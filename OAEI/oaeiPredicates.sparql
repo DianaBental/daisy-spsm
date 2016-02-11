@@ -1,0 +1,34 @@
+#~/CHAIN/code/jena/apache-jena-2.12.0/bin/arq --data ~/CHAIN/OAEI/conference-set-2014/cmt.owl --query oaeiPredicates.sparql >  ~/CHAIN/OAEI/analysis-2014/cmt-preds.table
+
+#~/CHAIN/code/jena/apache-jena-2.12.0/bin/arq --data ~/CHAIN/OAEI/conference-set-2014/Conference.owl --query oaeiPredicates.sparql >  ~/CHAIN/OAEI/analysis-2014/conference-preds.table
+
+#~/CHAIN/code/jena/apache-jena-2.12.0/bin/arq --data ~/CHAIN/OAEI/conference-set-2014/Cocus.owl --query oaeiPredicates.sparql >  ~/CHAIN/OAEI/analysis-2014/cocus-preds.table
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Make the output more readable by declaring a prefix for each dataset
+PREFIX cmt: <http://cmt#>
+PREFIX conf: <http://conference#>
+PREFIX cocus: <http://cocus#>
+PREFIX confious: <http://confious#>
+PREFIX confof: <http://confof#>
+PREFIX crs_dr: <http://crs_dr#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX iasted: <http://iasted#>
+PREFIX linklings: <http://linklings#>
+PREFIX micro: <http://micro#>
+PREFIX myreview: <http://myreview#>
+PREFIX openconf: <http://openconf#>
+PREFIX paperdyne: <http://paperdyne#>
+PREFIX pcs: <http://pcs#>
+PREFIX sigkdd: <http://sigkdd#>
+
+SELECT ?domain ?property ?range
+	WHERE { ?property rdfs:domain  ?domain  .
+	               ?property rdfs:range  ?range
+	} ORDER BY ?domain

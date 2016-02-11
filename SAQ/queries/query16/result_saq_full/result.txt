@@ -1,0 +1,599 @@
+Query:  entity(type(Movie),directedBy(Francis_Ford_Coppola)) 
+Construct query entity(type(Movie),directedBy(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Movie> ; 
+<directedBy> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Film FilmFestival MovieDirector Musical MusicalArtist MusicalWork TelevisionShow TelevisionShowFictionalCharacter 
+
+Matching query schema Movie(directedBy) 
+to dataset schema TelevisionShowFictionalCharacter(voice) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Movie(directedBy) 
+to dataset schema FilmFestival(causedBy,closingFilm,duration,endDate,film,followingEvent,nextEvent,numberOfPeopleAttending,openingFilm,participant,previousEvent,startDate) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Movie(directedBy) 
+to dataset schema Musical(WorkRuntime,alternativeTitle,author,basedOn,chiefEditor,completionDate,composer,license,lyrics,mainCharacter,musicBy,musicComposer,originalLanguage,originalTitle,previousWork,producer,productionCompany,releaseDate,runtime,starring,subjectTerm,subsequentWork,translator,writer) 
+Created match data: 
+similarity(0.020000000000000018).
+match(none).
+match([[Movie],>,[Musical]]).
+
+Matching query schema Movie(directedBy) 
+to dataset schema MusicalWork(WorkRuntime,alternativeTitle,artist,author,basedOn,chiefEditor,completionDate,composer,license,mainCharacter,musicComposer,musicType,musicalKey,originalLanguage,originalTitle,previousWork,producer,productionCompany,recordDate,recordedIn,releaseDate,runtime,starring,subjectTerm,subsequentWork,translator,writer) 
+Created match data: 
+similarity(0.017857142857142905).
+match(none).
+match([[Movie],>,[MusicalWork]]).
+
+Matching query schema Movie(directedBy) 
+to dataset schema TelevisionShow(WorkRuntime,alternativeTitle,author,basedOn,chiefEditor,coExecutiveProducer,coProducer,completionDate,composer,creativeDirector,endingTheme,license,mainCharacter,musicComposer,numberOfEpisodes,numberOfSeasons,openingTheme,originalLanguage,originalTitle,presenter,previousWork,producer,productionCompany,releaseDate,runtime,showJudge,starring,storyEditor,subjectTerm,subsequentWork,translator,tvComId,writer) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Movie(directedBy) 
+to dataset schema Film(WorkRuntime,afdbId,allcinemaId,alternativeTitle,amgid,author,basedOn,bgafdId,chiefEditor,cinematography,completionDate,composer,costumeDesigner,director,eTeatrId,editing,egafdId,eurobabeIndexId,filmAudioType,filmColourType,filmPolskiId,filmRuntime,firstBroadcast,gross,iafdId,imdbId,license,mainCharacter,makeupArtist,musicComposer,narrator,originalLanguage,originalTitle,previousWork,producedBy,producer,productionCompany,quebecerTitle,releaseDate,runtime,setDesigner,specialEffects,starring,subjectTerm,subsequentWork,titleLanguage,translator,writer) 
+Created match data: 
+similarity(0.020408163265306145).
+match(none).
+match([[Movie],=,[Film]]).
+
+Matching query schema Movie(directedBy) 
+to dataset schema MovieDirector(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0017730496453900457).
+match(none).
+match([[Movie],>,[MovieDirector]]).
+
+Matching query schema Movie(directedBy) 
+to dataset schema MusicalArtist(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,academyAward,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,afiAward,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,associatedAct,astrologicalSign,award,badGuy,baftaAward,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,cesarAward,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,disciple,discipline,dubber,dutchRKDCode,education,educationPlace,electionDate,emmyAward,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,field,filmFareAward,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,gaudiAward,generalCouncil,goldenGlobeAward,goyaAward,grammyAward,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,instrument,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,mbaId,measurements,media,mentor,militaryBranch,militaryFunction,mood,mount,movement,movie,musicBand,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,notableWork,noteOnRestingPlace,numberOfAlbums,numberOfLiveAlbums,numberOfRun,numberOfStudioAlbums,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,polishFilmAward,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,style,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tonyAward,training,tvShow,ulanId,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,voiceType,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.001607717041800627).
+match(none).
+match([[Movie],>,[MusicalArtist]]).
+
+Construct query entity(type(Film)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                                                                           |
+=====================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Alraune_(1918_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Alraune_(1928_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Alraune_(1952_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/April_Love_(film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Ascendancy_(film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Chervona_Ruta_(film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Dead_City_(film)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/Doughboys_(1930_film)>                                                                                                                                               |
+| <http://dbpedia.org/resource/Fanny_by_Gaslight_(film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Furnace_(film)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/Germany,_Year_Zero>                                                                                                                                                  |
+| <http://dbpedia.org/resource/Kekexili:_Mountain_Patrol>                                                                                                                                           |
+| <http://dbpedia.org/resource/Knight_Rider_(2008_film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Knight_Rider_2000>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Knight_Rider_2010>                                                                                                                                                   |
+| <http://dbpedia.org/resource/La_Ci%C3%A9naga_(film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Lipstick_(film)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/Nacho_Libre>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Panic_in_Year_Zero!>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Peg_o'_My_Heart_(1922_film)>                                                                                                                                         |
+| <http://dbpedia.org/resource/Peg_o'_My_Heart_(1933_film)>                                                                                                                                         |
+| <http://dbpedia.org/resource/Red_Light_(film)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/Red_Lights_(2004_film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Red_Lights_(2012_film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Seenu_(1999_film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Seenu_(2000_film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Smile_Pinki>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Someone_to_Love_(film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Stella_Dallas_(1925_film)>                                                                                                                                           |
+| <http://dbpedia.org/resource/Stella_Dallas_(1937_film)>                                                                                                                                           |
+| <http://dbpedia.org/resource/Tekken:_The_Motion_Picture>                                                                                                                                          |
+| <http://dbpedia.org/resource/Tekken_(1990_film)>                                                                                                                                                  |
+| <http://dbpedia.org/resource/Tekken_(2010_film)>                                                                                                                                                  |
+| <http://dbpedia.org/resource/The_Big_Store>                                                                                                                                                       |
+| <http://dbpedia.org/resource/The_Fighting_Heart_(1919_film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/The_Fighting_Heart_(1925_film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/The_Gold_Diggers_(1923_film)>                                                                                                                                        |
+| <http://dbpedia.org/resource/The_Taking_of_Pelham_One_Two_Three_(1974_film)>                                                                                                                      |
+| <http://dbpedia.org/resource/The_Taking_of_Pelham_One_Two_Three_(1998_film)>                                                                                                                      |
+| <http://dbpedia.org/resource/Voltaire_(film)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/Why_I_Wore_Lipstick_to_My_Mastectomy>                                                                                                                                |
+| <http://dbpedia.org/resource/%C3%89tienne_(film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/%C3%89toile_(film)>                                                                                                                                                  |
+| <http://dbpedia.org/resource/08/15_(film_series)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/101_Dalmatians_II:_Patch's_London_Adventure>                                                                                                                         |
+| <http://dbpedia.org/resource/2002_(film)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/21_(2008_film)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/23_Skidoo_(film)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/42_(film)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/500_Days_of_Summer>                                                                                                                                                  |
+| <http://dbpedia.org/resource/500_Dunam_on_the_Moon>                                                                                                                                               |
+| <http://dbpedia.org/resource/500_Years_Later>                                                                                                                                                     |
+| <http://dbpedia.org/resource/5_Days_of_War>                                                                                                                                                       |
+| <http://dbpedia.org/resource/99_(1918_film)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/99_(2009_film)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Bandit>                                                                                                                                                            |
+| <http://dbpedia.org/resource/A_Flower_of_Evil>                                                                                                                                                    |
+| <http://dbpedia.org/resource/A_Girl_in_Every_Port_(1928_film)>                                                                                                                                    |
+| <http://dbpedia.org/resource/A_Girl_in_Every_Port_(1952_film)>                                                                                                                                    |
+| <http://dbpedia.org/resource/A_Kiss_Before_Dying_(1956_film)>                                                                                                                                     |
+| <http://dbpedia.org/resource/A_Kiss_Before_Dying_(1991_film)>                                                                                                                                     |
+| <http://dbpedia.org/resource/A_Letter_from_Death_Row_(film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Little_Piece_of_Heaven_(film)>                                                                                                                                     |
+| <http://dbpedia.org/resource/A_More_Perfect_Union_(film)>                                                                                                                                         |
+| <http://dbpedia.org/resource/A_New_Life_(film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/A_Perfect_Fit>                                                                                                                                                       |
+| <http://dbpedia.org/resource/A_Roman_Scandal_(film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/A_Simple_Story_(1970_film)>                                                                                                                                          |
+| <http://dbpedia.org/resource/A_Simple_Story_(1978_film)>                                                                                                                                          |
+| <http://dbpedia.org/resource/A_Small_Town_Girl>                                                                                                                                                   |
+| <http://dbpedia.org/resource/A_Son_of_David>                                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Study_in_Scarlet_(1914_film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Study_in_Scarlet_(1933_film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Terrible_Beauty_(film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/A_Woman's_Revenge_(1921_film)>                                                                                                                                       |
+| <http://dbpedia.org/resource/A_Woman's_Revenge_(1990_film)>                                                                                                                                       |
+| <http://dbpedia.org/resource/Aakrosh_(1980_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Aakrosh_(1998_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Aakrosh_(2010_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Aatish:_Feel_the_Fire>                                                                                                                                               |
+| <http://dbpedia.org/resource/Aatish_(film)>                                                                                                                                                       |
+| <http://dbpedia.org/resource/Abby_(film)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Accident_(1928_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(1976_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(1985_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(2008_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(2009_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(2012_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Ace_High_(1919_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Ace_High_(1968_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Across_the_Universe_(film)>                                                                                                                                          |
+| <http://dbpedia.org/resource/Adam's_Rib_(1923_film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Adam_and_Eve_(1949_film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Adam_and_Eve_(1953_film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Adventures_of_the_Barber_of_Seville>                                                                                                                                 |
+| <http://dbpedia.org/resource/After_Midnight_(1927_film)>                                                                                                                                          |
+| <http://dbpedia.org/resource/After_Midnight_(1989_film)>                                                                                                                                          |
+
+Construct query entity(type(MovieDirector)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MovieDirector> . }
+
+The query did not return any data. 
+
+Construct query entity(type) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                    | type                                                               |
+===================================================================================================================================================================================================================
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>                                                                                          | <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>              |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default>                                                                                   | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-nullable>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt>                                                                            | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt-nullable>                                                                   | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-lang>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-lang-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-fixedlang-x-any>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-fixedlang-x-any-nullable>                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-dt>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-dt-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-lang>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-lang-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-fixedlang-x-any>                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-fixedlang-x-any-nullable>                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-dt>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-dt-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-lang>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-lang-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-fixedlang-x-any>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-fixedlang-x-any-nullable>                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-literal>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-literal-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-dt>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-dt-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-lang>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-lang-nullable>                                                            | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-fixedlang-x-any>                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-fixedlang-x-any-nullable>                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarbinary>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarbinary-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-literal>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-literal-nullable>                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date>                                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-nullable>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time>                                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-nullable>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-literal>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-literal-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri>                                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri-nullable>                                                                    | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri-fn-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal-fn-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri-fn-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal-fn-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-fn>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-fn-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+
+Construct query entity(type(Musical)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Musical> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------
+| subject                                                                                           |
+=====================================================================================================
+| <http://dbpedia.org/resource/After_Midnight_(musical)>                                            |
+| <http://dbpedia.org/resource/After_the_Ball_(musical)>                                            |
+| <http://dbpedia.org/resource/American_Idiot_(musical)>                                            |
+| <http://dbpedia.org/resource/Anna_Karenina_(musical)>                                             |
+| <http://dbpedia.org/resource/Anne_of_Green_Gables_%E2%80%93_The_Musical>                          |
+| <http://dbpedia.org/resource/Big_Deal_(musical)>                                                  |
+| <http://dbpedia.org/resource/Candide_(operetta)>                                                  |
+| <http://dbpedia.org/resource/Chronicle_of_a_Death_Foretold_(musical)>                             |
+| <http://dbpedia.org/resource/Chutzpah_a_Go-Go>                                                    |
+| <http://dbpedia.org/resource/Flying_Colors_(musical)>                                             |
+| <http://dbpedia.org/resource/Gay's_the_Word_(musical)>                                            |
+| <http://dbpedia.org/resource/Happy_New_Year_(musical)>                                            |
+| <http://dbpedia.org/resource/Legally_Blonde_(musical)>                                            |
+| <http://dbpedia.org/resource/Let's_Face_It!>                                                      |
+| <http://dbpedia.org/resource/Love_Never_Dies_(musical)>                                           |
+| <http://dbpedia.org/resource/Maytime_(musical)>                                                   |
+| <http://dbpedia.org/resource/Meet_Me_in_St._Louis_(musical)>                                      |
+| <http://dbpedia.org/resource/Movin'_Out_(musical)>                                                |
+| <http://dbpedia.org/resource/My_One_and_Only>                                                     |
+| <http://dbpedia.org/resource/Never_Say_Goodbye_(musical)>                                         |
+| <http://dbpedia.org/resource/New_Girl_in_Town>                                                    |
+| <http://dbpedia.org/resource/Sailor_Moon_musicals>                                                |
+| <http://dbpedia.org/resource/Songbook_(musical)>                                                  |
+| <http://dbpedia.org/resource/Sweet_and_Low_(musical)>                                             |
+| <http://dbpedia.org/resource/The_101_Dalmatians_Musical>                                          |
+| <http://dbpedia.org/resource/What's_Up%3F_(musical)>                                              |
+| <http://dbpedia.org/resource/Destry_Rides_Again_(musical)>                                        |
+| <http://dbpedia.org/resource/Fat_Camp_(musical)>                                                  |
+| <http://dbpedia.org/resource/Inside_U.S.A.>                                                       |
+| <http://dbpedia.org/resource/Kinky_Boots_(musical)>                                               |
+| <http://dbpedia.org/resource/Little_Me_(musical)>                                                 |
+| <http://dbpedia.org/resource/Over_Here!>                                                          |
+| <http://dbpedia.org/resource/Take_Flight_(musical)>                                               |
+| <http://dbpedia.org/resource/The_Commitments_(musical)>                                           |
+| <http://dbpedia.org/resource/The_Last_Ship_(musical)>                                             |
+| <http://dbpedia.org/resource/The_Lion_King_(musical)>                                             |
+| <http://dbpedia.org/resource/Waiting_for_the_Moon_(musical)>                                      |
+| <http://dbpedia.org/resource/All_About_Us_(musical)>                                              |
+| <http://dbpedia.org/resource/Brownstone_(musical)>                                                |
+| <http://dbpedia.org/resource/By_the_Beautiful_Sea_(musical)>                                      |
+| <http://dbpedia.org/resource/Portofino_(musical)>                                                 |
+| <http://dbpedia.org/resource/Roza_(musical)>                                                      |
+| <http://dbpedia.org/resource/The_Last_Session>                                                    |
+| <http://dbpedia.org/resource/The_Mad_Show>                                                        |
+| <http://dbpedia.org/resource/I'm_Getting_My_Act_Together_and_Taking_It_on_the_Road>               |
+| <http://dbpedia.org/resource/Menopause_The_Musical>                                               |
+| <http://dbpedia.org/resource/Disney's_My_Son_Pinocchio:_Geppetto's_Musical_Tale>                  |
+| <http://dbpedia.org/resource/Doonesbury_(musical)>                                                |
+| <http://dbpedia.org/resource/Bonnie_&_Clyde_(musical)>                                            |
+| <http://dbpedia.org/resource/Bluebell_in_Fairyland>                                               |
+| <http://dbpedia.org/resource/Bullets_and_Daffodils>                                               |
+| <http://dbpedia.org/resource/The_Thing_About_Men>                                                 |
+| <http://dbpedia.org/resource/Diamonds_(musical)>                                                  |
+| <http://dbpedia.org/resource/Houp_La!>                                                            |
+| <http://dbpedia.org/resource/Loserville>                                                          |
+| <http://dbpedia.org/resource/The_Utter_Glory_of_Morrissey_Hall>                                   |
+| <http://dbpedia.org/resource/Made_in_Dagenham_(musical)>                                          |
+| <http://dbpedia.org/resource/The_Night_Boat>                                                      |
+| <http://dbpedia.org/resource/White_Dalmatian>                                                     |
+| <http://dbpedia.org/resource/Am%C3%A9lie_(musical)>                                               |
+| <http://dbpedia.org/resource/But_Never_Jam_Today>                                                 |
+| <http://dbpedia.org/resource/Assassins_(musical)>                                                 |
+| <http://dbpedia.org/resource/Brigadoon>                                                           |
+| <http://dbpedia.org/resource/I'd_Rather_Be_Right>                                                 |
+| <http://dbpedia.org/resource/Jesus_Christ_Superstar>                                              |
+| <http://dbpedia.org/resource/The_King_and_I>                                                      |
+| <http://dbpedia.org/resource/West_Side_Story>                                                     |
+| <http://dbpedia.org/resource/Carrie_(musical)>                                                    |
+| <http://dbpedia.org/resource/Dusty_%E2%80%93_The_Original_Pop_Diva>                               |
+| <http://dbpedia.org/resource/Jumbo_(musical)>                                                     |
+| <http://dbpedia.org/resource/National_Lampoon_Lemmings>                                           |
+| <http://dbpedia.org/resource/Our_House_(musical)>                                                 |
+| <http://dbpedia.org/resource/Panama_Hattie>                                                       |
+| <http://dbpedia.org/resource/The_Hot_Mikado_(1939_production)>                                    |
+| <http://dbpedia.org/resource/The_Story_of_My_Life_(musical)>                                      |
+| <http://dbpedia.org/resource/Top_Banana_(musical)>                                                |
+| <http://dbpedia.org/resource/Bat_Boy:_The_Musical>                                                |
+| <http://dbpedia.org/resource/Big:_the_musical>                                                    |
+| <http://dbpedia.org/resource/Chaplin_(1993_musical)>                                              |
+| <http://dbpedia.org/resource/Charlie_and_the_Chocolate_Factory_the_Musical>                       |
+| <http://dbpedia.org/resource/City_of_Angels_(musical)>                                            |
+| <http://dbpedia.org/resource/Dogfight_(musical)>                                                  |
+| <http://dbpedia.org/resource/Evangeline_(musical)>                                                |
+| <http://dbpedia.org/resource/Gigi_(musical)>                                                      |
+| <http://dbpedia.org/resource/High_Society_(musical)>                                              |
+| <http://dbpedia.org/resource/John_Murray_Anderson's_Almanac>                                      |
+| <http://dbpedia.org/resource/Juno_and_Avos_(opera)>                                               |
+| <http://dbpedia.org/resource/Leap_of_Faith_(musical)>                                             |
+| <http://dbpedia.org/resource/Let_It_Be_(musical)>                                                 |
+| <http://dbpedia.org/resource/Marie_Antoinette_(musical)>                                          |
+| <http://dbpedia.org/resource/On_the_Record_(musical)>                                             |
+| <http://dbpedia.org/resource/Roberta>                                                             |
+| <http://dbpedia.org/resource/Salvation_(musical)>                                                 |
+| <http://dbpedia.org/resource/Silence!_The_Musical>                                                |
+| <http://dbpedia.org/resource/Tarzan_(musical)>                                                    |
+| <http://dbpedia.org/resource/The_Fantasticks>                                                     |
+| <http://dbpedia.org/resource/The_Visit_(musical)>                                                 |
+
+Construct query entity(type(MusicalArtist)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MusicalArtist> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------
+| subject                                                                               |
+=========================================================================================
+| <http://dbpedia.org/resource/Aaron_Lines>                                             |
+| <http://dbpedia.org/resource/Alma_Cogan>                                              |
+| <http://dbpedia.org/resource/Andy_Park_(musician)>                                    |
+| <http://dbpedia.org/resource/Bob_Hames>                                               |
+| <http://dbpedia.org/resource/Gene_Rockwell>                                           |
+| <http://dbpedia.org/resource/Hamilton_Bohannon>                                       |
+| <http://dbpedia.org/resource/Helen_Watson_(singer-songwriter)>                        |
+| <http://dbpedia.org/resource/Jimmy_Constable>                                         |
+| <http://dbpedia.org/resource/Nacho_Canut>                                             |
+| <http://dbpedia.org/resource/NoB>                                                     |
+| <http://dbpedia.org/resource/Patrick_Fiori>                                           |
+| <http://dbpedia.org/resource/Paul_Parker_(singer)>                                    |
+| <http://dbpedia.org/resource/Ray_Pillow>                                              |
+| <http://dbpedia.org/resource/Remberto_Gim%C3%A9nez>                                   |
+| <http://dbpedia.org/resource/Wade_Mainer>                                             |
+| <http://dbpedia.org/resource/2562_(musician)>                                         |
+| <http://dbpedia.org/resource/Abby_Dobson_(Australian_musician)>                       |
+| <http://dbpedia.org/resource/Abby_Travis>                                             |
+| <http://dbpedia.org/resource/Adam_Jones_(musician)>                                   |
+| <http://dbpedia.org/resource/Adam_of_Fulda>                                           |
+| <http://dbpedia.org/resource/Adonis_Shropshire>                                       |
+| <http://dbpedia.org/resource/Adriano_Cintra>                                          |
+| <http://dbpedia.org/resource/Aitor_Porres>                                            |
+| <http://dbpedia.org/resource/Alan_Warner_(musician)>                                  |
+| <http://dbpedia.org/resource/Albert_Becker_(composer)>                                |
+| <http://dbpedia.org/resource/Alceu_Valen%C3%A7a>                                      |
+| <http://dbpedia.org/resource/Aldo_Finzi_(composer)>                                   |
+| <http://dbpedia.org/resource/Aleksandar_Simi%C4%87_(composer)>                        |
+| <http://dbpedia.org/resource/Alessandro_Longo>                                        |
+| <http://dbpedia.org/resource/Alexander_Tucker_(musician)>                             |
+| <http://dbpedia.org/resource/Alfred_R._Gaul>                                          |
+| <http://dbpedia.org/resource/Alina_Devecerski>                                        |
+| <http://dbpedia.org/resource/Alina_Eremia>                                            |
+| <http://dbpedia.org/resource/Alina_Grosu>                                             |
+| <http://dbpedia.org/resource/Alina_Ibragimova>                                        |
+| <http://dbpedia.org/resource/Alina_Orlova>                                            |
+| <http://dbpedia.org/resource/Alina_Smith>                                             |
+| <http://dbpedia.org/resource/Alioune_Mbaye_Nder>                                      |
+| <http://dbpedia.org/resource/Alison_MacCallum>                                        |
+| <http://dbpedia.org/resource/Allen_West_(musician)>                                   |
+| <http://dbpedia.org/resource/Aman_Hayer>                                              |
+| <http://dbpedia.org/resource/Amanda_Jenssen>                                          |
+| <http://dbpedia.org/resource/Amanda_McBroom>                                          |
+| <http://dbpedia.org/resource/Ambrogio_Minoja>                                         |
+| <http://dbpedia.org/resource/Amen_(rock_musician)>                                    |
+| <http://dbpedia.org/resource/Amjad_Ali_Khan>                                          |
+| <http://dbpedia.org/resource/Andr%C3%A9_Almur%C3%B3>                                  |
+| <http://dbpedia.org/resource/Andranik_Madadian>                                       |
+| <http://dbpedia.org/resource/Andrea_Echeverri>                                        |
+| <http://dbpedia.org/resource/Andrew_Dawson_(record_producer)>                         |
+| <http://dbpedia.org/resource/Andrew_Innes>                                            |
+| <http://dbpedia.org/resource/Andrew_Morris_(musician)>                                |
+| <http://dbpedia.org/resource/Andrew_Wood_(singer)>                                    |
+| <http://dbpedia.org/resource/Andrius_Mamontovas>                                      |
+| <http://dbpedia.org/resource/Andy_Bown>                                               |
+| <http://dbpedia.org/resource/Andy_Chatterley>                                         |
+| <http://dbpedia.org/resource/Andy_Roberts_(musician)>                                 |
+| <http://dbpedia.org/resource/Anil_Mohile>                                             |
+| <http://dbpedia.org/resource/Anine_Kruse>                                             |
+| <http://dbpedia.org/resource/Annapurna_Devi>                                          |
+| <http://dbpedia.org/resource/Anne_Savage_(DJ)>                                        |
+| <http://dbpedia.org/resource/Annette_Ducharme>                                        |
+| <http://dbpedia.org/resource/Anouk_(singer)>                                          |
+| <http://dbpedia.org/resource/Anthony_%22Sooty%22_Jones>                               |
+| <http://dbpedia.org/resource/Anthony_Evans,_Jr.>                                      |
+| <http://dbpedia.org/resource/Antix_(Rapper)>                                          |
+| <http://dbpedia.org/resource/Antonina_Matviyenko>                                     |
+| <http://dbpedia.org/resource/Antonio_Brioschi>                                        |
+| <http://dbpedia.org/resource/Antonis_Papadakis>                                       |
+| <http://dbpedia.org/resource/Appa_(rapper)>                                           |
+| <http://dbpedia.org/resource/Ari_Hest>                                                |
+| <http://dbpedia.org/resource/Armani_Depaul>                                           |
+| <http://dbpedia.org/resource/Arturo_Meza>                                             |
+| <http://dbpedia.org/resource/Arve_Henriksen>                                          |
+| <http://dbpedia.org/resource/Asgari_Bai>                                              |
+| <http://dbpedia.org/resource/Asger_Svendsen>                                          |
+| <http://dbpedia.org/resource/Ashur_Bet_Sargis>                                        |
+| <http://dbpedia.org/resource/Asl%C4%B1_G%C3%B6kyoku%C5%9F>                            |
+| <http://dbpedia.org/resource/Asl%C4%B1_G%C3%BCng%C3%B6r>                              |
+| <http://dbpedia.org/resource/Assia_(singer)>                                          |
+| <http://dbpedia.org/resource/Aya_Hirano>                                              |
+| <http://dbpedia.org/resource/Ayano_Tsuji>                                             |
+| <http://dbpedia.org/resource/Azat_Abbasov>                                            |
+| <http://dbpedia.org/resource/B%C3%B8rre_Dalhaug>                                      |
+| <http://dbpedia.org/resource/B%C3%BClent_Ersoy>                                       |
+| <http://dbpedia.org/resource/Babatunde_Lea>                                           |
+| <http://dbpedia.org/resource/Bada_(singer)>                                           |
+| <http://dbpedia.org/resource/Barbara_Acklin>                                          |
+| <http://dbpedia.org/resource/Barbra_Amesbury>                                         |
+| <http://dbpedia.org/resource/Beefcake_the_Mighty>                                     |
+| <http://dbpedia.org/resource/Ben_Harper_(Yellowcard_and_HeyMike!)>                    |
+| <http://dbpedia.org/resource/Bernardino_Borlasca>                                     |
+| <http://dbpedia.org/resource/Beverley_Mahood>                                         |
+| <http://dbpedia.org/resource/Big_Lurch>                                               |
+| <http://dbpedia.org/resource/Bii_(singer)>                                            |
+| <http://dbpedia.org/resource/Bill_Caddick>                                            |
+| <http://dbpedia.org/resource/Bill_Curbishley>                                         |
+
+Construct query entity(type(MusicalWork)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MusicalWork> . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                                                                                   |
+=============================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Adieu_(C%C5%93ur_de_pirate_song)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Adieu_(Jahn_Teigen_and_Anita_Skorgan_song)>                                                                                                                                  |
+| <http://dbpedia.org/resource/April_Love_(song)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/Arnel_Pineda_(album)>                                                                                                                                                        |
+| <http://dbpedia.org/resource/Ascendancy_(album)>                                                                                                                                                          |
+| <http://dbpedia.org/resource/Blue_Daisy>                                                                                                                                                                  |
+| <http://dbpedia.org/resource/Break_It_Up_(Foreigner_song)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Break_It_Up_(Jemina_Pearl_album)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Break_It_Up_(Rocket_from_the_Crypt_song)>                                                                                                                                    |
+| <http://dbpedia.org/resource/Break_It_Up_(SSD_album)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/Chervona_Ruta_(album)>                                                                                                                                                       |
+| <http://dbpedia.org/resource/Chervona_Ruta_(song)>                                                                                                                                                        |
+| <http://dbpedia.org/resource/Christmas_Is_Here_(Brandon_Heath_album)>                                                                                                                                     |
+| <http://dbpedia.org/resource/El_Tiempo_(album)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/Furnace_(Download_album)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/Furnace_(Keith_Hudson_album)>                                                                                                                                                |
+| <http://dbpedia.org/resource/In_Search_of_Sunrise_(series)>                                                                                                                                               |
+| <http://dbpedia.org/resource/La_Raza_(album)>                                                                                                                                                             |
+| <http://dbpedia.org/resource/La_Raza_(song)>                                                                                                                                                              |
+| <http://dbpedia.org/resource/Licence_to_Kill_(soundtrack)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Lipstick/Ichiban_Boshi>                                                                                                                                                      |
+| <http://dbpedia.org/resource/Lipstick/Lamu_no_Love_Song>                                                                                                                                                  |
+| <http://dbpedia.org/resource/Lipstick_(Alejandra_Guzm%C3%A1n_album)>                                                                                                                                      |
+| <http://dbpedia.org/resource/Lipstick_(Alejandra_Guzm%C3%A1n_song)>                                                                                                                                       |
+| <http://dbpedia.org/resource/Lipstick_(Alesha_song)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/Lipstick_(Elise_Estrada_song)>                                                                                                                                               |
+| <http://dbpedia.org/resource/Lipstick_(Jedward_song)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/Lipstick_(Orange_Caramel_album)>                                                                                                                                             |
+| <http://dbpedia.org/resource/Lipstick_(Rocket_from_the_Crypt_song)>                                                                                                                                       |
+| <http://dbpedia.org/resource/List_of_Who_Framed_Roger_Rabbit_media>                                                                                                                                       |
+| <http://dbpedia.org/resource/Live_in_Rio_(Diana_Krall_DVD)>                                                                                                                                               |
+| <http://dbpedia.org/resource/Live_in_Rio_(Earth,_Wind_&_Fire_album)>                                                                                                                                      |
+| <http://dbpedia.org/resource/Live_in_Rio_(RBD_DVD)>                                                                                                                                                       |
+| <http://dbpedia.org/resource/Love_Changes_Everything_(Sarah_Brightman_album)>                                                                                                                             |
+| <http://dbpedia.org/resource/Love_Changes_Everything_(song)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Red_Light_(U2_song)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Red_Light_(song)>                                                                                                                                                            |
+| <http://dbpedia.org/resource/Red_Lights_(song)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/Some_Assembly_Required_(album)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Someone_to_Love_(Fountains_of_Wayne_song)>                                                                                                                                   |
+| <http://dbpedia.org/resource/Someone_to_Love_(Jon_B._song)>                                                                                                                                               |
+| <http://dbpedia.org/resource/Someone_to_Love_(Sean_Maguire_song)>                                                                                                                                         |
+| <http://dbpedia.org/resource/Someone_to_Love_Me_(Naked)>                                                                                                                                                  |
+| <http://dbpedia.org/resource/Someone_to_Love_You>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Special_Occasion_(Bobby_Valentino_album)>                                                                                                                                    |
+| <http://dbpedia.org/resource/Special_Occasion_(The_Miracles_album)>                                                                                                                                       |
+| <http://dbpedia.org/resource/Special_Occasion_(The_Miracles_song)>                                                                                                                                        |
+| <http://dbpedia.org/resource/The_Winter_Album_('N_Sync_album)>                                                                                                                                            |
+| <http://dbpedia.org/resource/The_Winter_Album_(The_Brilliant_Green_album)>                                                                                                                                |
+| <http://dbpedia.org/resource/Three_Little_Pigs_%E2%80%93_The_Remixes>                                                                                                                                     |
+| <http://dbpedia.org/resource/Three_Little_Pigs_(song)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/Whitechapel_(album)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Year_Zero_(album)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/Year_Zero_Remixed>                                                                                                                                                           |
+| <http://dbpedia.org/resource/%C3%89tienne_(song)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/(Everybody's_Waitin'_for)_The_Man_with_the_Bag>                                                                                                                              |
+| <http://dbpedia.org/resource/(I'd_Go_The)_Whole_Wide_World>                                                                                                                                               |
+| <http://dbpedia.org/resource/(It)_Feels_So_Good>                                                                                                                                                          |
+| <http://dbpedia.org/resource/(So_Tired_of_Standing_Still_We_Got_to)_Move_On>                                                                                                                              |
+| <http://dbpedia.org/resource/(Songbook)_A_Collection_of_Hits>                                                                                                                                             |
+| <http://dbpedia.org/resource/(You're_the)_Devil_in_Disguise>                                                                                                                                              |
+| <http://dbpedia.org/resource/1000_no_Violin>                                                                                                                                                              |
+| <http://dbpedia.org/resource/1492_(song)>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/1959_(John_Anderson_song)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/1959_(Patti_Smith_song)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/1959_(album)>                                                                                                                                                                |
+| <http://dbpedia.org/resource/1969:_The_Velvet_Underground_Live>                                                                                                                                           |
+| <http://dbpedia.org/resource/1969_(EP)>                                                                                                                                                                   |
+| <http://dbpedia.org/resource/1969_(G%C3%A1bor_Szab%C3%B3_album)>                                                                                                                                          |
+| <http://dbpedia.org/resource/1969_(Julie_Driscoll_album)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/1969_(Pink_Martini_and_Saori_Yuki_album)>                                                                                                                                    |
+| <http://dbpedia.org/resource/1973_(song)>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/2002_(Tha_Dogg_Pound_album)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/20:20_(box_set)>                                                                                                                                                             |
+| <http://dbpedia.org/resource/20th_Century_(album)>                                                                                                                                                        |
+| <http://dbpedia.org/resource/21%3F!_EP>                                                                                                                                                                   |
+| <http://dbpedia.org/resource/21_(Adele_album)>                                                                                                                                                            |
+| <http://dbpedia.org/resource/21_(Omarion_album)>                                                                                                                                                          |
+| <http://dbpedia.org/resource/21_(The_Paddingtons_song)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/24-7-365_(N2Deep_album)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/24-7-365_(Neal_McCoy_album)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/24_Kilates>                                                                                                                                                                  |
+| <http://dbpedia.org/resource/25/8_(song)>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/25_Years_%E2%80%93_The_Chain>                                                                                                                                                |
+| <http://dbpedia.org/resource/27_(song)>                                                                                                                                                                   |
+| <http://dbpedia.org/resource/42_(song)>                                                                                                                                                                   |
+| <http://dbpedia.org/resource/4_Minutes_(Madonna_song)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/5.15>                                                                                                                                                                        |
+| <http://dbpedia.org/resource/500_Degreez>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/500_Up>                                                                                                                                                                      |
+| <http://dbpedia.org/resource/5_Songs_(Iced_Earth_EP)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/5_Songs_(Seether_EP)>                                                                                                                                                        |
+| <http://dbpedia.org/resource/5_Songs_(The_Decemberists_EP)>                                                                                                                                               |
+| <http://dbpedia.org/resource/808_(album)>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/808_(song)>                                                                                                                                                                  |
+| <http://dbpedia.org/resource/808s_&_Heartbreak>                                                                                                                                                           |
+| <http://dbpedia.org/resource/99_(Epik_High_album)>                                                                                                                                                        |
+

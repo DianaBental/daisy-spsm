@@ -1,0 +1,225 @@
+Query:  entity(type(Politician),religion(Methodism)) 
+Construct query entity(type(Politician),religion(Methodism)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician> ; 
+<http://dbpedia.org/ontology/religion> <http://dbpedia.org/resource/Methodism> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------
+| subject                                                                            |
+======================================================================================
+| <http://dbpedia.org/resource/James_F._Hinkle>                                      |
+| <http://dbpedia.org/resource/Richie_Robb>                                          |
+| <http://dbpedia.org/resource/Kathy_Afzali>                                         |
+| <http://dbpedia.org/resource/Samantha_Shaw>                                        |
+| <http://dbpedia.org/resource/Shane_Robinson_(politician)>                          |
+| <http://dbpedia.org/resource/Luren_Dickinson>                                      |
+| <http://dbpedia.org/resource/Carte_Goodwin>                                        |
+| <http://dbpedia.org/resource/William_Horner_Fletcher>                              |
+| <http://dbpedia.org/resource/Bill_O'Brien_(Mayor)>                                 |
+| <http://dbpedia.org/resource/Chiang_Ching-kuo>                                     |
+| <http://dbpedia.org/resource/Harold_Washington>                                    |
+| <http://dbpedia.org/resource/John_L._Bates>                                        |
+| <http://dbpedia.org/resource/John_McWilliams_Ford>                                 |
+| <http://dbpedia.org/resource/Randy_Nix>                                            |
+| <http://dbpedia.org/resource/Roy_J._Turner>                                        |
+| <http://dbpedia.org/resource/Willis_Benson_Machen>                                 |
+| <http://dbpedia.org/resource/Laurie_Monnes_Anderson>                               |
+| <http://dbpedia.org/resource/David_Delano_Glover>                                  |
+| <http://dbpedia.org/resource/Frank_R._Gooding>                                     |
+| <http://dbpedia.org/resource/George_W._Atkinson>                                   |
+| <http://dbpedia.org/resource/Roxann_Robinson>                                      |
+| <http://dbpedia.org/resource/William_A._Pile>                                      |
+| <http://dbpedia.org/resource/Keiffer_J._Mitchell,_Jr.>                             |
+| <http://dbpedia.org/resource/Danny_Morgan_(politician)>                            |
+| <http://dbpedia.org/resource/John_Cann>                                            |
+| <http://dbpedia.org/resource/Sam_Lumpkin>                                          |
+| <http://dbpedia.org/resource/Charles_C._Ellsworth>                                 |
+| <http://dbpedia.org/resource/Bob_Anspach>                                          |
+| <http://dbpedia.org/resource/Ronald_C._Green>                                      |
+| <http://dbpedia.org/resource/Stephen_Fincher>                                      |
+| <http://dbpedia.org/resource/Samuel_Lees>                                          |
+| <http://dbpedia.org/resource/Tom_Bolack>                                           |
+| <http://dbpedia.org/resource/Herbert_Charles_Wilson>                               |
+| <http://dbpedia.org/resource/Alf_Landon>                                           |
+| <http://dbpedia.org/resource/Syngman_Rhee>                                         |
+| <http://dbpedia.org/resource/Alpheus_Felch>                                        |
+| <http://dbpedia.org/resource/Floyd_H._Flake>                                       |
+| <http://dbpedia.org/resource/Fred_M._Warner>                                       |
+| <http://dbpedia.org/resource/Norman_Makin>                                         |
+| <http://dbpedia.org/resource/Robert_Bradford_(Northern_Irish_politician)>          |
+| <http://dbpedia.org/resource/William_G._Conley>                                    |
+| <http://dbpedia.org/resource/Lurleen_Wallace>                                      |
+| <http://dbpedia.org/resource/Martin_Sennet_Conner>                                 |
+| <http://dbpedia.org/resource/Harry_G._Leslie>                                      |
+| <http://dbpedia.org/resource/John_William_Mitchell>                                |
+| <http://dbpedia.org/resource/Nehemiah_Green>                                       |
+| <http://dbpedia.org/resource/David_L._Boren>                                       |
+| <http://dbpedia.org/resource/Elmore_Y._Sarles>                                     |
+| <http://dbpedia.org/resource/Norman_Harold_Moss>                                   |
+| <http://dbpedia.org/resource/William_L._Andrews>                                   |
+| <http://dbpedia.org/resource/George_Thomas,_1st_Viscount_Tonypandy>                |
+| <http://dbpedia.org/resource/Coke_R._Stevenson>                                    |
+| <http://dbpedia.org/resource/Max_T._Malone>                                        |
+| <http://dbpedia.org/resource/Paul_Peek_(politician)>                               |
+| <http://dbpedia.org/resource/Winthrop_Rockefeller>                                 |
+| <http://dbpedia.org/resource/Arthur_Henderson>                                     |
+| <http://dbpedia.org/resource/Frank_O'Bannon>                                       |
+| <http://dbpedia.org/resource/Homer_Martin_Adkins>                                  |
+| <http://dbpedia.org/resource/John_Sparkman>                                        |
+| <http://dbpedia.org/resource/Charles_E._Potter>                                    |
+| <http://dbpedia.org/resource/Ernest_McFarland>                                     |
+| <http://dbpedia.org/resource/Jim_Chapman_(congressman)>                            |
+| <http://dbpedia.org/resource/Melvin_L._Stukes>                                     |
+| <http://dbpedia.org/resource/Henry_Justin_Allen>                                   |
+| <http://dbpedia.org/resource/Henry_Smith_Lane>                                     |
+| <http://dbpedia.org/resource/Joe_Turnham>                                          |
+| <http://dbpedia.org/resource/Charles_Albert_Plumley>                               |
+| <http://dbpedia.org/resource/John_N._Sandlin>                                      |
+| <http://dbpedia.org/resource/John_T._Watkins>                                      |
+| <http://dbpedia.org/resource/Brian_Aungst>                                         |
+| <http://dbpedia.org/resource/David_G._P._Taylor>                                   |
+| <http://dbpedia.org/resource/Patrick_H._Drewry>                                    |
+| <http://dbpedia.org/resource/Lee_Chee_Leong>                                       |
+| <http://dbpedia.org/resource/Bob_Barr>                                             |
+| <http://dbpedia.org/resource/Canaan_Banana>                                        |
+| <http://dbpedia.org/resource/Elizabeth_Dole>                                       |
+| <http://dbpedia.org/resource/Kirk_Fordice>                                         |
+| <http://dbpedia.org/resource/Doug_Hoffman>                                         |
+| <http://dbpedia.org/resource/John_B._Kendrick>                                     |
+| <http://dbpedia.org/resource/Johnston_Murray>                                      |
+| <http://dbpedia.org/resource/William_H._Murray>                                    |
+| <http://dbpedia.org/resource/Mark_Ritchie>                                         |
+| <http://dbpedia.org/resource/D._W._Davis>                                          |
+| <http://dbpedia.org/resource/George_S._Mickelson>                                  |
+| <http://dbpedia.org/resource/Page_Belcher>                                         |
+| <http://dbpedia.org/resource/Henry_Olin>                                           |
+| <http://dbpedia.org/resource/John_Wiley_Bryant>                                    |
+| <http://dbpedia.org/resource/Paul_Fannin>                                          |
+| <http://dbpedia.org/resource/Paul_Gillmor>                                         |
+| <http://dbpedia.org/resource/J._Millard_Tawes>                                     |
+| <http://dbpedia.org/resource/Jack_Stewart_(politician)>                            |
+| <http://dbpedia.org/resource/John_Brodhead_(New_Hampshire_politician)>             |
+| <http://dbpedia.org/resource/Leonidas_C._Houk>                                     |
+| <http://dbpedia.org/resource/Paul_Rogers_(politician)>                             |
+| <http://dbpedia.org/resource/Don_Samuelson>                                        |
+| <http://dbpedia.org/resource/Frederick_Stewart_(Australian_politician)>            |
+| <http://dbpedia.org/resource/Harry_Kneebone>                                       |
+
+Narrowed to these target datasets:  Politician 
+
+Matching query schema Politician(religion) 
+to dataset schema Politician(religion) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[Politician,religion],=,[Politician,religion]]).
+match([[Politician],=,[Politician]]).
+
+Construct query entity(type(Politician),religion(Methodism)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician> ; 
+<http://dbpedia.org/ontology/religion> <http://dbpedia.org/resource/Methodism> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------
+| subject                                                                            |
+======================================================================================
+| <http://dbpedia.org/resource/James_F._Hinkle>                                      |
+| <http://dbpedia.org/resource/Richie_Robb>                                          |
+| <http://dbpedia.org/resource/Kathy_Afzali>                                         |
+| <http://dbpedia.org/resource/Samantha_Shaw>                                        |
+| <http://dbpedia.org/resource/Shane_Robinson_(politician)>                          |
+| <http://dbpedia.org/resource/Luren_Dickinson>                                      |
+| <http://dbpedia.org/resource/Carte_Goodwin>                                        |
+| <http://dbpedia.org/resource/William_Horner_Fletcher>                              |
+| <http://dbpedia.org/resource/Bill_O'Brien_(Mayor)>                                 |
+| <http://dbpedia.org/resource/Chiang_Ching-kuo>                                     |
+| <http://dbpedia.org/resource/Harold_Washington>                                    |
+| <http://dbpedia.org/resource/John_L._Bates>                                        |
+| <http://dbpedia.org/resource/John_McWilliams_Ford>                                 |
+| <http://dbpedia.org/resource/Randy_Nix>                                            |
+| <http://dbpedia.org/resource/Roy_J._Turner>                                        |
+| <http://dbpedia.org/resource/Willis_Benson_Machen>                                 |
+| <http://dbpedia.org/resource/Laurie_Monnes_Anderson>                               |
+| <http://dbpedia.org/resource/David_Delano_Glover>                                  |
+| <http://dbpedia.org/resource/Frank_R._Gooding>                                     |
+| <http://dbpedia.org/resource/George_W._Atkinson>                                   |
+| <http://dbpedia.org/resource/Roxann_Robinson>                                      |
+| <http://dbpedia.org/resource/William_A._Pile>                                      |
+| <http://dbpedia.org/resource/Keiffer_J._Mitchell,_Jr.>                             |
+| <http://dbpedia.org/resource/Danny_Morgan_(politician)>                            |
+| <http://dbpedia.org/resource/John_Cann>                                            |
+| <http://dbpedia.org/resource/Sam_Lumpkin>                                          |
+| <http://dbpedia.org/resource/Charles_C._Ellsworth>                                 |
+| <http://dbpedia.org/resource/Bob_Anspach>                                          |
+| <http://dbpedia.org/resource/Ronald_C._Green>                                      |
+| <http://dbpedia.org/resource/Stephen_Fincher>                                      |
+| <http://dbpedia.org/resource/Samuel_Lees>                                          |
+| <http://dbpedia.org/resource/Tom_Bolack>                                           |
+| <http://dbpedia.org/resource/Herbert_Charles_Wilson>                               |
+| <http://dbpedia.org/resource/Alf_Landon>                                           |
+| <http://dbpedia.org/resource/Syngman_Rhee>                                         |
+| <http://dbpedia.org/resource/Alpheus_Felch>                                        |
+| <http://dbpedia.org/resource/Floyd_H._Flake>                                       |
+| <http://dbpedia.org/resource/Fred_M._Warner>                                       |
+| <http://dbpedia.org/resource/Norman_Makin>                                         |
+| <http://dbpedia.org/resource/Robert_Bradford_(Northern_Irish_politician)>          |
+| <http://dbpedia.org/resource/William_G._Conley>                                    |
+| <http://dbpedia.org/resource/Lurleen_Wallace>                                      |
+| <http://dbpedia.org/resource/Martin_Sennet_Conner>                                 |
+| <http://dbpedia.org/resource/Harry_G._Leslie>                                      |
+| <http://dbpedia.org/resource/John_William_Mitchell>                                |
+| <http://dbpedia.org/resource/Nehemiah_Green>                                       |
+| <http://dbpedia.org/resource/David_L._Boren>                                       |
+| <http://dbpedia.org/resource/Elmore_Y._Sarles>                                     |
+| <http://dbpedia.org/resource/Norman_Harold_Moss>                                   |
+| <http://dbpedia.org/resource/William_L._Andrews>                                   |
+| <http://dbpedia.org/resource/George_Thomas,_1st_Viscount_Tonypandy>                |
+| <http://dbpedia.org/resource/Coke_R._Stevenson>                                    |
+| <http://dbpedia.org/resource/Max_T._Malone>                                        |
+| <http://dbpedia.org/resource/Paul_Peek_(politician)>                               |
+| <http://dbpedia.org/resource/Winthrop_Rockefeller>                                 |
+| <http://dbpedia.org/resource/Arthur_Henderson>                                     |
+| <http://dbpedia.org/resource/Frank_O'Bannon>                                       |
+| <http://dbpedia.org/resource/Homer_Martin_Adkins>                                  |
+| <http://dbpedia.org/resource/John_Sparkman>                                        |
+| <http://dbpedia.org/resource/Charles_E._Potter>                                    |
+| <http://dbpedia.org/resource/Ernest_McFarland>                                     |
+| <http://dbpedia.org/resource/Jim_Chapman_(congressman)>                            |
+| <http://dbpedia.org/resource/Melvin_L._Stukes>                                     |
+| <http://dbpedia.org/resource/Henry_Justin_Allen>                                   |
+| <http://dbpedia.org/resource/Henry_Smith_Lane>                                     |
+| <http://dbpedia.org/resource/Joe_Turnham>                                          |
+| <http://dbpedia.org/resource/Charles_Albert_Plumley>                               |
+| <http://dbpedia.org/resource/John_N._Sandlin>                                      |
+| <http://dbpedia.org/resource/John_T._Watkins>                                      |
+| <http://dbpedia.org/resource/Brian_Aungst>                                         |
+| <http://dbpedia.org/resource/David_G._P._Taylor>                                   |
+| <http://dbpedia.org/resource/Patrick_H._Drewry>                                    |
+| <http://dbpedia.org/resource/Lee_Chee_Leong>                                       |
+| <http://dbpedia.org/resource/Bob_Barr>                                             |
+| <http://dbpedia.org/resource/Canaan_Banana>                                        |
+| <http://dbpedia.org/resource/Elizabeth_Dole>                                       |
+| <http://dbpedia.org/resource/Kirk_Fordice>                                         |
+| <http://dbpedia.org/resource/Doug_Hoffman>                                         |
+| <http://dbpedia.org/resource/John_B._Kendrick>                                     |
+| <http://dbpedia.org/resource/Johnston_Murray>                                      |
+| <http://dbpedia.org/resource/William_H._Murray>                                    |
+| <http://dbpedia.org/resource/Mark_Ritchie>                                         |
+| <http://dbpedia.org/resource/D._W._Davis>                                          |
+| <http://dbpedia.org/resource/George_S._Mickelson>                                  |
+| <http://dbpedia.org/resource/Page_Belcher>                                         |
+| <http://dbpedia.org/resource/Henry_Olin>                                           |
+| <http://dbpedia.org/resource/John_Wiley_Bryant>                                    |
+| <http://dbpedia.org/resource/Paul_Fannin>                                          |
+| <http://dbpedia.org/resource/Paul_Gillmor>                                         |
+| <http://dbpedia.org/resource/J._Millard_Tawes>                                     |
+| <http://dbpedia.org/resource/Jack_Stewart_(politician)>                            |
+| <http://dbpedia.org/resource/John_Brodhead_(New_Hampshire_politician)>             |
+| <http://dbpedia.org/resource/Leonidas_C._Houk>                                     |
+| <http://dbpedia.org/resource/Paul_Rogers_(politician)>                             |
+| <http://dbpedia.org/resource/Don_Samuelson>                                        |
+| <http://dbpedia.org/resource/Frederick_Stewart_(Australian_politician)>            |
+| <http://dbpedia.org/resource/Harry_Kneebone>                                       |
+

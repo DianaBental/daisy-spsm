@@ -1,0 +1,99 @@
+Query:  entity(subject(Amanda_Palmer),spouse) 
+Construct query entity(subject(Amanda_Palmer),spouse) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Amanda_Palmer> <http://dbpedia.org/property/spouse> ?spouse . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------
+| spouse                                    |
+=============================================
+| <http://dbpedia.org/resource/Neil_Gaiman> |
+---------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,spouse) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.16666666666666663).
+match(none).
+match([[entity],=,[entity]]).
+match([[entity,subject],<,[entity,language]]).
+
+Construct query entity(type(entity),subject(Amanda_Palmer)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Amanda_Palmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(Amanda_Palmer)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Amanda_Palmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------
+| type                                                                   |
+==========================================================================
+| <http://xmlns.com/foaf/0.1/Person>                                     |
+| <http://schema.org/Person>                                             |
+| <http://dbpedia.org/class/yago/WesleyanUniversityAlumni>               |
+| <http://wikidata.dbpedia.org/resource/Q215627>                         |
+| <http://www.w3.org/2002/07/owl#Thing>                                  |
+| <http://schema.org/MusicGroup>                                         |
+| <http://wikidata.dbpedia.org/resource/Q5>                              |
+| <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>          |
+| <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>  |
+| <http://dbpedia.org/ontology/Agent>                                    |
+| <http://dbpedia.org/ontology/Artist>                                   |
+| <http://dbpedia.org/ontology/MusicalArtist>                            |
+| <http://dbpedia.org/ontology/Person>                                   |
+| <http://umbel.org/umbel/rc/MusicalPerformer>                           |
+| <http://dbpedia.org/class/yago/Alumnus109786338>                       |
+| <http://dbpedia.org/class/yago/AmericanBloggers>                       |
+| <http://dbpedia.org/class/yago/AmericanBuskers>                        |
+| <http://dbpedia.org/class/yago/AmericanDramatistsAndPlaywrights>       |
+| <http://dbpedia.org/class/yago/AmericanFemaleSingers>                  |
+| <http://dbpedia.org/class/yago/AmericanFeminists>                      |
+| <http://dbpedia.org/class/yago/AmericanRockPianists>                   |
+| <http://dbpedia.org/class/yago/AmericanRockSingers>                    |
+| <http://dbpedia.org/class/yago/AmericanWomenArtists>                   |
+| <http://dbpedia.org/class/yago/Artist109812338>                        |
+| <http://dbpedia.org/class/yago/BisexualMusicians>                      |
+| <http://dbpedia.org/class/yago/Blogger109860415>                       |
+| <http://dbpedia.org/class/yago/Busker109883174>                        |
+| <http://dbpedia.org/class/yago/CausalAgent100007347>                   |
+| <http://dbpedia.org/class/yago/Communicator109610660>                  |
+| <http://dbpedia.org/class/yago/Creator109614315>                       |
+| <http://dbpedia.org/class/yago/Disputant109615465>                     |
+| <http://dbpedia.org/class/yago/Dramatist110030277>                     |
+| <http://dbpedia.org/class/yago/Entertainer109616922>                   |
+| <http://dbpedia.org/class/yago/Feminist110084635>                      |
+| <http://dbpedia.org/class/yago/Intellectual109621545>                  |
+| <http://dbpedia.org/class/yago/LivingThing100004258>                   |
+| <http://dbpedia.org/class/yago/Militant110315837>                      |
+| <http://dbpedia.org/class/yago/Musician110339966>                      |
+| <http://dbpedia.org/class/yago/Musician110340312>                      |
+| <http://dbpedia.org/class/yago/Object100002684>                        |
+| <http://dbpedia.org/class/yago/Organism100004475>                      |
+| <http://dbpedia.org/class/yago/Performer110415638>                     |
+| <http://dbpedia.org/class/yago/Person100007846>                        |
+| <http://dbpedia.org/class/yago/Pianist110430665>                       |
+| <http://dbpedia.org/class/yago/Reformer110515194>                      |
+| <http://dbpedia.org/class/yago/Scholar110557854>                       |
+| <http://dbpedia.org/class/yago/Singer110599806>                        |
+| <http://dbpedia.org/class/yago/Whole100003553>                         |
+| <http://dbpedia.org/class/yago/Writer110794014>                        |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                      |
+| <http://dbpedia.org/class/yago/MusiciansFromMassachusetts>             |
+| <http://dbpedia.org/class/yago/PeopleFromLexington,Massachusetts>      |
+| <http://dbpedia.org/class/yago/YagoLegalActor>                         |
+| <http://dbpedia.org/class/yago/DarkCabaretMusicians>                   |
+| <http://dbpedia.org/class/yago/FemalePunkRockSingers>                  |
+| <http://dbpedia.org/class/yago/FeministMusicians>                      |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>                |
+| <http://dbpedia.org/class/yago/LGBTFeminists>                          |
+| <http://dbpedia.org/class/yago/LGBTMusiciansFromTheUnitedStates>       |
+| <http://dbpedia.org/class/yago/LGBTRightsActivistsFromTheUnitedStates> |
+| <http://dbpedia.org/class/yago/LivingPeople>                           |
+--------------------------------------------------------------------------
+

@@ -1,0 +1,14 @@
+Query:  entity(type(Nonprofit_organization),locationCountry(Australia)) 
+Construct query entity(type(Nonprofit_organization),locationCountry(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Nonprofit_organization> ; 
+<locationCountry> <http://dbpedia.org/resource/Australia> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  
+
+No matches found for  Nonprofit_organization(locationCountry) 
+
+Cannot respond to   entity(type(Nonprofit_organization),locationCountry(Australia)) 
+

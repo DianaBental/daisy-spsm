@@ -1,0 +1,96 @@
+Query:  entity(subject(Angela_Merkel),birthName) 
+Construct query entity(subject(Angela_Merkel),birthName) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/property/birthName> ?birthName . }
+
+The query succeeded. The returned answers are: 
+-------------------------------
+| birthName                   |
+===============================
+| "Angela Dorothea Kasner"@en |
+-------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,birthName) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.16666666666666663).
+match(none).
+match([[entity],=,[entity]]).
+match([[entity,subject],<,[entity,language]]).
+
+Construct query entity(type(entity),subject(Angela_Merkel)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Angela_Merkel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(Angela_Merkel)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Angela_Merkel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------
+| type                                                                         |
+================================================================================
+| <http://xmlns.com/foaf/0.1/Person>                                           |
+| <http://schema.org/Person>                                                   |
+| <http://dbpedia.org/class/yago/WomenChemists>                                |
+| <http://wikidata.dbpedia.org/resource/Q215627>                               |
+| <http://www.w3.org/2002/07/owl#Thing>                                        |
+| <http://wikidata.dbpedia.org/resource/Q5>                                    |
+| <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                |
+| <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>        |
+| <http://dbpedia.org/ontology/Agent>                                          |
+| <http://dbpedia.org/ontology/OfficeHolder>                                   |
+| <http://dbpedia.org/ontology/Person>                                         |
+| <http://umbel.org/umbel/rc/Chancellor_HeadOfGovernment>                      |
+| <http://umbel.org/umbel/rc/Politician>                                       |
+| <http://dbpedia.org/class/yago/Administrator109770949>                       |
+| <http://dbpedia.org/class/yago/Adult109605289>                               |
+| <http://dbpedia.org/class/yago/CausalAgent100007347>                         |
+| <http://dbpedia.org/class/yago/Chemist109913824>                             |
+| <http://dbpedia.org/class/yago/Communicator109610660>                        |
+| <http://dbpedia.org/class/yago/Executive110069645>                           |
+| <http://dbpedia.org/class/yago/Head110162991>                                |
+| <http://dbpedia.org/class/yago/HeadOfState110164747>                         |
+| <http://dbpedia.org/class/yago/Holder110180178>                              |
+| <http://dbpedia.org/class/yago/Leader109623038>                              |
+| <http://dbpedia.org/class/yago/LivingThing100004258>                         |
+| <http://dbpedia.org/class/yago/Minister110320863>                            |
+| <http://dbpedia.org/class/yago/Negotiator110351874>                          |
+| <http://dbpedia.org/class/yago/Object100002684>                              |
+| <http://dbpedia.org/class/yago/Official110372373>                            |
+| <http://dbpedia.org/class/yago/Organism100004475>                            |
+| <http://dbpedia.org/class/yago/Person100007846>                              |
+| <http://dbpedia.org/class/yago/Politician110450303>                          |
+| <http://dbpedia.org/class/yago/Politician110451263>                          |
+| <http://dbpedia.org/class/yago/President110467179>                           |
+| <http://dbpedia.org/class/yago/Representative110522035>                      |
+| <http://dbpedia.org/class/yago/Scientist110560637>                           |
+| <http://dbpedia.org/class/yago/SkilledWorker110605985>                       |
+| <http://dbpedia.org/class/yago/Whole100003553>                               |
+| <http://dbpedia.org/class/yago/Woman110787470>                               |
+| <http://dbpedia.org/class/yago/Worker109632518>                              |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                            |
+| <http://dbpedia.org/class/yago/PeopleFromHamburg>                            |
+| <http://dbpedia.org/class/yago/YagoLegalActor>                               |
+| <http://dbpedia.org/class/yago/ChristianDemocraticUnion(Germany)Politicians> |
+| <http://dbpedia.org/class/yago/CurrentNationalLeaders>                       |
+| <http://dbpedia.org/class/yago/EnvironmentMinistersOfGermany>                |
+| <http://dbpedia.org/class/yago/Female109619168>                              |
+| <http://dbpedia.org/class/yago/FemaleHeadsOfGovernment>                      |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>                      |
+| <http://dbpedia.org/class/yago/Statesman110650162>                           |
+| <http://dbpedia.org/class/yago/PresidentsOfTheEuropeanCouncil>               |
+| <http://dbpedia.org/class/yago/GermanChemists>                               |
+| <http://dbpedia.org/class/yago/GermanPeopleOfPolishDescent>                  |
+| <http://dbpedia.org/class/yago/GermanWomenInPolitics>                        |
+| <http://dbpedia.org/class/yago/LeadersOfPoliticalPartiesInGermany>           |
+| <http://dbpedia.org/class/yago/LivingPeople>                                 |
+| <http://dbpedia.org/class/yago/MinistersForChildren,YoungPeopleAndFamilies>  |
+| <http://dbpedia.org/class/yago/Officeholder110371450>                        |
+| <http://dbpedia.org/class/yago/Owner110389398>                               |
+--------------------------------------------------------------------------------
+

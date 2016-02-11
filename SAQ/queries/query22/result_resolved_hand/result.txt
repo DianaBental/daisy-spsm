@@ -1,0 +1,77 @@
+Query:  entity(subject(Maribor),populationTotal) 
+Construct query entity(subject(Maribor),populationTotal) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Maribor> <http://dbpedia.org/ontology/populationTotal> ?populationTotal . }
+
+The query succeeded. The returned answers are: 
+-------------------
+| populationTotal |
+===================
+| 114487          |
+-------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,populationTotal) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.2777777777777778).
+match(none).
+match([[entity,subject],<,[entity,language]]).
+match([[entity,populationTotal],=,[entity,populationTotal]]).
+match([[entity],=,[entity]]).
+
+Construct query entity(type(entity),subject(Maribor),populationTotal) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Maribor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> ; 
+<http://dbpedia.org/ontology/populationTotal> ?populationTotal . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(Maribor),populationTotal) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Maribor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/populationTotal> ?populationTotal . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------
+| type                                                                      | populationTotal |
+===============================================================================================
+| <http://www.w3.org/2002/07/owl#Thing>                                     | 114487          |
+| <http://schema.org/City>                                                  | 114487          |
+| <http://schema.org/Place>                                                 | 114487          |
+| <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>               | 114487          |
+| <http://dbpedia.org/ontology/City>                                        | 114487          |
+| <http://dbpedia.org/ontology/Place>                                       | 114487          |
+| <http://dbpedia.org/ontology/PopulatedPlace>                              | 114487          |
+| <http://dbpedia.org/ontology/Settlement>                                  | 114487          |
+| <http://dbpedia.org/ontology/Wikidata:Q532>                               | 114487          |
+| <http://www.opengis.net/gml/_Feature>                                     | 114487          |
+| <http://umbel.org/umbel/rc/City>                                          | 114487          |
+| <http://umbel.org/umbel/rc/Location_Underspecified>                       | 114487          |
+| <http://umbel.org/umbel/rc/PopulatedPlace>                                | 114487          |
+| <http://umbel.org/umbel/rc/Village>                                       | 114487          |
+| <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>           | 114487          |
+| <http://dbpedia.org/class/yago/Area108497294>                             | 114487          |
+| <http://dbpedia.org/class/yago/Capital108518505>                          | 114487          |
+| <http://dbpedia.org/class/yago/Center108523483>                           | 114487          |
+| <http://dbpedia.org/class/yago/City108524735>                             | 114487          |
+| <http://dbpedia.org/class/yago/District108552138>                         | 114487          |
+| <http://dbpedia.org/class/yago/Location100027167>                         | 114487          |
+| <http://dbpedia.org/class/yago/Object100002684>                           | 114487          |
+| <http://dbpedia.org/class/yago/Region108630985>                           | 114487          |
+| <http://dbpedia.org/class/yago/Seat108647945>                             | 114487          |
+| <http://dbpedia.org/class/yago/Site108651247>                             | 114487          |
+| <http://dbpedia.org/class/yago/Tract108673395>                            | 114487          |
+| <http://dbpedia.org/class/yago/UrbanArea108675967>                        | 114487          |
+| <http://dbpedia.org/class/yago/YagoGeoEntity>                             | 114487          |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                         | 114487          |
+| <http://dbpedia.org/class/yago/CitiesAndTownsInSlovenia>                  | 114487          |
+| <http://dbpedia.org/class/yago/EuropeanCapitalsOfCulture>                 | 114487          |
+| <http://dbpedia.org/class/yago/GeographicalArea108574314>                 | 114487          |
+| <http://dbpedia.org/class/yago/Municipality108626283>                     | 114487          |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>                   | 114487          |
+| <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>              | 114487          |
+| <http://dbpedia.org/class/yago/PopulatedPlacesInTheMunicipalityOfMaribor> | 114487          |
+-----------------------------------------------------------------------------------------------
+

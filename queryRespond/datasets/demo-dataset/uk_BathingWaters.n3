@@ -1,0 +1,31 @@
+@prefix ukea: <http://fake.ukea/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ukea:fakeid_001
+	ukea:SampleClassification "SampleClassification" ;
+	ukea:PrefLabel "A fake UKEA entry, to extract prefixes" ;
+	ukea:Long "Longitude" ;
+	ukea:Lat "Latitude" ;
+	ukea:Northing "Northing" ;
+	ukea:Easting "Easting" ;
+	ukea:LatestComplianceAssessment "LatestComplianceAssessment";
+	ukea:Type "Type" ;
+	ukea:Country "Scotland" ;
+	ukea:District "Highland" ;
+	ukea:Envelope "Envelople" ;
+	ukea:LatestBathingWaterProfile "Profile" ;
+	ukea:SedimentTypesPresent "SedimentTypesPresent" ;
+	ukea:UriSet "UriSet" ;
+	ukea:RegionalOrganization "RegionalOrganization" ;
+	ukea:YearDesignated "2011" ;
+	ukea:LatestSampleAssessment "LatestSampleAssessment" ;
+	ukea:EubWidNotation "EubWidNotation" ;
+	ukea:WaterQualityImpactedByHeavyRain "WaterQualityImpactedByHeavyRain" ;
+	ukea:ZoneOfInfluence "ZoneOfInfluence" ;
+	ukea:SamplingPoint "SamplingPoint" ;
+	ukea:ComplianceClassification "ComplianceClassification" ;
+	ukea:PrimaryTopic "PrimaryTopic" ;
+	ukea:ExtendedMetadataVersion "ExtendedMetadataVersion" ;
+	ukea:Definition "Keeping it fake" ;
+	ukea:Label "How much faker can we get?" .
+

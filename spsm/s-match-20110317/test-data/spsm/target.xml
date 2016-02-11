@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><context>
+  <node id="n0" preprocessed="true">
+    <name>car</name>
+    <label-formula>(n0.1)</label-formula>
+    <node-formula>(n0.1)</node-formula>
+    <tokens>
+      <token id="1">
+        <text>car</text>
+        <lemma>car</lemma>
+        <senses>
+          <sense pos="n" id="2929975"/>
+          <sense pos="n" id="2931574"/>
+          <sense pos="n" id="2906118"/>
+          <sense pos="n" id="2932115"/>
+          <sense pos="n" id="2931966"/>
+        </senses>
+      </token>
+    </tokens>
+    <children>
+      <node id="n1" parent-id="n0" preprocessed="true">
+        <name>year</name>
+        <label-formula>(n1.1)</label-formula>
+        <node-formula>(n1.1) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>year</text>
+            <lemma>year</lemma>
+            <senses>
+              <sense pos="n" id="15004692"/>
+              <sense pos="n" id="15005198"/>
+              <sense pos="n" id="15002401"/>
+              <sense pos="n" id="8125440"/>
+            </senses>
+          </token>
+        </tokens>
+      </node>
+      <node id="n2" parent-id="n0" preprocessed="true">
+        <name>brand</name>
+        <label-formula>(n2.1)</label-formula>
+        <node-formula>(n2.1) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>brand</text>
+            <lemma>brand</lemma>
+            <senses>
+              <sense pos="v" id="2484494"/>
+              <sense pos="v" id="2484094"/>
+              <sense pos="v" id="1020776"/>
+              <sense pos="n" id="6753736"/>
+              <sense pos="n" id="5772129"/>
+              <sense pos="n" id="6704486"/>
+              <sense pos="n" id="14903169"/>
+              <sense pos="n" id="6703609"/>
+              <sense pos="n" id="4322100"/>
+            </senses>
+          </token>
+        </tokens>
+      </node>
+      <node id="n3" parent-id="n0" preprocessed="true">
+        <name>colour</name>
+        <label-formula>(n3.1)</label-formula>
+        <node-formula>(n3.1) &amp; (n0.1)</node-formula>
+        <tokens>
+          <token id="1">
+            <text>colour</text>
+            <lemma>colour</lemma>
+            <senses>
+              <sense pos="v" id="2512827"/>
+              <sense pos="v" id="1681511"/>
+              <sense pos="v" id="828303"/>
+              <sense pos="v" id="828096"/>
+              <sense pos="v" id="280507"/>
+              <sense pos="v" id="277697"/>
+              <sense pos="n" id="14787982"/>
+              <sense pos="n" id="7860205"/>
+              <sense pos="n" id="5771654"/>
+              <sense pos="n" id="5132115"/>
+              <sense pos="n" id="4930013"/>
+              <sense pos="n" id="4900721"/>
+              <sense pos="n" id="4622875"/>
+              <sense pos="n" id="4619856"/>
+              <sense pos="a" id="416394"/>
+            </senses>
+          </token>
+        </tokens>
+      </node>
+    </children>
+  </node>
+</context>

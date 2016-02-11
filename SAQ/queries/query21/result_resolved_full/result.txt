@@ -1,0 +1,19 @@
+Query:  entity(subject(T._E._Lawrence),battle) 
+Construct query entity(subject(T._E._Lawrence),battle) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/T._E._Lawrence> <battle> ?battle . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(subject,battle) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(subject,battle) 
+
+Cannot respond to   entity(subject(T._E._Lawrence),battle) 
+

@@ -1,0 +1,175 @@
+Query:  entity(type(Island),country(Japan)) 
+Construct query entity(type(Island),country(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Japan> . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------
+| subject                                                |
+==========================================================
+| <http://dbpedia.org/resource/Kume_Island>              |
+| <http://dbpedia.org/resource/Honshu>                   |
+| <http://dbpedia.org/resource/Shikoku>                  |
+| <http://dbpedia.org/resource/Rishiri_Island>           |
+| <http://dbpedia.org/resource/Yagishiri_Island>         |
+| <http://dbpedia.org/resource/Akusekijima>              |
+| <http://dbpedia.org/resource/Gajajima>                 |
+| <http://dbpedia.org/resource/Kogajajima>               |
+| <http://dbpedia.org/resource/Mageshima>                |
+| <http://dbpedia.org/resource/Takeshima_(Kagoshima)>    |
+| <http://dbpedia.org/resource/Kyushu>                   |
+| <http://dbpedia.org/resource/Zamami_Island>            |
+| <http://dbpedia.org/resource/Izena_Island>             |
+| <http://dbpedia.org/resource/%C5%8Cnohara_Islands>     |
+| <http://dbpedia.org/resource/%C5%8Csumi_Islands>       |
+| <http://dbpedia.org/resource/Iki_Island>               |
+| <http://dbpedia.org/resource/Tori-shima_(Izu_Islands)> |
+| <http://dbpedia.org/resource/Yonaguni>                 |
+| <http://dbpedia.org/resource/Iwo_Jima>                 |
+| <http://dbpedia.org/resource/Aka_Island>               |
+| <http://dbpedia.org/resource/Ishigaki_Island>          |
+| <http://dbpedia.org/resource/Tairajima>                |
+| <http://dbpedia.org/resource/Teuri_Island>             |
+| <http://dbpedia.org/resource/Tokara_Islands>           |
+| <http://dbpedia.org/resource/Minami-Tori-shima>        |
+| <http://dbpedia.org/resource/Yaeyama_Islands>          |
+| <http://dbpedia.org/resource/Minamidait%C5%8Djima>     |
+| <http://dbpedia.org/resource/Okinawa_Island>           |
+| <http://dbpedia.org/resource/Iriomote-jima>            |
+| <http://dbpedia.org/resource/Taketomi_Island>          |
+| <http://dbpedia.org/resource/Kitadait%C5%8Djima>       |
+| <http://dbpedia.org/resource/Bayonnaise_Rocks>         |
+| <http://dbpedia.org/resource/Tanegashima>              |
+| <http://dbpedia.org/resource/Yakushima>                |
+| <http://dbpedia.org/resource/Okinotorishima>           |
+| <http://dbpedia.org/resource/Hateruma>                 |
+| <http://dbpedia.org/resource/Geruma_Island>            |
+| <http://dbpedia.org/resource/Nakanoshima_(Kagoshima)>  |
+| <http://dbpedia.org/resource/Inamba-jima>              |
+| <http://dbpedia.org/resource/Fukaji_Island>            |
+| <http://dbpedia.org/resource/Tobishima_(Yamagata)>     |
+| <http://dbpedia.org/resource/Awaji_Island>             |
+| <http://dbpedia.org/resource/Oki_Islands>              |
+| <http://dbpedia.org/resource/Tsushima_Island>          |
+| <http://dbpedia.org/resource/Kuchinoerabu-jima>        |
+| <http://dbpedia.org/resource/Okidait%C5%8Djima>        |
+| <http://dbpedia.org/resource/Udone-shima>              |
+| <http://dbpedia.org/resource/Kozukumi_Island>          |
+| <http://dbpedia.org/resource/Miyako-jima>              |
+| <http://dbpedia.org/resource/Oshima,_Hokkaido>         |
+| <http://dbpedia.org/resource/Yokoate-jima>             |
+| <http://dbpedia.org/resource/Kamome_Island>            |
+| <http://dbpedia.org/resource/Daikon_Island>            |
+| <http://dbpedia.org/resource/Kuroshima_(Kagoshima)>    |
+| <http://dbpedia.org/resource/Dait%C5%8D_Islands>       |
+| <http://dbpedia.org/resource/I%C5%8Djima_(Kagoshima)>  |
+| <http://dbpedia.org/resource/Lot's_Wife_(crag)>        |
+| <http://dbpedia.org/resource/Okushiri_Island>          |
+| <http://dbpedia.org/resource/Benten-jima_(Wakkanai)>   |
+| <http://dbpedia.org/resource/Smith_Island_(Japan)>     |
+| <http://dbpedia.org/resource/Amami_Islands>            |
+| <http://dbpedia.org/resource/Hachij%C5%8D-kojima>      |
+| <http://dbpedia.org/resource/Kojima_(Hokkaido)>        |
+| <http://dbpedia.org/resource/Rebun_Island>             |
+| <http://dbpedia.org/resource/Tokashiki_Island>         |
+| <http://dbpedia.org/resource/Iejima>                   |
+| <http://dbpedia.org/resource/Sh%C5%8Dwa_I%C5%8Djima>   |
+| <http://dbpedia.org/resource/Jinai-t%C5%8D>            |
+| <http://dbpedia.org/resource/Tsuken_Island>            |
+| <http://dbpedia.org/resource/Denshima>                 |
+| <http://dbpedia.org/resource/Hokkaido__island__1>      |
+----------------------------------------------------------
+
+Narrowed to these target datasets:  Island 
+
+Matching query schema Island(country) 
+to dataset schema Island(country) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[Island],=,[Island]]).
+match([[Island,country],=,[Island,country]]).
+
+Construct query entity(type(Island),country(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Japan> . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------
+| subject                                                |
+==========================================================
+| <http://dbpedia.org/resource/Kume_Island>              |
+| <http://dbpedia.org/resource/Honshu>                   |
+| <http://dbpedia.org/resource/Shikoku>                  |
+| <http://dbpedia.org/resource/Rishiri_Island>           |
+| <http://dbpedia.org/resource/Yagishiri_Island>         |
+| <http://dbpedia.org/resource/Akusekijima>              |
+| <http://dbpedia.org/resource/Gajajima>                 |
+| <http://dbpedia.org/resource/Kogajajima>               |
+| <http://dbpedia.org/resource/Mageshima>                |
+| <http://dbpedia.org/resource/Takeshima_(Kagoshima)>    |
+| <http://dbpedia.org/resource/Kyushu>                   |
+| <http://dbpedia.org/resource/Zamami_Island>            |
+| <http://dbpedia.org/resource/Izena_Island>             |
+| <http://dbpedia.org/resource/%C5%8Cnohara_Islands>     |
+| <http://dbpedia.org/resource/%C5%8Csumi_Islands>       |
+| <http://dbpedia.org/resource/Iki_Island>               |
+| <http://dbpedia.org/resource/Tori-shima_(Izu_Islands)> |
+| <http://dbpedia.org/resource/Yonaguni>                 |
+| <http://dbpedia.org/resource/Iwo_Jima>                 |
+| <http://dbpedia.org/resource/Aka_Island>               |
+| <http://dbpedia.org/resource/Ishigaki_Island>          |
+| <http://dbpedia.org/resource/Tairajima>                |
+| <http://dbpedia.org/resource/Teuri_Island>             |
+| <http://dbpedia.org/resource/Tokara_Islands>           |
+| <http://dbpedia.org/resource/Minami-Tori-shima>        |
+| <http://dbpedia.org/resource/Yaeyama_Islands>          |
+| <http://dbpedia.org/resource/Minamidait%C5%8Djima>     |
+| <http://dbpedia.org/resource/Okinawa_Island>           |
+| <http://dbpedia.org/resource/Iriomote-jima>            |
+| <http://dbpedia.org/resource/Taketomi_Island>          |
+| <http://dbpedia.org/resource/Kitadait%C5%8Djima>       |
+| <http://dbpedia.org/resource/Bayonnaise_Rocks>         |
+| <http://dbpedia.org/resource/Tanegashima>              |
+| <http://dbpedia.org/resource/Yakushima>                |
+| <http://dbpedia.org/resource/Okinotorishima>           |
+| <http://dbpedia.org/resource/Hateruma>                 |
+| <http://dbpedia.org/resource/Geruma_Island>            |
+| <http://dbpedia.org/resource/Nakanoshima_(Kagoshima)>  |
+| <http://dbpedia.org/resource/Inamba-jima>              |
+| <http://dbpedia.org/resource/Fukaji_Island>            |
+| <http://dbpedia.org/resource/Tobishima_(Yamagata)>     |
+| <http://dbpedia.org/resource/Awaji_Island>             |
+| <http://dbpedia.org/resource/Oki_Islands>              |
+| <http://dbpedia.org/resource/Tsushima_Island>          |
+| <http://dbpedia.org/resource/Kuchinoerabu-jima>        |
+| <http://dbpedia.org/resource/Okidait%C5%8Djima>        |
+| <http://dbpedia.org/resource/Udone-shima>              |
+| <http://dbpedia.org/resource/Kozukumi_Island>          |
+| <http://dbpedia.org/resource/Miyako-jima>              |
+| <http://dbpedia.org/resource/Oshima,_Hokkaido>         |
+| <http://dbpedia.org/resource/Yokoate-jima>             |
+| <http://dbpedia.org/resource/Kamome_Island>            |
+| <http://dbpedia.org/resource/Daikon_Island>            |
+| <http://dbpedia.org/resource/Kuroshima_(Kagoshima)>    |
+| <http://dbpedia.org/resource/Dait%C5%8D_Islands>       |
+| <http://dbpedia.org/resource/I%C5%8Djima_(Kagoshima)>  |
+| <http://dbpedia.org/resource/Lot's_Wife_(crag)>        |
+| <http://dbpedia.org/resource/Okushiri_Island>          |
+| <http://dbpedia.org/resource/Benten-jima_(Wakkanai)>   |
+| <http://dbpedia.org/resource/Smith_Island_(Japan)>     |
+| <http://dbpedia.org/resource/Amami_Islands>            |
+| <http://dbpedia.org/resource/Hachij%C5%8D-kojima>      |
+| <http://dbpedia.org/resource/Kojima_(Hokkaido)>        |
+| <http://dbpedia.org/resource/Rebun_Island>             |
+| <http://dbpedia.org/resource/Tokashiki_Island>         |
+| <http://dbpedia.org/resource/Iejima>                   |
+| <http://dbpedia.org/resource/Sh%C5%8Dwa_I%C5%8Djima>   |
+| <http://dbpedia.org/resource/Jinai-t%C5%8D>            |
+| <http://dbpedia.org/resource/Tsuken_Island>            |
+| <http://dbpedia.org/resource/Denshima>                 |
+| <http://dbpedia.org/resource/Hokkaido__island__1>      |
+----------------------------------------------------------
+

@@ -1,0 +1,19 @@
+Query:  entity(subject(Lisbon),leaderParty) 
+Construct query entity(subject(Lisbon),leaderParty) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Lisbon> <http://dbpedia.org/ontology/leaderParty> ?leaderParty . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(subject,leaderParty) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(subject,leaderParty) 
+
+Cannot respond to   entity(subject(Lisbon),leaderParty) 
+

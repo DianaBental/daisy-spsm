@@ -1,0 +1,14 @@
+Query:  entity(type(Bandleader),play(Trumpet)) 
+Construct query entity(type(Bandleader),play(Trumpet)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Bandleader> ; 
+<play> <http://dbpedia.org/resource/Trumpet> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  
+
+No matches found for  Bandleader(play) 
+
+Cannot respond to   entity(type(Bandleader),play(Trumpet)) 
+

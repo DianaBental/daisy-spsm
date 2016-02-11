@@ -1,0 +1,123 @@
+Query:  entity(type(germanCity),inhabitants) 
+Construct query entity(type(germanCity),inhabitants) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/germanCity> ; 
+<inhabitants> ?inhabitants . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  City 
+
+Matching query schema germanCity(inhabitants) 
+to dataset schema City(country,populationTotal) 
+Created match data: 
+similarity(0.33333333333333337).
+match(none).
+match([[germanCity],=,[City]]).
+
+Construct query entity(type(City)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/City> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------
+| subject                                                                                |
+==========================================================================================
+| <http://dbpedia.org/resource/L%C3%A9ry,_Quebec>                                        |
+| <http://dbpedia.org/resource/Alipur_Chatha>                                            |
+| <http://dbpedia.org/resource/Alipurduar>                                               |
+| <http://dbpedia.org/resource/Ambikapur,_India>                                         |
+| <http://dbpedia.org/resource/Ardal>                                                    |
+| <http://dbpedia.org/resource/Arra,_India>                                              |
+| <http://dbpedia.org/resource/Babai,_Madhya_Pradesh>                                    |
+| <http://dbpedia.org/resource/Badarpur,_Assam>                                          |
+| <http://dbpedia.org/resource/Badarpur_Railway_Town>                                    |
+| <http://dbpedia.org/resource/Baghmara,_India>                                          |
+| <http://dbpedia.org/resource/Bareilly>                                                 |
+| <http://dbpedia.org/resource/Barkot,_India>                                            |
+| <http://dbpedia.org/resource/Basar,_Andhra_Pradesh>                                    |
+| <http://dbpedia.org/resource/Bazarak,_Panjshir>                                        |
+| <http://dbpedia.org/resource/Bedi,_Gujarat>                                            |
+| <http://dbpedia.org/resource/Betul,_Madhya_Pradesh>                                    |
+| <http://dbpedia.org/resource/Bhavanisagar>                                             |
+| <http://dbpedia.org/resource/Bhikhi,_Punjab>                                           |
+| <http://dbpedia.org/resource/Bori,_Rivers>                                             |
+| <http://dbpedia.org/resource/Bostan,_Iran>                                             |
+| <http://dbpedia.org/resource/Bostanabad>                                               |
+| <http://dbpedia.org/resource/Bouna,_Ivory_Coast>                                       |
+| <http://dbpedia.org/resource/Burao>                                                    |
+| <http://dbpedia.org/resource/Butuan>                                                   |
+| <http://dbpedia.org/resource/Changle>                                                  |
+| <http://dbpedia.org/resource/Changzhi>                                                 |
+| <http://dbpedia.org/resource/Changzhou>                                                |
+| <http://dbpedia.org/resource/Chaoyang,_Liaoning>                                       |
+| <http://dbpedia.org/resource/Chapais,_Quebec>                                          |
+| <http://dbpedia.org/resource/Charlemagne,_Quebec>                                      |
+| <http://dbpedia.org/resource/Chas>                                                     |
+| <http://dbpedia.org/resource/Chishui,_Guizhou>                                         |
+| <http://dbpedia.org/resource/Chuxiong_City>                                            |
+| <http://dbpedia.org/resource/City_Municipality_of_Ljubljana>                           |
+| <http://dbpedia.org/resource/Ciudad_Jim%C3%A9nez>                                      |
+| <http://dbpedia.org/resource/Copala,_Guerrero>                                         |
+| <http://dbpedia.org/resource/Cutzamala_de_Pinz%C3%B3n>                                 |
+| <http://dbpedia.org/resource/Dalmau>                                                   |
+| <http://dbpedia.org/resource/Debel,_Lebanon>                                           |
+| <http://dbpedia.org/resource/Depalpur,_India>                                          |
+| <http://dbpedia.org/resource/Devgadh_Baria>                                            |
+| <http://dbpedia.org/resource/Dhana>                                                    |
+| <http://dbpedia.org/resource/Dhola,_India>                                             |
+| <http://dbpedia.org/resource/Dujiangyan_City>                                          |
+| <http://dbpedia.org/resource/Durgapur>                                                 |
+| <http://dbpedia.org/resource/Eagle_Pass,_Texas>                                        |
+| <http://dbpedia.org/resource/Ejutla,_Jalisco>                                          |
+| <http://dbpedia.org/resource/El_Salto,_Durango>                                        |
+| <http://dbpedia.org/resource/El_Salto,_Jalisco>                                        |
+| <http://dbpedia.org/resource/Enshi_City>                                               |
+| <http://dbpedia.org/resource/Erich,_Uttar_Pradesh>                                     |
+| <http://dbpedia.org/resource/Fazelabad,_Golestan>                                      |
+| <http://dbpedia.org/resource/Ferdowsieh>                                               |
+| <http://dbpedia.org/resource/Fernando_de_la_Mora,_Paraguay>                            |
+| <http://dbpedia.org/resource/Francisco_I._Madero,_Coahuila>                            |
+| <http://dbpedia.org/resource/Gauripur,_India>                                          |
+| <http://dbpedia.org/resource/Gazipur_City>                                             |
+| <http://dbpedia.org/resource/Ghazipur>                                                 |
+| <http://dbpedia.org/resource/Gondal,_India>                                            |
+| <http://dbpedia.org/resource/Gopalpur,_Nadia>                                          |
+| <http://dbpedia.org/resource/Goygol_(city)>                                            |
+| <http://dbpedia.org/resource/Grande-Rivi%C3%A8re,_Quebec>                              |
+| <http://dbpedia.org/resource/Gulariya,_Uttar_Pradesh>                                  |
+| <http://dbpedia.org/resource/Hadath_El_Jebbeh>                                         |
+| <http://dbpedia.org/resource/Haicheng,_Liaoning>                                       |
+| <http://dbpedia.org/resource/Hajjiabad,_Fars>                                          |
+| <http://dbpedia.org/resource/Hajjiabad,_Hormozgan>                                     |
+| <http://dbpedia.org/resource/Hajjiabad,_South_Khorasan>                                |
+| <http://dbpedia.org/resource/Hakusan,_Ishikawa>                                        |
+| <http://dbpedia.org/resource/Hertsa>                                                   |
+| <http://dbpedia.org/resource/Hikawa,_Kumamoto>                                         |
+| <http://dbpedia.org/resource/Hinojosa_del_Duque>                                       |
+| <http://dbpedia.org/resource/Hir,_Iran>                                                |
+| <http://dbpedia.org/resource/Hokuei,_Tottori>                                          |
+| <http://dbpedia.org/resource/Huadian,_Jilin>                                           |
+| <http://dbpedia.org/resource/Huanghua>                                                 |
+| <http://dbpedia.org/resource/Jagdishpur_(Industrial_Area)>                             |
+| <http://dbpedia.org/resource/Jalgaon,_Ratnagiri>                                       |
+| <http://dbpedia.org/resource/Jianyang,_Fujian>                                         |
+| <http://dbpedia.org/resource/Jianyang,_Sichuan>                                        |
+| <http://dbpedia.org/resource/Jinjiang,_Fujian>                                         |
+| <http://dbpedia.org/resource/Jowsheqan_va_Kamu>                                        |
+| <http://dbpedia.org/resource/Juan_Aldama,_Chihuahua>                                   |
+| <http://dbpedia.org/resource/Kalikapur,_India>                                         |
+| <http://dbpedia.org/resource/Kalvarija,_Lithuania>                                     |
+| <http://dbpedia.org/resource/Kama,_Fukuoka>                                            |
+| <http://dbpedia.org/resource/Kangra,_Himachal_Pradesh>                                 |
+| <http://dbpedia.org/resource/Katai,_India>                                             |
+| <http://dbpedia.org/resource/Khalkhal,_Ardabil>                                        |
+| <http://dbpedia.org/resource/Khed,_Satara>                                             |
+| <http://dbpedia.org/resource/Khour,_India>                                             |
+| <http://dbpedia.org/resource/Kiso,_Nagano_(town)>                                      |
+| <http://dbpedia.org/resource/Kotra,_Uttar_Pradesh>                                     |
+| <http://dbpedia.org/resource/La_Puebla_de_Cazalla>                                     |
+| <http://dbpedia.org/resource/La_Puebla_de_los_Infantes>                                |
+| <http://dbpedia.org/resource/La_Puebla_del_R%C3%ADo>                                   |
+| <http://dbpedia.org/resource/La_Serena,_Chile>                                         |
+

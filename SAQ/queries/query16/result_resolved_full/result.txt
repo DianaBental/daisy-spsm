@@ -1,0 +1,656 @@
+Query:  entity(type(Film),director(Francis_Ford_Coppola)) 
+Construct query entity(type(Film),director(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> ; 
+<http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------
+| subject                                                     |
+===============================================================
+| <http://dbpedia.org/resource/Hammett_(film)>                |
+| <http://dbpedia.org/resource/The_Rain_People>               |
+| <http://dbpedia.org/resource/Twixt_(film)>                  |
+| <http://dbpedia.org/resource/The_Conversation>              |
+| <http://dbpedia.org/resource/The_Godfather_Part_II>         |
+| <http://dbpedia.org/resource/The_Godfather_Part_III>        |
+| <http://dbpedia.org/resource/The_Terror_(1963_film)>        |
+| <http://dbpedia.org/resource/The_Cotton_Club_(film)>        |
+| <http://dbpedia.org/resource/The_Rainmaker_(1997_film)>     |
+| <http://dbpedia.org/resource/Apocalypse_Now>                |
+| <http://dbpedia.org/resource/Dementia_13>                   |
+| <http://dbpedia.org/resource/Tucker:_The_Man_and_His_Dream> |
+| <http://dbpedia.org/resource/Tonight_for_Sure>              |
+| <http://dbpedia.org/resource/The_Bellboy_and_the_Playgirls> |
+| <http://dbpedia.org/resource/Peggy_Sue_Got_Married>         |
+| <http://dbpedia.org/resource/Bram_Stoker's_Dracula>         |
+| <http://dbpedia.org/resource/Battle_Beyond_the_Sun>         |
+| <http://dbpedia.org/resource/Gardens_of_Stone>              |
+| <http://dbpedia.org/resource/Rumble_Fish>                   |
+| <http://dbpedia.org/resource/You're_a_Big_Boy_Now>          |
+| <http://dbpedia.org/resource/Jack_(1996_film)>              |
+| <http://dbpedia.org/resource/The_Godfather>                 |
+| <http://dbpedia.org/resource/The_Godfather_(film_series)>   |
+| <http://dbpedia.org/resource/The_Godfather_Saga>            |
+| <http://dbpedia.org/resource/Tetro>                         |
+| <http://dbpedia.org/resource/The_Outsiders_(film)>          |
+| <http://dbpedia.org/resource/Youth_Without_Youth_(film)>    |
+| <http://dbpedia.org/resource/One_from_the_Heart>            |
+| <http://dbpedia.org/resource/Apocalypse_Now_Redux>          |
+| <http://dbpedia.org/resource/New_York_Stories>              |
+---------------------------------------------------------------
+
+Narrowed to these target datasets:  Film FilmFestival MovieDirector Musical MusicalArtist MusicalWork PenaltyShootOut RecordLabel RecordOffice TelevisionEpisode TelevisionShow TelevisionShowFictionalCharacter 
+
+Matching query schema Film(director) 
+to dataset schema TelevisionShowFictionalCharacter(voice) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Film(director) 
+to dataset schema PenaltyShootOut(penaltiesTeamA,penaltiesTeamB,penaltyScore) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Film(director) 
+to dataset schema FilmFestival(causedBy,closingFilm,duration,endDate,film,followingEvent,nextEvent,numberOfPeopleAttending,openingFilm,participant,previousEvent,startDate) 
+Created match data: 
+similarity(0.11538461538461542).
+match(none).
+match([[Film],=,[FilmFestival]]).
+match([[Film,director],<,[FilmFestival,closingFilm]]).
+
+Matching query schema Film(director) 
+to dataset schema Musical(WorkRuntime,alternativeTitle,author,basedOn,chiefEditor,completionDate,composer,license,lyrics,mainCharacter,musicBy,musicComposer,originalLanguage,originalTitle,previousWork,producer,productionCompany,releaseDate,runtime,starring,subjectTerm,subsequentWork,translator,writer) 
+Created match data: 
+similarity(0.020000000000000018).
+match(none).
+match([[Film],>,[Musical]]).
+
+Matching query schema Film(director) 
+to dataset schema TelevisionEpisode(WorkRuntime,alternativeTitle,author,basedOn,chiefEditor,completionDate,composer,episodeNumber,guest,license,mainCharacter,musicComposer,originalLanguage,originalTitle,photographer,previousWork,producer,productionCompany,releaseDate,runtime,seasonNumber,starring,subjectTerm,subsequentWork,translator,writer) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Film(director) 
+to dataset schema MusicalWork(WorkRuntime,alternativeTitle,artist,author,basedOn,chiefEditor,completionDate,composer,license,mainCharacter,musicComposer,musicType,musicalKey,originalLanguage,originalTitle,previousWork,producer,productionCompany,recordDate,recordedIn,releaseDate,runtime,starring,subjectTerm,subsequentWork,translator,writer) 
+Created match data: 
+similarity(0.017857142857142905).
+match(none).
+match([[Film],>,[MusicalWork]]).
+
+Matching query schema Film(director) 
+to dataset schema TelevisionShow(WorkRuntime,alternativeTitle,author,basedOn,chiefEditor,coExecutiveProducer,coProducer,completionDate,composer,creativeDirector,endingTheme,license,mainCharacter,musicComposer,numberOfEpisodes,numberOfSeasons,openingTheme,originalLanguage,originalTitle,presenter,previousWork,producer,productionCompany,releaseDate,runtime,showJudge,starring,storyEditor,subjectTerm,subsequentWork,translator,tvComId,writer) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Film(director) 
+to dataset schema RecordOffice(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Film(director) 
+to dataset schema Film(WorkRuntime,afdbId,allcinemaId,alternativeTitle,amgid,author,basedOn,bgafdId,chiefEditor,cinematography,completionDate,composer,costumeDesigner,director,eTeatrId,editing,egafdId,eurobabeIndexId,filmAudioType,filmColourType,filmPolskiId,filmRuntime,firstBroadcast,gross,iafdId,imdbId,license,mainCharacter,makeupArtist,musicComposer,narrator,originalLanguage,originalTitle,previousWork,producedBy,producer,productionCompany,quebecerTitle,releaseDate,runtime,setDesigner,specialEffects,starring,subjectTerm,subsequentWork,titleLanguage,translator,writer) 
+Created match data: 
+similarity(0.04081632653061229).
+match(none).
+match([[Film,director],=,[Film,director]]).
+match([[Film],=,[Film]]).
+
+Matching query schema Film(director) 
+to dataset schema RecordLabel(affiliation,age,artPatron,assetUnderManagement,assets,ceo,chairperson,childOrganisation,codeStockExchange,discipline,distributingCompany,distributingLabel,endowment,equity,extinctionDate,extinctionYear,fate,formationDate,formationYear,foundationPlace,generalCouncil,groundsForLiquidation,headquarter,hometown,honours,ideology,industry,internationally,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,marketCapitalisation,membership,nationalSelection,netIncome,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,operatingIncome,organisationMember,parentOrganisation,playerSeason,product,production,regionServed,regionalCouncil,registration,revenue,season,secretaryGeneral,service,slogan,stockExchange,subsidiary,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Film(director) 
+to dataset schema MovieDirector(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.005319148936170248).
+match(none).
+match([[Film],>,[MovieDirector]]).
+match([[Film,director],=,[MovieDirector,created]]).
+match([[Film,director],=,[MovieDirector,board]]).
+
+Matching query schema Film(director) 
+to dataset schema MusicalArtist(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,academyAward,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,afiAward,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,associatedAct,astrologicalSign,award,badGuy,baftaAward,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,cesarAward,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,disciple,discipline,dubber,dutchRKDCode,education,educationPlace,electionDate,emmyAward,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,field,filmFareAward,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,gaudiAward,generalCouncil,goldenGlobeAward,goyaAward,grammyAward,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,instrument,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,mbaId,measurements,media,mentor,militaryBranch,militaryFunction,mood,mount,movement,movie,musicBand,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,notableWork,noteOnRestingPlace,numberOfAlbums,numberOfLiveAlbums,numberOfRun,numberOfStudioAlbums,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,polishFilmAward,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,style,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tonyAward,training,tvShow,ulanId,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,voiceType,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.003215434083601254).
+match(none).
+match([[Film,director],>,[MusicalArtist,leagueManager]]).
+match([[Film],>,[MusicalArtist]]).
+
+Construct query entity(type(Musical)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Musical> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------
+| subject                                                                                           |
+=====================================================================================================
+| <http://dbpedia.org/resource/After_Midnight_(musical)>                                            |
+| <http://dbpedia.org/resource/After_the_Ball_(musical)>                                            |
+| <http://dbpedia.org/resource/American_Idiot_(musical)>                                            |
+| <http://dbpedia.org/resource/Anna_Karenina_(musical)>                                             |
+| <http://dbpedia.org/resource/Anne_of_Green_Gables_%E2%80%93_The_Musical>                          |
+| <http://dbpedia.org/resource/Big_Deal_(musical)>                                                  |
+| <http://dbpedia.org/resource/Candide_(operetta)>                                                  |
+| <http://dbpedia.org/resource/Chronicle_of_a_Death_Foretold_(musical)>                             |
+| <http://dbpedia.org/resource/Chutzpah_a_Go-Go>                                                    |
+| <http://dbpedia.org/resource/Flying_Colors_(musical)>                                             |
+| <http://dbpedia.org/resource/Gay's_the_Word_(musical)>                                            |
+| <http://dbpedia.org/resource/Happy_New_Year_(musical)>                                            |
+| <http://dbpedia.org/resource/Legally_Blonde_(musical)>                                            |
+| <http://dbpedia.org/resource/Let's_Face_It!>                                                      |
+| <http://dbpedia.org/resource/Love_Never_Dies_(musical)>                                           |
+| <http://dbpedia.org/resource/Maytime_(musical)>                                                   |
+| <http://dbpedia.org/resource/Meet_Me_in_St._Louis_(musical)>                                      |
+| <http://dbpedia.org/resource/Movin'_Out_(musical)>                                                |
+| <http://dbpedia.org/resource/My_One_and_Only>                                                     |
+| <http://dbpedia.org/resource/Never_Say_Goodbye_(musical)>                                         |
+| <http://dbpedia.org/resource/New_Girl_in_Town>                                                    |
+| <http://dbpedia.org/resource/Sailor_Moon_musicals>                                                |
+| <http://dbpedia.org/resource/Songbook_(musical)>                                                  |
+| <http://dbpedia.org/resource/Sweet_and_Low_(musical)>                                             |
+| <http://dbpedia.org/resource/The_101_Dalmatians_Musical>                                          |
+| <http://dbpedia.org/resource/What's_Up%3F_(musical)>                                              |
+| <http://dbpedia.org/resource/Destry_Rides_Again_(musical)>                                        |
+| <http://dbpedia.org/resource/Fat_Camp_(musical)>                                                  |
+| <http://dbpedia.org/resource/Inside_U.S.A.>                                                       |
+| <http://dbpedia.org/resource/Kinky_Boots_(musical)>                                               |
+| <http://dbpedia.org/resource/Little_Me_(musical)>                                                 |
+| <http://dbpedia.org/resource/Over_Here!>                                                          |
+| <http://dbpedia.org/resource/Take_Flight_(musical)>                                               |
+| <http://dbpedia.org/resource/The_Commitments_(musical)>                                           |
+| <http://dbpedia.org/resource/The_Last_Ship_(musical)>                                             |
+| <http://dbpedia.org/resource/The_Lion_King_(musical)>                                             |
+| <http://dbpedia.org/resource/Waiting_for_the_Moon_(musical)>                                      |
+| <http://dbpedia.org/resource/All_About_Us_(musical)>                                              |
+| <http://dbpedia.org/resource/Brownstone_(musical)>                                                |
+| <http://dbpedia.org/resource/By_the_Beautiful_Sea_(musical)>                                      |
+| <http://dbpedia.org/resource/Portofino_(musical)>                                                 |
+| <http://dbpedia.org/resource/Roza_(musical)>                                                      |
+| <http://dbpedia.org/resource/The_Last_Session>                                                    |
+| <http://dbpedia.org/resource/The_Mad_Show>                                                        |
+| <http://dbpedia.org/resource/I'm_Getting_My_Act_Together_and_Taking_It_on_the_Road>               |
+| <http://dbpedia.org/resource/Menopause_The_Musical>                                               |
+| <http://dbpedia.org/resource/Disney's_My_Son_Pinocchio:_Geppetto's_Musical_Tale>                  |
+| <http://dbpedia.org/resource/Doonesbury_(musical)>                                                |
+| <http://dbpedia.org/resource/Bonnie_&_Clyde_(musical)>                                            |
+| <http://dbpedia.org/resource/Bluebell_in_Fairyland>                                               |
+| <http://dbpedia.org/resource/Bullets_and_Daffodils>                                               |
+| <http://dbpedia.org/resource/The_Thing_About_Men>                                                 |
+| <http://dbpedia.org/resource/Diamonds_(musical)>                                                  |
+| <http://dbpedia.org/resource/Houp_La!>                                                            |
+| <http://dbpedia.org/resource/Loserville>                                                          |
+| <http://dbpedia.org/resource/The_Utter_Glory_of_Morrissey_Hall>                                   |
+| <http://dbpedia.org/resource/Made_in_Dagenham_(musical)>                                          |
+| <http://dbpedia.org/resource/The_Night_Boat>                                                      |
+| <http://dbpedia.org/resource/White_Dalmatian>                                                     |
+| <http://dbpedia.org/resource/Am%C3%A9lie_(musical)>                                               |
+| <http://dbpedia.org/resource/But_Never_Jam_Today>                                                 |
+| <http://dbpedia.org/resource/Assassins_(musical)>                                                 |
+| <http://dbpedia.org/resource/Brigadoon>                                                           |
+| <http://dbpedia.org/resource/I'd_Rather_Be_Right>                                                 |
+| <http://dbpedia.org/resource/Jesus_Christ_Superstar>                                              |
+| <http://dbpedia.org/resource/The_King_and_I>                                                      |
+| <http://dbpedia.org/resource/West_Side_Story>                                                     |
+| <http://dbpedia.org/resource/Carrie_(musical)>                                                    |
+| <http://dbpedia.org/resource/Dusty_%E2%80%93_The_Original_Pop_Diva>                               |
+| <http://dbpedia.org/resource/Jumbo_(musical)>                                                     |
+| <http://dbpedia.org/resource/National_Lampoon_Lemmings>                                           |
+| <http://dbpedia.org/resource/Our_House_(musical)>                                                 |
+| <http://dbpedia.org/resource/Panama_Hattie>                                                       |
+| <http://dbpedia.org/resource/The_Hot_Mikado_(1939_production)>                                    |
+| <http://dbpedia.org/resource/The_Story_of_My_Life_(musical)>                                      |
+| <http://dbpedia.org/resource/Top_Banana_(musical)>                                                |
+| <http://dbpedia.org/resource/Bat_Boy:_The_Musical>                                                |
+| <http://dbpedia.org/resource/Big:_the_musical>                                                    |
+| <http://dbpedia.org/resource/Chaplin_(1993_musical)>                                              |
+| <http://dbpedia.org/resource/Charlie_and_the_Chocolate_Factory_the_Musical>                       |
+| <http://dbpedia.org/resource/City_of_Angels_(musical)>                                            |
+| <http://dbpedia.org/resource/Dogfight_(musical)>                                                  |
+| <http://dbpedia.org/resource/Evangeline_(musical)>                                                |
+| <http://dbpedia.org/resource/Gigi_(musical)>                                                      |
+| <http://dbpedia.org/resource/High_Society_(musical)>                                              |
+| <http://dbpedia.org/resource/John_Murray_Anderson's_Almanac>                                      |
+| <http://dbpedia.org/resource/Juno_and_Avos_(opera)>                                               |
+| <http://dbpedia.org/resource/Leap_of_Faith_(musical)>                                             |
+| <http://dbpedia.org/resource/Let_It_Be_(musical)>                                                 |
+| <http://dbpedia.org/resource/Marie_Antoinette_(musical)>                                          |
+| <http://dbpedia.org/resource/On_the_Record_(musical)>                                             |
+| <http://dbpedia.org/resource/Roberta>                                                             |
+| <http://dbpedia.org/resource/Salvation_(musical)>                                                 |
+| <http://dbpedia.org/resource/Silence!_The_Musical>                                                |
+| <http://dbpedia.org/resource/Tarzan_(musical)>                                                    |
+| <http://dbpedia.org/resource/The_Fantasticks>                                                     |
+| <http://dbpedia.org/resource/The_Visit_(musical)>                                                 |
+
+Construct query entity(type(MusicalWork)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MusicalWork> . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                                                                                   |
+=============================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Adieu_(C%C5%93ur_de_pirate_song)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Adieu_(Jahn_Teigen_and_Anita_Skorgan_song)>                                                                                                                                  |
+| <http://dbpedia.org/resource/April_Love_(song)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/Arnel_Pineda_(album)>                                                                                                                                                        |
+| <http://dbpedia.org/resource/Ascendancy_(album)>                                                                                                                                                          |
+| <http://dbpedia.org/resource/Blue_Daisy>                                                                                                                                                                  |
+| <http://dbpedia.org/resource/Break_It_Up_(Foreigner_song)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Break_It_Up_(Jemina_Pearl_album)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Break_It_Up_(Rocket_from_the_Crypt_song)>                                                                                                                                    |
+| <http://dbpedia.org/resource/Break_It_Up_(SSD_album)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/Chervona_Ruta_(album)>                                                                                                                                                       |
+| <http://dbpedia.org/resource/Chervona_Ruta_(song)>                                                                                                                                                        |
+| <http://dbpedia.org/resource/Christmas_Is_Here_(Brandon_Heath_album)>                                                                                                                                     |
+| <http://dbpedia.org/resource/El_Tiempo_(album)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/Furnace_(Download_album)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/Furnace_(Keith_Hudson_album)>                                                                                                                                                |
+| <http://dbpedia.org/resource/In_Search_of_Sunrise_(series)>                                                                                                                                               |
+| <http://dbpedia.org/resource/La_Raza_(album)>                                                                                                                                                             |
+| <http://dbpedia.org/resource/La_Raza_(song)>                                                                                                                                                              |
+| <http://dbpedia.org/resource/Licence_to_Kill_(soundtrack)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Lipstick/Ichiban_Boshi>                                                                                                                                                      |
+| <http://dbpedia.org/resource/Lipstick/Lamu_no_Love_Song>                                                                                                                                                  |
+| <http://dbpedia.org/resource/Lipstick_(Alejandra_Guzm%C3%A1n_album)>                                                                                                                                      |
+| <http://dbpedia.org/resource/Lipstick_(Alejandra_Guzm%C3%A1n_song)>                                                                                                                                       |
+| <http://dbpedia.org/resource/Lipstick_(Alesha_song)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/Lipstick_(Elise_Estrada_song)>                                                                                                                                               |
+| <http://dbpedia.org/resource/Lipstick_(Jedward_song)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/Lipstick_(Orange_Caramel_album)>                                                                                                                                             |
+| <http://dbpedia.org/resource/Lipstick_(Rocket_from_the_Crypt_song)>                                                                                                                                       |
+| <http://dbpedia.org/resource/List_of_Who_Framed_Roger_Rabbit_media>                                                                                                                                       |
+| <http://dbpedia.org/resource/Live_in_Rio_(Diana_Krall_DVD)>                                                                                                                                               |
+| <http://dbpedia.org/resource/Live_in_Rio_(Earth,_Wind_&_Fire_album)>                                                                                                                                      |
+| <http://dbpedia.org/resource/Live_in_Rio_(RBD_DVD)>                                                                                                                                                       |
+| <http://dbpedia.org/resource/Love_Changes_Everything_(Sarah_Brightman_album)>                                                                                                                             |
+| <http://dbpedia.org/resource/Love_Changes_Everything_(song)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Red_Light_(U2_song)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Red_Light_(song)>                                                                                                                                                            |
+| <http://dbpedia.org/resource/Red_Lights_(song)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/Some_Assembly_Required_(album)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Someone_to_Love_(Fountains_of_Wayne_song)>                                                                                                                                   |
+| <http://dbpedia.org/resource/Someone_to_Love_(Jon_B._song)>                                                                                                                                               |
+| <http://dbpedia.org/resource/Someone_to_Love_(Sean_Maguire_song)>                                                                                                                                         |
+| <http://dbpedia.org/resource/Someone_to_Love_Me_(Naked)>                                                                                                                                                  |
+| <http://dbpedia.org/resource/Someone_to_Love_You>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Special_Occasion_(Bobby_Valentino_album)>                                                                                                                                    |
+| <http://dbpedia.org/resource/Special_Occasion_(The_Miracles_album)>                                                                                                                                       |
+| <http://dbpedia.org/resource/Special_Occasion_(The_Miracles_song)>                                                                                                                                        |
+| <http://dbpedia.org/resource/The_Winter_Album_('N_Sync_album)>                                                                                                                                            |
+| <http://dbpedia.org/resource/The_Winter_Album_(The_Brilliant_Green_album)>                                                                                                                                |
+| <http://dbpedia.org/resource/Three_Little_Pigs_%E2%80%93_The_Remixes>                                                                                                                                     |
+| <http://dbpedia.org/resource/Three_Little_Pigs_(song)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/Whitechapel_(album)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Year_Zero_(album)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/Year_Zero_Remixed>                                                                                                                                                           |
+| <http://dbpedia.org/resource/%C3%89tienne_(song)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/(Everybody's_Waitin'_for)_The_Man_with_the_Bag>                                                                                                                              |
+| <http://dbpedia.org/resource/(I'd_Go_The)_Whole_Wide_World>                                                                                                                                               |
+| <http://dbpedia.org/resource/(It)_Feels_So_Good>                                                                                                                                                          |
+| <http://dbpedia.org/resource/(So_Tired_of_Standing_Still_We_Got_to)_Move_On>                                                                                                                              |
+| <http://dbpedia.org/resource/(Songbook)_A_Collection_of_Hits>                                                                                                                                             |
+| <http://dbpedia.org/resource/(You're_the)_Devil_in_Disguise>                                                                                                                                              |
+| <http://dbpedia.org/resource/1000_no_Violin>                                                                                                                                                              |
+| <http://dbpedia.org/resource/1492_(song)>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/1959_(John_Anderson_song)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/1959_(Patti_Smith_song)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/1959_(album)>                                                                                                                                                                |
+| <http://dbpedia.org/resource/1969:_The_Velvet_Underground_Live>                                                                                                                                           |
+| <http://dbpedia.org/resource/1969_(EP)>                                                                                                                                                                   |
+| <http://dbpedia.org/resource/1969_(G%C3%A1bor_Szab%C3%B3_album)>                                                                                                                                          |
+| <http://dbpedia.org/resource/1969_(Julie_Driscoll_album)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/1969_(Pink_Martini_and_Saori_Yuki_album)>                                                                                                                                    |
+| <http://dbpedia.org/resource/1973_(song)>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/2002_(Tha_Dogg_Pound_album)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/20:20_(box_set)>                                                                                                                                                             |
+| <http://dbpedia.org/resource/20th_Century_(album)>                                                                                                                                                        |
+| <http://dbpedia.org/resource/21%3F!_EP>                                                                                                                                                                   |
+| <http://dbpedia.org/resource/21_(Adele_album)>                                                                                                                                                            |
+| <http://dbpedia.org/resource/21_(Omarion_album)>                                                                                                                                                          |
+| <http://dbpedia.org/resource/21_(The_Paddingtons_song)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/24-7-365_(N2Deep_album)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/24-7-365_(Neal_McCoy_album)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/24_Kilates>                                                                                                                                                                  |
+| <http://dbpedia.org/resource/25/8_(song)>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/25_Years_%E2%80%93_The_Chain>                                                                                                                                                |
+| <http://dbpedia.org/resource/27_(song)>                                                                                                                                                                   |
+| <http://dbpedia.org/resource/42_(song)>                                                                                                                                                                   |
+| <http://dbpedia.org/resource/4_Minutes_(Madonna_song)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/5.15>                                                                                                                                                                        |
+| <http://dbpedia.org/resource/500_Degreez>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/500_Up>                                                                                                                                                                      |
+| <http://dbpedia.org/resource/5_Songs_(Iced_Earth_EP)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/5_Songs_(Seether_EP)>                                                                                                                                                        |
+| <http://dbpedia.org/resource/5_Songs_(The_Decemberists_EP)>                                                                                                                                               |
+| <http://dbpedia.org/resource/808_(album)>                                                                                                                                                                 |
+| <http://dbpedia.org/resource/808_(song)>                                                                                                                                                                  |
+| <http://dbpedia.org/resource/808s_&_Heartbreak>                                                                                                                                                           |
+| <http://dbpedia.org/resource/99_(Epik_High_album)>                                                                                                                                                        |
+
+Construct query entity(type(Film),director(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> ; 
+<http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------
+| subject                                                     |
+===============================================================
+| <http://dbpedia.org/resource/Hammett_(film)>                |
+| <http://dbpedia.org/resource/The_Rain_People>               |
+| <http://dbpedia.org/resource/Twixt_(film)>                  |
+| <http://dbpedia.org/resource/The_Conversation>              |
+| <http://dbpedia.org/resource/The_Godfather_Part_II>         |
+| <http://dbpedia.org/resource/The_Godfather_Part_III>        |
+| <http://dbpedia.org/resource/The_Terror_(1963_film)>        |
+| <http://dbpedia.org/resource/The_Cotton_Club_(film)>        |
+| <http://dbpedia.org/resource/The_Rainmaker_(1997_film)>     |
+| <http://dbpedia.org/resource/Apocalypse_Now>                |
+| <http://dbpedia.org/resource/Dementia_13>                   |
+| <http://dbpedia.org/resource/Tucker:_The_Man_and_His_Dream> |
+| <http://dbpedia.org/resource/Tonight_for_Sure>              |
+| <http://dbpedia.org/resource/The_Bellboy_and_the_Playgirls> |
+| <http://dbpedia.org/resource/Peggy_Sue_Got_Married>         |
+| <http://dbpedia.org/resource/Bram_Stoker's_Dracula>         |
+| <http://dbpedia.org/resource/Battle_Beyond_the_Sun>         |
+| <http://dbpedia.org/resource/Gardens_of_Stone>              |
+| <http://dbpedia.org/resource/Rumble_Fish>                   |
+| <http://dbpedia.org/resource/You're_a_Big_Boy_Now>          |
+| <http://dbpedia.org/resource/Jack_(1996_film)>              |
+| <http://dbpedia.org/resource/The_Godfather>                 |
+| <http://dbpedia.org/resource/The_Godfather_(film_series)>   |
+| <http://dbpedia.org/resource/The_Godfather_Saga>            |
+| <http://dbpedia.org/resource/Tetro>                         |
+| <http://dbpedia.org/resource/The_Outsiders_(film)>          |
+| <http://dbpedia.org/resource/Youth_Without_Youth_(film)>    |
+| <http://dbpedia.org/resource/One_from_the_Heart>            |
+| <http://dbpedia.org/resource/Apocalypse_Now_Redux>          |
+| <http://dbpedia.org/resource/New_York_Stories>              |
+---------------------------------------------------------------
+
+Construct query entity(type(FilmFestival),closingFilm(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/FilmFestival> ; 
+<http://dbpedia.org/ontology/closingFilm> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query did not return any data. 
+
+Construct query entity(type,closingFilm(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/closingFilm> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+Construct query entity(type(FilmFestival),closingFilm) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/FilmFestival> ; 
+<http://dbpedia.org/ontology/closingFilm> ?closingFilm . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                       | closingFilm                                                                |
+==============================================================================================================================================================
+| <http://dbpedia.org/resource/1956_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Roof_(film)>                              |
+| <http://dbpedia.org/resource/2006_Sundance_Film_Festival>                     | <http://dbpedia.org/resource/Alpha_Dog>                                    |
+| <http://dbpedia.org/resource/1980_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/I'm_Photogenic>                               |
+| <http://dbpedia.org/resource/1999_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Eugene_Onegin>                                |
+| <http://dbpedia.org/resource/1975_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Tommy_(1975_film)>                            |
+| <http://dbpedia.org/resource/2007_Sundance_Film_Festival>                     | <http://dbpedia.org/resource/Life_Support_(film)>                          |
+| <http://dbpedia.org/resource/2003_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Charlie:_The_Life_and_Art_of_Charles_Chaplin> |
+| <http://dbpedia.org/resource/2007_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Emotional_Arithmetic>                         |
+| <http://dbpedia.org/resource/2008_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/What_Just_Happened>                           |
+| <http://dbpedia.org/resource/1967_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Batouk>                                       |
+| <http://dbpedia.org/resource/1971_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Married_Couple_of_the_Year_Two>           |
+| <http://dbpedia.org/resource/1976_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Family_Plot>                                  |
+| <http://dbpedia.org/resource/1966_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Pharaoh_(film)>                               |
+| <http://dbpedia.org/resource/1999_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/An_Ideal_Husband_(1999_film)>                 |
+| <http://dbpedia.org/resource/1985_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Emerald_Forest>                           |
+| <http://dbpedia.org/resource/2012_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Th%C3%A9r%C3%A8se_Desqueyroux_(2012_film)>    |
+| <http://dbpedia.org/resource/2002_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Femme_Fatale_(2002_film)>                     |
+| <http://dbpedia.org/resource/1981_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Honeysuckle_Rose_(film)>                      |
+| <http://dbpedia.org/resource/2013_Sundance_Film_Festival>                     | <http://dbpedia.org/resource/Jobs_(film)>                                  |
+| <http://dbpedia.org/resource/2006_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Transylvania_(film)>                          |
+| <http://dbpedia.org/resource/2001_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Savage_Souls_(film)>                          |
+| <http://dbpedia.org/resource/1968_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Rocky_Road_to_Dublin_(film)>                  |
+| <http://dbpedia.org/resource/1972_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Frenzy>                                       |
+| <http://dbpedia.org/resource/1977_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Slap_Shot_(film)>                             |
+| <http://dbpedia.org/resource/1979_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Us_Two_(film)>                                |
+| <http://dbpedia.org/resource/1983_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/WarGames>                                     |
+| <http://dbpedia.org/resource/1984_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Bounty>                                   |
+| <http://dbpedia.org/resource/1986_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/El_Amor_brujo_(1986_film)>                    |
+| <http://dbpedia.org/resource/1989_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Old_Gringo>                                   |
+| <http://dbpedia.org/resource/1991_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Thelma_&_Louise>                              |
+| <http://dbpedia.org/resource/1996_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Flirting_with_Disaster_(film)>                |
+| <http://dbpedia.org/resource/1998_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Godzilla_(1998_film)>                         |
+| <http://dbpedia.org/resource/1st_Okinawa_International_Movie_Festival>        | <http://dbpedia.org/resource/Burn_After_Reading>                           |
+| <http://dbpedia.org/resource/1994_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Serial_Mom>                                   |
+| <http://dbpedia.org/resource/2005_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Edison_(film)>                                |
+| <http://dbpedia.org/resource/2000_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Stardom>                                      |
+| <http://dbpedia.org/resource/1973_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Lady_Sings_the_Blues_(film)>                  |
+| <http://dbpedia.org/resource/1992_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Far_and_Away>                                 |
+| <http://dbpedia.org/resource/Kingston_Canadian_Film_Festival>                 | <http://dbpedia.org/resource/Real_Time_(film)>                             |
+| <http://dbpedia.org/resource/2007_Bangkok_International_Film_Festival>        | <http://dbpedia.org/resource/Muay_Thai_Chaiya>                             |
+| <http://dbpedia.org/resource/1974_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/S*P*Y*S>                                      |
+| <http://dbpedia.org/resource/1976_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Queen_of_the_Gypsies>                         |
+| <http://dbpedia.org/resource/33rd_Moscow_International_Film_Festival>         | <http://dbpedia.org/resource/The_Debt_(2011_film)>                         |
+| <http://dbpedia.org/resource/2004_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/De-Lovely>                                    |
+| <http://dbpedia.org/resource/1997_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Absolute_Power_(film)>                        |
+| <http://dbpedia.org/resource/1970_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Ball_of_Count_Orgel>                      |
+| <http://dbpedia.org/resource/1990_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Comfort_of_Strangers_(film)>              |
+| <http://dbpedia.org/resource/2010_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Last_Night_(2010_film)>                       |
+| <http://dbpedia.org/resource/3rd_Detroit_Windsor_International_Film_Festival> | <http://dbpedia.org/resource/Detroit_Windsor_International_Film_Festival>  |
+| <http://dbpedia.org/resource/2013_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Life_of_Crime_(film)>                         |
+| <http://dbpedia.org/resource/2005_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Chromophobia>                                 |
+| <http://dbpedia.org/resource/25th_Tokyo_International_Film_Festival>          | <http://dbpedia.org/resource/Trouble_with_the_Curve>                       |
+| <http://dbpedia.org/resource/1981_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Threshold_(1981_film)>                        |
+| <http://dbpedia.org/resource/1995_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Devil_in_a_Blue_Dress_(film)>                 |
+| <http://dbpedia.org/resource/2002_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/And_Now..._Ladies_and_Gentlemen>              |
+| <http://dbpedia.org/resource/2nd_Odessa_International_Film_Festival>          | <http://dbpedia.org/resource/Russia>                                       |
+| <http://dbpedia.org/resource/1997_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Jackie_Brown_(film)>                          |
+| <http://dbpedia.org/resource/1998_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Antz>                                         |
+| <http://dbpedia.org/resource/2007_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Days_of_Darkness_(2007_Canadian_film)>        |
+| <http://dbpedia.org/resource/1993_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Toxic_Affair>                                 |
+| <http://dbpedia.org/resource/70th_Venice_International_Film_Festival>         | <http://dbpedia.org/resource/Amazonia_(film)>                              |
+| <http://dbpedia.org/resource/2011_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Page_Eight>                                   |
+| <http://dbpedia.org/resource/1995_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Quick_and_the_Dead_(1995_film)>           |
+| <http://dbpedia.org/resource/2011_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Beloved_(2011_film)>                      |
+| <http://dbpedia.org/resource/34th_Moscow_International_Film_Festival>         | <http://dbpedia.org/resource/The_Beloved_(2011_film)>                      |
+| <http://dbpedia.org/resource/2012_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Song_for_Marion>                              |
+| <http://dbpedia.org/resource/1987_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Aria_(film)>                                  |
+| <http://dbpedia.org/resource/2003_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Danny_Deckchair>                              |
+| <http://dbpedia.org/resource/2009_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/The_Young_Victoria>                           |
+| <http://dbpedia.org/resource/1965_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Tokyo_Olympiad>                               |
+| <http://dbpedia.org/resource/1982_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/E.T._the_Extra-Terrestrial>                   |
+| <http://dbpedia.org/resource/3rd_Okinawa_International_Movie_Festival>        | <http://dbpedia.org/resource/Forgotten_Silver>                             |
+| <http://dbpedia.org/resource/1959_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Diary_of_Anne_Frank_(1959_film)>          |
+| <http://dbpedia.org/resource/1988_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Willow_(film)>                                |
+| <http://dbpedia.org/resource/2014_Sundance_Film_Festival>                     | <http://dbpedia.org/resource/Rudderless>                                   |
+| <http://dbpedia.org/resource/2013_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Zulu_(2013_film)>                             |
+| <http://dbpedia.org/resource/1955_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Carmen_Jones_(film)>                          |
+| <http://dbpedia.org/resource/2004_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/5x2>                                          |
+| <http://dbpedia.org/resource/2006_Toronto_International_Film_Festival>        | <http://dbpedia.org/resource/Amazing_Grace_(2006_film)>                    |
+| <http://dbpedia.org/resource/2008_Sundance_Film_Festival>                     | <http://dbpedia.org/resource/CSNY/D%C3%A9j%C3%A0_Vu>                       |
+| <http://dbpedia.org/resource/2009_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Coco_Chanel_&_Igor_Stravinsky>                |
+| <http://dbpedia.org/resource/4th_Okinawa_International_Movie_Festival>        | <http://dbpedia.org/resource/A_Simple_Life>                                |
+| <http://dbpedia.org/resource/1978_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/Fedora_(film)>                                |
+| <http://dbpedia.org/resource/1st_Odessa_International_Film_Festival>          | <http://dbpedia.org/resource/Russia>                                       |
+| <http://dbpedia.org/resource/2010_Cannes_Film_Festival>                       | <http://dbpedia.org/resource/The_Tree_(2010_film)>                         |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Construct query entity(type(MovieDirector),board(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MovieDirector> ; 
+<http://dbpedia.org/ontology/board> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query did not return any data. 
+
+Construct query entity(type,board(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/board> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+Construct query entity(type(MovieDirector),board) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MovieDirector> ; 
+<http://dbpedia.org/ontology/board> ?board . }
+
+Construct query entity(type,board) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/board> ?board . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                           | type                                                                                         | board                                                                                                 |
+============================================================================================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://xmlns.com/foaf/0.1/Person>                                                           | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://schema.org/Person>                                                                   | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://wikidata.dbpedia.org/resource/Q215627>                                               | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://www.w3.org/2002/07/owl#Thing>                                                        | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://wikidata.dbpedia.org/resource/Q5>                                                    | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                                | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>                        | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/ontology/Agent>                                                          | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/ontology/Person>                                                         | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/AmericanPhilanthropists>                                      | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Benefactor109608709>                                          | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/CausalAgent100007347>                                         | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Donor110025730>                                               | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/GoodPerson110138767>                                          | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/LivingThing100004258>                                         | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Object100002684>                                              | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Organism100004475>                                            | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Person100007846>                                              | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Philanthropist110421956>                                      | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Whole100003553>                                               | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                            | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/PeopleFromSalem,Massachusetts>                                | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/YagoLegalActor>                                               | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                      | <http://dbpedia.org/resource/Packer_Collegiate_Institute>                                             |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://xmlns.com/foaf/0.1/Person>                                                           | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://schema.org/Person>                                                                   | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://wikidata.dbpedia.org/resource/Q215627>                                               | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://www.w3.org/2002/07/owl#Thing>                                                        | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://wikidata.dbpedia.org/resource/Q5>                                                    | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                                | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>                        | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/ontology/Agent>                                                          | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/ontology/Person>                                                         | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/AmericanPhilanthropists>                                      | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Benefactor109608709>                                          | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/CausalAgent100007347>                                         | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Donor110025730>                                               | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/GoodPerson110138767>                                          | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/LivingThing100004258>                                         | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Object100002684>                                              | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Organism100004475>                                            | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Person100007846>                                              | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Philanthropist110421956>                                      | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/Whole100003553>                                               | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                            | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/PeopleFromSalem,Massachusetts>                                | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/YagoLegalActor>                                               | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Abiel_Abbot_Low>                     | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                      | <http://dbpedia.org/resource/Chamber_of_commerce>                                                     |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://xmlns.com/foaf/0.1/Person>                                                           | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://schema.org/Person>                                                                   | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://wikidata.dbpedia.org/resource/Q215627>                                               | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://www.w3.org/2002/07/owl#Thing>                                                        | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://wikidata.dbpedia.org/resource/Q5>                                                    | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                                | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>                        | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/ontology/Agent>                                                          | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/ontology/Person>                                                         | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Alumnus109786338>                                             | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/AngelInvestors>                                               | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Capitalist109609232>                                          | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/CausalAgent100007347>                                         | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Intellectual109621545>                                        | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Investor110216106>                                            | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/LivingThing100004258>                                         | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Object100002684>                                              | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Organism100004475>                                            | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Person100007846>                                              | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Scholar110557854>                                             | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Whole100003553>                                               | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                            | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/YagoLegalActor>                                               | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                      | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/RobertE.LeeHighSchool(Midland,Texas)Alumni>                   | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/LivingPeople>                                                 | <http://dbpedia.org/resource/University_of_Virginia>                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://xmlns.com/foaf/0.1/Person>                                                           | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://schema.org/Person>                                                                   | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://wikidata.dbpedia.org/resource/Q215627>                                               | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://www.w3.org/2002/07/owl#Thing>                                                        | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://wikidata.dbpedia.org/resource/Q5>                                                    | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                                | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>                        | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/ontology/Agent>                                                          | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/ontology/Person>                                                         | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Alumnus109786338>                                             | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/AngelInvestors>                                               | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Capitalist109609232>                                          | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/CausalAgent100007347>                                         | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Intellectual109621545>                                        | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Investor110216106>                                            | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/LivingThing100004258>                                         | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Object100002684>                                              | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Organism100004475>                                            | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Person100007846>                                              | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Scholar110557854>                                             | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/Whole100003553>                                               | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                            | <http://dbpedia.org/resource/Redfin>                                                                  |
+| <http://dbpedia.org/resource/Austin_Ligon>                        | <http://dbpedia.org/class/yago/YagoLegalActor>                                               | <http://dbpedia.org/resource/Redfin>                                                                  |
+
+Construct query entity(type(MovieDirector),created(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MovieDirector> ; 
+<http://dbpedia.org/ontology/created> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query did not return any data. 
+
+Construct query entity(type,created(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/created> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+Construct query entity(type(MovieDirector),created) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MovieDirector> ; 
+<http://dbpedia.org/ontology/created> ?created . }
+
+Construct query entity(type,created) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/created> ?created . }
+
+Construct query entity(type(MusicalArtist),leagueManager(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MusicalArtist> ; 
+<http://dbpedia.org/ontology/leagueManager> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query did not return any data. 
+
+Construct query entity(type,leagueManager(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/leagueManager> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+Construct query entity(type(MusicalArtist),leagueManager) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MusicalArtist> ; 
+<http://dbpedia.org/ontology/leagueManager> ?leagueManager . }
+
+Construct query entity(type,leagueManager) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/leagueManager> ?leagueManager . }
+

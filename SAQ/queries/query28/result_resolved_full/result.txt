@@ -1,0 +1,303 @@
+Query:  entity(type(Island),country(Japan)) 
+Construct query entity(type(Island),country(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<country> <http://dbpedia.org/resource/Japan> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Archipelago CricketGround Island 
+
+Matching query schema Island(country) 
+to dataset schema CricketGround(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Island(country) 
+to dataset schema Archipelago(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.005813953488372103).
+match(none).
+match([[Island,country],<,[Archipelago,district]]).
+match([[Island],<,[Archipelago]]).
+
+Matching query schema Island(country) 
+to dataset schema Island(PopulatedPlaceArea,PopulatedPlaceAreaMetro,PopulatedPlaceAreaTotal,PopulatedPlaceAreaUrban,PopulatedPlacePopulationDensity,PopulatedPlacePopulationMetroDensity,PopulatedPlacePopulationUrbanDensity,administrativeHeadCity,agglomeration,agglomerationArea,agglomerationDemographics,alemmanicName,altitude,annualTemperature,anthem,apskritis,arberishtName,areaCode,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaRural,areaTotal,areaTotalRanking,areaUrban,areaWater,arrondissement,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,barangays,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,border,borough,budgetYear,building,cableCar,calabrianName,cannonNumber,capital,capitalCoordinates,capitalCountry,capitalDistrict,capitalElevation,capitalMountain,capitalPlace,capitalPosition,capitalRegion,catholicPercentage,ccaState,censusYear,ceremonialCounty,circle,cityLink,citySince,cityType,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,colonialName,commissioner,commissionerDate,communityIsoCode,coordinates,councilArea,countySeat,currencyCode,cyrilliqueName,dateAgreement,daylightSavingTimeZone,delegateMayor,delegation,deme,demographics,demographicsAsOf,department,departmentPosition,depth,depthQuote,depths,different,disappearanceDate,discovery,dissolutionDate,dissolutionYear,district,ekatteCode,elevation,elevationQuote,emblem,endangeredSince,eruption,ethnicGroup,eventDate,fauna,fipsCode,firstMention,flora,flower,foresterDistrict,foundation,foundationDate,foundingPerson,frenchName,frioulanName,frontierLength,gagaouze,geolocDual,geologicPeriod,germanName,giniCoefficient,giniCoefficientAsOf,giniCoefficientCategory,giniCoefficientRanking,gnisCode,gnl,governingBody,government,governmentCountry,governmentElevation,governmentMountain,governmentPlace,governmentPosition,governmentRegion,governorate,greekName,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProduct,grossDomesticProductAsOf,grossDomesticProductNominalPerCapita,grossDomesticProductPerPeople,grossDomesticProductPurchasingPowerParityPerCapita,grossDomesticProductRank,heritageRegister,highestPointIsland,highestRegion,highestState,historicalMap,historicalName,historicalRegion,hraState,humanDevelopmentIndex,humanDevelopmentIndexAsOf,humanDevelopmentIndexRank,humanDevelopmentIndexRankingCategory,illiteracy,income,infantMortality,information,informationName,internationalPhonePrefix,internationalPhonePrefixLabel,isoCode,isoCode,ist,istat,italianName,kanjiName,kindOfCoordinate,kindOfRock,ladinName,lake,land,landArea,landPercentage,largestCity,largestCountry,largestSettlement,lawCountry,leaderName,leaderParty,leaderTitle,leftChild,lengthQuote,licenceNumber,licenceNumberLabel,lieutenancy,lieutenancyArea,lifeExpectancy,limit,linkedSpace,localPhonePrefix,localization,localizationThumbnail,localizationThumbnailCaption,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,lowestRegion,lowestState,luxembourgishName,mainIsland,mainIslands,majorIsland,managementCountry,managementRegion,maoriName,map,mapCaption,mapDescription,material,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,metropolitanBorough,minimumArea,minimumAreaQuote,minimumElevation,moldavianName,municipalityCode,namedByLanguage,nation,nationalTopographicSystemMapNumber,nearestCity,neighboringMunicipality,neighbourRegion,nextEntity,nisCode,numberOfCantons,numberOfCapitalDeputies,numberOfCounties,numberOfFederalDeputies,numberOfIsland,numberOfIslands,numberOfMunicipalities,numberOfStateDeputies,nutsCode,observatory,occitanName,officialLanguage,okatoCode,oldDistrict,oldName,oldProvince,otherName,output,outskirts,parish,parliament,parliamentType,peopleName,perCapitaIncome,perCapitaIncomeAsOf,perCapitaIncomeRank,phonePrefix,phonePrefixName,pisciculturalPopulation,plant,pluviometry,policeName,politicGovernmentDepartment,politicalLeader,population,populationAsOf,populationDate,populationDensity,populationMetro,populationMetroDensity,populationPctChildren,populationPctMen,populationPctWomen,populationQuote,populationRural,populationRuralDensity,populationTotalRanking,populationUrban,populationUrbanDensity,populationYear,postalCode,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousDemographics,previousEntity,previousName,previousPopulation,previousPopulationTotal,principalArea,protectionStatus,protestantPercentage,province,provinceIsoCode,provinceLink,purchasingPowerParity,purchasingPowerParityRank,purchasingPowerParityYear,quote,rankAgreement,rankArea,rankPopulation,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalLanguage,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,rightChild,river,route,saint,sardinianName,scale,scotishName,scotsName,sea,senior,seniunija,settlement,sharingOut,sharingOutArea,sharingOutPopulation,sharingOutPopulationName,sharingOutPopulationYear,sheading,sicilianName,simcCode,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,smallestCountry,snowParkNumber,sovereignCountry,statusYear,subPrefecture,subdivision,subdivisionLink,subdivisionName,subdivisions,subregion,subsystem,subsystemLink,supply,termOfOffice,terytCode,timeZone,topic,touristicSite,tree,tu,typeCoordinate,unesco,unitaryAuthority,unlcCode,unloCode,utcOffset,vehicleCode,viceLeader,viceLeaderParty,volcanicActivity,volcanicType,volcanoId,volumeQuote,water,waterArea,waterPercentage,watercourse,wholeArea,widthQuote,yearOfConstruction,zipCode) 
+Created match data: 
+similarity(0.005102040816326481).
+match(none).
+match([[Island],=,[Island]]).
+match([[Island,country],=,[Island,governmentCountry]]).
+match([[Island,country],=,[Island,largestCountry]]).
+
+Construct query entity(type(Archipelago),district(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Archipelago> ; 
+<http://dbpedia.org/ontology/district> <http://dbpedia.org/resource/Japan> . }
+
+The query did not return any data. 
+
+Construct query entity(type,district(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/district> <http://dbpedia.org/resource/Japan> . }
+
+Construct query entity(type(Archipelago),district) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Archipelago> ; 
+<http://dbpedia.org/ontology/district> ?district . }
+
+Construct query entity(type,district) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/district> ?district . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                | type                                                                                      | district                                                                      |
+======================================================================================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://www.w3.org/2002/07/owl#Thing>                                                     | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://schema.org/Place>                                                                 | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                               | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/ontology/Place>                                                       | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/ontology/PopulatedPlace>                                              | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/ontology/Settlement>                                                  | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/ontology/Wikidata:Q532>                                               | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://www.opengis.net/gml/_Feature>                                                     | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                           | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/District108552138>                                         | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/Location100027167>                                         | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/Object100002684>                                           | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/Region108630985>                                           | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/UrbanArea108675967>                                        | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/YagoGeoEntity>                                             | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                         | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/MunicipalitiesOfTheCantonOfFribourg>                       | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/GeographicalArea108574314>                                 | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/Municipality108626283>                                     | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                   | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                     | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                              | <http://dbpedia.org/resource/Sarine_District>                                 |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://www.w3.org/2002/07/owl#Thing>                                                     | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://schema.org/BodyOfWater>                                                           | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://schema.org/Place>                                                                 | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://schema.org/RiverBodyOfWater>                                                      | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                               | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/ontology/BodyOfWater>                                                 | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/ontology/NaturalPlace>                                                | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/ontology/Place>                                                       | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/ontology/River>                                                       | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/ontology/Stream>                                                      | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/ontology/Wikidata:Q532>                                               | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/BodyOfWater109225146>                                      | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/River109411430>                                            | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/Stream109448361>                                           | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/Thing100002452>                                            | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/YagoGeoEntity>                                             | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                   | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                              | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/RiversOfBoto%C5%9FaniCounty>                               | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/RiversOfRomania>                                           | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Badu_River>                                               | <http://dbpedia.org/class/yago/RiversOfThePrutSubbasin>                                   | <http://dbpedia.org/resource/Boto%C8%99ani_County>                            |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>                                    | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/VillagesInHampshire>                                       | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://www.w3.org/2002/07/owl#Thing>                                                     | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://schema.org/Place>                                                                 | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                               | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/ontology/Place>                                                       | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/ontology/PopulatedPlace>                                              | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/ontology/Settlement>                                                  | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/ontology/Wikidata:Q532>                                               | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://www.opengis.net/gml/_Feature>                                                     | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/Location100027167>                                         | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/Object100002684>                                           | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/Region108630985>                                           | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/Village108672738>                                          | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/YagoGeoEntity>                                             | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                         | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/GeographicalArea108574314>                                 | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                   | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                              | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth>                                                | <http://dbpedia.org/class/yago/Settlement108672562>                                       | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://www.w3.org/2002/07/owl#Thing>                                                     | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://schema.org/Place>                                                                 | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                               | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://dbpedia.org/ontology/ArchitecturalStructure>                                      | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://dbpedia.org/ontology/Infrastructure>                                              | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://dbpedia.org/ontology/Place>                                                       | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://dbpedia.org/ontology/Station>                                                     | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://dbpedia.org/ontology/Wikidata:Q532>                                               | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Bentworth_and_Lasham_railway_station>                     | <http://www.opengis.net/gml/_Feature>                                                     | <http://dbpedia.org/resource/East_Hampshire>                                  |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>                                    | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://www.w3.org/2002/07/owl#Thing>                                                     | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://schema.org/Place>                                                                 | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                               | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/ontology/ArchitecturalStructure>                                      | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/ontology/Infrastructure>                                              | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/ontology/Place>                                                       | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/ontology/Station>                                                     | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/ontology/Wikidata:Q532>                                               | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://umbel.org/umbel/rc/Building>                                                      | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/Artifact100021939>                                         | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/Facility103315023>                                         | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/Object100002684>                                           | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/RailwayStation104049098>                                   | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/Station104306080>                                          | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/Terminal104412901>                                         | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/Whole100003553>                                            | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/YagoGeoEntity>                                             | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/DfTCategoryF2Stations>                                     | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/FormerBarryRailwayStations>                                | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                   | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                              | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/RailwayStationsInTheValeOfGlamorgan>                       | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Cogan_railway_station>                                    | <http://dbpedia.org/class/yago/RailwayStationsServedByArrivaTrainsWales>                  | <http://dbpedia.org/resource/Vale_of_Glamorgan>                               |
+| <http://dbpedia.org/resource/Glenfield_railway_station_(Paisley)>                      | <http://www.w3.org/2002/07/owl#Thing>                                                     | <http://dbpedia.org/resource/Renfrewshire>                                    |
+| <http://dbpedia.org/resource/Glenfield_railway_station_(Paisley)>                      | <http://schema.org/Place>                                                                 | <http://dbpedia.org/resource/Renfrewshire>                                    |
+
+Construct query entity(type(Island),governmentCountry(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<http://dbpedia.org/ontology/governmentCountry> <http://dbpedia.org/resource/Japan> . }
+
+The query did not return any data. 
+
+Construct query entity(type,governmentCountry(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/governmentCountry> <http://dbpedia.org/resource/Japan> . }
+
+Construct query entity(type(Island),governmentCountry) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<http://dbpedia.org/ontology/governmentCountry> ?governmentCountry . }
+
+Construct query entity(type,governmentCountry) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/governmentCountry> ?governmentCountry . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                | type                                                                   | governmentCountry                                        |
+==============================================================================================================================================================================================
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/VolcanoesOfPortugal>                    | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/VolcanoesOfTheAtlanticOcean>            | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://www.w3.org/2002/07/owl#Thing>                                  | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://schema.org/AdministrativeArea>                                 | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://schema.org/Place>                                              | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>            | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/ontology/AdministrativeRegion>                     | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/ontology/Place>                                    | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/ontology/PopulatedPlace>                           | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/ontology/Region>                                   | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/ontology/Wikidata:Q532>                            | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://umbel.org/umbel/rc/Country>                                    | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://umbel.org/umbel/rc/Location_Underspecified>                    | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://umbel.org/umbel/rc/PopulatedPlace>                             | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Abstraction100002137>                   | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>        | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/AmorphousShape113867492>                | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Attribute100024264>                     | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/AutonomousRegionsOfPortugal>            | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/District108552138>                      | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Island109316454>                        | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Land109334396>                          | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Location100027167>                      | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Object100002684>                        | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Opening109379111>                       | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Region108630039>                        | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Region108630985>                        | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Shape100027807>                         | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Space113910384>                         | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/State108654360>                         | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Vent109470550>                          | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/YagoGeoEntity>                          | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                      | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/NUTS2StatisticalRegionsOfPortugal>      | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/OutermostRegionsOfTheEuropeanUnion>     | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/Crack109258715>                         | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>           | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/ProvincesOfPortugal(1936%E2%80%931976)> | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/RidgeVolcanoes>                         | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/SpecialTerritoriesOfTheEuropeanUnion>   | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Azores>                   | <http://dbpedia.org/class/yago/IslandsOfMacaronesia>                   | <http://dbpedia.org/resource/S%C3%A3o_Miguel_Island>     |
+| <http://dbpedia.org/resource/Madeira>                  | <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>                 | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/VolcanoesOfPortugal>                    | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/VolcanoesOfTheAtlanticOcean>            | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/WineRegionsOfPortugal>                  | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://www.w3.org/2002/07/owl#Thing>                                  | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://schema.org/AdministrativeArea>                                 | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://schema.org/Place>                                              | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>            | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/ontology/AdministrativeRegion>                     | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/ontology/Place>                                    | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/ontology/PopulatedPlace>                           | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/ontology/Region>                                   | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/ontology/Wikidata:Q532>                            | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://umbel.org/umbel/rc/Country>                                    | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://umbel.org/umbel/rc/Location_Underspecified>                    | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://umbel.org/umbel/rc/PopulatedPlace>                             | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Abstraction100002137>                   | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/AmorphousShape113867492>                | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Archipelago109203827>                   | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/ArchipelagoesOfTheAtlanticOcean>        | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Attribute100024264>                     | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/AutonomousRegionsOfPortugal>            | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Island109316454>                        | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Land109334396>                          | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Location100027167>                      | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Object100002684>                        | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Opening109379111>                       | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Region108630039>                        | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Shape100027807>                         | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Space113910384>                         | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Vent109470550>                          | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/YagoGeoEntity>                          | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                      | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/NUTS2StatisticalRegionsOfPortugal>      | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/OutermostRegionsOfTheEuropeanUnion>     | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/Crack109258715>                         | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>           | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Madeira>                  | <http://dbpedia.org/class/yago/IslandsOfMacaronesia>                   | <http://dbpedia.org/resource/Funchal>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://www.w3.org/2002/07/owl#Thing>                                  | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://schema.org/AdministrativeArea>                                 | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://schema.org/Place>                                              | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>            | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/ontology/AdministrativeRegion>                     | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/ontology/Place>                                    | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/ontology/PopulatedPlace>                           | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/ontology/Region>                                   | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/ontology/Wikidata:Q532>                            | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://www.opengis.net/gml/_Feature>                                  | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/class/yago/Abstraction100002137>                   | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/class/yago/AdministrativeUnit108077292>            | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/class/yago/Agency108337324>                        | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/class/yago/Group100031264>                         | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/class/yago/Organization108008335>                  | <http://dbpedia.org/resource/Ukraine>                    |
+| <http://dbpedia.org/resource/Chernobyl_Exclusion_Zone> | <http://dbpedia.org/class/yago/SocialGroup107950920>                   | <http://dbpedia.org/resource/Ukraine>                    |
+
+Construct query entity(type(Island),largestCountry(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<http://dbpedia.org/ontology/largestCountry> <http://dbpedia.org/resource/Japan> . }
+
+The query did not return any data. 
+
+Construct query entity(type,largestCountry(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/largestCountry> <http://dbpedia.org/resource/Japan> . }
+
+Construct query entity(type(Island),largestCountry) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<http://dbpedia.org/ontology/largestCountry> ?largestCountry . }
+
+Construct query entity(type,largestCountry) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/largestCountry> ?largestCountry . }
+

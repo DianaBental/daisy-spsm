@@ -1,0 +1,142 @@
+Query:  entity(publisher(GMT_Games)) 
+Construct query entity(publisher(GMT_Games)) 
+SELECT *
+WHERE { ?subject <http://dbpedia.org/ontology/publisher> <http://dbpedia.org/resource/GMT_Games> . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------
+| subject                                                   |
+=============================================================
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       |
+| <http://dbpedia.org/resource/Commands_&_Colors:_Ancients> |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   |
+| <http://dbpedia.org/resource/Sword_of_Rome>               |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> |
+| <http://dbpedia.org/resource/Washington's_War>            |
+| <http://dbpedia.org/resource/Twilight_Struggle>           |
+-------------------------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(publisher) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.2222222222222222).
+match(none).
+match([[entity,publisher],=,[entity,publisher]]).
+match([[entity],=,[entity]]).
+
+Construct query entity(type(entity),publisher(GMT_Games)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> ; 
+<http://dbpedia.org/ontology/publisher> <http://dbpedia.org/resource/GMT_Games> . }
+
+The query did not return any data. 
+
+Construct query entity(type,publisher(GMT_Games)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/publisher> <http://dbpedia.org/resource/GMT_Games> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------------------------------
+| subject                                                   | type                                                          |
+=============================================================================================================================
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity>   |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://www.w3.org/2002/07/owl#Thing>                         |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/ontology/Activity>                        |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/ontology/Game>                            |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://umbel.org/umbel/rc/Action>                            |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://umbel.org/umbel/rc/Game>                              |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/Abstraction100002137>          |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/Act100030358>                  |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/Activity100407535>             |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/BoardGame100502415>            |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/Contest107456188>              |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/Event100029378>                |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/Game100455599>                 |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/Game100456199>                 |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/ParlorGame100501722>           |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/SocialEvent107288639>          |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/PsychologicalFeature100023100> |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>  |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/GMTGamesGames>                 |
+| <http://dbpedia.org/resource/Fields_of_Fire_(game)>       | <http://dbpedia.org/class/yago/HistoricalBoardGames>          |
+| <http://dbpedia.org/resource/Commands_&_Colors:_Ancients> | <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity>   |
+| <http://dbpedia.org/resource/Commands_&_Colors:_Ancients> | <http://www.w3.org/2002/07/owl#Thing>                         |
+| <http://dbpedia.org/resource/Commands_&_Colors:_Ancients> | <http://dbpedia.org/ontology/Activity>                        |
+| <http://dbpedia.org/resource/Commands_&_Colors:_Ancients> | <http://dbpedia.org/ontology/Game>                            |
+| <http://dbpedia.org/resource/Commands_&_Colors:_Ancients> | <http://umbel.org/umbel/rc/Action>                            |
+| <http://dbpedia.org/resource/Commands_&_Colors:_Ancients> | <http://umbel.org/umbel/rc/Game>                              |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity>   |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://www.w3.org/2002/07/owl#Thing>                         |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/ontology/Activity>                        |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/ontology/Game>                            |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/Abstraction100002137>          |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/Act100030358>                  |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/Activity100407535>             |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/BoardGame100502415>            |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/Contest107456188>              |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/Event100029378>                |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/Game100455599>                 |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/Game100456199>                 |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/ParlorGame100501722>           |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/SocialEvent107288639>          |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/PsychologicalFeature100023100> |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>  |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/RichardBergGames>              |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/GMTGamesGames>                 |
+| <http://dbpedia.org/resource/Chandragupta_(board_game)>   | <http://dbpedia.org/class/yago/HistoricalBoardGames>          |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity>   |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://www.w3.org/2002/07/owl#Thing>                         |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/ontology/Activity>                        |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/ontology/Game>                            |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/Abstraction100002137>          |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/Act100030358>                  |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/Activity100407535>             |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/BoardGame100502415>            |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/Contest107456188>              |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/Event100029378>                |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/Game100455599>                 |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/Game100456199>                 |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/ParlorGame100501722>           |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/SocialEvent107288639>          |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/PsychologicalFeature100023100> |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>  |
+| <http://dbpedia.org/resource/Sword_of_Rome>               | <http://dbpedia.org/class/yago/HistoricalBoardGames>          |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity>   |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://www.w3.org/2002/07/owl#Thing>                         |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/ontology/Activity>                        |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/ontology/Game>                            |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://umbel.org/umbel/rc/Action>                            |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://umbel.org/umbel/rc/Game>                              |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/class/yago/Abstraction100002137>          |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/class/yago/Contest107456188>              |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/class/yago/Event100029378>                |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/class/yago/Game100456199>                 |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/class/yago/SocialEvent107288639>          |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/class/yago/PsychologicalFeature100023100> |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>  |
+| <http://dbpedia.org/resource/Paths_of_Glory_(board_game)> | <http://dbpedia.org/class/yago/GMTGamesGames>                 |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity>   |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://www.w3.org/2002/07/owl#Thing>                         |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/ontology/Activity>                        |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/ontology/Game>                            |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/class/yago/Abstraction100002137>          |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/class/yago/Contest107456188>              |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/class/yago/Event100029378>                |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/class/yago/Game100456199>                 |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/class/yago/SocialEvent107288639>          |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/class/yago/PsychologicalFeature100023100> |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>  |
+| <http://dbpedia.org/resource/Washington's_War>            | <http://dbpedia.org/class/yago/GMTGamesGames>                 |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity>   |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://www.w3.org/2002/07/owl#Thing>                         |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://dbpedia.org/ontology/Activity>                        |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://dbpedia.org/ontology/Game>                            |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://umbel.org/umbel/rc/Action>                            |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://umbel.org/umbel/rc/Game>                              |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://dbpedia.org/class/yago/Abstraction100002137>          |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://dbpedia.org/class/yago/Contest107456188>              |
+| <http://dbpedia.org/resource/Twilight_Struggle>           | <http://dbpedia.org/class/yago/Event100029378>                |
+

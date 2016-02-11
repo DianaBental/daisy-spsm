@@ -1,0 +1,93 @@
+Query:  entity(occupation(Surfing),birthPlace(Australia)) 
+Construct query entity(occupation(Surfing),birthPlace(Australia)) 
+SELECT *
+WHERE { ?subject <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Surfing> ; 
+<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Australia> . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------
+| subject                                       |
+=================================================
+| <http://dbpedia.org/resource/Midget_Farrelly> |
+| <http://dbpedia.org/resource/Ian_Cairns>      |
+-------------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(occupation,birthPlace) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.33333333333333337).
+match(none).
+match([[entity,birthPlace],=,[entity,birthPlace]]).
+match([[entity],=,[entity]]).
+match([[entity,occupation],=,[entity,occupation]]).
+
+Construct query entity(type(entity),occupation(Surfing),birthPlace(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> ; 
+<http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Surfing> ; 
+<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Australia> . }
+
+The query did not return any data. 
+
+Construct query entity(type,occupation(Surfing),birthPlace(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Surfing> ; 
+<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Australia> . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------
+| subject                                       | type                                                                  |
+=========================================================================================================================
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://xmlns.com/foaf/0.1/Person>                                    |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://schema.org/Person>                                            |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://wikidata.dbpedia.org/resource/Q215627>                        |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://www.w3.org/2002/07/owl#Thing>                                 |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://wikidata.dbpedia.org/resource/Q5>                             |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>         |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/ontology/Agent>                                   |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/ontology/Person>                                  |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/AustralianSurfers>                     |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/CausalAgent100007347>                  |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/LivingThing100004258>                  |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/Object100002684>                       |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/Organism100004475>                     |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/Person100007846>                       |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/Surfer110679054>                       |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/Traveler109629752>                     |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/Whole100003553>                        |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                     |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/YagoLegalActor>                        |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/PhysicalEntity100001930>               |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/Swimmer110683126>                      |
+| <http://dbpedia.org/resource/Midget_Farrelly> | <http://dbpedia.org/class/yago/LivingPeople>                          |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://xmlns.com/foaf/0.1/Person>                                    |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://schema.org/Person>                                            |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://wikidata.dbpedia.org/resource/Q215627>                        |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://www.w3.org/2002/07/owl#Thing>                                 |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://wikidata.dbpedia.org/resource/Q5>                             |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>         |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/ontology/Agent>                                   |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/ontology/Person>                                  |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/AustralianSurfers>                     |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/CausalAgent100007347>                  |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/LivingThing100004258>                  |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/Object100002684>                       |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/Organism100004475>                     |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/Person100007846>                       |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/Surfer110679054>                       |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/Traveler109629752>                     |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/Whole100003553>                        |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                     |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/PeopleFromPerth,WesternAustralia>      |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/PeopleFromVictoria(Australia)>         |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/YagoLegalActor>                        |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/PhysicalEntity100001930>               |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/Swimmer110683126>                      |
+| <http://dbpedia.org/resource/Ian_Cairns>      | <http://dbpedia.org/class/yago/LivingPeople>                          |
+-------------------------------------------------------------------------------------------------------------------------
+

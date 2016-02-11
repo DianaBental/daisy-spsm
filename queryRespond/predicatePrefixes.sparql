@@ -1,0 +1,27 @@
+# Take a sample of 50 records from a database file
+# (i.e. data for 50 subjects).
+# Get all the predicates used in those records
+# and divide them into the initial uri part (like the prefix) and the
+# idenitifier or label for the predicates.
+
+# ARQ - local file (one of the sepa files)
+
+# Big file example
+#~/CHAIN/code/jena/apache-jena-2.12.0/bin/arq --data ~/CHAIN/code/daisy-spsm/queryRespond/datasets/sepa/classifications-shorter.n3 --query predicatePrefixes.sparql --results csv
+
+# Smaller file example
+#~/CHAIN/code/jena/apache-jena-2.12.0/bin/arq --data ~/CHAIN/code/daisy-spsm/queryRespond/datasets/sepa/bathingWaterLocations.n3 --query predicatePrefixes.sparql --results csv > bathingWaterLocations.csv
+
+SELECT DISTINCT ?id ?uristripped WHERE {
+       {
+              SELECT DISTINCT ?s  WHERE {
+       	        ?s ?p ?o
+		} # OFFSET 50
+		  LIMIT 50
+       }
+       ?s ?pred ?ob
+       BIND(REPLACE(str(?pred), "[^/#]*$", "") AS ?uristripped)
+       BIND(SUBSTR(str(?pred),STRLEN(?uristripped)+1) AS ?id)
+}
+
+

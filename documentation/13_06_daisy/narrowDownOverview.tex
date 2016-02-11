@@ -1,0 +1,265 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+
+% Title Page
+\title{Narrow-Down Process}
+\author{Andriana Gkaniatsou}
+
+
+\begin{document}
+\maketitle
+
+
+
+
+
+\section{Introduction}
+
+After a query failure, for each of the dataset that we own, we compute the \textit{related information} given a dataset name. 	Then, given
+ the dataset name of the query we try to match that name against the dataset names that we own.
+
+
+\subsection{Compute Related Information}
+This process relies 
+on the SUMO and Wordnet ontologies. 
+%In mored detail the steps of this process are the following:
+%\begin{enumerate}
+% \item Check whether a dataset name consists of multiple subwords. If so, split it into individual words.
+%\item For each dataset name $D$
+%    \begin{itemize}
+%     \item  	Compute all SUMO related information: subClassOf, superClassOf, geographicSubRegion, overlapsSpatially
+%	      \item Compute all Wordnet related information; synset, subClass, superClass, hypernym, hyponym, similar, meronym
+%
+%      \item For each subword $i$ $\in$ $D$:
+%	    \begin{itemize}
+%	      \item	Compute all SUMO related information: subClassOf, superClassOf, geographicSubRegion, overlapsSpatially
+%	      \item Compute all Wordnet related information; synset, subClass, superClass, hypernym, hyponym, similar, meronym
+%	    \end{itemize}
+%	    
+
+
+%    \end{itemize}
+%\item For each SUMO and Wordnet related word:
+ %\begin{itemize}
+  %   \item  	Compute all SUMO related information: subClassOf, superClassOf, geographicSubRegion, overlapsSpatially
+%	      \item Compute all Wordnet related information; synset, subClass, superClass, hypernym, hyponym, similar, meronym
+ % \end{itemize}
+
+%\end{enumerate}
+
+
+
+%\subsection{Match Query Dataset Name}
+
+%First, we check whether the dataset name provided by the query can be split into sub words. If so, we split it. To match the query dataset 
+%name with the dataset names that we own we:
+%\begin{enumerate}
+% \item Perform string matching,
+%  \item Search for possible relations.
+%\end{enumerate}
+
+%\subsubsection{String Matching}
+
+
+
+
+
+
+
+\subsubsection{SUMO Search}
+First step is to check whether a dataset name consists of multiple subwords\footnote{We have applied the same technique to all SUMO words, \textit{i.e. the SUMO file contains all terms that original appear in SUMO and the same terms splitted into subwords}}. 
+If so, we split it into individual words. The SUMO search 
+that we analyse bellow is repeated for the whole dataset name and the corresponding subwords.
+
+\paragraph{Step 1.}\label{step1} In this step we assume that each dataset name corresponds to a single word (we do not split is in subwords).  
+For each non-split dataset name (single-word or mutli-word) we search for all SUMO terms that it may be related to.    
+The algorithmic steps are :
+
+
+\begin{itemize}
+\item For each non-split dataset name $k$ $\in$ DatasetsWeOwn,
+	\begin{itemize}
+	\item find all (non-split and split) SUMO  terms  Instance, Class, Subclass, SuperClass, SubRegion, SuperRegion, Region  such that: \\
+		\indent instance(Instance, $k$) or instance($k$, Class), and/or 
+	\\ \indent subclass(Subclass, $k$), and/or 
+		\\  \indent subclass($k$, SuperClass), and/or
+			\\	\indent  geographicSubRegion(SubRegion, $k$), and/or  
+			\\ \indent geographicSubRegion($k$, SuperRegion), and/or  
+			\\ \indent  overlapsSpattially(Region, $k$) or 	 overlapsSpattially($k$, Region).
+	
+	\end{itemize}	
+\end{itemize}
+
+If the query term is multi-word then most probably this step will not produce a lot (or even none) results, since this term has to match exactly with one of the SUMO multi-word terms.
+
+\textbf{Example} Consider the query terms \textit{river} and \textit{subDistrict}. The results we obtain for the term \textit{river} are: 
+
+\indent subclassOf(river,streamWaterArea) \\
+\indent subclassOf(river,freshWaterArea) \\
+\indent subclassOf(river,bodyOfWater)
+
+However, we do not obtain any results for the term \textit{subDistrict}.
+	
+
+\paragraph{Step 2.} In this step we split all dataset names into lists of individual words, and for each individual word we compute all SUMO related terms.
+The algorithmic steps are :
+
+\begin{itemize}
+ \item Split each dataset name $k \in DatasetsWeOwn$, into a set of subwords, such that $k=\{m_1,m_2,..,m_n\}$
+
+\item For each individual word $m_i \in \{m_1,m_2,..,m_n\}$ 
+				\begin{itemize}
+				\item find all (non-split and split) SUMO  terms  Instance, Class, Subclass, SuperClass, SubRegion, SuperRegion, Region  such that: \\
+		\indent instance(Instance, $m$) or instance($m$, Class), and/or 
+	\\ \indent subclass(Subclass, $m$), and/or 
+		\\  \indent subclass($m$, SuperClass), and/or
+			\\	\indent  geographicSubRegion(SubRegion, $m$), and/or  
+			\\ \indent geographicSubRegion($m$, SuperRegion), and/or  
+			\\ \indent  overlapsSpattially(Region, $m$) or 	 overlapsSpattially($m$, Region).
+	
+	\end{itemize}	
+\item Repeat for all $m_i \in \{m_1,m_2,..,m_n\} $
+\end{itemize} 
+
+
+\textbf{Example} Consider the query term \textit{subBasinDistrict}, which we split into [sub, basin, district]. Then we find all possible SUMO terms which are related with each of these words. The results we obtain are:\\
+\begin{itemize}
+\item[sub:] none
+\item[basin:] subclassOf(basin,landForm), subclassOf([basin],[land,form]).
+\item[district:] none 
+\end{itemize}
+
+
+\paragraph{Step 3.} In this step, we split all dataset names into lists of individual words. We apply the same technique to all SUMO terms. 
+Then, for each individual word that belongs to a dataset name, we search for SUMO multi-word terms which are related  that subword. 
+Then, given a dataset name we compare the SUMO results and we keep only the SUMO terms that are related to more than one subwords within the same 
+dataset name.
+The algorithmic steps:
+
+\begin{itemize}
+\item For each dataset $k$ where $k=\{m_1,m_2,..,m_n\}$ and $k$ $\in$ DatasetsWeOwn,
+
+\begin{itemize}
+ \item Select an individual word $m_i$ $\in$ $k$,
+
+
+		\begin{itemize} 
+			\item find all SUMO split terms (lists)  Instance, Class, Subclass, SuperClass, SubRegion, SuperRegion, Region such that:\\
+						\indent instance(Instance, Class) where $m \in Instance$, or $m \in Class$, and/or\\
+						\indent subclass(Subclass, Superclass) where $m \in Subclass$ and/or $m \in Superclass$, and/or\\
+			\indent  geographicSubRegion(SubRegion, SuperRegion) where $m \in SubRegion$  and/or $m \in SuperRegion$, and/or \\
+				 \indent overlapsSpattially(RegionA, RegionB) where $m \in RegionA$ or $m \in RegionB$
+		
+\end{itemize}
+		\item repeat process for all $m_i$ $\in$ $k$
+	\end{itemize}
+\item  Keep SUMO terms which are related with more than one  individual $m_i$ $\in$ $k$,  and discard the rest.
+		 
+	\end{itemize}
+
+  	
+ \textbf{Example} Following the example in \ref{sumo}, consider the query term \textit{waterBody} which we split into [water, body]. The first SUMO search is related to \textit{water}. Some of the results\footnote{These results correspond to  \textit{subclass} related search.} we obtain are: 
+ 
+\indent subclassOf([heavy,surf],[water,motion]).\\
+\indent subclassOf([river,system],[water,area]).\\
+\indent subclassOf([river],[fresh,water,area]).\\
+\indent subclassOf([river],[body,of,water]). \\
+ Then we search for SUMO terms related to \textit{body} Some of the results we obtained for \textit{body} are:\\
+\indent  subclassOf([seed],[reproductive,body]).\\
+\indent  subclassOf([body,junction],[body,part]).\\
+\indent  subclassOf([star],[astronomical,body]).\\
+\indent subclassOf([river],[body,of,water]).\\
+ Our system will consider as a good candidate only subclassOf([river],[body,of,water]) because it appears in both search results.
+  	 
+ \subsubsection{Wordnet}		
+In this step we only consider individual words for each dataset name. Thus, we split dataset names into lists of individual words. 
+	The algorithmic steps we follow are:
+
+\begin{itemize}
+\item For each individual word $m \in k$ where $k \in QueryTerms$
+			\begin{itemize}
+				\item find the Wordnet id of that word
+				\item  find all hyponym ids, hypernym ids, subclass ids, superclass ids , meronym ids  and similar ids which are related to $m$.
+				\item for all hyponym ids, hypernym ids, subclass ids, superclass ids , meronym ids  and similar ids find the corresponding words
+			\end{itemize}	
+\item repeat the same process for each hyponym, hypernym, subclass,  superclass,  meronym and similar
+			
+
+\end{itemize}
+	
+	
+					
+					
+					
+\footnote{If we are unable to split the dataset names into lists of subwords,  the above algorithms are applied in the same way, and all query terms are considered as lists with one element.}					
+		
+
+
+	\section{Schema Candidates For Matching}	
+First step is to check whether the dataset name provided by the query can be decomposed to subwords. Then, we check whether the query 
+dataset name, or the individual subwords, are related to the dataset names (or their subwords) of the datasets that we own. This is a two-step 
+process:
+
+\begin{itemize}
+ \item[Step 1] Search suing the SUMO and Wordnet results.
+\item[Step 2] Perform naive string matching.
+\end{itemize}
+
+
+\paragraph{Step 1.} 
+At this step we check for possible relations between the query dataset name and the datasets that we own. This check is performed (i) considering 
+that the query dataset name is a single word term, (ii) considering that the query query dataset name is a multi-word term. 
+The algorithmic steps that we follow are:
+
+\begin{itemize}
+ \item Split query dataset name $j$ into sub words such as $j=\{l_1,l_2,..,l_n\}$
+\item For each individual word $l \in \{l_1,l_2,..,l_n\}$ 
+
+	\begin{itemize}
+	\item find all $k$, where $k \in DatasetsWeOwn$ such that
+		\begin{itemize}
+		\item relation($Related$, $k$) and/or relation($k$, $Related$), where \\ relation $\in$ $\{$ similar, hyponym, hypernym, meronym,\\ 
+subclass, superclass, geographicSubRegion, overlapsSpatially$\}$ and $l \in Related$
+			\end{itemize}
+				\end{itemize}
+	\item Consider query dataset name $j$ as a single word term
+	
+		\begin{itemize}
+		\item find all 	$k$, where $k \in datasetsWeOwn$ such that	
+		\begin{itemize}
+		\item relation($j$, $k$) and/or relation($k$, $j$), where \\ relation $\in$ $\{$ similar, hyponym, hypernym, meronym,\\ subclass, superclass, geographicSubRegion, overlapsSpatially$\}$ 
+			\end{itemize}
+		
+		\end{itemize}
+	
+\end{itemize}
+
+\textbf{Example} Consider the error query term \textit{regionEco}\footnote{[region  ,eco]}. Some of the SUMO and Wordnet results are:\\
+\indent subclassOf(geopoliticalArea,region). 
+\\ \indent subclassOf(geographicArea,region). 
+\\ \indent subclassOf(subArea,region). 
+\\ \indent hyponym([district,territory,territorialDominion,dominion],region). 
+\\ \indent hypernym(region,district).
+\\ \indent hyponym([region,part],location). \\
+Based on these results, the schema\footnote{Full schema: ([genre,lengthKm, associatedGroundWaterId, 
+sbdCode, dataSource, isHeavilyMmodified, geoLogyTypology, currentClassificationYear, associatedGroundWater,  statusRiskAssessment, riverBasinDistrict, category, rbdCode, isArtificial, riverName, long, altitudeTypology, catchmentId, riverNumber, classificationCertainty, waterBodyId, currentOverallClassification,  classificationCertaintyBand, waterBodyName, subBasinDistrict, ecoRegion, isLessthanGood, wiseCode, catchment, targetClass, lat, team, sizeTypology, noDetRiskAssessment, areaSqKm} candidates that our algorithm provides are: \\
+areaSqKm, ecoRegion, subBasinDistrict, riverBasinDistrict.
+
+ 			%%% lala
+ 			\paragraph{Step 2.}	
+ 			In this step we perform naive string matching between the query dataset and the datasets that we own:
+ (i) check for string containment (ii) check for the  longest common subsequence. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}          

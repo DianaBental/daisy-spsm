@@ -1,0 +1,19 @@
+Query:  entity(subject(Angela_Merkel),birthName) 
+Construct query entity(subject(Angela_Merkel),birthName) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/ontology/birthName> ?birthName . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(subject,birthName) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(subject,birthName) 
+
+Cannot respond to   entity(subject(Angela_Merkel),birthName) 
+

@@ -1,0 +1,4 @@
+% SAQ
+entity(type('MunichCompany')).
+
+

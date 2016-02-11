@@ -1,0 +1,1767 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+
+%opening
+\title{Evaluation Tests and Results}
+\author{Andriana Gkaniatsou}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In the following sections we describe some evaluation tests we conducted and we present the 
+results we obtained. For each evaluation test we assume that we are the owners of a specific dataset 
+and that we receive queries that we need to provide answers. 
+Our goal is to show that our system is capable to provide the exact or associated answers for information provided by the 
+ query.   
+
+Each query corresponds to the schema of a real dataset~\footnote{These datasets are publicly available from different agencies. Some of them are available only for only browsing, while other for downloading as well.}. As a first step 
+each query represents an exact dataset schema  (including the dataset name). Then, depending the results we twist the 
+predicate name. 
+
+\subsection{SPSM Limitations/Bugs}
+
+As we will show in the following sections there are some SPSM bugs that affect the capability of our system to produce results. If SPSM does not match two predicate names, it does not produce matches for the corresponding arguments. Thus, for testing purposes in some experiments we twist the predicate name. 
+
+
+
+%%% SEPA
+\section{SEPA datasets}
+
+ We assume that we are the owners of the SEPA datasets, and that 
+any of the incoming queries is formed by a different agency. Each query represents the dataset schema of an agency.
+The SEPA datasets that we used are the following:
+\begin{itemize}
+\item bathingWaterLocations(year, locationCode, localAuthority, locationDescription, sepaTeam, sepaRegion, hydrocode, lat, ngr, catchment, long)
+\item waterBodyPressures(envImprovementNext, atGepNextPeriod, atGepCurClassYear, atGepSysdate, pressureId, waterBodyId, locationCode, industrySectorCode, assessmentCategory, assessmentParameter, swmiSector, industrySector, dataSource, comments, atGepPeriodAfterNext, isPrimary, atGepCurrentPeriod, pressureType, envImprovementAfterNext, envImprovementCurrent, purposeCode, purpose, eiCurrentFailReason, identifiedDate, eiCurrentConfidence, eiNextConfidence, hmawbDesignationInd, eiAfterConfidence, affectsGroundwater, eiNextFailReason, activityCode, activity, swAsset, protectedAreaId, eiAfterFailReason, sourceCode, source)
+\item waterBodyMeasures(atGepPeriodAfterNext, atGepCurClassYear, waterBodyId, pressureId, deadline, comments, secondaryMeasure, primaryMeasure, owner, atGepSysdate, atGepNextPeriod, measureFixedDate, agreed, projected, atGepCurrentPeriod, dataSource, measureId, locationCode, protectedAreaId, onTrack, notOnTrackReason)
+\item surfaceWaterBodies(genre, lengthKm,a ssociatedGroundwaterId, sbdCode, dataSource, isHeavilyModified, geologyTypology, currentClassificationYear, associatedGroundwater, statusRiskAssessment, riverBasinDistrict, category, rbdCode, isArtificial, riverName, long, altitudeTypology, catchmentId, riverNumber, classificationCertainty, waterBodyId, currentOverallClassification, classificationCertaintyBand, waterBodyName, subBasinDistrict, ecoRegion, isLessThanGood, wiseCode, catchment, targetClass, lat, team, sizeTypology, noDetRiskAssessment, areaSqKm)
+\item bathingWaters(year, description, classDescription, bwLocation, bathingWaterId)
+\item classifications(classificationYear, parameter)  and parameter is  (certainty, certaintyBand, classificationParameter, contributingLocationCode, lessThanGood, reportingParameter, reportingParameterCode, status, statusDescription) 
+\end{itemize}
+
+
+
+%%% test 1
+
+\subsection{Test 1: European Statistics, Fresh Water Resources dataset}
+
+Incoming query is formed based on the freshWaterResources dataset: \\
+\indent freshWaterResources( resource, measure, geo, timePeriod)
+
+
+\subsubsection{Test 1.1}
+\paragraph{Plural: on}The query is the dataset schema:\\
+ \indent \texttt{ freshWaterResources( resource, measure, geo, timePeriod)}
+
+\paragraph{Results: } The narrow-down process returns as possible matching candidates the following datasets: 
+
+\begin{itemize}
+\item waterBodyPressures
+\item waterBodyMeasures
+\item surfaceWaterBodies
+\item bathingWaterLocations
+\end{itemize}
+
+However, SPSMS fails to match any of these dataset names with the one provided by the query.
+
+\paragraph{Plural: off}
+The narrow-down process returns an extra matching candidate: 
+\begin{itemize}
+\item bathingWater
+\end{itemize}
+However SPSM did not return any results. 
+
+\textbf{Timings:} 
+\begin{itemize}
+\item real	1m52.214s
+\item user	0m44.714s
+\item sys	0m7.701s
+\end{itemize}
+
+
+\subsubsection{Test 1.2}
+We change the predicate name of the query into \texttt{freshWater}:\\
+\indent \texttt{freshWater( resource, measure, geo, timePeriod)}.
+
+\paragraph{Results: } The narrow-down process returned the same candidates as before. 
+However, SPSMS did not returned any matching results.
+
+
+%%%% good example
+\subsubsection{Test 1.3}
+We change the predicate name of the query with into \texttt{water}:\\
+\indent \texttt{ water( resource, measure, geo, timePeriod)}
+
+\paragraph{Plural: On, Results: } The narrow-down process returned the following possible candidates:
+
+\begin{itemize}
+\item waterBodyPressures
+\item waterBodyMeasures
+\item surfaceWaterBodies
+\item bathingWaterLocations
+
+\end{itemize}
+
+The results we obtained from SPSM are the following: 
+
+
+\textbf{Match 1.}\\
+ water $\mapsto$ waterBodyPressures \\
+water(timePeriod) $\mapsto$ waterBodyPressures(identifiedDate)\\
+water(geo) $\mapsto$ waterBodyPressures(waterBodyId)\\
+water(measure) $\mapsto$ waterBodyPressures(assessmentCategory)\\
+water(resource) $\mapsto$ waterBodyPressures(source)\\
+
+\textbf{Match 2.}\\
+water$\mapsto$ bathingWaters \footnote{We discard this match as there are no argument mappings}
+
+ 
+We applied the substitutions provided by SPSM and we deleted the arguments that do not appear to have any mappings.  
+%The resulting suggested query schema is:\\
+%\indent \texttt{ waterBodyPressures(identifiedDate,waterBodyId,assessmentCategory,source)} 
+A sample of the answers we retrieved is presented in~\ref{Test 1.3})
+\paragraph{Plural: Off, Results: } The narrow-down process retuned one more matching candidate: 
+\begin{itemize}
+\item bathingWater
+\end{itemize}
+SPSM retuned the same results as above.
+
+ 
+\textbf{Timings:} 
+\begin{itemize}
+\item real	2m10.208s
+\item user	0m49.725s
+\item sys	0m8.023s
+\end{itemize}
+
+
+%%% test 2 
+\subsection{Test 2: European Statistics, Environmental Protection Expenditure dataset}
+
+
+
+Incoming query is formed based on the  Environmental Protection Expenditure dataset:\\
+\indent environmentProtectionRegion( dimension, unit, environmentDomain,  environmentExposure, geo, timePeriod ).
+	
+	
+\subsubsection{Test 2.1} The query represents is the same with the agency's dataset schema:\\	
+\indent \texttt{ environmentalProtectionExpenditutureRegions( dimension, unit,  environmentDomain, environmentExposure, geo, timePeriod )}
+	
+\paragraph{Plural: On, Results: } The narrow-down process did not returned any possible candidates. 
+	
+\paragraph{Plural: Off, Results: }	The narrow-down process retuned bathingWaterLocation
+ as a matching candidate. SPSM does not return any results.
+ 
+ \textbf{Timings:}
+ \begin{itemize}
+\item real	0m33.804s
+\item user	0m15.963s
+\item sys	0m1.040s
+
+ \end{itemize}
+	
+	
+\subsubsection{Test 2.2} We change the predicate of the query name into \texttt{environmentProtectionRegion}:\\
+\indent \texttt{ environmentProtectionRegion( dimension, unit, environmentDomain, environmentExposure, geo, timePeriod )}.
+
+\paragraph{Plural: On, Results: } The narrow-down process did not returned any possible candidates.
+
+\paragraph{Plural: Off, Results: }The narrow-down process returns bathingWaterLocation as a matching candidate. SPSM does not return any results. 
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m27.942s
+\item user	0m16.596s
+\item sys	0m1.044s
+
+\end{itemize}
+
+
+\subsubsection{Test 2.2} We change  the predicate name of the query with \textit{locations}\footnote{The narro-down process uses Wordnet and SUMO. None of these two ontologies contain arguments in plural. So, the narrow-down process will not match area with regions, but will do in case of area and region. }: \\
+\indent \texttt{ locations( dimension, unit, environmentDomain, environmentExposure, geo, timePeriod )}.
+
+\paragraph{Plural: On, Results: } The narrow down process returned the following matching candidates:
+
+\begin{itemize}
+\item bathingWaterLocations
+\end{itemize}
+	
+However, SPSM did not return any results \footnote{This is due to a bug in SPSM algorithm}. 	
+	
+\paragraph{Plural: Off, Results: } The narrow-down process returns bathingWaterLocation as a matching candidate. This time, SPSM also returns results:
+
+\textbf{Match 1.}\\
+ location $\mapsto$ bathingWaterLocation\\
+location(unit) $\mapsto$ bathingWaterLocation(localAuthority)
+
+A sample of the returned answers is presented in ~\ref{Test 2.2}.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	1m6.662s
+\item user	0m19.747s
+\item sys	0m1.282s
+
+\end{itemize}
+
+\subsubsection{Test 2.3} We replace the predicate name with \textit{water}:\\
+\indent \texttt{ water( dimension, unit, environmentDomain, environmentExposure, geo, timePeriod )}.
+ \paragraph{Plural: On, Results: } The narrow down process returned the following matching candidates:
+ 
+ \begin{itemize}
+ \item waterBodyPressures
+ \item waterBodyMeasures
+ \item surfaceWaterBodies
+ \item bathingWaterLocations
+ 
+ \end{itemize}
+
+
+The SPSM results are the following:
+
+\textbf{Match 1. }\\
+water $\mapsto$ waterBodyPressures\\
+water(geo) $\mapsto$  waterBodyPressures(waterBodyId)\\
+water(environmentExposure) $\mapsto$  waterBodyPressures(activity)\\
+water(environmentDomain) $\mapsto$  waterBodyPressures(affectsGroundwater)\\
+water(unit)$\mapsto$ waterBodyPressures(dataSource)\\
+water(dimension) $\mapsto$ waterBodyPressures(industrySector)
+
+\textbf{Match 2.} \\
+water $\mapsto$  bathingWaters \footnote{We discarded this match since there are no matching arguments.}.
+
+ 
+\textbf{Match 3.} \\
+water $\mapsto$  waterBodyMeasures
+water(geo) $\mapsto$ waterBodyMeasures(waterBodyId)\\
+water(unit) $\mapsto$  waterBodyMeasures(secondaryMeasure)
+
+
+We applied the substitutions provided by SPSM and we deleted the arguments that do not appear to have any mappings.  
+%The resulting suggested query schemata are:\\
+%\begin{itemize}
+%\item[Match 1. ] \texttt{waterBodyMeasures(waterBodyId,secondaryMeasure)}
+%\item[Match 2.] \texttt{waterBodyPressures(waterBodyId,activity,affectsGroundwater,dataSource,industrySector)}
+%\end{itemize}
+A sample of the results we obtained s presented in~\ref{Test 2.3}.
+
+
+
+\paragraph{Plural: Off, Results: } The narrow-down process returns one more matching candidate: bathingWater. SPSM returned the same results as before. 
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	2m47.152s
+\item user	1m0.255s
+\item sys	0m9.011s
+
+\end{itemize}
+
+
+
+%%% test 3
+\subsection{Test 3: Scottish Protection Agency: Protected Areas dataset}
+
+Incoming query is formed based on the  Scottish Protection Agency, Protected Areas dataset:
+\indent  spa$\_$protectedAreas( area, perimeter, paCode, siteName, siteHa, status, eurCode )
+	
+
+
+\subsubsection{Test 3.1}
+
+The query is the same as the dataset schema:\\
+\indent \texttt{spa$\_$protectedAreas( area, perimeter, paCode, siteName, siteHa, status, eurCode )}
+
+\paragraph{Plural: On, Results:} The narrowing-down process did not return any matching candidates.
+
+\paragraph{Plural: Off, Results:} The narrow-down process did not return any results.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m28.893s
+\item user	0m13.259s
+\item sys	0m3.721s
+
+\end{itemize}
+
+
+
+\subsubsection{Test 3.2}
+We replace the predicate name of the query with \textit{areas}:\\
+\indent \texttt{ protectedAreas( area, perimeter, paCode, siteName, siteHa, status, eurCode )}
+
+\paragraph{Plural: On, Results: } The narrowing-down process did not return any results \footnote{Although there exist a dataset with similar name: bathingWaterLocations, due to the plural of location, the narrowing-down process cannot find any wordnet or sumo related word. If we replace locations with location, then, we get results.}.
+
+\paragraph{Plural: Off, Results: }The narrow-down process did not return any results.
+
+\textbf{Timings:} Same as before.
+
+
+
+\subsubsection{Test 3.3} We replace the query predicate name with the generic \textit{water}:\\
+\indent \texttt{water( area, perimeter, paCode, siteName, siteHa, status, eurCode )}
+
+\paragraph{Plural: On, Results: } The narrow-down process returned the following results:
+
+\begin{itemize}
+\item waterBodyPressures
+\item waterBodyMeasures
+\item surfaceWaterBodies
+\item bathingWaterLocations
+\item waterBodyPressures
+\item waterBodyMeasures
+\item surfaceWaterBodies
+\item bathingWaterLocations
+\end{itemize}
+
+SPSM returned the following mappings:
+
+\textbf{Match 1. }\\
+water $\mapsto$ bathingWaters 
+
+\textbf{Match 2. }\\
+water $\mapsto$ waterBodyPressures
+water(eurCode) $\mapsto$  waterBodyPressures(locationCode)\\
+water(status) $\mapsto$ waterBodyPressures(pressureType)\\
+water(paCode) $\mapsto$  waterBodyPressures(purposeCode)\\
+water(perimeter) $\mapsto$  waterBodyPressures(affectsGroundwater)\\
+water(area) $\mapsto$  waterBodyPressures(waterBodyId)
+
+\textbf{Match 3. }
+water $\mapsto$  waterBodyMeasures])\\
+water(eurCode) $\mapsto$  waterBodyMeasures(locationCode)\\
+water(area) $\mapsto$  waterBodyMeasures(waterBodyId)
+
+
+%After the applying the suggested substitutions and deleting the arguments that appear to have no mappings, 
+%the resulting query schemata are:
+%\begin{itemize}
+%\item \texttt{ waterBodyMeasures(locationCode,waterBodyId)}
+%\item \texttt{  waterBodyPressures(locationCode,pressureType,purposeCode,affectsGroundwater,waterBodyId)}
+%\end{itemize}
+A sample of the answers we obtained is presented in~\ref{Test 3.3}.
+
+\paragraph{Plural: Off, Results} The narrow-down process returned one additional matching candidate: bathingWater. SPSM returned the same results as before.
+
+\textbf{Timings: }
+\begin{itemize}
+\item real	2m57.830s
+\item user	1m7.376s
+\item sys	0m10.141s
+
+\end{itemize}
+
+\subsubsection{Test 3.4} We replace the query predicate name with the generic \textit{locations}:
+\\
+\indent \texttt{locations( area, perimeter, paCode, siteName, siteHa, status, eurCode )}
+
+\paragraph{Plural: On, Results}The narrow-process returned bathingWaterLocations as a matching candidate. SPSM returned the following matches:
+
+\textbf{Match 1.}\\
+location $\mapsto$ bathingWaterLocation\\
+location(eurCode) $\mapsto$ bathingWaterLocation(locationCode).
+
+A sample of the answers we obtained is presented in \ref{Test 3.4} 
+
+
+
+%%% test 4
+
+
+%%% good example
+\subsection{Test 4: The UK Environmental Agency: Bathing Waters dataset}
+The Uk Environmental Agency offers an online API to query and retrieve information from the bathing waters dataset. The schema of this dataset is the following: \\
+\indent uk$\_$BathingWaters( sampleClassification, prefLabel, long, lat, northing, easting,  latestComplianceAssessment, type, country, district,  envelope, latestBathingWaterProfile, sedimentTypesPresent, uriSet, regionalOrganization, yearDesignated, latestSampleAssessment, eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluence, samplingPoint, complianceClassification, primaryTopic, extendedMetadataVersion, definition, label).
+
+\subsubsection{Test 4.1} 
+
+The query we form is the same as the bathing waters dataset schema:
+\indent \texttt{ uk$\_$BathingWaters( sampleClassification, prefLabel, long, lat, northing, easting,  latestComplianceAssessment, type, country, district,  envelope, latestBathingWaterProfile, sedimentTypesPresent, uriSet, regionalOrganization, yearDesignated, latestSampleAssessment, eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluence, samplingPoint, complianceClassification, primaryTopic, extendedMetadataVersion, definition, label)}
+
+\paragraph{Plural: On, Results: } The narrow-down process returned the following matching candidates: 
+
+\begin{itemize}
+\item  bathingWaters
+\item bathingWaterLocations
+\item waterBodyMeasures
+\item waterBodyPressures
+\end{itemize}
+SPSM retuned the following matches: 
+
+\textbf{Match 1.}\\
+uk$\_$BathingWaters $\mapsto$ waterBodyMeasures\\
+uk$\_$BathingWaters(label)$\mapsto$ waterBodyMeasures(waterBodyId)\\
+uk$\_$BathingWaters(primaryTopic)$\mapsto$ waterBodyMeasures(secondaryMeasure).\\
+
+\textbf{Match 2.}\\
+uk$\_$BathingWaters $\mapsto$ waterBodyPressures\\
+uk$\_$BathingWaters(label)$\mapsto$  waterBodyPressures(waterBodyId)\\
+uk$\_$BathingWaters(type) $\mapsto$ waterBodyPressures(pressureType)\\
+uk$\_$BathingWaters(prefLabel) $\mapsto$ waterBodyPressures(activity)\\
+uk$\_$BathingWaters(sampleClassification) $\mapsto$  waterBodyPressures(affectsGroundwater)
+
+\textbf{Match 3.}\\
+uk$\_$BathingWaters $\mapsto$ bathingWaters.\\
+uk$\_$BathingWaters(label) $\mapsto$ bathingWaters(description)\\
+
+
+Please see \ref{Test 4.1} for some of the answers we got.
+
+\paragraph{Plural: On, Results: } Both narrow-down process and SPSM retuned the same results.
+
+\textbf{Timings: }
+\begin{itemize}
+\item real	3m55.407s
+\item user	1m25.673s
+\item sys	0m18.614s
+
+\end{itemize}
+
+%%%% EU STAT protectedAreas
+
+
+\section{European Statistics Statistics, Protected Areas dataset}
+During the following evaluation tests we assume that we are the owners of the EU Statistics ProtectedAreas dataset. The schema of this dataset is the following:\\
+\indent  protectedAreas( obsValue, timePeriod, freq, dataSet, indic$\_$md, geo, obsStatus, structure, seeAlso, comment) 
+
+
+
+
+\subsection{Test 1: Scottish Protection Agency}
+
+Incoming query is formed based on the  Scottish Protection Agency, Protected Areas dataset:\\
+\indent \texttt{ spa$\_$protectedAreas( area, perimeter, paCode, siteName, siteHa, status, eurCode )}
+	
+
+\paragraph{Plural: On, Results} Narrowing - down process suggested the protectedAreas dataset as a possible candidate. 
+The results we obtained from SPSM are the following:
+
+\textbf{Match 1}: \\
+spa$\_$protectedAreas $\mapsto$ protectedAreas \\
+spa$\_$protectedAreas(status) $\mapsto$ protectedAreas(obsStatus)\\
+spa$\_$protectedAreas(area) $\mapsto$ protectedAreas(structure)
+
+A sample of the answers this query returned is presented in \ref{Section 2: Test 1}
+\paragraph{Plural: Off, Results} We get the same results as before.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	1m20.555s
+\item user	0m16.934s
+\item sys	0m1.090s
+
+\end{itemize}
+
+
+\subsection{Test 2: European Statistics, Environmental Protection Expenditure dataset}
+
+Incoming query is formed based on the  Environmental Protection Expenditure dataset:
+\indent  environmentProtectionRegions( dimension, unit, environmentDomain,  environmentExposure, geo, timePeriod )
+	
+
+\subsubsection{Test 2.1 }
+The query is  the same as the dataset schema:\\
+\indent \texttt{ environmentProtectionRegions( dimension, unit, environmentDomain,  environmentExposure, geo, timePeriod )}
+	
+\paragraph{Plural: On, Results} The narrow-down process retuned protectedAreas dataset as a matching candidate. However SPSM did not return any results.
+\paragraph{Plural: Off, Results} The results are the same as before.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m32.891s
+\item user	0m9.840s
+\item sys	0m0.155s
+
+\end{itemize}
+
+
+\subsubsection{Test 2.2}
+We change the predicate name of the query into: ProtectedRegions. The query we test is the following: 
+
+\indent \texttt{ ProtectedRegions( dimension, unit, environmentDomain,  environmentExposure, geo, timePeriod )}
+
+
+\paragraph{Plural: On, Results}
+The narrow down process returned protectedAreas as a matching candidate. SPSM produced the following results: 
+
+\textbf{Match}:\\
+protectedRegions $\mapsto$ protectedAreas \\
+protectedRegions(geo) $\mapsto$ protectedAreas(geo)\\
+protectedRegions(environmentDomain) $\mapsto$ protectedAreas(timePeriod)
+
+A sample of the results we obtained is demonstrated in~\ref{EU Protected Areas 2.2}.
+\paragraph{Plural: Off, Results}
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m36.244s
+\item user	0m20.941s
+\item sys	0m1.183s
+\end{itemize}
+
+\subsection{Test 3: UK Environmental Agency: Bathing Waters Dataset}
+Incomming query is formed based on the UK Environmental Agency's Bathing Waters dataset. The schema of that dataset is the 
+following:\\
+\indent  uk$\_$BathingWaters( sampleClassification, prefLabel, long, lat, northing, easting,  latestComplianceAssessment, type, country, district,  envelope, latestBathingWaterProfile, sedimentTypesPresent, uriSet, regionalOrganization, yearDesignated, latestSampleAssessment, eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluence, samplingPoint, complianceClassification, primaryTopic, extendedMetadataVersion, definition, label)
+
+\subsubsection{Test 3.1} 
+
+The query we form is the same as the bathing waters dataset schema:\\
+\indent \texttt{ uk$\_$BathingWaters( sampleClassification, prefLabel, long, lat, northing, easting,  latestComplianceAssessment, type, country, district,  envelope, latestBathingWaterProfile, sedimentTypesPresent, uriSet, regionalOrganization, yearDesignated, latestSampleAssessment, eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluence, samplingPoint, complianceClassification, primaryTopic, extendedMetadataVersion, definition, label)}
+\paragraph{Plural: On, Results: } The narrow-down process did not return any results.
+\paragraph{Plural: Off, Results: } The results are the same as above.
+
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m16.666s
+\item user	0m9.912s
+\item sys	0m0.145s
+
+\end{itemize}
+
+\subsubsection{Test 3.2}
+We change the predicate name of the query from uk$\_$bathingWaters  to uk$\_$protectedBathingWaters. The query that we send is the following:\\
+\indent \texttt{ uk$\_$protectedBathingWaters( sampleClassification, prefLabel, long, lat, northing, easting,  latestComplianceAssessment, type, country, district,  envelope, latestBathingWaterProfile, sedimentTypesPresent, uriSet, regionalOrganization, yearDesignated, latestSampleAssessment, eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluence, samplingPoint, complianceClassification, primaryTopic, extendedMetadataVersion, definition, label)}
+
+\paragraph{Plural: On, Results} The narrow down process returned protectedAreas as possible candidate, but SPSM did not produced any matching results.
+\paragraph{Plural: Off, Results} The results and timings are the same as above.
+
+
+\subsubsection{Test 3.3}
+
+We change the predicate name of the query from uk$\_$bathingWaters to uk$\_$protectedAreas. The query that we send is the following: \\
+\indent \texttt{ uk$\_$protectedAreas( sampleClassification, prefLabel, long, lat, northing, easting,  latestComplianceAssessment, type, country, district,  envelope, latestBathingWaterProfile, sedimentTypesPresent, uriSet, regionalOrganization, yearDesignated, latestSampleAssessment, eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluence, samplingPoint, complianceClassification, primaryTopic, extendedMetadataVersion, definition, label)}
+
+
+\paragraph{Plural: On, Results: } The narrow down process returned protectedAreas as matching candidates. SPSM produced the following matching results: 
+
+\textbf{Match 1.}\\
+uk$\_$ProtectedAreas $\mapsto$ protectedAreas\\
+uk$\_$ProtectedAreas(yearDesignated) $\mapsto$ protectedAreas(timePeriod)\\
+
+ A sample of the answers this query returned is demonstrated in~\ref{ProtectedAreas 3.3}.
+
+\paragraph{Plural: Off, Results: } Both the narrow-down process and SPSM produced the same results as before.
+
+
+\section{European Statistics, Protected Areas and Environmental Protection Expenditure dataset }
+During the following evaluation tests we assume that we are the owners of both  EU Statistics protectedAreas and environmentProtectionRegions datasets. 
+The schemamata of these datasets are the following:\\
+ \indent  protectedAreas( obsValue, timePeriod, freq, dataSet, indic$\_$md, geo, obsStatus, structure, seeAlso, comment) \\
+\indent  environmentProtectionRegions( dimension, unit, environmentDomain,  environmentExposure, geo, timePeriod )
+
+
+
+
+\subsection{Test 1: Scottish Protection Agency: Protected Areas dataset}
+
+The query that we form is  the schema of the Scottish Protection Agency, Protected Areas dataset:
+\\ \indent \texttt{spa$\_$protectedAreas( area, perimeter, paCode, siteName, siteHa, status, eurCode )}
+
+
+\paragraph{Plural: On, Results:} The narrow down process returned both environmentProtectionRegions and 
+protectedAreas as matching candidates. SPSM produced the following matching results:
+
+\textbf{Match 1}: \\
+spa$\_$protectedAreas $\mapsto$ protectedAreas \\
+spa$\_$protectedAreas(status) $\mapsto$ protectedAreas(obsStatus)\\
+spa$\_$protectedAreas(area) $\mapsto$ protectedAreas(structure)
+
+
+A sample of the answers this query returned is demonstrated in~\ref{Section 2: Test 1}
+\paragraph{Plural: Off, Results:}Both narrow-down process and SPSM produced the same results as before.
+
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m46.684s
+\item user	0m35.146s
+\item sys	0m2.154s
+\end{itemize}
+
+\section{European Statistics, Transport Network dataset} 
+
+For the following tests we use the Transport Network dataset. The schema of this dataset is the following: \\
+\indent \texttt{transportNetwork(obsValue, timePeriod, freq, dataset, unit, geo, obsStatus, structure, seeAlso, comment)}
+
+
+\subsection{Test 1: NAPTAN, Stop Availability dataset }
+
+The icomming query is formed based on the NAPTAN Stop Availability schema:\\
+\indent  stopAvailability(atcoCode,	startDate,	endDate,	availabilityStatus,	note,	noteLang,	transferStopAtcoCode,	creationDateTime,	modificationDateTime,	revisionNumber,	modification)			
+
+
+\subsubsection{Test 1}
+The query that we send is exactly the same as the stopAvailability dataset schema:\\
+\indent \texttt{  stopAvailability(atcoCode,	startDate,	endDate,	availabilityStatus,	note,	noteLang,	transferStopAtcoCode,	creationDateTime,	modificationDateTime,	revisionNumber,	modification)}			
+
+
+\paragraph{Plural:On, Results: } The narrow down process did not return any results. 
+\paragraph{Plural:Off, Results: } The narrow-down process and SPSM produced the same results as before.
+
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m17.179s
+\item user	0m12.492s
+\item sys	0m0.170s
+
+\end{itemize}
+
+\subsubsection{Test 1.1}
+We replace the predicate name of the query with transportStopAvailability. 
+The query that we send is the following: \\
+\indent \texttt{transportStopAvailability(atcoCode,	startDate,	endDate,	availabilityStatus,	note,	noteLang,	transferStopAtcoCode,	creationDateTime,	modificationDateTime,	revisionNumber,	modification)}
+
+
+\paragraph{Plural:On, Results:} The narrow-down process retuned the transportNetwork dataset as a possible matching candidate. However, SPSM
+ did not return any results. 
+\paragraph{Plural:Off, Results:} The narrow-down process and SPSM produced the same results as before.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m30.403s
+\item user	0m26.874s
+\item sys	0m1.808s
+
+\end{itemize}
+ \subsubsection{Test 1.2}
+We substitute the predicate name of the query with transport:\\
+\indent \texttt{transport(atcoCode,	startDate,	endDate,	availabilityStatus,	note,	noteLang,	transferStopAtcoCode,	creationDateTime,	modificationDateTime,	revisionNumber,	modification)}
+
+
+\paragraph{Plural: On, Results:}
+The narrow-down process returned transportNetwork as a matching candidate. SPSM produced the following results:
+
+\textbf{Match 1.}\\
+transport $\mapsto$ transportNetwork\\
+transport(note) $\mapsto$ transportNetwork(comment)
+
+A sample of the answers we retrieved is presented in~\ref{Transport Network, NAPTAN Query}
+
+\paragraph{Plural: Off, Results:} The narrow-down process and SPSM produced the same results as before.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m45.144s
+\item user	0m34.398s
+\item sys	0m2.173s
+
+\end{itemize}
+
+
+
+
+\section{All datasets}
+For this experiment we assume that we are the owners of all datasets that we have previously tested. The datasets and the corresponding schemata are:
+
+\begin{itemize}
+\item bathingWaterLocations(year, locationCode, localAuthority, locationDescription, sepaTeam, sepaRegion, hydrocode, lat, ngr, catchment, long)
+\item waterBodyPressures(envImprovementNext, atGepNextPeriod, atGepCurClassYear, atGepSysdate, pressureId, waterBodyId, locationCode, industrySectorCode, assessmentCategory, assessmentParameter, swmiSector, industrySector, dataSource, comments, atGepPeriodAfterNext, isPrimary, atGepCurrentPeriod, pressureType, envImprovementAfterNext, envImprovementCurrent, purposeCode, purpose, eiCurrentFailReason, identifiedDate, eiCurrentConfidence, eiNextConfidence, hmawbDesignationInd, eiAfterConfidence, affectsGroundwater, eiNextFailReason, activityCode, activity, swAsset, protectedAreaId, eiAfterFailReason, sourceCode, source)
+\item waterBodyMeasures(atGepPeriodAfterNext, atGepCurClassYear, waterBodyId, pressureId, deadline, comments, secondaryMeasure, primaryMeasure, owner, atGepSysdate, atGepNextPeriod, measureFixedDate, agreed, projected, atGepCurrentPeriod, dataSource, measureId, locationCode, protectedAreaId, onTrack, notOnTrackReason)
+\item surfaceWaterBodies(genre, lengthKm,a ssociatedGroundwaterId, sbdCode, dataSource, isHeavilyModified, geologyTypology, currentClassificationYear, associatedGroundwater, statusRiskAssessment, riverBasinDistrict, category, rbdCode, isArtificial, riverName, long, altitudeTypology, catchmentId, riverNumber, classificationCertainty, waterBodyId, currentOverallClassification, classificationCertaintyBand, waterBodyName, subBasinDistrict, ecoRegion, isLessThanGood, wiseCode, catchment, targetClass, lat, team, sizeTypology, noDetRiskAssessment, areaSqKm)
+\item bathingWaters(year, description, classDescription, bwLocation, bathingWaterId)
+\item classifications(classificationYear, parameter)  and parameter is  (certainty, certaintyBand, classificationParameter, contributingLocationCode, lessThanGood, reportingParameter, reportingParameterCode, status, statusDescription) 
+\item  protectedAreas( obsValue, timePeriod, freq, dataSet, indic$\_$md, geo, obsStatus, structure, seeAlso, comment) \\
+\item  environmentProtectionRegion( env$\_$dom, dataSet, unit, nace$\_$r2,  obsValue, freq, env$\_$exp, type, geo, timePeriod, obsStatus, structure, seeAlso, comment)
+
+\item freshWater(  obsValue, timePeriod, freq, dataSet, src, geo, type, obsStatus, structure, seeAlso, comment)
+\item transportNetwork(obsValue, timePeriod, freq, dataset, unit, geo, obsStatus, structure, seeAlso, comment)
+\end{itemize}
+
+During the following experiments plural nouns were converted to single.
+
+
+\subsection{ Test 1: EnvironmentalProtectionExpenditureRegions}
+
+\subsubsection{Test 1.1}
+ The query that we tested is the following: \\
+\indent  environmentalProtectionExpenditureRegion( env$\_$dom, dataSet, unit, nace$\_$r2,  obsValue, freq, env$\_$exp, type, geo, timePeriod, obsStatus, structure, seeAlso, comment)\\
+
+The narrow-down process returned the following matching candidates:
+\begin{itemize}
+\item protectedArea
+\item bathingWaterLoacation
+\item environmentProtectionRegion
+\end{itemize}
+
+However SPSM did not return any results.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	0m43.178s
+\item user	0m41.968s
+\item sys	0m3.003s
+
+\end{itemize}
+
+
+\paragraph{Difference to previous evaluation Tests}
+Because of the depluralisation process we have three new results: protectedArea,  bathingWaterLoacation(s) and environmentProtectionRegion(s) datasets.
+\subsubsection{Test 1.2}
+We change the query predicate from environmentalProtectionExpenditureRegion to environmentalProtectionRegion. The query that we tested is the following:\\
+\indent environmentalProtectionRegions( env$\_$dom, dataSet, unit, nace$\_$r2,  obsValue, freq, env$\_$exp, type, geo, timePeriod, obsStatus, structure, seeAlso, comment)\\
+The narrow down process returned the following matching candidates:
+\begin{itemize}
+\item protectedArea
+\item bathingWaterLoacation
+\item environmentProtectionRegion
+\end{itemize}
+SPSM returned the same dataset as the query.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	1m9.010s
+\item user	0m59.695s
+\item sys	0m4.249s
+
+\end{itemize}
+\subsection{Test 2: FreshWaters }
+
+\subsubsection{Test 2.1} The query that we tested is the following:\\
+\indent freshWater(  obsValue, timePeriod, freq, dataSet, src, geo, type, obsStatus, structure, seeAlso, comment)\\
+The narrow-down process retuned the following matching candidates: 
+
+
+\begin{itemize}
+\item waterBodyPressure
+\item waterBodyMeasure
+\item surfaceWaterBody
+\item freshWater
+\item bathingWater
+\item bathingWaterLocation
+
+\end{itemize}
+SPSM returned only the same dataset as the query.
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	1m19.009s
+\item user	1m14.748s
+\item sys	0m7.868s
+
+\end{itemize}
+
+
+\paragraph{Difference to previous evaluation Tests}
+Because of the depluralisation process we have one matching candidate: bathingWater(s) dataset.
+
+
+\subsection{Test 3: Uk$\_$BathingWaters }
+
+\subsubsection{Test 3.1}
+The query that we tested is the following:\\
+\indent uk$\_$BathingWaters( sampleClassification, prefLabel, long, lat, northing, easting, latestComplianceAssessment, type, country, district, envelope, latestBathingWaterProfile, sedimentTypesPresent, uriSet, regionalOrganization, yearDesignated, latestSampleAssessment, eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluence, samplingPoint, complianceClassification, primaryTopic, extendedMetadataVersion, definition, label)\\
+
+The narrow-down process returned the following candidates:
+\begin{itemize}
+\item bathingWaterLocation
+\item bathingWater
+\item  surfaceWaterBody
+\item waterBodyMeasure
+\item waterBodyPressure
+\item freshWater
+\end{itemize}
+
+SPMS returned the following matches:
+
+\textbf{Match1. }\\
+uk$\_$BathingWater $\mapsto$ waterBodyMeasure\\
+uk$\_$BathingWater(label) $\mapsto$ waterBodyMeasure(waterBodyId)\\
+uk$\_$BathingWater(primaryTopic) $\mapsto$ waterBodyMeasure(secondaryMeasure)
+
+\textbf{Match2. }\\
+uk$\_$BathingWater $\mapsto$ waterBodyPressure\\
+uk$\_$BathingWater(label) $\mapsto$ waterBodyPressure(waterBodyId)\\
+uk$\_$BathingWater(type) $\mapsto$ waterBodyPressure(pressureType)\\
+uk$\_$BathingWater(prefLabel) $\mapsto$ waterBodyPressure(activity)\\
+uk$\_$BathingWater(sampleClassification ) $\mapsto$ waterBodyPressure(affectsGroundwater)
+
+\textbf{Match3. }\\
+uk$\_$BathingWater  $\mapsto$ bathingWaterLocation\\
+uk$\_$BathingWater(lat ) $\mapsto$ bathingWaterLocation(lat)\\
+uk$\_$BathingWater(long ) $\mapsto$ bathingWaterLocation(long)
+
+\textbf{Match4. }\\
+uk$\_$BathingWater  $\mapsto$ bathingWater\\
+uk$\_$BathingWater(label ) $\mapsto$  bathingWater(description)\\
+uk$\_$BathingWater(waterQualityImpactedByHeavyRain) $\mapsto$  bathingWater(bathingWaterId).
+
+
+\textbf{Timings:}
+\begin{itemize}
+\item real	2m5.248s
+\item user	1m41.483s
+\item sys	0m15.254s
+
+\end{itemize}
+
+
+\paragraph{Difference to previous evaluation Tests}
+Because of the depluralisation process we have one new matching candidate,  the bathingWaterLocation(s)  dataset, and the corresponding matches. 
+
+
+
+\section{Test 4: SPA$\_$ProtectedAreas}
+\subsection{Test 4.1} The query that we send is the following:\\
+spa$\_$protectedArea( area, perimeter, paCode, siteName, siteHa, status, eurCode)\\
+The narrow-down process retuned the following results:
+\begin{itemize}
+\item environmentProtectionRegion
+\item protectedArea
+\end{itemize}
+ SPSM returned the following results: 
+ 
+ \textbf{Match 1}: \\
+spa$\_$protectedAreas $\mapsto$ protectedAreas \\
+spa$\_$protectedAreas(status) $\mapsto$ protectedAreas(obsStatus)\\
+spa$\_$protectedAreas(area) $\mapsto$ protectedAreas(structure)
+ 
+ 
+\textbf{Timings: }
+\begin{itemize}
+\item real	0m50.696s
+\item user	0m38.000s
+\item sys	0m2.152s
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% appendix: returned answers %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\section{SEPA datasets}
+\subsection{European Statistics, Fresh Water Resources dataset: Test 1.3}
+\label{Test 1.3}
+
+\begin{itemize}
+\item[Original Query Schema:] water(resource,measure,geo,timePeriod).
+\item[Suggested Query Schema: ]
+waterBodyPressures(identifiedDate,waterBodyId,assessmentCategory,source).
+\item[Schema Mappings:] 
+		\begin{itemize}
+		\item water $\mapsto$ waterBodyPressures
+\item resource $\mapsto$ source
+\item measure $\mapsto$ assessmentCategory
+\item geo $\mapsto$ waterBodyId
+\item timePeriod $\mapsto$ identifiedDate
+\end{itemize}
+		\end{itemize}
+		
+
+Some of the answers we got are presented in  \ref{waterBodyPressures(identifiedDate,waterBodyId,assessmentCategory,source)}.
+
+\begin{table}[!tb]
+\caption{Answers for query waterBodyPressures(identifiedDate,waterBodyId,assessmentCategory,source)}		
+
+\begin{center}
+  
+
+
+%
+\begin{tabular}{ l l c  r }
+\hline
+identifiedDate & waterBodyId  & assessmentCategory & source \\ \hline
+"2008-04-01"   & sepaidw:23088 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20497 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20788 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:23332 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20587 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20176 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:23092 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20508 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:23334 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20261 & "Morphology and Fish Continuity" & "River" \\
+"2008-04-01"   & sepaidw:20304 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:20199 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20770 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:23345 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20289 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:23158 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20778 & "Morphology and Fish Continuity" & "Lake"   \\
+ "2008-04-01"   & sepaidw:20098 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20303 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:23086 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:23092 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:23641 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20173 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20175 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:20257 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:20281 & "Morphology and Fish Continuity" & "Lake"  \\
+ "2008-04-01"   & sepaidw:23138 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:23339 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:23350 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:20227 & "Morphology and Fish Continuity" & "River" \\
+ "2008-04-01"   & sepaidw:23080 & "Morphology and Fish Continuity" & "River" 
+
+\end{tabular}
+\label{waterBodyPressures(identifiedDate,waterBodyId,assessmentCategory,source)}
+\end{center}
+\end{table}
+
+\subsection{European Statistics, Environmental Protection Expenditure dataset: Test 2.2}
+\label{Test 2.2}
+
+
+\begin{itemize}
+\item[Original Query Schema:]location(dimension,unit,environmentDomain,environmentExposure,geo).
+\item[Suggested Query Schema: ]
+bathingWaterLocation(localAuthority)
+\item[Schema Mappings:] 
+		\begin{itemize}
+\item unit $\mapsto$ localAuthority
+\item dimension $\mapsto$ no match
+\item environmentDomain $\mapsto$ no match
+\item environmentExposure $\mapsto$ no match
+\item geo $\mapsto$ no match
+
+		\end{itemize}
+\end{itemize}
+Some of the answers we got are presented in  \ref{bathingWaterLocation(localAuthority)}
+
+\begin{table}[!tb]
+\caption{Answers for query bathingWaterLocation(localAuthority) }	
+\begin{center}	
+\begin{tabular}{ l c}
+\hline
+localAuthority  \\ \hline
+"Fife"                \\
+ "Highland"            \\
+ "Argyll & Bute"	\\
+ "East Lothian"        \\
+ "City of Edinburgh"   \\
+ "Fife"                \\
+ "Moray"               \\
+"Aberdeenshire"	\\
+ "Aberdeenshire"	\\
+ "Scottish Borders"    \\
+ "Fife"                \\
+ "Argyll & Bute"	\\
+ "South Ayrshire"	\\
+ "Highland"            \\
+ "North Ayrshire"	\\
+"Dumfries & Galloway" \\
+ "City of Edinburgh"   \\
+"Moray"               \\
+ "Aberdeen City"	\\
+ "East Lothian"        \\
+ "Highland"            \\
+ "East Lothian"        \\
+ "Fife"                \\
+ "Dumfries & Galloway" \\
+ "Dumfries & Galloway" \\
+ "Inverclyde"          \\
+ "East Lothian"        \\
+ "Fife"                \\
+ "North Ayrshire"	\\
+ "Fife"                \\
+ "South Ayrshire"	
+
+
+\end{tabular}
+\label{bathingWaterLocation(localAuthority)}
+\end{center}
+\end{table}
+
+
+
+
+
+
+
+
+
+\subsection{European Statistics, Environmental Protection Expenditure dataset: Test 2.3}
+\label{Test 2.3}
+
+
+\begin{itemize}
+\item[Original Query Schema:]water(associatedGroundwaterId,dimension,unit,environmentDomain,environmentExposure,geo)
+\item[Suggested Query Schema: ]
+waterBodyMeasures(waterBodyId,secondaryMeasure)
+\item[Schema Mappings:] 
+		\begin{itemize}
+\item unit $\mapsto$ secondaryMeasure
+\item geo $\mapsto$ waterBodyId
+\item associatedGroundwaterId $\mapsto$ no match
+\item dimension $\mapsto$ no match
+\item environmentDomain $\mapsto$ no match
+\item environmentExposure $\mapsto$ no match
+		\end{itemize}
+\end{itemize}
+
+
+Some of the answers we got are presented in  \ref{waterBodyMeasures(waterBodyId,secondaryMeasure)}
+
+
+
+
+\begin{table}[!tb]
+\caption{Answers for query waterBodyMeasures(waterBodyId,secondaryMeasure) }	
+\begin{center}	
+\begin{tabular}{ l c}
+\hline
+	waterBodyId & secondaryMeasure \\ \hline
+ sepaidw:150342 & "Control Abstraction"    \\                                                                     
+ sepaidw:100269 & "Removal of barriers or provision of mechanisms to enable fish migration"   \\                  
+ sepaidw:10757  & "Non-urban land management measures"      \\                                                    
+ sepaidw:23330  & "Improvement to condition of riparian zone and/or wetland habitats"    \\                       
+ sepaidw:23190  & "Improvement to condition of riparian zone and/or wetland habitats"  \\                         
+ sepaidw:5802   & "Improvement to condition of riparian zone and/or wetland habitats"  \\                         
+ sepaidw:10211  & "Improvement to condition of riparian zone and/or wetland habitats"       \\                    
+ sepaidw:10042  & "Change timing or frequency of discharge"         \\                                            
+ sepaidw:10214  & "Improvement to condition of riparian zone and/or wetland habitats"   \\                        
+ sepaidw:150104 & "Control Abstraction"    \\                                                                     
+ sepaidw:3002   & "Reduce at source"    \\                                                                         
+ sepaidw:23482  & "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" \\ 
+ sepaidw:20278  & "Control Abstraction"      \\                                                                    
+sepaidw:10000  & "Reduce at source"    \\                                                                         
+ sepaidw:6503   & "Control Abstraction"   \\                                                                       
+ sepaidw:6525   & "Improve Modified Habitat"  \\                                                                   
+ sepaidw:5904   & "Increase treatment"   \\                                                                        
+ sepaidw:23322  & "Removal of barriers or provision of mechanisms to enable fish migration"    \\                  
+ sepaidw:100291 & "Improve Modified Habitat" \\                                                                    
+ sepaidw:6563   & "Relocate all or part of discharge"   \\                                                         
+ sepaidw:10202  & "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" \\ 
+sepaidw:20307  & "Improve Modified Habitat"          \\                                                           
+ sepaidw:10063  & "Removal of barriers or provision of mechanisms to enable fish migration" \\                     
+ sepaidw:4206   & "Reduce Diffuse Source Inputs"  \\                                                               
+ sepaidw:6525   & "Control Abstraction"     \\                                                                     
+ sepaidw:20342  & "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" \\ 
+ sepaidw:20609  & "Removal of barriers or provision of mechanisms to enable fish migration"      \\                
+ sepaidw:4000   & "Increase treatment"        \\                                                                   
+ sepaidw:10022  & "Change timing or frequency of discharge"    \\                                                  
+ sepaidw:10673  & "Provide appropriate baseline flow regime downstream of impoundment"        \\                   
+ sepaidw:10251  & "Improvement to condition of riparian zone and/or wetland habitats"   \\                         
+sepaidw:23182  & "Removal of barriers or provision of mechanisms to enable fish migration"   \\                   
+sepaidw:10047  & "Reduce at source"        \\                                                                     
+ sepaidw:10003  & "Change timing or frequency of discharge"      \\                                               
+ sepaidw:10029  & "Removal of barriers or provision of mechanisms to enable fish migration"   \\                  
+ sepaidw:10458  & "Removal of barriers or provision of mechanisms to enable fish migration"  \\                    
+ sepaidw:20245  & "Improvement to condition of channel/bed and/or banks/shoreline"    \\                           
+ sepaidw:23223  & "Reduce Diffuse Source Inputs"    \\                                                             
+ sepaidw:23270  & "Reduce at source"  \\                                                                           
+ sepaidw:3000   & "Reduce at source"   \\                                                                          
+ sepaidw:6882   & "Control Abstraction"   \\                                                                       
+ sepaidw:4207   & "Reduce Point Source Inputs"    \\                                                               
+ sepaidw:20387  & "Reduce Diffuse Source Inputs"     \\                               
+
+\end{tabular}
+\label{waterBodyMeasures(waterBodyId,secondaryMeasure)}
+
+\end{center}
+\end{table}
+
+
+
+\begin{itemize}
+\item[Original Query Schema:]water(associatedGroundwaterId,dimension,unit,environmentDomain,environmentExposure,geo)
+\item[Suggested Query Schema: ]
+waterBodyPressures(waterBodyId,activity,affectsGroundwater,dataSource,industrySector) 
+\item[Schema Mappings:] 
+		\begin{itemize}
+\item water $\mapsto$ waterBodyPressures
+\item dimension $\mapsto$ industrySector
+\item unit $\mapsto$ dataSource
+\item environmentDomain $\mapsto$ affectsGroundwater
+\item environmentExposure $\mapsto$ activity
+\item geo $\mapsto$ waterBodyId
+
+		\end{itemize}
+\end{itemize}
+
+The above query did not return any answers. This is because there does not exist within the dataset any given object to satisfy all 
+given columns at the same time. 
+
+
+
+\subsection{ Scottish Protection Agency: Protected Areas: Test 3.3}
+\label{Test 3.3}
+
+\begin{itemize}
+\item[Original Query Schema:] water(area,perimeter,paCode,siteName,siteHa,status,eurCode).
+
+\item[Suggested Query Schema: ]
+waterBodyMeasures(locationCode,waterBodyId)
+\item[Schema Mappings:] 
+	\begin{itemize}
+	
+\item water $\mapsto$ waterBodyMeasures
+\item area  $\mapsto$ waterBodyId
+\item eurCode  $\mapsto$ locationCode
+
+	\end{itemize}
+
+\end{itemize}
+
+Some of the answers we got are presented in  \ref{waterBodyMeasures(locationCode,waterBodyId)}
+
+
+\begin{table}
+\caption{Answers for query waterBodyMeasures(locationCode,waterBodyId) }		
+\begin{center}
+\begin{tabular}{ l r}
+\hline
+locationCode & waterBodyId \\ \hline
+sepaidloc:333346 & sepaidw:150112 \\
+ sepaidloc:329473 & sepaidw:5901  \\ 
+ sepaidloc:811    & sepaidw:3105  \\ 
+ sepaidloc:331030 & sepaidw:150257 \\
+ sepaidloc:331476 & sepaidw:150340 \\
+ sepaidloc:112953 & sepaidw:10002  \\
+ sepaidloc:337942 & sepaidw:4728   \\
+ sepaidloc:315756 & sepaidw:10341  \\
+ sepaidloc:125190 & sepaidw:10666  \\
+ sepaidloc:337783 & sepaidw:100311 \\
+ sepaidloc:334244 & sepaidw:10790 \\ 
+ sepaidloc:311241 & sepaidw:10397  \\
+ sepaidloc:339861 & sepaidw:200242 \\
+  sepaidloc:311099 & sepaidw:10374  \\
+ sepaidloc:315120 & sepaidw:20111  \\
+ sepaidloc:330454 & sepaidw:150261 \\
+ sepaidloc:341476 & sepaidw:150194 \\
+ sepaidloc:331899 & sepaidw:23034  \\
+ sepaidloc:373044 & sepaidw:23571  \\
+ sepaidloc:311347 & sepaidw:10747  \\
+ sepaidloc:328579 & sepaidw:6109   \\
+ sepaidloc:334233 & sepaidw:23138  \\
+ sepaidloc:311857 & sepaidw:10829  \\
+ sepaidloc:315411 & sepaidw:20220  \\
+ sepaidloc:332865 & sepaidw:20342  \\
+ sepaidloc:200781 & sepaidw:20798  \\
+sepaidloc:315456 & sepaidw:23392  \\
+ sepaidloc:7	   & sepaidw:3107   \\
+ sepaidloc:332275 & sepaidw:10600  \\
+ sepaidloc:16487  & sepaidw:150243 \\
+ sepaidloc:1175   & sepaidw:4001   \\
+ sepaidloc:344655 & sepaidw:100299 \\
+ sepaidloc:324428 & sepaidw:23020  \\
+ sepaidloc:125173 & sepaidw:200011 \\
+sepaidloc:77777  & sepaidw:10069  \\
+ sepaidloc:127765 & sepaidw:10040  \\
+ sepaidloc:128568 & sepaidw:10918  
+\end{tabular}
+\label{waterBodyMeasures(locationCode,waterBodyId)}
+\end{center}
+\end{table}
+ 
+
+
+
+\subsection{ Scottish Protection Agency: Protected Areas: Test 3.4}
+\label{Test 3.4}
+
+\begin{itemize}
+\item[Original Query Schema:] Original Query : location(area,perimeter,paCode,siteName,siteHa,status,eurCode).
+
+
+\item[Suggested Query Schema: ]
+bathingWaterLocation(locationCode).
+\item[Schema Mappings:] 
+	\begin{itemize}
+
+\item location $\mapsto$ bathingWaterLocation
+\item	eurCode $\mapsto$ locationCode
+\item area $\mapsto$ no match
+\item perimeter $\mapsto$ no match
+\item paCode $\mapsto$ no match
+\item siteName $\mapsto$ no match
+\item siteHa $\mapsto$ no match
+\item status $\mapsto$ no match
+
+
+	\end{itemize}
+
+\end{itemize}
+Some of the answers we got are presented in \ref{bathingWaterLocation(locationCode)}.
+
+
+\begin{table}
+\caption{Answers for query bathingWaterLocation(locationCode) }		
+\begin{center}
+\begin{tabular}{ l }
+\hline
+locationCode \\ \hline
+ sepaidloc:366962 \\
+ sepaidloc:4561   \\
+ sepaidloc:124793 \\
+ sepaidloc:114582 \\
+ sepaidloc:206179 \\
+ sepaidloc:11789  \\
+sepaidloc:9318   \\
+ sepaidloc:9334   \\
+ sepaidloc:4552   \\
+ sepaidloc:233617 \\
+ sepaidloc:124770 \\
+ sepaidloc:206178 \\
+ sepaidloc:9335   \\
+ sepaidloc:235334 \\
+ sepaidloc:124482 \\
+ sepaidloc:235333 \\
+ sepaidloc:9320   \\
+ sepaidloc:9316   \\
+ sepaidloc:206238 \\
+ sepaidloc:124817 \\
+ sepaidloc:4593   
+
+\end{tabular}
+\label{bathingWaterLocation(locationCode)}
+\end{center}
+\end{table}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{The UK Environmental Agency: Bathing Waters dataset: Test 4.1}
+\label{Test 4.1}
+
+
+\begin{itemize}
+\item[Original Query Schema:] uk$\_$BathingWaters(sampleClassification,prefLabel,long,lat,northing,easting,latestComplianceAssessment,type,country,district,envelope,latestBathingWaterProfile,sedimentTypesPresent,uriSet,regionalOrganization,yearDesignated,latestSampleAssessment,eubWidNotation,waterQualityImpactedByHeavyRain,zoneOfInfluence,samplingPoint,complianceClassification,primaryTopic,extendedMetadataVersion,definition,label).
+
+
+\item[Suggested Query Schema: ]
+bathingWaters(description)
+\item[Schema Mappings:] 
+	\begin{itemize}
+	
+\item label $\mapsto$ description
+\item  sampleClassification $\mapsto$ no match 
+\item  prefLabel $\mapsto$ no match 
+\item  long $\mapsto$ no match 
+\item  lat $\mapsto$ no match 
+\item  northing $\mapsto$ no match 
+\item  easting $\mapsto$ no match 
+\item  latestComplianceAssessment $\mapsto$ no match 
+\item  type $\mapsto$ no match 
+\item  country $\mapsto$ no match 
+\item  district $\mapsto$ no match 
+\item  envelope $\mapsto$ no match 
+\item  latestBathingWaterProfile $\mapsto$ no match 
+\item  sedimentTypesPresent $\mapsto$ no match 
+\item  uriSet $\mapsto$ no match 
+\item  regionalOrganization $\mapsto$ no match 
+\item  yearDesignated $\mapsto$ no match 
+\item  latestSampleAssessment $\mapsto$ no match 
+\item  eubWidNotation $\mapsto$ no match 
+\item  waterQualityImpactedByHeavyRain $\mapsto$ no match 
+\item  zoneOfInfluence $\mapsto$ no match 
+\item  samplingPoint $\mapsto$ no match 
+\item  complianceClassification $\mapsto$ no match 
+\item  primaryTopic $\mapsto$ no match 
+\item  extendedMetadataVersion $\mapsto$ no match 
+\item  definition $\mapsto$ no match 
+
+	\end{itemize}
+
+\end{itemize}
+Some of the answers we got are presented in  \ref{bathingWaters(description)}.  
+\begin{table}[!tb]
+\caption{Sample answers for query bathingWaters(description) }
+\begin{center}
+
+\begin{tabular}{c}
+\hline
+description \\ \hline
+"Largs (Pencil Beach)"     \\     
+ "Cullen Bay"                \\    
+ "Achmelvich"                  \\  
+ "Lunan Bay"                     \\
+ "Mossyard"                      \\
+ "Nairn (East)"                  \\
+ "Dores"                         \\
+ "Irvine"                        \\
+ "Kinghorn (Harbour Beach)"      \\
+ "Prestwick"                     \\
+ "Thurso"                        \\
+ "Fraserburgh (Philorth)"        \\
+ "Dunbar (East)"                 \\
+ "Rockcliffe"                    \\
+ "Dhoon Bay"                     \\
+ "Inverboyndie"                  \\
+ "Cruden Bay"                    \\
+ "Leven"                         \\
+ "Brighouse Bay"                 \\
+ "Monifieth"                     \\
+ "Crail (Roome Bay)"             \\
+ "Findhorn"                      \\
+ "Broad Sands"                   \\
+ "Girvan"                        \\
+ "St. Andrews (West Sands)"      \\
+ "Yellowcraig"                   \\
+ "Portobello (Central)"          \\
+ "North Berwick (West)"          \\
+ "Dunbar (Belhaven)"             \\
+ "Burntisland"                   \\
+ "Southerness"                   \\
+ "Portobello (West)"             \\
+ "Thorntonloch"                  \\
+ "Saltcoats/Ardrossan "          \\
+ "Elie (Ruby Bay)"               \\
+ "Culzean"                       \\
+ "Peterhead (Lido)"              \\
+ "Seacliff"                      \\
+ "Kinghorn (Pettycur)"           \\
+ "Rosemarkie"                    \\
+ "Ganavan "                      \\
+ "Arbroath (West Links)"         \\
+ "Rosehearty"                    \\
+ "Kingsbarns"                    \\
+ "St. Andrews (East Sands)"      \\
+ "Aberdour (Silver Sands)"       \\
+ "Seamill"                       \\
+ "Sandyhills"                    \\
+ "Montrose"                      \\
+\end{tabular}
+\label{bathingWaters(description)} 
+\end{center}
+\end{table}
+
+
+\begin{itemize}
+\item[Original Query Schema:] uk$\_$BathingWaters(sampleClassification,prefLabel,long,lat,northing,easting,latestComplianceAssessment,type,country,district,envelope,latestBathingWaterProfile,sedimentTypesPresent,uriSet,regionalOrganization,yearDesignated,latestSampleAssessment,eubWidNotation,waterQualityImpactedByHeavyRain,zoneOfInfluence,samplingPoint,complianceClassification,primaryTopic,extendedMetadataVersion,definition,label).
+
+
+\item[Suggested Query Schema: ]
+waterBodyPressures(waterBodyId,pressureType,activity,affectsGroundwater).
+
+\item[Schema Mappings:] 
+	\begin{itemize}
+
+\item sampleClassification $\mapsto$ affectsGroundwater
+\item prefLabel $\mapsto$ activity
+\item type $\mapsto$ pressureType
+\item label $\mapsto$ waterBodyId
+\item long $\mapsto$ no match 
+\item lat $\mapsto$ no match 
+\item northing $\mapsto$ no match 
+\item easting $\mapsto$ no match 
+\item latestComplianceAssessment $\mapsto$ no match 
+\item country $\mapsto$ no match 
+\item district $\mapsto$ no match 
+\item envelope $\mapsto$ no match 
+\item latestBathingWaterProfile $\mapsto$ no match 
+\item sedimentTypesPresent $\mapsto$ no match 
+\item uriSet $\mapsto$ no match 
+\item regionalOrganization $\mapsto$ no match 
+\item yearDesignated $\mapsto$ no match 
+\item latestSampleAssessment $\mapsto$ no match 
+\item eubWidNotation $\mapsto$ no match 
+\item waterQualityImpactedByHeavyRain $\mapsto$ no match 
+\item zoneOfInfluence $\mapsto$ no match 
+\item samplingPoint $\mapsto$ no match 
+\item complianceClassification $\mapsto$ no match 
+\item primaryTopic $\mapsto$ no match 
+\item extendedMetadataVersion $\mapsto$ no match 
+\item definition $\mapsto$ no match 
+	\end{itemize}
+
+\end{itemize}
+
+
+No returned Answers.
+
+\begin{itemize}
+\item[Original Query Schema:] uk$\_$BathingWaters(sampleClassification,prefLabel,long,lat,northing,easting,latestComplianceAssessment,type,country,district,envelope,latestBathingWaterProfile,sedimentTypesPresent,uriSet,regionalOrganization,yearDesignated,latestSampleAssessment,eubWidNotation,waterQualityImpactedByHeavyRain,zoneOfInfluence,samplingPoint,complianceClassification,primaryTopic,extendedMetadataVersion,definition,label).
+
+
+\item[Suggested Query Schema: ]
+waterBodyMeasures(waterBodyId,secondaryMeasure).
+
+\item[Schema Mappings:] 
+	\begin{itemize}
+
+\item primaryTopic $\mapsto$ secondaryMeasure
+\item label $\mapsto$ waterBodyId
+\item sampleClassification $\mapsto$ no match 
+\item prefLabel $\mapsto$ no match 
+\item long $\mapsto$ no match 
+\item lat $\mapsto$ no match 
+\item northing $\mapsto$ no match 
+\item easting $\mapsto$ no match 
+\item latestComplianceAssessment $\mapsto$ no match 
+\item type $\mapsto$ no match 
+\item country $\mapsto$ no match 
+\item district $\mapsto$ no match 
+\item envelope $\mapsto$ no match 
+\item latestBathingWaterProfile $\mapsto$ no match 
+\item sedimentTypesPresent $\mapsto$ no match 
+\item uriSet $\mapsto$ no match 
+\item regionalOrganization $\mapsto$ no match 
+\item yearDesignated $\mapsto$ no match 
+\item latestSampleAssessment $\mapsto$ no match 
+\item eubWidNotation $\mapsto$ no match 
+\item waterQualityImpactedByHeavyRain $\mapsto$ no match 
+\item zoneOfInfluence $\mapsto$ no match 
+\item samplingPoint $\mapsto$ no match 
+\item complianceClassification $\mapsto$ no match 
+\item extendedMetadataVersion $\mapsto$ no match 
+\item definition $\mapsto$ no match 
+
+
+	\end{itemize}
+
+\end{itemize}
+
+Some of the answers we got are presented in  \ref{waterBodyMeasures(waterBodyId,secondaryMeasure)}. 
+
+\begin{table}[!tb]
+
+\caption{Sample Results for query waterBodyMeasures(waterBodyId,secondaryMeasure)}
+\begin{center}
+\begin{tabular}{llcr}
+\hline
+waterBodyId & secondaryMeasure \\ \hline 
+sepaidw:150342 & "Control Abstraction"                                                                         
+ sepaidw:100269 & "Removal of barriers or provision of mechanisms to enable fish migration"    \\                 
+ sepaidw:10757  & "Non-urban land management measures"                                  \\                        
+ sepaidw:23330  & "Improvement to condition of riparian zone and/or wetland habitats"     \\                     
+sepaidw:23190  & "Improvement to condition of riparian zone and/or wetland habitats"       \\                   
+ sepaidw:5802   & "Improvement to condition of riparian zone and/or wetland habitats"     \\                      
+ sepaidw:10211  & "Improvement to condition of riparian zone and/or wetland habitats"    \\                       
+ sepaidw:10042  & "Change timing or frequency of discharge"                              \\                       
+ sepaidw:10214  & "Improvement to condition of riparian zone and/or wetland habitats"     \\                      
+ sepaidw:150104 & "Control Abstraction"                                                  \\                       
+ sepaidw:3002   & "Reduce at source"                                                    \\                        
+ sepaidw:23482  & "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" \\
+ sepaidw:20278  & "Control Abstraction"                                                          \\               
+ sepaidw:10000  & "Reduce at source"                                                         \\                   
+ sepaidw:6503   & "Control Abstraction"                                                     \\                    
+ sepaidw:6525   & "Improve Modified Habitat"                                               \\                     
+ sepaidw:5904   & "Increase treatment"                                                  \\                        
+ sepaidw:23322  & "Removal of barriers or provision of mechanisms to enable fish migration"         \\            
+ sepaidw:100291 & "Improve Modified Habitat"                                          \\                          
+ sepaidw:6563   & "Relocate all or part of discharge"                               \\                            
+ sepaidw:10202  & "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" \\
+ sepaidw:20307  & "Improve Modified Habitat"                                                      \\              
+ sepaidw:10063  & "Removal of barriers or provision of mechanisms to enable fish migration"   \\                  
+ sepaidw:4206   & "Reduce Diffuse Source Inputs"                                             \\                   
+ sepaidw:6525   & "Control Abstraction"                                                     \\                    
+sepaidw:20342  & "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" \\
+ sepaidw:20609  & "Removal of barriers or provision of mechanisms to enable fish migration"     \\                
+ sepaidw:4000   & "Increase treatment"                                                 \\                         
+ sepaidw:10022  & "Change timing or frequency of discharge"                           \\                          
+ sepaidw:10673  & "Provide appropriate baseline flow regime downstream of impoundment"    \\                      
+sepaidw:10251  & "Improvement to condition of riparian zone and/or wetland habitats"      \\                     
+ sepaidw:23182  & "Removal of barriers or provision of mechanisms to enable fish migration"             \\        
+ sepaidw:10047  & "Reduce at source"                            \\                                                
+ sepaidw:10003  & "Change timing or frequency of discharge"      \\                                              
+ sepaidw:10029  & "Removal of barriers or provision of mechanisms to enable fish migration"       \\             
+ sepaidw:10458  & "Removal of barriers or provision of mechanisms to enable fish migration"            \\         
+sepaidw:20245  & "Improvement to condition of channel/bed and/or banks/shoreline"\\                              
+ sepaidw:23223  & "Reduce Diffuse Source Inputs"                           \\                                     
+ sepaidw:23270  & "Reduce at source"                                     \\                                       
+ sepaidw:3000   & "Reduce at source"                                   \\                                         
+ sepaidw:6882   & "Control Abstraction"                              \\                                           
+ sepaidw:4207   & "Reduce Point Source Inputs"                     \\                                             
+ sepaidw:20387  & "Reduce Diffuse Source Inputs"                 \\                                               
+ sepaidw:6311   & "Change timing or frequency of discharge"    \\                                                 \\
+sepaidw:100232 & "Appropriate management of rate and range of artificial drawdown"                             \\
+
+
+
+
+
+
+
+\end{tabular}
+\label{waterBodyMeasures(waterBodyId,secondaryMeasure)}
+
+\end{center}
+\end{table}
+
+
+
+
+
+
+%% prob appen
+\section{European Statistics, ProtectedAreas dataset}
+
+\subsection{Scottish Protection Agency: Test 1.1}
+\label{Section 2: Test 1}
+
+\begin{itemize}
+\item[Original Query Schema:] spa$\_$protectedAreas(area,perimeter,paCode,siteName,siteHa,status,eurCode).
+\item[Suggested Query Schema: ]
+protectedAreas(obsStatus)
+\item[Schema Mappings:] 
+		\begin{itemize}
+		\item spa$\_$protectedAreas $\mapsto$ waterBodyPressures
+		status $\mapsto$ obsStatus
+\item area $\mapsto$ structure
+\item perimeter $\mapsto$ no match
+\item paCode $\mapsto$ no match
+\item siteName $\mapsto$ no match
+\item siteHa $\mapsto$ no match
+\item eurCode $\mapsto$ no match
+
+		\end{itemize}
+\end{itemize}		
+Some of the answers we got are presented in  \ref{protectedAreas(obsStatus)}.
+\begin{table}[!tb]
+
+\caption{Sample Results for query protectedAreas(obsStatus)} \footnote{Structure does not return any answers as there is no triple that satisfies both obsStatus and structure at the same time.}
+\begin{center}
+\begin{tabular}{l}
+\hline
+obsStatus \\ \hline
+"<http://eurostat.linked-statistics.org/dic/obs$\_$status$\#$s>"\\ 
+" <http://eurostat.linked-statistics.org/dic/obs$\_$status$\#$s>" \\
+"<http://eurostat.linked-statistics.org/dic/obs$\_$status$\#$i>" \\
+" <http://eurostat.linked-statistics.org/dic/obs$\_$status$\#$s>" \\
+" <http://eurostat.linked-statistics.org/dic/obs$\_$status$\#$s>" \\
+" <http://eurostat.linked-statistics.org/dic/obs$\_$status$\#$s>" \\
+
+
+
+
+\end{tabular}
+\label{protectedAreas(obsStatus)}
+\end{center}
+
+\end{table}
+
+
+
+\subsection{European Statistics, Environmental Protection Expenditure dataset: Test 2.2}
+\label{EU Protected Areas 2.2}
+
+
+\begin{itemize}
+\item[Original Query Schema:] protectedRegions(dimension,unit,environmentDomain,environmentExposure,geo)
+
+\item[Suggested Query Schema: ]
+protectedAreas(geo,timePeriod).
+
+
+\item[Schema Mappings:] 
+		\begin{itemize}
+		\item protectedRegions $\mapsto$ protectedAreas
+\item environmentDomain $\mapsto$ timePeriod
+\item geo $\mapsto$ geo
+\item dimension $\mapsto$ no match
+\item unit $\mapsto$ no match
+\item environmentExposure $\mapsto$ no match
+\end{itemize}
+
+		\end{itemize}
+		
+		
+	Some of the answers we got are presented in  \ref{protectedAreas(geo,timePeriod)}.
+
+		
+\begin{table}[!tb]
+
+\caption{Sample Results for query protectedAreas(geo,timePeriod)}
+\begin{center}
+\begin{tabular}{l c}
+
+\hline
+geo & timePeriod \\ \hline 
+ <http://eurostat.linked-statistics.org/dic/geo$\#$JO> & "2006-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$SY> & "2003-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$PS> & "2002-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$TN> & "2008-01-01" \\
+<http://eurostat.linked-statistics.org/dic/geo$\#$MA> & "2001-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$MA> & "2009-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$MA> & "2000-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$JO> & "2003-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$MA> & "2011-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$LB> & "2000-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$JO> & "2004-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$EG> & "2004-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$SY> & "2003-01-01" \\
+<http://eurostat.linked-statistics.org/dic/geo$\#$EG> & "2010-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$PS> & "2004-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$PS> & "2000-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$LB> & "2005-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$MA> & "2006-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$EG> & "2004-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$LB> & "2005-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$MA> & "2005-01-01"\\
+<http://eurostat.linked-statistics.org/dic/geo$\#$PS> & "2002-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$TN> & "2008-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$MA> & "2003-01-01" \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$MA> & "2005-01-01"^^xsd:dat \\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$PS> & "2005-01-01"\\
+ <http://eurostat.linked-statistics.org/dic/geo$\#$EG> & "2007-01-01" \\
+
+	\end{tabular}
+	\label{protectedAreas(geo,timePeriod)}
+	\end{center}
+	\end{table}
+		
+		
+		
+\subsection{UK Environmental Agency: Bathing Waters Dataset: Test 3.3}
+\label{ProtectedAreas 3.3}		
+		
+		\begin{itemize}
+\item[Original Query Schema:] uk$\_$protectedAreas( sampleClassification, prefLabel, long, lat, northing, easting,  latestComplianceAssessment, type, country, district,  envelope, latestBathingWaterProfile, sedimentTypesPresent, uriSet, regionalOrganization, yearDesignated, latestSampleAssessment, eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluence, samplingPoint, complianceClassification, primaryTopic, extendedMetadataVersion, definition, label)
+\item[Suggested Query Schema: ]
+protectedAreas(timePeriod)
+\item[Schema Mappings:] 
+		\begin{itemize}
+		\item uk$\_$protectedAreas $\mapsto$ protectedAreas
+\item type $\mapsto$ no match
+\item yearDesignated $\mapsto$ timePeriod
+\item sampleClassification $\mapsto$ no match
+\item prefLabel $\mapsto$ no match
+\item long $\mapsto$ no match
+\item lat $\mapsto$ no match
+\item northing $\mapsto$ no match
+\item easting $\mapsto$ no match
+\item latestComplianceAssessment $\mapsto$ no match
+\item country $\mapsto$ no match
+\item district $\mapsto$ no match
+\item envelope $\mapsto$ no match
+\item latestBathingWaterProfile $\mapsto$ no match
+\item sedimentTypesPresent $\mapsto$ no match
+\item uriSet $\mapsto$ no match
+\item regionalOrganization $\mapsto$ no match
+\item latestSampleAssessment $\mapsto$ no match
+\item eubWidNotation $\mapsto$ no match
+\item waterQualityImpactedByHeavyRain $\mapsto$ no match
+\item zoneOfInfluence $\mapsto$ no match
+\item samplingPoint $\mapsto$ no match
+\item complianceClassification $\mapsto$ no match
+\item primaryTopic $\mapsto$ no match
+\item extendedMetadataVersion $\mapsto$ no match
+\item definition $\mapsto$ no match
+\item label $\mapsto$ no match
+
+\end{itemize}
+		\end{itemize}
+		
+		
+	Some of the answers we got are presented in  \ref{protectedAreas(timePeriod)}.
+
+			
+		
+\begin{table}
+
+\caption{Sample Results for query protectedAreas(timePeriod)}
+\begin{center}
+\begin{tabular}{l }
+\hline
+timePeriod \\ \hline
+
+ "2006-01-01" \\
+ "2003-01-01" \\
+ "2002-01-01" \\
+ "2008-01-01" \\
+"2001-01-01" \\
+ "2009-01-01" \\
+"2000-01-01" \\
+ "2003-01-01" \\
+  "2011-01-01" \\
+ "2000-01-01" \\
+ "2004-01-01" \\
+  "2004-01-01" \\
+"2003-01-01" \\
+"2010-01-01" \\
+ "2004-01-01" \\
+ "2000-01-01" \\
+ "2005-01-01" \\
+ "2006-01-01" \\
+ "2004-01-01" \\
+ "2005-01-01" \\
+ "2005-01-01"\\
+ "2002-01-01" \\
+ "2008-01-01" \\
+  "2003-01-01" \\
+ "2005-01-01"^^xsd:dat \\
+ "2005-01-01"\\
+ "2007-01-01" \\
+\end{tabular}
+\label{protectedAreas(timePeriod)}
+\end{center}
+\end{table}	
+		
+\section{European Statistics, Transport Network dataset}
+\label{Transport Network, NAPTAN Query}
+	\subsection{NAPTAN, Stop Availability dataset: Test 1.2}
+	
+		
+\begin{itemize}
+\item[Original Query Schema:] transport(atcoCode, startDate, endDate, availabilityStatus, note,noteLang, 
+transferStopAtcoCode, creationDateTime, modificationDateTime, revisionNumber, modification)
+\item[Suggested Query Schema: ]
+transportNetwork(comment)
+\item[Schema Mappings:] 
+		\begin{itemize}
+		\item transport $\mapsto$ transportNetwork
+\item note $\mapsto$ comment
+\item atcoCode $\mapsto$ no match
+\item startDate $\mapsto$ no match
+\item endDate $\mapsto$ no match
+\item availabilityStatus $\mapsto$ no match
+\item noteLang $\mapsto$ no match
+\item transferStopAtcoCode $\mapsto$ no match
+\item creationDateTime $\mapsto$ no match
+\item modificationDateTime $\mapsto$ no match
+\item revisionNumber $\mapsto$ no match
+\item modification $\mapsto$ no match
+
+
+\end{itemize}
+		\end{itemize}
+		
+		Some of the answers we got are presented in  \ref{transportNetwork(comment)}.			
+		
+\begin{table}
+
+\caption{Sample Results for query transportNetwork(comment)}
+\begin{center}
+\begin{tabular}{l }
+\hline
+comment \\ \hline
+Reused Eurostat Linked Data Wrapper (http://estatwrap.ontologycentral.com/) to rdfize Eurostat datasets (http://epp.eurostat.ec.europa.eu/)
+
+\end{tabular}
+\label{transportNetwork(comment)}
+\end{center}
+\end{table}	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+%% end document
+\end{document}

@@ -1,0 +1,140 @@
+Query:  entity(type(MethodistPolitician)) 
+Construct query entity(type(MethodistPolitician)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/MethodistPolitician> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Governor Mayor Politician PoliticianSpouse 
+
+Matching query schema MethodistPolitician 
+to dataset schema PoliticianSpouse(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema MethodistPolitician 
+to dataset schema Governor(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,prefect,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema MethodistPolitician 
+to dataset schema Politician(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,prefect,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0035335689045936647).
+match(none).
+match([[MethodistPolitician],>,[Politician,PersonHeight]]).
+
+Matching query schema MethodistPolitician 
+to dataset schema Mayor(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,mayorMandate,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,prefect,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Construct query entity(type(Politician)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------
+| subject                                                                                            |
+======================================================================================================
+| <http://dbpedia.org/resource/Andrew_Foley_(MP)>                                                    |
+| <http://dbpedia.org/resource/Carlos_A._Gim%C3%A9nez>                                               |
+| <http://dbpedia.org/resource/Carlos_E._Gim%C3%A9nez>                                               |
+| <http://dbpedia.org/resource/Dean_Constable>                                                       |
+| <http://dbpedia.org/resource/Eduardo_Fellner>                                                      |
+| <http://dbpedia.org/resource/Edward_C._Kehr>                                                       |
+| <http://dbpedia.org/resource/Edward_Harley_(1664%E2%80%931735)>                                    |
+| <http://dbpedia.org/resource/Fred_Ashton_(politician)>                                             |
+| <http://dbpedia.org/resource/Harry_Jones_(politician)>                                             |
+| <http://dbpedia.org/resource/Henry_McGhee>                                                         |
+| <http://dbpedia.org/resource/Jacques_Lafleur>                                                      |
+| <http://dbpedia.org/resource/Kim_Hames>                                                            |
+| <http://dbpedia.org/resource/Liliana_Fellner>                                                      |
+| <http://dbpedia.org/resource/Norman_Smith_(politician)>                                            |
+| <http://dbpedia.org/resource/Patrick_Cogan>                                                        |
+| <http://dbpedia.org/resource/Peter_Gummer,_Baron_Chadlington>                                      |
+| <http://dbpedia.org/resource/Robert_Rugge>                                                         |
+| <http://dbpedia.org/resource/Voltaire_Molesworth>                                                  |
+| <http://dbpedia.org/resource/Aaron_Farrugia>                                                       |
+| <http://dbpedia.org/resource/Abdul_Zahir_(Afghan_Prime_Minister)>                                  |
+| <http://dbpedia.org/resource/Abdullahi_Adamu>                                                      |
+| <http://dbpedia.org/resource/Abiel_Wood>                                                           |
+| <http://dbpedia.org/resource/Abraham_B._Venable>                                                   |
+| <http://dbpedia.org/resource/Adalberto_Madero>                                                     |
+| <http://dbpedia.org/resource/Adam_Hofman>                                                          |
+| <http://dbpedia.org/resource/Adam_Lipi%C5%84ski>                                                   |
+| <http://dbpedia.org/resource/Adebayo_Adefarati>                                                    |
+| <http://dbpedia.org/resource/Adolfo_Zald%C3%ADvar>                                                 |
+| <http://dbpedia.org/resource/Agenor_Maria_Go%C5%82uchowski>                                        |
+| <http://dbpedia.org/resource/Alan_Chambers_(Canadian_politician)>                                  |
+| <http://dbpedia.org/resource/Alan_Steelman>                                                        |
+| <http://dbpedia.org/resource/Albert_Thompson_(Australian_politician)>                              |
+| <http://dbpedia.org/resource/Alberto_Herrera_y_Franchi>                                            |
+| <http://dbpedia.org/resource/Alexander_Hay_(Australian_politician)>                                |
+| <http://dbpedia.org/resource/Alexander_Oxenford>                                                   |
+| <http://dbpedia.org/resource/Alexander_Robertson_(MP)>                                             |
+| <http://dbpedia.org/resource/Alexander_Tucker_(commissioner)>                                      |
+| <http://dbpedia.org/resource/Alexandros_Papanastasiou>                                             |
+| <http://dbpedia.org/resource/Alf_Ivar_Samuelsen>                                                   |
+| <http://dbpedia.org/resource/Alfonso_Pecoraro_Scanio>                                              |
+| <http://dbpedia.org/resource/Alfred_Blaisdell>                                                     |
+| <http://dbpedia.org/resource/Alfred_Lucking>                                                       |
+| <http://dbpedia.org/resource/Alfred_Waterson>                                                      |
+| <http://dbpedia.org/resource/Ali-Reza_Asgari>                                                      |
+| <http://dbpedia.org/resource/Ali_Babacan>                                                          |
+| <http://dbpedia.org/resource/Alina_Gut>                                                            |
+| <http://dbpedia.org/resource/Alina_Pienkowska>                                                     |
+| <http://dbpedia.org/resource/Allen_West_(politician)>                                              |
+| <http://dbpedia.org/resource/Alonso_de_Ribera>                                                     |
+| <http://dbpedia.org/resource/Alyson_Kennedy>                                                       |
+| <http://dbpedia.org/resource/Andrew_George_(governor)>                                             |
+| <http://dbpedia.org/resource/Andrew_Green_(Jersey_politician)>                                     |
+| <http://dbpedia.org/resource/Andrew_Robb>                                                          |
+| <http://dbpedia.org/resource/Andrew_Wood_(diplomat)>                                               |
+| <http://dbpedia.org/resource/Andrzej_Adamczyk>                                                     |
+| <http://dbpedia.org/resource/Angelo_Farrugia>                                                      |
+| <http://dbpedia.org/resource/Anne_Kerr_(politician)>                                               |
+| <http://dbpedia.org/resource/Anthony_Mason_(judge)>                                                |
+| <http://dbpedia.org/resource/Aristides_Gomes>                                                      |
+| <http://dbpedia.org/resource/Arjan_El_Fassed>                                                      |
+| <http://dbpedia.org/resource/Arnold_McCallum>                                                      |
+| <http://dbpedia.org/resource/Arthur_Davidson_(politician)>                                         |
+| <http://dbpedia.org/resource/Arthur_Porter_(MP)>                                                   |
+| <http://dbpedia.org/resource/Arthur_Richards_(French_politician)>                                  |
+| <http://dbpedia.org/resource/Ashley_Cooper_(politician)>                                           |
+| <http://dbpedia.org/resource/August_Flamme>                                                        |
+| <http://dbpedia.org/resource/Austin_Taylor_(British_politician)>                                   |
+| <http://dbpedia.org/resource/B%C3%B8rre_R%C3%B8nningen>                                            |
+| <http://dbpedia.org/resource/B%C3%BClent_Ar%C4%B1n%C3%A7>                                          |
+| <http://dbpedia.org/resource/Babatunde_Fashola>                                                    |
+| <http://dbpedia.org/resource/Baha_Araji>                                                           |
+| <http://dbpedia.org/resource/Bannon_Goforth_Thibodeaux>                                            |
+| <http://dbpedia.org/resource/Barnabas_Sibusiso_Dlamini>                                            |
+| <http://dbpedia.org/resource/Barrie_Chivers>                                                       |
+| <http://dbpedia.org/resource/Beatrice_Trew>                                                        |
+| <http://dbpedia.org/resource/Benjamin_Guerard>                                                     |
+| <http://dbpedia.org/resource/Benjamin_Jones_(congressman)>                                         |
+| <http://dbpedia.org/resource/Benjamin_Tasker,_Jr.>                                                 |
+| <http://dbpedia.org/resource/Benjamin_Tasker,_Sr.>                                                 |
+| <http://dbpedia.org/resource/Bernardino_de_Sousa_Monteiro>                                         |
+| <http://dbpedia.org/resource/Bernie_Kilgariff>                                                     |
+| <http://dbpedia.org/resource/Bert_Kelly>                                                           |
+| <http://dbpedia.org/resource/Bill_Drews>                                                           |
+| <http://dbpedia.org/resource/Bill_Heffernan>                                                       |
+| <http://dbpedia.org/resource/Bill_Jordan,_Baron_Jordan>                                            |
+| <http://dbpedia.org/resource/Bill_McKnight>                                                        |
+| <http://dbpedia.org/resource/Billy_Fox_(politician)>                                               |
+| <http://dbpedia.org/resource/Bj%C3%B6rn_J%C3%B3nsson>                                              |
+| <http://dbpedia.org/resource/Bob_Corker>                                                           |
+| <http://dbpedia.org/resource/Bob_Debus>                                                            |
+| <http://dbpedia.org/resource/Borys_Kolesnikov>                                                     |
+| <http://dbpedia.org/resource/Brad_Avakian>                                                         |
+| <http://dbpedia.org/resource/Brampton_Gurdon_(of_Assington_and_Letton)>                            |
+| <http://dbpedia.org/resource/Brampton_Gurdon_(of_Letton)>                                          |
+| <http://dbpedia.org/resource/Brian_Burke>                                                          |
+| <http://dbpedia.org/resource/Brian_Gibson_(Australian_politician)>                                 |
+| <http://dbpedia.org/resource/Bryce_Gaudry>                                                         |
+

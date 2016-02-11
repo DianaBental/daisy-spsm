@@ -1,0 +1,19 @@
+Query:  entity(subject(Maribor),numberOfInhabitants) 
+Construct query entity(subject(Maribor),numberOfInhabitants) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Maribor> <numberOfInhabitants> ?numberOfInhabitants . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(subject,numberOfInhabitants) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(subject,numberOfInhabitants) 
+
+Cannot respond to   entity(subject(Maribor),numberOfInhabitants) 
+

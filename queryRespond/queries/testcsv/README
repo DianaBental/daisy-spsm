@@ -1,0 +1,12 @@
+A couple of test queries for trying out csv files.
+Works with datasets/csvtargets/*csv and datasets/csvsource/*csv
+
+e.g. The query 
+'NativePopulation'(geocode(10), 'Inuit', 'Geographic Population','Total population').
+
+matches a source file
+datasets/csvsource/NativePopulation.csv
+and works on a target file
+datasets/csvtargets/AustraliaAboriginalPopulation.csv
+(Actually these two files have identical content)
+

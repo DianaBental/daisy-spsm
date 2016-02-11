@@ -1,0 +1,3 @@
+% SAQ
+entity(type('Cosmonaut')).
+

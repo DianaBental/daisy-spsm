@@ -1,0 +1,781 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix property:  <http://eurostat.linked-statistics.org/property#> .
+@prefix qb:      <http://purl.org/linked-data/cube#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,TN,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#TN> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.33" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,IL,2002>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#IL> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2002-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "409966" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,PS,2002>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2002-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "5440" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,JO,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#JO> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-attribute:obsStatus
+              <http://eurostat.linked-statistics.org/dic/obs_status#s> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.45" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2002>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2002-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "214187" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,JO,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#JO> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "129800" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2003>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.301" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,TN,2008>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#TN> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2008-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.33" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2002>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2002-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.301" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,EG,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#EG> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "9.83" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2007>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2007-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.965" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,PS,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.92" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,TN,2000>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#TN> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2000-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.33" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,PS,2000>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2000-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.904" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,EG,2008>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#EG> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2008-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "15" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,EG,2010>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#EG> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2010-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "15" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,SY,2003>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#SY> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "213393" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,PS,2001>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2001-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "5440" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,LB,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#LB> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "2" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,LB,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#LB> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "21808" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,LB,2000>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#LB> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2000-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "2" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2010>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2010-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.097" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,TN,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#TN> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.33" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,JO,2003>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#JO> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "114100" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,JO,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#JO> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-attribute:obsStatus
+              <http://eurostat.linked-statistics.org/dic/obs_status#s> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.45" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2003>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "214187" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,PS,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "5440" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2009>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2009-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "779499" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2006>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2006-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.965" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,EG,2007>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#EG> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2007-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "149167.5" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,PS,2001>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2001-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.904" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,JO,2006>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#JO> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2006-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.45" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,PS,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.92" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,TN,2000>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#TN> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2000-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "217888" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2001>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2001-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.301" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,SY,2003>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#SY> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-attribute:obsStatus
+              <http://eurostat.linked-statistics.org/dic/obs_status#s> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.15" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "500999" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,TN,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#TN> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "217888" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,EG,2007>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#EG> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2007-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "15" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,EG,2010>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#EG> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2010-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "150000" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2010>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2010-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "779499" .
+
+<http://eurostat.linked-statistics.org/data/med_en51>
+      a       qb:DataSet ;
+      rdfs:comment "Reused Eurostat Linked Data Wrapper (http://estatwrap.ontologycentral.com/) to rdfize Eurostat datasets (http://epp.eurostat.ec.europa.eu/) ." ;
+      rdfs:seeAlso <http://epp.eurostat.ec.europa.eu/portal/page/portal/about_eurostat/policies/copyright_licence_policy> , <http://eurostat.linked-statistics.org/> ;
+      dcterms:modified "2013-05-11T17:12:49+0100" ;
+      dcterms:source <http://epp.eurostat.ec.europa.eu/NavTree_prod/everybody/BulkDownloadListing?file=data%2Fmed_en51.tsv.gz> ;
+      qb:structure <http://eurostat.linked-statistics.org/dsd/med_en51> .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2011>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.097" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2008>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2008-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "779499" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2000>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2000-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "214187" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,PS,2002>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2002-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.904" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.705" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,PS,2000>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2000-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "5440" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2009>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2009-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.097" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,TN,2008>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#TN> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-attribute:obsStatus
+              <http://eurostat.linked-statistics.org/dic/obs_status#i> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2008-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "217888" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,EG,2008>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#EG> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2008-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "149167.5" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,PS,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "5440" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2000>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2000-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.3" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,EG,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#EG> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "9848350" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,JO,2006>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#JO> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2006-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "129800" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,TN,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#TN> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "217888" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "500999" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2011>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2011-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "779499" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2001>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2001-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "214187" .
+
+<http://eurostat.linked-statistics.org/>
+      dcterms:date "2013-05-11T17:12:49+0100" ;
+      foaf:maker <http://harth.org/andreas/foaf#ah> .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2004>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2004-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.705" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,PS,2003>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "0.92" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2007>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2007-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "685999" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,IL,2002>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#IL> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-attribute:obsStatus
+              <http://eurostat.linked-statistics.org/dic/obs_status#s> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2002-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "19.8" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,MA,2008>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2008-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.097" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,PS,2003>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#PS> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "5440" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5102,JO,2003>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#JO> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5102> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-attribute:obsStatus
+              <http://eurostat.linked-statistics.org/dic/obs_status#s> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2003-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "1.28" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,JO,2005>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#JO> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2005-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "129800" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,LB,2000>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#LB> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2000-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "20700" .
+
+<http://eurostat.linked-statistics.org/data/med_en51#A,D5101,MA,2006>
+      a       qb:Observation ;
+      property:geo <http://eurostat.linked-statistics.org/dic/geo#MA> ;
+      property:indic_md <http://eurostat.linked-statistics.org/dic/indic_md#D5101> ;
+      qb:dataSet <http://eurostat.linked-statistics.org/data/med_en51> ;
+      sdmx-dimension:freq <http://purl.org/linked-data/sdmx/2009/code#freq-A> ;
+      sdmx-dimension:timePeriod
+              "2006-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      sdmx-measure:obsValue
+              "685999" .

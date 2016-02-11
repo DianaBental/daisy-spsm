@@ -1,0 +1,19 @@
+Query:  entity(publisher(GMT_Games)) 
+Construct query entity(publisher(GMT_Games)) 
+SELECT *
+WHERE { ?subject <publisher> <http://dbpedia.org/resource/GMT_Games> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(publisher) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(publisher) 
+
+Cannot respond to   entity(publisher(GMT_Games)) 
+

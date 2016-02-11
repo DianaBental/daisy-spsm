@@ -1,0 +1,132 @@
+Query:  entity(type(Nonprofit_organization),locationCountry(Australia)) 
+Construct query entity(type(Nonprofit_organization),locationCountry(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Nonprofit_organization> ; 
+<http://dbpedia.org/ontology/locationCountry> <http://dbpedia.org/resource/Australia> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Nonprofit_organization 
+
+Matching query schema Nonprofit_organization(locationCountry) 
+to dataset schema Nonprofit_organization(locationCountry) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[Nonprofit_organization,locationCountry],=,[Nonprofit_organization,locationCountry]]).
+match([[Nonprofit_organization],=,[Nonprofit_organization]]).
+
+Construct query entity(type(Nonprofit_organization),locationCountry(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Nonprofit_organization> ; 
+<http://dbpedia.org/ontology/locationCountry> <http://dbpedia.org/resource/Australia> . }
+
+The query did not return any data. 
+
+Construct query entity(type,locationCountry(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/locationCountry> <http://dbpedia.org/resource/Australia> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                               | type                                                                              |
+=============================================================================================================================================================================
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://www.w3.org/2002/07/owl#Thing>                                             |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://schema.org/Organization>                                                  |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                     |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>              |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/ontology/Agent>                                               |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/ontology/Company>                                             |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/ontology/Organisation>                                        |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/Abstraction100002137>                              |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/Company108058098>                                  |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/Group100031264>                                    |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/Institution108053576>                              |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/Organization108008335>                             |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/SocialGroup107950920>                              |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/YagoLegalActor>                                    |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      |
+| <http://dbpedia.org/resource/Freeview_(Australia)>                                    | <http://dbpedia.org/class/yago/PrivatelyHeldCompaniesOfAustralia>                 |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://www.w3.org/2002/07/owl#Thing>                                             |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://schema.org/Place>                                                         |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://dbpedia.org/ontology/ArchitecturalStructure>                              |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://dbpedia.org/ontology/Place>                                               |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://dbpedia.org/ontology/Theatre>                                             |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://dbpedia.org/ontology/Venue>                                               |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://dbpedia.org/ontology/Wikidata:Q532>                                       |
+| <http://dbpedia.org/resource/Oriana_Cinema>                                           | <http://www.opengis.net/gml/_Feature>                                             |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://www.w3.org/2002/07/owl#Thing>                                             |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://schema.org/Organization>                                                  |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                     |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>              |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/ontology/Agent>                                               |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/ontology/Company>                                             |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/ontology/Organisation>                                        |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/Abstraction100002137>                              |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/AustralianMedia>                                   |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/Company108058098>                                  |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/Group100031264>                                    |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/Institution108053576>                              |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/Organization108008335>                             |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/SocialGroup107950920>                              |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/OrganisationsBasedInMelbourne>                     |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/YagoLegalActor>                                    |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      |
+| <http://dbpedia.org/resource/The_Conversation_(website)>                              | <http://dbpedia.org/class/yago/MediaInMelbourne>                                  |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://www.w3.org/2002/07/owl#Thing>                                             |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://schema.org/Organization>                                                  |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                     |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>              |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/ontology/Agent>                                               |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/ontology/BroadcastNetwork>                                    |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/ontology/Broadcaster>                                         |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/ontology/Organisation>                                        |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/Abstraction100002137>                              |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/Company108058098>                                  |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/Group100031264>                                    |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/Institution108053576>                              |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/Organization108008335>                             |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/SocialGroup107950920>                              |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/YagoLegalActor>                                    |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/ChristianMediaCompanies>                           |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/CompaniesBasedInFranklinCounty,Illinois>           |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/ReligiousMedia>                                    |
+| <http://dbpedia.org/resource/Three_Angels_Broadcasting_Network>                       | <http://dbpedia.org/class/yago/Seventh-dayAdventistMedia>                         |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://www.w3.org/2002/07/owl#Thing>                                             |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://schema.org/Organization>                                                  |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                     |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>              |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/ontology/Agent>                                               |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/ontology/Company>                                             |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/ontology/Organisation>                                        |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/Abstraction100002137>                              |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/Company108058098>                                  |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/Group100031264>                                    |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/Institution108053576>                              |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/Organization108008335>                             |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/SocialGroup107950920>                              |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/YagoLegalActor>                                    |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/FoodCompaniesOfAustralia>                          |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/FoodCompany108003427>                              |
+| <http://dbpedia.org/resource/Beerenberg_Farm>                                         | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://www.w3.org/2002/07/owl#Thing>                                             |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://schema.org/Organization>                                                  |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                     |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>              |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://dbpedia.org/ontology/Agent>                                               |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://dbpedia.org/ontology/Company>                                             |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://dbpedia.org/ontology/Organisation>                                        |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://umbel.org/umbel/rc/Business>                                              |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://dbpedia.org/class/yago/Abstraction100002137>                              |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://dbpedia.org/class/yago/Company108058098>                                  |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://dbpedia.org/class/yago/Group100031264>                                    |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://dbpedia.org/class/yago/Institution108053576>                              |
+| <http://dbpedia.org/resource/Computershare>                                           | <http://dbpedia.org/class/yago/Organization108008335>                             |
+

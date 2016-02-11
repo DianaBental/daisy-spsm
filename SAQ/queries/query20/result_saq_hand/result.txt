@@ -1,0 +1,20 @@
+Query:  entity(type(NonprofitOrganization),country(Australia)) 
+Construct query entity(type(NonprofitOrganization),country(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/NonprofitOrganization> ; 
+<http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Australia> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Company 
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema Company(location,headquarter,locationCity) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  NonprofitOrganization(country) 
+
+Cannot respond to   entity(type(NonprofitOrganization),country(Australia)) 
+

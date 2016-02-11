@@ -1,0 +1,448 @@
+Query:  entity(type(Mountain),locatedOn(Earth),height) 
+Construct query entity(type(Mountain),locatedOn(Earth),height) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<locatedOn> <http://dbpedia.org/resource/Earth> ; 
+<height> ?height . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Mountain MountainPass MountainRange MountainVolcano Volcano 
+
+Matching query schema Mountain(locatedOn,height) 
+to dataset schema MountainVolcano(firstAscent) 
+Created match data: 
+similarity(0.16666666666666663).
+match(none).
+match([[Mountain],>,[MountainVolcano]]).
+
+Matching query schema Mountain(locatedOn,height) 
+to dataset schema MountainPass(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.011627906976744207).
+match(none).
+match([[Mountain],=,[MountainPass]]).
+match([[Mountain,height],=,[MountainPass,elevation]]).
+match([[Mountain,height],=,[MountainPass,altitude]]).
+
+Matching query schema Mountain(locatedOn,height) 
+to dataset schema MountainRange(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.011627906976744207).
+match(none).
+match([[Mountain,height],=,[MountainRange,altitude]]).
+match([[Mountain,height],=,[MountainRange,elevation]]).
+match([[Mountain],=,[MountainRange]]).
+
+Matching query schema Mountain(locatedOn,height) 
+to dataset schema Volcano(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eruptionYear,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.0028901734104046506).
+match(none).
+match([[Mountain,height],>,[Volcano,altitude]]).
+match([[Mountain],>,[Volcano]]).
+
+Matching query schema Mountain(locatedOn,height) 
+to dataset schema Mountain(alpsGroup,alpsMainPart,alpsMajorSector,alpsSection,alpsSoiusaCode,alpsSubgroup,alpsSubsection,alpsSupergroup,altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,ascentDate,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,firstAscentPerson,firstAscentYear,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,mountainRange,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parentMountainPeak,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.010810810810810811).
+match(none).
+match([[Mountain],=,[Mountain]]).
+match([[Mountain,locatedOn],<,[Mountain,elevation]]).
+match([[Mountain,height],=,[Mountain,altitude]]).
+
+Construct query entity(type(MountainVolcano)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainVolcano> . }
+
+The query did not return any data. 
+
+Construct query entity(type) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                    | type                                                               |
+===================================================================================================================================================================================================================
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>                                                                                          | <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>              |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default>                                                                                   | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-nullable>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt>                                                                            | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt-nullable>                                                                   | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-lang>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-lang-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-fixedlang-x-any>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-fixedlang-x-any-nullable>                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-dt>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-dt-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-lang>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-lang-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-fixedlang-x-any>                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-fixedlang-x-any-nullable>                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-dt>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-dt-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-lang>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-lang-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-fixedlang-x-any>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-fixedlang-x-any-nullable>                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-literal>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-literal-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-dt>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-dt-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-lang>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-lang-nullable>                                                            | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-fixedlang-x-any>                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-fixedlang-x-any-nullable>                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarbinary>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarbinary-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-literal>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-literal-nullable>                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date>                                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-nullable>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time>                                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-nullable>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-literal>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-literal-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri>                                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri-nullable>                                                                    | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri-fn-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal-fn-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri-fn-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal-fn-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-fn>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-fn-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+
+Construct query entity(type(MountainPass),altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainPass> ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+The query did not return any data. 
+
+Construct query entity(type,altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+Construct query entity(type(MountainPass),elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainPass> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query did not return any data. 
+
+Construct query entity(type,elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                    | type                                                                                       | elevation                                            |
+==================================================================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Acq>                                                          | <http://www.w3.org/2002/07/owl#Thing>                                                      | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://schema.org/Place>                                                                  | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/ontology/Place>                                                        | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/ontology/PopulatedPlace>                                               | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/ontology/Settlement>                                                   | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://www.opengis.net/gml/_Feature>                                                      | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                            | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/District108552138>                                          | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/Location100027167>                                          | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/Object100002684>                                            | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/Region108630985>                                            | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/YagoGeoEntity>                                              | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                          | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/Commune108541609>                                           | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/CommunesOfPas-de-Calais>                                    | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                    | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                               | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.w3.org/2002/07/owl#Thing>                                                      | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://schema.org/Airport>                                                                | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://schema.org/Place>                                                                  | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Airport>                                                      | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/ArchitecturalStructure>                                       | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Infrastructure>                                               | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Place>                                                        | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.opengis.net/gml/_Feature>                                                      | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.w3.org/2002/07/owl#Thing>                                                      | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://schema.org/Airport>                                                                | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://schema.org/Place>                                                                  | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Airport>                                                      | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/ArchitecturalStructure>                                       | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Infrastructure>                                               | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Place>                                                        | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.opengis.net/gml/_Feature>                                                      | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://www.w3.org/2002/07/owl#Thing>                                                      | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://schema.org/Place>                                                                  | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/ontology/Place>                                                        | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/ontology/PopulatedPlace>                                               | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/ontology/Settlement>                                                   | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://www.opengis.net/gml/_Feature>                                                      | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                            | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/District108552138>                                          | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/Location100027167>                                          | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/Object100002684>                                            | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/Region108630985>                                            | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/YagoGeoEntity>                                              | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                          | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/Commune108541609>                                           | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/CommunesOfSeine-Maritime>                                   | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                    | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                               | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://www.w3.org/2002/07/owl#Thing>                                                      | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://schema.org/Place>                                                                  | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/ontology/Place>                                                        | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/ontology/PopulatedPlace>                                               | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/ontology/Settlement>                                                   | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://www.opengis.net/gml/_Feature>                                                      | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                            | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/District108552138>                                          | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/Location100027167>                                          | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/Object100002684>                                            | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/Region108630985>                                            | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/UrbanArea108675967>                                         | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/YagoGeoEntity>                                              | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                          | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/MunicipalitiesOfTheCantonOfFribourg>                        | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/GeographicalArea108574314>                                  | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/Municipality108626283>                                      | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                    | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                               | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://www.w3.org/2002/07/owl#Thing>                                                      | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://schema.org/Airport>                                                                | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://schema.org/Place>                                                                  | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/Airport>                                                      | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/ArchitecturalStructure>                                       | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/Infrastructure>                                               | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/Place>                                                        | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://www.opengis.net/gml/_Feature>                                                      | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Airfield102687992>                                          | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Airport102692232>                                           | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/AirportsInQueensland>                                       | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Artifact100021939>                                          | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Facility103315023>                                          | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Object100002684>                                            | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Whole100003553>                                             | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/YagoGeoEntity>                                              | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+
+Construct query entity(type(MountainRange),altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainRange> ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+The query did not return any data. 
+
+Construct query entity(type,altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+Construct query entity(type(MountainRange),elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainRange> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                    | elevation                                            |
+=====================================================================================================================================
+| <http://dbpedia.org/resource/Castle_Mountains_(California)>                | "1567.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Itcha_Range>                                  | "2375.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Blue_Mountains_(Jamaica)>                     | "2256.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Capay_Hills>                                  | "420.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Cayoosh_Range>                                | "2855.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/D'Aguilar_Range>                              | "770.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Egge_(range)>                                 | "468.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Elkhorn_Mountains_(Oregon)>                   | "2776.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gorce_Mountains>                              | "1310.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Granite_Range_(Elko_County)>                  | "2388.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Granite_Range_(Washoe_County)>                | "2365.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Imeon_Range>                                  | "2105.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Inglefield_Mountains>                         | "1500.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Last_Chance_Range>                            | "2645.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Last_Chance_Range_(Nevada)>                   | "1454.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lippe_Uplands>                                | "496.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Main_Range_(Snowy_Mountains)>                 | "2228.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Old_Woman_Mountains>                          | "899.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Potrero_Hills_(Solano_County,_California)>    | "107.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Sierra_Blanca_(Andalusia)>                    | "1275.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Sierra_Norte_de_Sevilla>                      | "960.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Titiwangsa_Mountains>                         | "2187.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dalou_Mountains>                              | "2251.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Montes_de_Toledo>                             | "1603.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Phi_Pan_Nam_Range>                            | "1694.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Salt_Spring>                                  | "509.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/San_Antonio_Mountains>                        | "1884.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Sierra_Sur_de_Ja%C3%A9n>                      | "1872.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Sierra_de_Cazorla>                            | "1847.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bieszczady_Mountains>                         | "1405.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bunya_Mountains>                              | "1135.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cordillera_de_la_Ramada>                      | "6720.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Nipe-Sagua-Baracoa>                           | "1231.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Russian_Mountains_(Alaska)>                   | "3077.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Anaimalai_Hills>                              | "2695.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Columbia_Mountains>                           | "3519.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Monashee_Mountains>                           | "3274.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Western_Tatras>                               | "2248.4"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mutton_Mountains>                             | "1247.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Prebaetic_System>                             | "2382.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Romsdalsalpene>                               | "1852.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Alsek_Ranges>                                 | "2721.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Antelope_Range_(Nye_County,_Nevada)>          | "3080.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lenne_Mountains>                              | "656.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Little_Signal_Hills>                          | "413.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Harly_Forest>                                 | "255.9"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Calumet_Mountains>                            | "829.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Carinthian-Styrian_Alps>                      | "2241.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ciervo_Hills>                                 | "1027.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Martin_Creek_Mountains>                       | "2198.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Daumengruppe>                                 | "2280.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ogilby_Hills>                                 | "128.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Las_Tinajas_de_Los_Indios>                    | "780.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Lompoc_Hills>                                 | "411.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Rehburg_Hills>                                | "161.4"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Sierra_de_Aracena>                            | "962.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Albula_Alps>                                  | "3418.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Atlas_Mountains>                              | "4165.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bernese_Alps>                                 | "4274.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Carpathian_Mountains>                         | "2655.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cottian_Alps>                                 | "3841.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dauphin%C3%A9_Alps>                           | "4102.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dolomites>                                    | "3343.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Glarus_Alps>                                  | "3614.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Graian_Alps>                                  | "4810.45"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Great_Dividing_Range>                         | "2228.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Himalayas>                                    | "8848.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Hindu_Kush>                                   | "7690.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lepontine_Alps>                               | "3552.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Maritime_Alps>                                | "3297.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Pennine_Alps>                                 | "4634.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tatra_Mountains>                              | "2655.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ural_Mountains>                               | "1895.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Maury_Mountains>                              | "1844.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Monti_Ernici>                                 | "2064.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Annamite_Range>                               | "2598.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chalk_Mountains_(California)>                 | "761.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Chalk_Mountains_(Colorado)>                   | "3649.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chalk_Mountains_(Texas)>                      | "955.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Cordillera_Occidental_(Colombia)>             | "4250.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cordillera_Oriental_(Colombia)>               | "5410.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cordillera_del_Paine>                         | "2884.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Desert_Hills_(Nevada)>                        | "1542.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Double_H_Mountains>                           | "1834.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Driftwood_Range>                              | "2027.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Frankland_Range>                              | "1083.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Kikai_Caldera>                                | "704.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Newberry_Mountains_(California)>              | "1217.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/North_Mountain_(Nova_Scotia)>                 | "235.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Owl_Mountains>                                | "1014.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Plessur_Alps>                                 | "2985.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Strawberry_Range>                             | "2750.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tantalus_Range>                               | "2603.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mallard_Hills>                                | "2052.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Irish_Range>                            | "2665.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Panoche_Hills>                                | "675.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Sierra_del_Escudo_de_Cabu%C3%A9rniga>         | "927.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+
+Construct query entity(type(Volcano),altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Volcano> ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+The query did not return any data. 
+
+Construct query entity(type,altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+Construct query entity(type(Mountain),elevation(Earth),altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<http://dbpedia.org/ontology/elevation> <http://dbpedia.org/resource/Earth> ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+The query did not return any data. 
+
+Construct query entity(type,elevation(Earth),altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/elevation> <http://dbpedia.org/resource/Earth> ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+Construct query entity(type(Mountain),elevation,altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+
+Construct query entity(type,elevation,altitude) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/elevation> ?elevation ; 
+<http://dbpedia.org/ontology/altitude> ?altitude . }
+

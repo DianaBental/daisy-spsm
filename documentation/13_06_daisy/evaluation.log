@@ -1,0 +1,772 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  11 JUL 2013 12:39
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**evaluation.tex
+(./evaluation.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count87
+\uc@combtoks=\toks16
+\uc@combtoksb=\toks17
+\uc@temptokena=\toks18
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(./evaluation.aux
+
+LaTeX Warning: Label `waterBodyMeasures(waterBodyId,secondaryMeasure)' multiply
+ defined.
+
+)
+\openout1 = `evaluation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+
+Overfull \hbox (0.48682pt too wide) in paragraph at lines 38--39
+\OT1/cmr/m/n/10 in-dus-try-Sec-tor, data-Source, com-ments, at-Gep-Pe-ri-odAfte
+rNext, is-Pri-mary,
+ []
+
+
+Overfull \hbox (2.9728pt too wide) in paragraph at lines 38--39
+\OT1/cmr/m/n/10 ac-tiv-ity, swAs-set, pro-tectedAreaId, eiAfter-Fail-Rea-son, s
+ource-Code, source) 
+ []
+
+
+Overfull \hbox (4.62566pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/n/10 pro-jected, at-GepCur-rent-Pe-riod, data-Source, mea-sureId, lo
+-ca-tion-Code, pro-
+ []
+
+[1
+
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (3.8479pt too wide) in paragraph at lines 40--41
+[]\OT1/cmr/m/n/10 surfaceWaterBodies(genre, lengthKm,a sso-ci-at-ed-Ground-wa-t
+erId, sb-d-Code,
+ []
+
+
+Overfull \hbox (6.77853pt too wide) in paragraph at lines 40--41
+\OT1/cmr/m/n/10 data-Source, isHeav-i-ly-Mod-i-fied, ge-ol-o-gy-Ty-pol-ogy, cur
+-rent-Clas-si-fi-ca-tionYear,
+ []
+
+
+Overfull \hbox (3.05627pt too wide) in paragraph at lines 40--41
+\OT1/cmr/m/n/10 Clas-si-fi-ca-tion, clas-si-fi-ca-tion-Cer-tain-ty-Band, wa-ter
+-Bo-dy-Name, sub-BasinDis-
+ []
+
+
+Overfull \hbox (14.19518pt too wide) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 cer-tain-ty-Band, clas-si-fi-ca-tion-Pa-ram-e-ter, con-tribut-i
+n-gLo-ca-tion-Code, lessThan-
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 111--117
+
+ []
+
+[3]
+Overfull \hbox (95.24629pt too wide) in paragraph at lines 150--152
+[] \OT1/cmtt/m/n/10 environmentalProtectionExpenditutureRegions( dimension, uni
+t, environmentDomain,
+ []
+
+
+Overfull \hbox (3.74907pt too wide) in paragraph at lines 167--169
+\OT1/cmr/m/n/10 We change the pred-i-cate of the query name into \OT1/cmtt/m/n/
+10 environmentProtectionRegion\OT1/cmr/m/n/10 : 
+ []
+
+
+Overfull \hbox (11.24702pt too wide) in paragraph at lines 167--169
+[] \OT1/cmtt/m/n/10 environmentProtectionRegion( dimension, unit, environmentDo
+main,
+ []
+
+[4]
+Overfull \hbox (26.99689pt too wide) in paragraph at lines 183--185
+[] \OT1/cmtt/m/n/10 locations( dimension, unit, environmentDomain, environmentE
+xposure,
+ []
+
+
+Overfull \hbox (5.99707pt too wide) in paragraph at lines 210--212
+[] \OT1/cmtt/m/n/10 water( dimension, unit, environmentDomain, environmentExpos
+ure,
+ []
+
+[5]
+Overfull \hbox (10.54503pt too wide) in paragraph at lines 268--270
+\OT1/cmr/m/n/10 Ar-eas dataset: []spa$[]$protectedAreas( area, perime-ter, pa-C
+ode, site-Name, siteHa,
+ []
+
+
+Overfull \hbox (36.0268pt too wide) in paragraph at lines 275--277
+[]\OT1/cmtt/m/n/10 spa$[]$protectedAreas( area, perimeter, paCode, siteName, si
+teHa, status,
+ []
+
+
+Overfull \hbox (0.68872pt too wide) in paragraph at lines 278--279
+ \OT1/cmr/bx/n/10 Plu-ral: On, Re-sults:[] \OT1/cmr/m/n/10 The narrowing-down p
+ro-cess did not re-turn any match-
+ []
+
+[6]
+Overfull \hbox (21.74693pt too wide) in paragraph at lines 293--295
+[] \OT1/cmtt/m/n/10 protectedAreas( area, perimeter, paCode, siteName, siteHa, 
+status,
+ []
+
+
+Overfull \hbox (11.24702pt too wide) in paragraph at lines 304--306
+[]\OT1/cmtt/m/n/10 water( area, perimeter, paCode, siteName, siteHa, status, eu
+rCode
+ []
+
+
+Overfull \hbox (20.30617pt too wide) in paragraph at lines 325--332
+\OT1/cmr/m/n/10 water $\OMS/cmsy/m/n/10 7!$ \OT1/cmr/m/n/10 wa-ter-Body-Pres-su
+res wa-ter(eurCode) $\OMS/cmsy/m/n/10 7!$ \OT1/cmr/m/n/10 wa-ter-Body-Pres-sure
+s(locationCode) 
+ []
+
+[7]
+Overfull \hbox (32.24684pt too wide) in paragraph at lines 357--360
+[]\OT1/cmtt/m/n/10 locations( area, perimeter, paCode, siteName, siteHa, status
+, eurCode
+ []
+
+
+Overfull \hbox (6.63957pt too wide) in paragraph at lines 376--378
+\OT1/cmr/m/n/10 ing, lat-est-Com-pli-ance-Assess-ment, type, coun-try, dis-tric
+t, en-ve-lope, lat-est-Bathing-
+ []
+
+
+Overfull \hbox (34.02861pt too wide) in paragraph at lines 376--378
+\OT1/cmr/m/n/10 nated, lat-est-Sam-ple-Assess-ment, eub-Wid-No-ta-tion, wa-terQ
+ual-i-ty-Im-pact-ed-By-HeavyRain,
+ []
+
+
+Overfull \hbox (26.27675pt too wide) in paragraph at lines 381--383
+\OT1/cmtt/m/n/10 uk$[]$BathingWaters( sampleClassification, prefLabel, long, la
+t, northing,
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 381--383
+\OT1/cmtt/m/n/10 easting, latestComplianceAssessment, type, country, district, 
+envelope,
+ []
+
+
+Overfull \hbox (64.49643pt too wide) in paragraph at lines 381--383
+\OT1/cmtt/m/n/10 latestBathingWaterProfile, sedimentTypesPresent, uriSet, regio
+nalOrganization,
+ []
+
+
+Overfull \hbox (116.99597pt too wide) in paragraph at lines 381--383
+\OT1/cmtt/m/n/10 yearDesignated, latestSampleAssessment, eubWidNotation, waterQ
+ualityImpactedByHeavyRain,
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 381--383
+\OT1/cmtt/m/n/10 zoneOfInfluence, samplingPoint, complianceClassification, prim
+aryTopic,
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 394--398
+
+ []
+
+
+Overfull \hbox (26.36462pt too wide) in paragraph at lines 399--405
+\OT1/cmr/m/n/10 uk$[]$BathingWaters(sampleClassification) $\OMS/cmsy/m/n/10 7!$
+ \OT1/cmr/m/n/10 wa-ter-Body-Pres-sures(affectsGroundwater) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--409
+
+ []
+
+[9]
+Overfull \hbox (41.27675pt too wide) in paragraph at lines 435--437
+[] \OT1/cmtt/m/n/10 spa$[]$protectedAreas( area, perimeter, paCode, siteName, s
+iteHa, status,
+ []
+
+
+Overfull \hbox (16.49698pt too wide) in paragraph at lines 466--468
+[] \OT1/cmtt/m/n/10 environmentProtectionRegions( dimension, unit, environmentD
+omain,
+ []
+
+
+Overfull \hbox (9.29982pt too wide) in paragraph at lines 469--470
+ \OT1/cmr/bx/n/10 Plu-ral: On, Re-sults[] \OT1/cmr/m/n/10 The narrow-down pro-c
+ess re-tuned pro-tectedAr-eas dataset
+ []
+
+[10]
+Overfull \hbox (63.74657pt too wide) in paragraph at lines 484--485
+[] \OT1/cmtt/m/n/10 ProtectedRegions( dimension, unit, environmentDomain, envir
+onmentExposure,
+ []
+
+
+Overfull \hbox (6.63957pt too wide) in paragraph at lines 506--509
+\OT1/cmr/m/n/10 ing, lat-est-Com-pli-ance-Assess-ment, type, coun-try, dis-tric
+t, en-ve-lope, lat-est-Bathing-
+ []
+
+
+Overfull \hbox (34.02861pt too wide) in paragraph at lines 506--509
+\OT1/cmr/m/n/10 nated, lat-est-Sam-ple-Assess-ment, eub-Wid-No-ta-tion, wa-terQ
+ual-i-ty-Im-pact-ed-By-HeavyRain,
+ []
+
+
+Overfull \hbox (46.5267pt too wide) in paragraph at lines 512--514
+[] \OT1/cmtt/m/n/10 uk$[]$BathingWaters( sampleClassification, prefLabel, long,
+ lat, northing,
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 512--514
+\OT1/cmtt/m/n/10 easting, latestComplianceAssessment, type, country, district, 
+envelope,
+ []
+
+
+Overfull \hbox (64.49643pt too wide) in paragraph at lines 512--514
+\OT1/cmtt/m/n/10 latestBathingWaterProfile, sedimentTypesPresent, uriSet, regio
+nalOrganization,
+ []
+
+
+Overfull \hbox (116.99597pt too wide) in paragraph at lines 512--514
+\OT1/cmtt/m/n/10 yearDesignated, latestSampleAssessment, eubWidNotation, waterQ
+ualityImpactedByHeavyRain,
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 512--514
+\OT1/cmtt/m/n/10 zoneOfInfluence, samplingPoint, complianceClassification, prim
+aryTopic,
+ []
+
+[11]
+Overfull \hbox (78.17302pt too wide) in paragraph at lines 527--529
+\OT1/cmr/m/n/10 We change the pred-i-cate name of the query from uk$[]$bathingW
+aters to uk$[]$protectedBathingWaters.
+ []
+
+
+Overfull \hbox (15.02698pt too wide) in paragraph at lines 527--529
+[] \OT1/cmtt/m/n/10 uk$[]$protectedBathingWaters( sampleClassification, prefLab
+el, long,
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 527--529
+\OT1/cmtt/m/n/10 lat, northing, easting, latestComplianceAssessment, type, coun
+try,
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 527--529
+\OT1/cmtt/m/n/10 district, envelope, latestBathingWaterProfile, sedimentTypesPr
+esent,
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 527--529
+\OT1/cmtt/m/n/10 uriSet, regionalOrganization, yearDesignated, latestSampleAsse
+ssment,
+ []
+
+
+Overfull \hbox (74.99634pt too wide) in paragraph at lines 527--529
+\OT1/cmtt/m/n/10 eubWidNotation, waterQualityImpactedByHeavyRain, zoneOfInfluen
+ce, samplingPoint,
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 527--529
+\OT1/cmtt/m/n/10 complianceClassification, primaryTopic, extendedMetadataVersio
+n, definition,
+ []
+
+
+Overfull \hbox (37.47845pt too wide) in paragraph at lines 536--538
+\OT1/cmr/m/n/10 We change the pred-i-cate name of the query from uk$[]$bathingW
+aters to uk$[]$protectedAreas.
+ []
+
+
+Overfull \hbox (51.77666pt too wide) in paragraph at lines 536--538
+[] \OT1/cmtt/m/n/10 uk$[]$protectedAreas( sampleClassification, prefLabel, long
+, lat, northing,
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 536--538
+\OT1/cmtt/m/n/10 easting, latestComplianceAssessment, type, country, district, 
+envelope,
+ []
+
+
+Overfull \hbox (64.49643pt too wide) in paragraph at lines 536--538
+\OT1/cmtt/m/n/10 latestBathingWaterProfile, sedimentTypesPresent, uriSet, regio
+nalOrganization,
+ []
+
+
+Overfull \hbox (116.99597pt too wide) in paragraph at lines 536--538
+\OT1/cmtt/m/n/10 yearDesignated, latestSampleAssessment, eubWidNotation, waterQ
+ualityImpactedByHeavyRain,
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 536--538
+\OT1/cmtt/m/n/10 zoneOfInfluence, samplingPoint, complianceClassification, prim
+aryTopic,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--545
+
+ []
+
+[12]
+Overfull \hbox (36.0268pt too wide) in paragraph at lines 562--564
+[]\OT1/cmtt/m/n/10 spa$[]$protectedAreas( area, perimeter, paCode, siteName, si
+teHa, status,
+ []
+
+
+Overfull \hbox (13.20296pt too wide) in paragraph at lines 586--586
+[]\OT1/cmr/bx/n/14.4 European Statis-tics, Trans-port Net-work dataset 
+ []
+
+
+Overfull \hbox (5.99707pt too wide) in paragraph at lines 588--590
+[]\OT1/cmtt/m/n/10 transportNetwork(obsValue, timePeriod, freq, dataset, unit, 
+geo,
+ []
+
+
+Overfull \hbox (4.63966pt too wide) in paragraph at lines 594--596
+[]\OT1/cmr/m/n/10 stopAvailability(atcoCode, start-Date, end-Date, avail-abil-i
+-tyS-ta-tus, note, note-
+ []
+
+[13]
+Overfull \hbox (21.74693pt too wide) in paragraph at lines 599--601
+[] \OT1/cmtt/m/n/10 stopAvailability(atcoCode, startDate, endDate, availability
+Status,
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 599--601
+\OT1/cmtt/m/n/10 note, noteLang, transferStopAtcoCode, creationDateTime, modifi
+cationDateTime,
+ []
+
+
+Overfull \hbox (63.74657pt too wide) in paragraph at lines 616--619
+[]\OT1/cmtt/m/n/10 transportStopAvailability(atcoCode, startDate, endDate, avai
+labilityStatus,
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 616--619
+\OT1/cmtt/m/n/10 note, noteLang, transferStopAtcoCode, creationDateTime, modifi
+cationDateTime,
+ []
+
+
+Overfull \hbox (11.24702pt too wide) in paragraph at lines 633--635
+[]\OT1/cmtt/m/n/10 transport(atcoCode, startDate, endDate, availabilityStatus, 
+note,
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 633--635
+\OT1/cmtt/m/n/10 noteLang, transferStopAtcoCode, creationDateTime, modification
+DateTime,
+ []
+
+[14]
+Overfull \hbox (0.48682pt too wide) in paragraph at lines 664--665
+\OT1/cmr/m/n/10 in-dus-try-Sec-tor, data-Source, com-ments, at-Gep-Pe-ri-odAfte
+rNext, is-Pri-mary,
+ []
+
+
+Overfull \hbox (2.9728pt too wide) in paragraph at lines 664--665
+\OT1/cmr/m/n/10 ac-tiv-ity, swAs-set, pro-tectedAreaId, eiAfter-Fail-Rea-son, s
+ource-Code, source) 
+ []
+
+
+Overfull \hbox (4.62566pt too wide) in paragraph at lines 665--666
+\OT1/cmr/m/n/10 pro-jected, at-GepCur-rent-Pe-riod, data-Source, mea-sureId, lo
+-ca-tion-Code, pro-
+ []
+
+
+Overfull \hbox (3.8479pt too wide) in paragraph at lines 666--667
+[]\OT1/cmr/m/n/10 surfaceWaterBodies(genre, lengthKm,a sso-ci-at-ed-Ground-wa-t
+erId, sb-d-Code,
+ []
+
+
+Overfull \hbox (6.77853pt too wide) in paragraph at lines 666--667
+\OT1/cmr/m/n/10 data-Source, isHeav-i-ly-Mod-i-fied, ge-ol-o-gy-Ty-pol-ogy, cur
+-rent-Clas-si-fi-ca-tionYear,
+ []
+
+
+Overfull \hbox (3.05627pt too wide) in paragraph at lines 666--667
+\OT1/cmr/m/n/10 Clas-si-fi-ca-tion, clas-si-fi-ca-tion-Cer-tain-ty-Band, wa-ter
+-Bo-dy-Name, sub-BasinDis-
+ []
+
+
+Overfull \hbox (14.19518pt too wide) in paragraph at lines 668--669
+\OT1/cmr/m/n/10 cer-tain-ty-Band, clas-si-fi-ca-tion-Pa-ram-e-ter, con-tribut-i
+n-gLo-ca-tion-Code, lessThan-
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
+
+ []
+
+
+Overfull \hbox (0.8653pt too wide) in paragraph at lines 679--679
+[] \OT1/cmr/bx/n/12 Test 1: En-vi-ron-men-tal-Pro-tec-tion-Ex-pen-di-tur-eRe-gi
+ons 
+ []
+
+
+Overfull \hbox (7.00632pt too wide) in paragraph at lines 682--684
+[]\OT1/cmr/m/n/10 environmentalProtectionExpenditureRegion( env$[]$dom, dataSet
+, unit, nace$[]$r2,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--684
+
+ []
+
+
+Overfull \hbox (1.06181pt too wide) in paragraph at lines 706--709
+[]\OT1/cmr/m/n/10 environmentalProtectionRegions( env$[]$dom, dataSet, unit, na
+ce$[]$r2, ob-sValue,
+ []
+
+[16]
+Overfull \hbox (6.63957pt too wide) in paragraph at lines 757--759
+\OT1/cmr/m/n/10 ing, lat-est-Com-pli-ance-Assess-ment, type, coun-try, dis-tric
+t, en-ve-lope, lat-est-Bathing-
+ []
+
+
+Overfull \hbox (34.02861pt too wide) in paragraph at lines 757--759
+\OT1/cmr/m/n/10 nated, lat-est-Sam-ple-Assess-ment, eub-Wid-No-ta-tion, wa-terQ
+ual-i-ty-Im-pact-ed-By-HeavyRain,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 757--759
+
+ []
+
+[17]
+Overfull \hbox (20.69795pt too wide) in paragraph at lines 777--783
+\OT1/cmr/m/n/10 uk$[]$BathingWater(sampleClassification ) $\OMS/cmsy/m/n/10 7!$
+ \OT1/cmr/m/n/10 wa-ter-Body-Pres-sure(affectsGroundwater) 
+ []
+
+
+Overfull \hbox (51.07317pt too wide) in paragraph at lines 789--793
+\OT1/cmr/m/n/10 uk$[]$BathingWater(waterQualityImpactedByHeavyRain) $\OMS/cmsy/
+m/n/10 7!$ \OT1/cmr/m/n/10 bathing-Wa-ter(bathingWaterId). 
+ []
+
+[18]
+Overfull \hbox (18.38956pt too wide) in paragraph at lines 849--850
+[]\OT1/cmr/m/n/10 waterBodyPressures(identifiedDate,waterBodyId,assessmentCateg
+ory,source). 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 864--864
+[]\OT1/cmr/m/n/10 Table 1: An-swers for query wa-ter-Body-Pres-
+ []
+
+
+Overfull \hbox (13.86186pt too wide) in paragraph at lines 871--908
+ [] 
+ []
+
+[19] [20]
+Overfull \hbox (96.5704pt too wide) in paragraph at lines 988--989
+[]\OT1/cmr/m/n/10 water(associatedGroundwaterId,dimension,unit,environmentDomai
+n,environmentExposure,geo) 
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1009
+[]\OT1/cmr/m/n/10 Table 3: An-swers for query wa-ter-BodyMea-
+ []
+
+
+Overfull \hbox (153.61218pt too wide) in paragraph at lines 1011--1060
+ [] 
+ []
+
+
+Overfull \hbox (96.5704pt too wide) in paragraph at lines 1067--1068
+[]\OT1/cmr/m/n/10 water(associatedGroundwaterId,dimension,unit,environmentDomai
+n,environmentExposure,geo) 
+ []
+
+
+Overfull \hbox (73.23698pt too wide) in paragraph at lines 1069--1070
+[]\OT1/cmr/m/n/10 waterBodyPressures(waterBodyId,activity,affectsGroundwater,da
+taSource,industrySector) 
+ []
+
+
+Overfull \hbox (39.55635pt too wide) in paragraph at lines 1164--1165
+[]\OT1/cmr/m/n/10 Original Query : lo-ca-tion(area,perimeter,paCode,siteName,si
+teHa,status,eurCode). 
+ []
+
+
+Overfull \hbox (22.5374pt too wide) in paragraph at lines 1234--1234
+[]\OT1/cmr/bx/n/12 The UK En-vi-ron-men-tal Agency: Bathing Wa-ters dataset:
+ []
+
+
+Overfull \hbox (1516.13187pt too wide) in paragraph at lines 1239--1240
+[]\OT1/cmr/m/n/10 uk$[]$BathingWaters(sampleClassification,prefLabel,long,lat,n
+orthing,easting,latestComplianceAssessment,type,country,district,envelope,lates
+tBathingWaterProfile,sedimentTypesPresent,uriSet,regionalOrganization,yearDesig
+nated,latestSampleAssessment,eubWidNotation,waterQualityImpactedByHeavyRain,zon
+eOfInfluence,samplingPoint,complianceClassification,primaryTopic,extendedMetada
+taVersion,definition,label). 
+ []
+
+[22]
+
+LaTeX Warning: Float too large for page by 43.79999pt on input line 1337.
+
+
+Overfull \hbox (1516.13187pt too wide) in paragraph at lines 1341--1342
+[]\OT1/cmr/m/n/10 uk$[]$BathingWaters(sampleClassification,prefLabel,long,lat,n
+orthing,easting,latestComplianceAssessment,type,country,district,envelope,lates
+tBathingWaterProfile,sedimentTypesPresent,uriSet,regionalOrganization,yearDesig
+nated,latestSampleAssessment,eubWidNotation,waterQualityImpactedByHeavyRain,zon
+eOfInfluence,samplingPoint,complianceClassification,primaryTopic,extendedMetada
+taVersion,definition,label). 
+ []
+
+
+Overfull \hbox (19.3757pt too wide) in paragraph at lines 1345--1346
+[]\OT1/cmr/m/n/10 waterBodyPressures(waterBodyId,pressureType,activity,affectsG
+roundwater). 
+ []
+
+[23]
+Overfull \hbox (1516.13187pt too wide) in paragraph at lines 1384--1385
+[]\OT1/cmr/m/n/10 uk$[]$BathingWaters(sampleClassification,prefLabel,long,lat,n
+orthing,easting,latestComplianceAssessment,type,country,district,envelope,lates
+tBathingWaterProfile,sedimentTypesPresent,uriSet,regionalOrganization,yearDesig
+nated,latestSampleAssessment,eubWidNotation,waterQualityImpactedByHeavyRain,zon
+eOfInfluence,samplingPoint,complianceClassification,primaryTopic,extendedMetada
+taVersion,definition,label). 
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1429--1429
+[]\OT1/cmr/m/n/10 Table 7: Sam-ple Re-sults for query wa-ter-BodyMea-
+ []
+
+
+Overfull \hbox (490.36282pt too wide) in paragraph at lines 1431--1488
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 17.74443pt on input line 1490.
+
+
+Overfull \hbox (15.21179pt too wide) in paragraph at lines 1504--1505
+[]\OT1/cmr/m/n/10 spa$[]$protectedAreas(area,perimeter,paCode,siteName,siteHa,s
+tatus,eurCode). 
+ []
+
+
+Overfull \hbox (33.75084pt too wide) in paragraph at lines 1551--1552
+[]\OT1/cmr/m/n/10 protectedRegions(dimension,unit,environmentDomain,environment
+Exposure,geo) 
+ []
+
+[25]
+Overfull \hbox (0.36183pt too wide) in paragraph at lines 1620--1621
+\OT1/cmr/m/n/10 pli-ance-Clas-si-fi-ca-tion, pri-ma-ry-Topic, ex-tend-ed-Meta-d
+ataVer-sion, def-i-ni-tion,
+ []
+
+[26]
+Overfull \hbox (16.80295pt too wide) in paragraph at lines 1701--1701
+[]\OT1/cmr/bx/n/14.4 European Statis-tics, Trans-port Net-work dataset 
+ []
+
+
+Overfull \hbox (5.44524pt too wide) in paragraph at lines 1707--1709
+[]\OT1/cmr/m/n/10 transport(atcoCode, start-Date, end-Date, avail-abil-i-tyS-ta
+-tus, note,noteLang,
+ []
+
+
+Overfull \hbox (6.16737pt too wide) in paragraph at lines 1707--1709
+\OT1/cmr/m/n/10 trans-fer-StopAt-coCode, cre-ation-Date-Time, mod-i-fi-ca-tion-
+Date-Time, re-vi-sion-
+ []
+
+
+Overfull \hbox (297.2235pt too wide) in paragraph at lines 1736--1743
+ [] 
+ []
+
+[27] [28] [29] [30] [31] [32] [33] [34] (./evaluation.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 842 strings out of 493633
+ 11951 string characters out of 3143378
+ 99040 words of memory out of 3000000
+ 4173 multiletter control sequences out of 15000+200000
+ 13264 words of font info for 52 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 24i,12n,24p,656b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
+ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on evaluation.pdf (34 pages, 188922 bytes).
+PDF statistics:
+ 158 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

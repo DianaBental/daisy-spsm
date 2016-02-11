@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping similarity="0.625">
+  <link source-id="n0" target-id="n0" relation="="/>
+  <link source-id="n1" target-id="n2" relation="="/>
+  <link source-id="n3" target-id="n3" relation="="/>
+</mapping>

@@ -1,0 +1,43 @@
+#~/CHAIN/code/jena/apache-jena-2.12.0/bin/arq --data ~/CHAIN/OAEI/conference-set-2014/Conference.owl --query oaeiPredicatesExtended.sparql >  ~/CHAIN/OAEI/analysis-2014/conference-preds-ext.table
+
+#~/CHAIN/code/jena/apache-jena-2.12.0/bin/arq --data ~/CHAIN/OAEI/conference-set-2014/Cocus.owl --query oaeiPredicatesExtended.sparql >  ~/CHAIN/OAEI/analysis-2014/cocus-preds-ext.table
+
+# This version extends the query so that properties are passed on to the
+# parent domains.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX afn: <http://jena.hpl.hp.com/ARQ/function#>
+
+# Make the output more readable by declaring a prefix for each dataset
+PREFIX cmt: <http://cmt#>
+PREFIX conf: <http://conference#>
+PREFIX cocus: <http://cocus#>
+PREFIX confious: <http://confious#>
+PREFIX confof: <http://confof#>
+PREFIX crs_dr: <http://crs_dr#>
+PREFIX edas: <http://edas#>
+PREFIX ekaw: <http://ekaw#>
+PREFIX iasted: <http://iasted#>
+PREFIX linklings: <http://linklings#>
+PREFIX micro: <http://micro#>
+PREFIX myreview: <http://myreview#>
+PREFIX openconf: <http://openconf#>
+PREFIX paperdyne: <http://paperdyne#>
+PREFIX pcs: <http://pcs#>
+PREFIX sigkdd: <http://sigkdd#>
+
+#SELECT ?domain ?property ?range ?d
+
+SELECT ?domain ?property ?range
+	WHERE { ?property rdfs:domain  ?d  .
+                ?property rdfs:range  ?range .
+  	        ?d rdfs:subClassOf* ?domain .
+		# Filter out any parent domains that are bnodes
+		FILTER(isIRI(?domain))
+		# BIND(afn:namespace(?domain) AS ?x)
+		# Filter out any parent domains from owl, such as owl:Thing
+		FILTER(str(afn:namespace(?domain)) != "http://www.w3.org/2002/07/owl#")
+	} ORDER BY ?domain

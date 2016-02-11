@@ -1,0 +1,85 @@
+Query:  entity(subject(Lisbon),leaderParty) 
+Construct query entity(subject(Lisbon),leaderParty) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Lisbon> <http://dbpedia.org/property/leaderParty> ?leaderParty . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------
+| leaderParty                                              |
+============================================================
+| <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+------------------------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,leaderParty) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.2777777777777778).
+match(none).
+match([[entity],=,[entity]]).
+match([[entity,leaderParty],=,[entity,leaderParty]]).
+match([[entity,subject],<,[entity,language]]).
+
+Construct query entity(type(entity),subject(Lisbon),leaderParty) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Lisbon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> ; 
+<http://dbpedia.org/property/leaderParty> ?leaderParty . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(Lisbon),leaderParty) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Lisbon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/property/leaderParty> ?leaderParty . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------
+| type                                                             | leaderParty                                              |
+===============================================================================================================================
+| <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>           | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://www.w3.org/2002/07/owl#Thing>                            | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://schema.org/Place>                                        | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>      | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/ontology/Place>                              | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/ontology/Wikidata:Q532>                      | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://www.opengis.net/gml/_Feature>                            | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://umbel.org/umbel/rc/Location_Underspecified>              | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://umbel.org/umbel/rc/PopulatedPlace>                       | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://umbel.org/umbel/rc/Village>                              | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>  | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Area108497294>                    | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Artifact100021939>                | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Capital108518505>                 | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/CapitalsInEurope>                 | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Center108523483>                  | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/City108524735>                    | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/District108552138>                | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Location100027167>                | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Object100002684>                  | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Region108630985>                  | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Seat108647945>                    | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Site108651247>                    | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Structure104341686>               | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Town108665504>                    | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Tract108673395>                   | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/UrbanArea108675967>               | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Whole100003553>                   | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/YagoGeoEntity>                    | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/MunicipalitiesOfPortugal>         | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/PopulatedCoastalPlacesInPortugal> | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/CitiesInPortugal>                 | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Dock103216828>                    | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/EuropeanCapitalsOfCulture>        | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/GeographicalArea108574314>        | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Landing103638321>                 | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Municipality108626283>            | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>          | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>     | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/PortCitiesAndTownsInPortugal>     | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/RomanTownsAndCitiesInPortugal>    | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/Marina103721590>                  | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+| <http://dbpedia.org/class/yago/MarinasInPortugal>                | <http://dbpedia.org/resource/Socialist_Party_(Portugal)> |
+-------------------------------------------------------------------------------------------------------------------------------
+

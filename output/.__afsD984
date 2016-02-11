@@ -1,0 +1,304 @@
+Original Query : surfaceWaterBodies([subBasinArea,riverBodyName,sepaidw:20399,Mid-altitude,10065]).
+Query Original Schema: surfaceWaterBodies([riverBodyName,subBasinArea,altitudeTypology,associatedGroundwaterId]).
+
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]
+Original Query : surfaceWaterBodies([subBasinArea,riverBodyName,sepaidw:20399,Mid-altitude,10065]).
+Query Original Schema: surfaceWaterBodies([riverBodyName,subBasinArea,altitudeTypology,associatedGroundwaterId]).
+
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+Original Query : surfaceWaterBodies([subBasinArea,riverBodyName,sepaidw:20399,Mid-altitude,10065]).
+Query Original Schema: surfaceWaterBodies([riverBodyName,subBasinArea,altitudeTypology,associatedGroundwaterId]).
+
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+Mappings: 
+bodyId --> waterBodyId
+improvement --> pressureId
+Suggested Schema: waterBodyPressures([bodyPressures,pressureId,waterBodyId]
+
+improvement --> pressureId
+Suggested Schema: waterBodyPressures([bodyPressures,pressureId,waterBodyId]
+
+Mappings: 
+localAuthority --> affectsGroundwater
+catchment --> waterBodyId
+Suggested Schema: waterBodyPressures([bathingWater,waterBodyId,affectsGroundwater]).
+
+Mappings: 
+catchment --> waterBodyId
+Suggested Schema: waterBodyMeasures([bathingWater,waterBodyId]).
+
+Mappings: 
+localAuthority --> localAuthority
+catchment --> catchment
+Suggested Schema: bathingWaterLocations([bathingWater,catchment,localAuthority]).
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+Original Query : surfaceWaterBodies([subBasinArea,riverBodyName,sepaidw:20399,Mid-altitude,10065]).
+Query Original Schema: surfaceWaterBodies([riverBodyName,subBasinArea,altitudeTypology,associatedGroundwaterId]).
+
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+Original Query : surfaceWaterBodies([subBasinArea,riverBodyName,sepaidw:20399,Mid-altitude,10065]).
+Query Original Schema: surfaceWaterBodies([riverBodyName,subBasinArea,altitudeTypology,associatedGroundwaterId]).
+
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+Original Query : surfaceWaterBodies([subBasinArea,riverBodyName,sepaidw:20399,Mid-altitude,10065]).
+Query Original Schema: surfaceWaterBodies([riverBodyName,subBasinArea,altitudeTypology,associatedGroundwaterId]).
+
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+Original Query : surfaceWaterBodies([subBasinArea,riverBodyName,sepaidw:20399,Mid-altitude,10065]).
+Query Original Schema: surfaceWaterBodies([riverBodyName,subBasinArea,altitudeTypology,associatedGroundwaterId]).
+
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+Original Query : surfaceWaterBodies([subBasinArea,riverBodyName,sepaidw:20399,Mid-altitude,10065]).
+Query Original Schema: surfaceWaterBodies([riverBodyName,subBasinArea,altitudeTypology,associatedGroundwaterId]).
+
+
+Mappings: 
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwater
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).
+altitudeTypology --> altitudeTypology
+altitudeTypology --> geologyTypology
+riverBodyName --> riverName
+associatedGroundwaterId --> associatedGroundwaterId
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwaterId]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> altitudeTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,altitudeTypology,associatedGroundwater]).
+associatedGroundwaterId --> associatedGroundwater
+associatedGroundwaterId --> associatedGroundwaterId
+riverBodyName --> riverName
+altitudeTypology --> geologyTypology
+Suggested Schema: 
+surfaceWaterBodies([riverName,geologyTypology,associatedGroundwater]).

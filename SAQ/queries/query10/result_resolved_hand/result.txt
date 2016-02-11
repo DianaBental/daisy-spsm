@@ -1,0 +1,225 @@
+Query:  entity(type(River),length) 
+Construct query entity(type(River),length) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/River> ; 
+<http://dbpedia.org/ontology/length> ?length . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                             | length                                                |
+===============================================================================================================================================================
+| <http://dbpedia.org/resource/American_River>                                                        | "191512.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/American_River_(Washington)>                                           | "32186.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Iren_River>                                                            | "214000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Ammonoosuc_River>                                                      | "88513.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Arnon_(France)>                                                        | "150000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Arve>                                                                  | "102000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Avre_(Eure)>                                                           | "80000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Avre_(Somme)>                                                          | "66000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Babai_River>                                                           | "400000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Babb_Creek>                                                            | "34922.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Balch_Creek>                                                           | "5632.7"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Bhavani_River>                                                         | "135000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Bhavani_River>                                                         | "349228.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Blakeley_River>                                                        | "4828.03"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bolshoy_Kundysh_River>                                                 | "173000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Bouble>                                                                | "65400.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bueno_River>                                                           | "130000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Campbells_Creek_(West_Virginia)>                                       | "29772.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Charest_River>                                                         | "35000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Charest_River>                                                         | "35003.2"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chillisquaque_Creek>                                                   | "32508.7"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Coleen_River>                                                          | "83685.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dahan_Creek>                                                           | "135000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Ellice_River>                                                          | "287000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Gales_Creek_(Oregon)>                                                  | "37819.6"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Goose_River_(Belfast_Bay)>                                             | "14484.1"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Goose_River_(Rockport_Harbor)>                                         | "7081.11"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gypsey_Race>                                                           | "25000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Iset_River>                                                            | "606000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Kiso_River>                                                            | "193000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Knik_River>                                                            | "40233.6"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Kotra_River>                                                           | "109000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Kymi_River>                                                            | "204000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Lourde_(river)>                                                        | "13000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lu%C4%8Dina_(river)>                                                   | "37300.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Malad_River>                                                           | "19312.1"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Malad_River_(Utah)>                                                    | "156106.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Maly_Kundysh_River>                                                    | "107000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Manaia_River>                                                          | "12000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Metolius_River>                                                        | "46671.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Miya_River_(Mie)>                                                      | "91000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mor%C3%A1vka_(river)>                                                  | "29600.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Niers>                                                                 | "116000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Otava_(river)>                                                         | "111700.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Pambak_River>                                                          | "86000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/River_Culm>                                                            | "27358.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Salmon_Brook_(Merrimack_River)>                                        | "28163.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Salmon_Creek_(Clark_County,_Washington)>                               | "41842.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/San_Ygnacio_Creek>                                                     | "19312.1"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Santa_Maria_River_(Arizona)>                                           | "80467.2"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Santa_Maria_River_(California)>                                        | "39268.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Scie_(river)>                                                          | "37000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Solin_(river)>                                                         | "31300.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/South_Yuba_River>                                                      | "104607.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Spanish_River_(Alabama)>                                               | "12874.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Spanish_River_(Jamaica)>                                               | 1.2e+06                                               |
+| <http://dbpedia.org/resource/Stephens_Creek_(Oregon)>                                               | "3218.69"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tandzut_River>                                                         | "23000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tarawera_River>                                                        | "65000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tarn_(river)>                                                          | "381000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Tinkers_Creek_(Cuyahoga_River)>                                        | "45383.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tuke_River>                                                            | "12000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Walker_Creek_(Marin_County,_California)>                               | "29772.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Walker_Creek_(West_Virginia)>                                          | "25105.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Wildcat_Creek_(Siuslaw_River)>                                         | "25749.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Yarlung_Tsangpo_River>                                                 | 2.84e+06                                              |
+| <http://dbpedia.org/resource/Anglin>                                                                | "91000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Arie_River>                                                            | "12500.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Arnold_Creek_(West_Virginia)>                                          | "17541.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bluestone_River>                                                       | "123919.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Bluestone_River_(Alaska)>                                              | "20921.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Buckeye_Creek_(West_Virginia)>                                         | "20438.7"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cachapoal_River>                                                       | "250000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Captina_Creek>                                                         | "56327.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chiquito_River_(Ponce,_Puerto_Rico)>                                   | "9500.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Cypress_Creek_(Texas)>                                                 | "78857.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/East_Branch_Pleasant_River_(Piscataquis_River)>                        | "51499.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Elbow_River>                                                           | "120000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Flint_Run_(West_Virginia)>                                             | "12070.1"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Foglia>                                                                | "90000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Homochitto_River>                                                      | "144841.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Huzzah_Creek>                                                          | "57614.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Isdell_River>                                                          | "206000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Kellys_Creek_(West_Virginia)>                                          | "10460.7"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Leatherwood_Creek_(Ohio)>                                              | "46027.2"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Little_Bostonnais_River>                                               | "23600.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Loop_Creek_(West_Virginia)>                                            | "32186.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Luza_River>                                                            | "574000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Magra>                                                                 | "62000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Margaret_River>                                                        | "60000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Margaret_River_(Kimberley)>                                            | "335000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Mattox_Creek>                                                          | "22369.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/McKim_Creek_(West_Virginia)>                                           | "32830.6"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Middle_Fork_River>                                                     | "56327.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Northkill_Creek>                                                       | "17702.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Orco>                                                                  | "100000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Otay_River>                                                            | "40233.6"^^<http://www.w3.org/2001/XMLSchema#double>  |
+
+Narrowed to these target datasets:  River 
+
+Matching query schema River(length) 
+to dataset schema River(length) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[River,length],=,[River,length]]).
+match([[River],=,[River]]).
+
+Construct query entity(type(River),length) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/River> ; 
+<http://dbpedia.org/ontology/length> ?length . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                             | length                                                |
+===============================================================================================================================================================
+| <http://dbpedia.org/resource/American_River>                                                        | "191512.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/American_River_(Washington)>                                           | "32186.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Iren_River>                                                            | "214000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Ammonoosuc_River>                                                      | "88513.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Arnon_(France)>                                                        | "150000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Arve>                                                                  | "102000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Avre_(Eure)>                                                           | "80000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Avre_(Somme)>                                                          | "66000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Babai_River>                                                           | "400000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Babb_Creek>                                                            | "34922.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Balch_Creek>                                                           | "5632.7"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Bhavani_River>                                                         | "135000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Bhavani_River>                                                         | "349228.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Blakeley_River>                                                        | "4828.03"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bolshoy_Kundysh_River>                                                 | "173000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Bouble>                                                                | "65400.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bueno_River>                                                           | "130000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Campbells_Creek_(West_Virginia)>                                       | "29772.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Charest_River>                                                         | "35000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Charest_River>                                                         | "35003.2"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chillisquaque_Creek>                                                   | "32508.7"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Coleen_River>                                                          | "83685.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dahan_Creek>                                                           | "135000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Ellice_River>                                                          | "287000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Gales_Creek_(Oregon)>                                                  | "37819.6"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Goose_River_(Belfast_Bay)>                                             | "14484.1"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Goose_River_(Rockport_Harbor)>                                         | "7081.11"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gypsey_Race>                                                           | "25000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Iset_River>                                                            | "606000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Kiso_River>                                                            | "193000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Knik_River>                                                            | "40233.6"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Kotra_River>                                                           | "109000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Kymi_River>                                                            | "204000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Lourde_(river)>                                                        | "13000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lu%C4%8Dina_(river)>                                                   | "37300.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Malad_River>                                                           | "19312.1"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Malad_River_(Utah)>                                                    | "156106.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Maly_Kundysh_River>                                                    | "107000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Manaia_River>                                                          | "12000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Metolius_River>                                                        | "46671.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Miya_River_(Mie)>                                                      | "91000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mor%C3%A1vka_(river)>                                                  | "29600.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Niers>                                                                 | "116000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Otava_(river)>                                                         | "111700.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Pambak_River>                                                          | "86000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/River_Culm>                                                            | "27358.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Salmon_Brook_(Merrimack_River)>                                        | "28163.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Salmon_Creek_(Clark_County,_Washington)>                               | "41842.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/San_Ygnacio_Creek>                                                     | "19312.1"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Santa_Maria_River_(Arizona)>                                           | "80467.2"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Santa_Maria_River_(California)>                                        | "39268.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Scie_(river)>                                                          | "37000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Solin_(river)>                                                         | "31300.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/South_Yuba_River>                                                      | "104607.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Spanish_River_(Alabama)>                                               | "12874.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Spanish_River_(Jamaica)>                                               | 1.2e+06                                               |
+| <http://dbpedia.org/resource/Stephens_Creek_(Oregon)>                                               | "3218.69"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tandzut_River>                                                         | "23000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tarawera_River>                                                        | "65000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tarn_(river)>                                                          | "381000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Tinkers_Creek_(Cuyahoga_River)>                                        | "45383.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tuke_River>                                                            | "12000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Walker_Creek_(Marin_County,_California)>                               | "29772.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Walker_Creek_(West_Virginia)>                                          | "25105.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Wildcat_Creek_(Siuslaw_River)>                                         | "25749.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Yarlung_Tsangpo_River>                                                 | 2.84e+06                                              |
+| <http://dbpedia.org/resource/Anglin>                                                                | "91000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Arie_River>                                                            | "12500.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Arnold_Creek_(West_Virginia)>                                          | "17541.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bluestone_River>                                                       | "123919.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Bluestone_River_(Alaska)>                                              | "20921.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Buckeye_Creek_(West_Virginia)>                                         | "20438.7"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cachapoal_River>                                                       | "250000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Captina_Creek>                                                         | "56327.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chiquito_River_(Ponce,_Puerto_Rico)>                                   | "9500.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Cypress_Creek_(Texas)>                                                 | "78857.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/East_Branch_Pleasant_River_(Piscataquis_River)>                        | "51499.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Elbow_River>                                                           | "120000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Flint_Run_(West_Virginia)>                                             | "12070.1"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Foglia>                                                                | "90000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Homochitto_River>                                                      | "144841.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Huzzah_Creek>                                                          | "57614.5"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Isdell_River>                                                          | "206000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Kellys_Creek_(West_Virginia)>                                          | "10460.7"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Leatherwood_Creek_(Ohio)>                                              | "46027.2"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Little_Bostonnais_River>                                               | "23600.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Loop_Creek_(West_Virginia)>                                            | "32186.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Luza_River>                                                            | "574000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Magra>                                                                 | "62000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Margaret_River>                                                        | "60000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Margaret_River_(Kimberley)>                                            | "335000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Mattox_Creek>                                                          | "22369.9"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/McKim_Creek_(West_Virginia)>                                           | "32830.6"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Middle_Fork_River>                                                     | "56327.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Northkill_Creek>                                                       | "17702.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Orco>                                                                  | "100000.0"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Otay_River>                                                            | "40233.6"^^<http://www.w3.org/2001/XMLSchema#double>  |
+

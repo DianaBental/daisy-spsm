@@ -1,0 +1,19 @@
+Query:  entity(subject(Jane_Fonda),marriedTo) 
+Construct query entity(subject(Jane_Fonda),marriedTo) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Jane_Fonda> <marriedTo> ?marriedTo . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(subject,marriedTo) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(subject,marriedTo) 
+
+Cannot respond to   entity(subject(Jane_Fonda),marriedTo) 
+

@@ -1,0 +1,92 @@
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sepaidw:  <http://data.sepa.org.uk/id/Water/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sepaw:   <http://data.sepa.org.uk/ont/Water#> .
+
+sepaidw:200168
+      sepaw:areaSqKm "2.7604" ;
+      sepaw:category "Coastal" ;
+      sepaw:classificationCertainty
+              "64.28" ;
+      sepaw:classificationCertaintyBand
+              "High" ;
+      sepaw:currentClassificationYear
+              "2010" ;
+      sepaw:currentOverallClassification
+              "Overall status - Good" ;
+      sepaw:dataSource "SEPA" ;
+      sepaw:ecoRegion "1" ;
+      sepaw:genre "SURFACE WATER" ;
+      sepaw:isArtificial "N" ;
+      sepaw:isHeavilyModified
+              "N" ;
+      sepaw:isLessThanGood
+              "N" ;
+      sepaw:noDetRiskAssessment
+              "2b" ;
+      sepaw:rbdCode "1" ;
+      sepaw:riverBasinDistrict
+              "Scotland" ;
+      sepaw:sbdCode "8" ;
+      sepaw:statusRiskAssessment
+              "2b" ;
+      sepaw:subBasinArea
+              "West Highland" ;
+      sepaw:targetClass "Good by 2015" ;
+      sepaw:team "Hebrides & C. H/land" ;
+      sepaw:waterBodyId "200168" ;
+      sepaw:waterBodyName "Loch Bhrollum" ;
+      sepaw:wiseCode "UKSC200168" ;
+      geo:lat "57.93482" ;
+      geo:long "-6.53629" .
+
+sepaidw:20399
+      sepaw:altitudeTypology
+              "Mid-altitude" ;
+      sepaw:associatedGroundwater
+              "Loch Sheil and Loch Stuart" ;
+      sepaw:associatedGroundwaterId
+              "150065" ;
+      sepaw:catchment "Ardnamurchan Coastal" ;
+      sepaw:catchmentId "115" ;
+      sepaw:category "River" ;
+      sepaw:classificationCertainty
+              "49" ;
+      sepaw:classificationCertaintyBand
+              "Medium" ;
+      sepaw:currentClassificationYear
+              "2010" ;
+      sepaw:currentOverallClassification
+              "Overall status - Good ecological potential" ;
+      sepaw:dataSource "SEPA" ;
+      sepaw:ecoRegion "18" ;
+      sepaw:genre "HEAVILY MODIFIED WATER BODY" ;
+      sepaw:geologyTypology
+              "Siliceous" ;
+      sepaw:isArtificial "N" ;
+      sepaw:isHeavilyModified
+              "Y" ;
+      sepaw:isLessThanGood
+              "N" ;
+      sepaw:lengthKm "15.763" ;
+      sepaw:noDetRiskAssessment
+              "2b" ;
+      sepaw:rbdCode "1" ;
+      sepaw:riverBasinDistrict
+              "Scotland" ;
+      sepaw:riverName "Carnoch River" ;
+      sepaw:riverNumber "17" ;
+      sepaw:sbdCode "7" ;
+      sepaw:sizeTypology "Small" ;
+      sepaw:statusRiskAssessment
+              "1b" ;
+      sepaw:subBasinArea
+              "Argyll" ;
+      sepaw:targetClass "Good by 2015" ;
+      sepaw:team "W Highlands & Argyll" ;
+      sepaw:waterBodyId "20399" ;
+      sepaw:waterBodyName "River Tarbert" ;
+      sepaw:wiseCode "UKSC020399" ;
+      geo:lat "56.69962" ;
+      geo:long "-5.43723" .
+

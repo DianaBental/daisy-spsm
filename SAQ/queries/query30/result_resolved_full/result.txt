@@ -1,0 +1,26 @@
+Query:  entity(mission(Apollo_14)) 
+Construct query entity(mission(Apollo_14)) 
+SELECT *
+WHERE { ?subject <http://dbpedia.org/ontology/mission> <http://dbpedia.org/resource/Apollo_14> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------
+| subject                                      |
+================================================
+| <http://dbpedia.org/resource/Alan_Shepard>   |
+| <http://dbpedia.org/resource/Edgar_Mitchell> |
+| <http://dbpedia.org/resource/Stuart_Roosa>   |
+------------------------------------------------
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(mission) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(mission) 
+
+Cannot respond to   entity(mission(Apollo_14)) 
+

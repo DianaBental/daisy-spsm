@@ -1,0 +1,13 @@
+Query:  entity(type(Apollo14Astronauts)) 
+Construct query entity(type(Apollo14Astronauts)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Apollo14Astronauts> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  
+
+No matches found for  Apollo14Astronauts 
+
+Cannot respond to   entity(type(Apollo14Astronauts)) 
+

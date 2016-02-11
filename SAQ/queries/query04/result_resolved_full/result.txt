@@ -1,0 +1,840 @@
+Query:  entity(type(Mountain),elevation) 
+Construct query entity(type(Mountain),elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                 | elevation                                             |
+===================================================================================================================================================
+| <http://dbpedia.org/resource/Clark_Peak_(Medicine_Bow_Mountains)>                       | "3948.38"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gummer's_How>                                              | "321.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Itcha_Mountain>                                            | "2290.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Pillow_Ridge>                                              | "2400.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Yucca_Mountain>                                            | "2044.29"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Abert_Rim>                                                 | "2300.63"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Anahim_Peak>                                               | "1897.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Antler_Peak>                                               | "3067.2"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Arenig_Fawr>                                               | "854.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ash_Mountain_(British_Columbia)>                           | "2125.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ash_Mountain_(Montana)>                                    | "3123.59"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bare_Mountain_(Massachusetts)>                             | "309.067"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Beda_Fell>                                                 | "509.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Blackjack_Mountain_(Carroll_County,_Georgia)>              | "470.916"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Blackjack_Mountain_(Oklahoma)>                             | "381.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Blakeley_Raise>                                            | "389.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Bolna,_Rana>                                               | "1460.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Brahmagiri_(hill)>                                         | "1608.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Bread_Loaf_Mountain>                                       | "1168.91"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Brindlee_Mountain>                                         | "402.946"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bukhansan>                                                 | "836.5"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Burke_Mountain_(Vermont)>                                  | "996.696"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Castej%C3%B3n_Mountains>                                   | "747.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Cha%C3%AEne_de_l'%C3%89pine>                               | "1425.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Chaux_Ronde>                                               | "2028.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Chinese_Wall_(Idaho)>                                      | "3425.34"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cockscomb_(mountain)>                                      | "1768.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Corne_de_Sorebois>                                         | "2896.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crag_Mountain_(Massachusetts)>                             | "458.114"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Crap_Grisch>                                               | "2861.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Masegn>                                               | "2516.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Mats>                                                 | "2947.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Sogn_Gion>                                            | "2252.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_la_Pala>                                              | "2151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crinkle_Crags>                                             | "859.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Crystal_Peak_(Box_Elder_County,_Utah)>                     | "2371.34"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Crystal_Peak_(Tenmile_Range)>                              | "4224.22"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dallol_(volcano)>                                          | "-48.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Disappointment_Mountain>                                   | "552.907"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Discovery_Peak_(California)>                               | "1171.35"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Doyle_Peak>                                                | "3494.23"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/East_Peak_(New_Haven_County,_Connecticut)>                 | "297.485"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Fort_Mountain_(Maine)>                                     | "1178.66"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Fort_Mountain_(Murray_County,_Georgia)>                    | "868.68"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gaviota_Peak>                                              | "749.808"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gypsy_Peak>                                                | "2232.66"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Hayden_Mountain_(Oregon)>                                  | "1562.1"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Hochberg_(Chiemgau)>                                       | "775.6"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Hochberg_(Haardt)>                                         | "636.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Hochberg_(Swabian_Alb)>                                    | "1009.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Hohenstaufen_(mountain)>                                   | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Howse_Peak>                                                | "3295.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Kassianspitze>                                             | "2581.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Lank_Rigg>                                                 | "541.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Lone_Butte_(British_Columbia)>                             | "1237.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Lone_Mountain_(California)>                                | "128.321"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lone_Mountain_(New_York)>                                  | "1134.16"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Malheur_Butte>                                             | "811.073"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Manzano_Peak>                                              | "3077.87"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Marjan>                                                    | "178.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/McKnight_Mountain>                                         | "3098.29"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mnich_(mountain)>                                          | "2068.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monadnock_Mountain_(Vermont)>                              | "959.51"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mont_Bellevue>                                             | "333.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Monte_Binga>                                               | "2439.6"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monte_Salmone>                                             | "1560.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monte_San_Salvatore>                                       | "912.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Monte_Verena>                                              | "2015.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Achilles_(Tasmania)>                                 | "1363.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Bielawski>                                           | "985.723"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Craig_(North_Carolina)>                              | "2026.01"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Deborah>                                             | "3760.93"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Faget>                                               | "3360.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Forget>                                              | "2122.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Fox_(Canada)>                                        | "2973.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Fox_(Queensland)>                                    | "120.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_French_(Queensland)>                                 | "579.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Haku_(Hy%C5%8Dgo)>                                   | "510.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Holmes>                                              | "3150.41"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Hosmer_(Iowa)>                                       | "316.992"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Huckle>                                              | "2500.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Kanmuri_(Gifu,_Fukui)>                               | "1256.6"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Kinka_(Gifu)>                                        | "328.9"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Liberty_(New_Hampshire)>                             | "1359.1"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Lindesay_(New_South_Wales)>                          | "1373.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Lindesay_(Queensland)>                               | "1177.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Longhu>                                              | "150.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Matsuo>                                              | "687.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_McPhail>                                             | "2886.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Michelson_(Chugach_Mountains)>                       | "2652.06"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Miwa>                                                | "467.1"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Moran>                                               | "3842.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Rose_(Nevada)>                                       | "3287.27"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Sanford_(British_Columbia)>                          | "1827.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Sanford_(Connecticut)>                               | "270.053"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Scott_(Antarctica)>                                  | "880.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Scott_(Canada)>                                      | "3296.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+
+Narrowed to these target datasets:  Mountain MountainPass MountainRange MountainVolcano Volcano 
+
+Matching query schema Mountain(elevation) 
+to dataset schema MountainVolcano(firstAscent) 
+Created match data: 
+similarity(0.5).
+match(none).
+match([[Mountain],>,[MountainVolcano]]).
+match([[Mountain,elevation],>,[MountainVolcano,firstAscent]]).
+
+Matching query schema Mountain(elevation) 
+to dataset schema MountainPass(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.011627906976744207).
+match(none).
+match([[Mountain,elevation],=,[MountainPass,maximumElevation]]).
+match([[Mountain],=,[MountainPass]]).
+match([[Mountain,elevation],=,[MountainPass,elevation]]).
+
+Matching query schema Mountain(elevation) 
+to dataset schema MountainRange(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.011627906976744207).
+match(none).
+match([[Mountain],=,[MountainRange]]).
+match([[Mountain,elevation],=,[MountainRange,maximumElevation]]).
+match([[Mountain,elevation],=,[MountainRange,elevation]]).
+
+Matching query schema Mountain(elevation) 
+to dataset schema Volcano(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eruptionYear,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.005780346820809301).
+match(none).
+match([[Mountain,elevation],>,[Volcano,elevation]]).
+match([[Mountain],>,[Volcano]]).
+
+Matching query schema Mountain(elevation) 
+to dataset schema Mountain(alpsGroup,alpsMainPart,alpsMajorSector,alpsSection,alpsSoiusaCode,alpsSubgroup,alpsSubsection,alpsSupergroup,altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,ascentDate,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,firstAscentPerson,firstAscentYear,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,mountainRange,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parentMountainPeak,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.010810810810810811).
+match(none).
+match([[Mountain,elevation],=,[Mountain,elevation]]).
+match([[Mountain],=,[Mountain]]).
+match([[Mountain,elevation],=,[Mountain,maximumElevation]]).
+
+Construct query entity(type(Mountain),elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                 | elevation                                             |
+===================================================================================================================================================
+| <http://dbpedia.org/resource/Clark_Peak_(Medicine_Bow_Mountains)>                       | "3948.38"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gummer's_How>                                              | "321.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Itcha_Mountain>                                            | "2290.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Pillow_Ridge>                                              | "2400.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Yucca_Mountain>                                            | "2044.29"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Abert_Rim>                                                 | "2300.63"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Anahim_Peak>                                               | "1897.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Antler_Peak>                                               | "3067.2"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Arenig_Fawr>                                               | "854.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ash_Mountain_(British_Columbia)>                           | "2125.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ash_Mountain_(Montana)>                                    | "3123.59"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bare_Mountain_(Massachusetts)>                             | "309.067"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Beda_Fell>                                                 | "509.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Blackjack_Mountain_(Carroll_County,_Georgia)>              | "470.916"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Blackjack_Mountain_(Oklahoma)>                             | "381.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Blakeley_Raise>                                            | "389.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Bolna,_Rana>                                               | "1460.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Brahmagiri_(hill)>                                         | "1608.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Bread_Loaf_Mountain>                                       | "1168.91"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Brindlee_Mountain>                                         | "402.946"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bukhansan>                                                 | "836.5"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Burke_Mountain_(Vermont)>                                  | "996.696"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Castej%C3%B3n_Mountains>                                   | "747.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Cha%C3%AEne_de_l'%C3%89pine>                               | "1425.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Chaux_Ronde>                                               | "2028.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Chinese_Wall_(Idaho)>                                      | "3425.34"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cockscomb_(mountain)>                                      | "1768.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Corne_de_Sorebois>                                         | "2896.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crag_Mountain_(Massachusetts)>                             | "458.114"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Crap_Grisch>                                               | "2861.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Masegn>                                               | "2516.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Mats>                                                 | "2947.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Sogn_Gion>                                            | "2252.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_la_Pala>                                              | "2151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crinkle_Crags>                                             | "859.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Crystal_Peak_(Box_Elder_County,_Utah)>                     | "2371.34"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Crystal_Peak_(Tenmile_Range)>                              | "4224.22"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dallol_(volcano)>                                          | "-48.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Disappointment_Mountain>                                   | "552.907"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Discovery_Peak_(California)>                               | "1171.35"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Doyle_Peak>                                                | "3494.23"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/East_Peak_(New_Haven_County,_Connecticut)>                 | "297.485"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Fort_Mountain_(Maine)>                                     | "1178.66"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Fort_Mountain_(Murray_County,_Georgia)>                    | "868.68"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gaviota_Peak>                                              | "749.808"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gypsy_Peak>                                                | "2232.66"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Hayden_Mountain_(Oregon)>                                  | "1562.1"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Hochberg_(Chiemgau)>                                       | "775.6"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Hochberg_(Haardt)>                                         | "636.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Hochberg_(Swabian_Alb)>                                    | "1009.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Hohenstaufen_(mountain)>                                   | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Howse_Peak>                                                | "3295.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Kassianspitze>                                             | "2581.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Lank_Rigg>                                                 | "541.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Lone_Butte_(British_Columbia)>                             | "1237.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Lone_Mountain_(California)>                                | "128.321"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lone_Mountain_(New_York)>                                  | "1134.16"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Malheur_Butte>                                             | "811.073"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Manzano_Peak>                                              | "3077.87"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Marjan>                                                    | "178.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/McKnight_Mountain>                                         | "3098.29"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mnich_(mountain)>                                          | "2068.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monadnock_Mountain_(Vermont)>                              | "959.51"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mont_Bellevue>                                             | "333.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Monte_Binga>                                               | "2439.6"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monte_Salmone>                                             | "1560.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monte_San_Salvatore>                                       | "912.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Monte_Verena>                                              | "2015.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Achilles_(Tasmania)>                                 | "1363.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Bielawski>                                           | "985.723"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Craig_(North_Carolina)>                              | "2026.01"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Deborah>                                             | "3760.93"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Faget>                                               | "3360.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Forget>                                              | "2122.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Fox_(Canada)>                                        | "2973.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Fox_(Queensland)>                                    | "120.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_French_(Queensland)>                                 | "579.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Haku_(Hy%C5%8Dgo)>                                   | "510.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Holmes>                                              | "3150.41"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Hosmer_(Iowa)>                                       | "316.992"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Huckle>                                              | "2500.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Kanmuri_(Gifu,_Fukui)>                               | "1256.6"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Kinka_(Gifu)>                                        | "328.9"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Liberty_(New_Hampshire)>                             | "1359.1"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Lindesay_(New_South_Wales)>                          | "1373.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Lindesay_(Queensland)>                               | "1177.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Longhu>                                              | "150.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Matsuo>                                              | "687.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_McPhail>                                             | "2886.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Michelson_(Chugach_Mountains)>                       | "2652.06"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Miwa>                                                | "467.1"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Moran>                                               | "3842.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Rose_(Nevada)>                                       | "3287.27"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Sanford_(British_Columbia)>                          | "1827.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Sanford_(Connecticut)>                               | "270.053"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Scott_(Antarctica)>                                  | "880.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Scott_(Canada)>                                      | "3296.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+
+Construct query entity(type(Mountain),maximumElevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<http://dbpedia.org/ontology/maximumElevation> ?maximumElevation . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------
+| subject                                        | maximumElevation                                   |
+=======================================================================================================
+| <http://dbpedia.org/resource/Batorampon_Point> | "91.44"^^<http://www.w3.org/2001/XMLSchema#double> |
+-------------------------------------------------------------------------------------------------------
+
+Construct query entity(type(MountainPass),elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainPass> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query did not return any data. 
+
+Construct query entity(type,elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                    | type                                                                                       | elevation                                            |
+==================================================================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Acq>                                                          | <http://www.w3.org/2002/07/owl#Thing>                                                      | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://schema.org/Place>                                                                  | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/ontology/Place>                                                        | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/ontology/PopulatedPlace>                                               | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/ontology/Settlement>                                                   | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://www.opengis.net/gml/_Feature>                                                      | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                            | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/District108552138>                                          | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/Location100027167>                                          | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/Object100002684>                                            | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/Region108630985>                                            | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/YagoGeoEntity>                                              | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                          | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/Commune108541609>                                           | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/CommunesOfPas-de-Calais>                                    | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                    | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Acq>                                                          | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                               | "91.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.w3.org/2002/07/owl#Thing>                                                      | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://schema.org/Airport>                                                                | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://schema.org/Place>                                                                  | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Airport>                                                      | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/ArchitecturalStructure>                                       | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Infrastructure>                                               | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Place>                                                        | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.opengis.net/gml/_Feature>                                                      | "62.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.w3.org/2002/07/owl#Thing>                                                      | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://schema.org/Airport>                                                                | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://schema.org/Place>                                                                  | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Airport>                                                      | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/ArchitecturalStructure>                                       | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Infrastructure>                                               | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Place>                                                        | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Agen_La_Garenne_Airport>                                      | <http://www.opengis.net/gml/_Feature>                                                      | "62.1792"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://www.w3.org/2002/07/owl#Thing>                                                      | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://schema.org/Place>                                                                  | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/ontology/Place>                                                        | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/ontology/PopulatedPlace>                                               | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/ontology/Settlement>                                                   | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://www.opengis.net/gml/_Feature>                                                      | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                            | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/District108552138>                                          | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/Location100027167>                                          | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/Object100002684>                                            | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/Region108630985>                                            | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/YagoGeoEntity>                                              | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                          | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/Commune108541609>                                           | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/CommunesOfSeine-Maritime>                                   | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                    | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                      | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                               | "100.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://www.w3.org/2002/07/owl#Thing>                                                      | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://schema.org/Place>                                                                  | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/ontology/Place>                                                        | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/ontology/PopulatedPlace>                                               | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/ontology/Settlement>                                                   | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://www.opengis.net/gml/_Feature>                                                      | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                            | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/District108552138>                                          | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/Location100027167>                                          | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/Object100002684>                                            | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/Region108630985>                                            | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/UrbanArea108675967>                                         | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/YagoGeoEntity>                                              | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                          | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/MunicipalitiesOfTheCantonOfFribourg>                        | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/GeographicalArea108574314>                                  | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/Municipality108626283>                                      | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                    | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Switzerland>                                         | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                               | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://www.w3.org/2002/07/owl#Thing>                                                      | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://schema.org/Airport>                                                                | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://schema.org/Place>                                                                  | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                                | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/Airport>                                                      | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/ArchitecturalStructure>                                       | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/Infrastructure>                                               | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/Place>                                                        | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/ontology/Wikidata:Q532>                                                | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://www.opengis.net/gml/_Feature>                                                      | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Airfield102687992>                                          | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Airport102692232>                                           | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/AirportsInQueensland>                                       | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Artifact100021939>                                          | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Facility103315023>                                          | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Object100002684>                                            | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/Whole100003553>                                             | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Badu_Island_Airport>                                          | <http://dbpedia.org/class/yago/YagoGeoEntity>                                              | "13.716"^^<http://www.w3.org/2001/XMLSchema#double>  |
+
+Construct query entity(type(MountainPass),maximumElevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainPass> ; 
+<http://dbpedia.org/ontology/maximumElevation> ?maximumElevation . }
+
+The query did not return any data. 
+
+Construct query entity(type,maximumElevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/maximumElevation> ?maximumElevation . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                     | type                                                                              | maximumElevation                                     |
+==========================================================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Acq>                                                           | <http://www.w3.org/2002/07/owl#Thing>                                             | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://schema.org/Place>                                                         | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/ontology/Place>                                               | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/ontology/Settlement>                                          | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://www.opengis.net/gml/_Feature>                                             | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/District108552138>                                 | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/Location100027167>                                 | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/Object100002684>                                   | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/Region108630985>                                   | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/Commune108541609>                                  | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/CommunesOfPas-de-Calais>                           | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://www.w3.org/2002/07/owl#Thing>                                             | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://schema.org/AdministrativeArea>                                            | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://schema.org/Place>                                                         | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/AdministrativeRegion>                                | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/Place>                                               | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/Region>                                              | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://umbel.org/umbel/rc/PopulatedPlace>                                        | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://www.w3.org/2002/07/owl#Thing>                                             | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://schema.org/AdministrativeArea>                                            | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://schema.org/Place>                                                         | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/AdministrativeRegion>                                | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/Place>                                               | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/Region>                                              | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://www.w3.org/2002/07/owl#Thing>                                             | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://schema.org/Place>                                                         | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/ontology/Place>                                               | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/ontology/Settlement>                                          | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://www.opengis.net/gml/_Feature>                                             | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/District108552138>                                 | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/Location100027167>                                 | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/Object100002684>                                   | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/Region108630985>                                   | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/Commune108541609>                                  | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/CommunesOfSeine-Maritime>                          | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://www.w3.org/2002/07/owl#Thing>                                             | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://schema.org/Place>                                                         | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/ontology/Place>                                               | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/ontology/Settlement>                                          | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://www.opengis.net/gml/_Feature>                                             | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/District108552138>                                 | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/Location100027167>                                 | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/Object100002684>                                   | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/Region108630985>                                   | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/Commune108541609>                                  | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/CommunesOfEure-et-Loir>                            | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://www.w3.org/2002/07/owl#Thing>                                             | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://schema.org/Place>                                                         | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/ontology/Place>                                               | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/ontology/Settlement>                                          | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://www.opengis.net/gml/_Feature>                                             | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/District108552138>                                 | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/Location100027167>                                 | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/Object100002684>                                   | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/Region108630985>                                   | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/Commune108541609>                                  | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/CommunesOfSeine-Maritime>                          | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Grandcourt,_Seine-Maritime>                                    | <http://www.w3.org/2002/07/owl#Thing>                                             | "204.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Grandcourt,_Seine-Maritime>                                    | <http://schema.org/Place>                                                         | "204.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+
+Construct query entity(type(MountainRange),elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainRange> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                    | elevation                                            |
+=====================================================================================================================================
+| <http://dbpedia.org/resource/Castle_Mountains_(California)>                | "1567.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Itcha_Range>                                  | "2375.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Blue_Mountains_(Jamaica)>                     | "2256.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Capay_Hills>                                  | "420.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Cayoosh_Range>                                | "2855.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/D'Aguilar_Range>                              | "770.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Egge_(range)>                                 | "468.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Elkhorn_Mountains_(Oregon)>                   | "2776.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gorce_Mountains>                              | "1310.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Granite_Range_(Elko_County)>                  | "2388.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Granite_Range_(Washoe_County)>                | "2365.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Imeon_Range>                                  | "2105.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Inglefield_Mountains>                         | "1500.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Last_Chance_Range>                            | "2645.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Last_Chance_Range_(Nevada)>                   | "1454.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lippe_Uplands>                                | "496.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Main_Range_(Snowy_Mountains)>                 | "2228.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Old_Woman_Mountains>                          | "899.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Potrero_Hills_(Solano_County,_California)>    | "107.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Sierra_Blanca_(Andalusia)>                    | "1275.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Sierra_Norte_de_Sevilla>                      | "960.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Titiwangsa_Mountains>                         | "2187.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dalou_Mountains>                              | "2251.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Montes_de_Toledo>                             | "1603.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Phi_Pan_Nam_Range>                            | "1694.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Salt_Spring>                                  | "509.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/San_Antonio_Mountains>                        | "1884.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Sierra_Sur_de_Ja%C3%A9n>                      | "1872.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Sierra_de_Cazorla>                            | "1847.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bieszczady_Mountains>                         | "1405.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bunya_Mountains>                              | "1135.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cordillera_de_la_Ramada>                      | "6720.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Nipe-Sagua-Baracoa>                           | "1231.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Russian_Mountains_(Alaska)>                   | "3077.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Anaimalai_Hills>                              | "2695.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Columbia_Mountains>                           | "3519.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Monashee_Mountains>                           | "3274.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Western_Tatras>                               | "2248.4"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mutton_Mountains>                             | "1247.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Prebaetic_System>                             | "2382.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Romsdalsalpene>                               | "1852.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Alsek_Ranges>                                 | "2721.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Antelope_Range_(Nye_County,_Nevada)>          | "3080.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lenne_Mountains>                              | "656.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Little_Signal_Hills>                          | "413.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Harly_Forest>                                 | "255.9"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Calumet_Mountains>                            | "829.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Carinthian-Styrian_Alps>                      | "2241.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ciervo_Hills>                                 | "1027.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Martin_Creek_Mountains>                       | "2198.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Daumengruppe>                                 | "2280.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ogilby_Hills>                                 | "128.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Las_Tinajas_de_Los_Indios>                    | "780.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Lompoc_Hills>                                 | "411.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Rehburg_Hills>                                | "161.4"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Sierra_de_Aracena>                            | "962.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Albula_Alps>                                  | "3418.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Atlas_Mountains>                              | "4165.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bernese_Alps>                                 | "4274.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Carpathian_Mountains>                         | "2655.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cottian_Alps>                                 | "3841.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dauphin%C3%A9_Alps>                           | "4102.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dolomites>                                    | "3343.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Glarus_Alps>                                  | "3614.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Graian_Alps>                                  | "4810.45"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Great_Dividing_Range>                         | "2228.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Himalayas>                                    | "8848.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Hindu_Kush>                                   | "7690.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lepontine_Alps>                               | "3552.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Maritime_Alps>                                | "3297.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Pennine_Alps>                                 | "4634.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tatra_Mountains>                              | "2655.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ural_Mountains>                               | "1895.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Maury_Mountains>                              | "1844.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Monti_Ernici>                                 | "2064.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Annamite_Range>                               | "2598.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chalk_Mountains_(California)>                 | "761.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Chalk_Mountains_(Colorado)>                   | "3649.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chalk_Mountains_(Texas)>                      | "955.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Cordillera_Occidental_(Colombia)>             | "4250.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cordillera_Oriental_(Colombia)>               | "5410.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cordillera_del_Paine>                         | "2884.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Desert_Hills_(Nevada)>                        | "1542.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Double_H_Mountains>                           | "1834.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Driftwood_Range>                              | "2027.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Frankland_Range>                              | "1083.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Kikai_Caldera>                                | "704.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Newberry_Mountains_(California)>              | "1217.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/North_Mountain_(Nova_Scotia)>                 | "235.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Owl_Mountains>                                | "1014.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Plessur_Alps>                                 | "2985.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Strawberry_Range>                             | "2750.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tantalus_Range>                               | "2603.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mallard_Hills>                                | "2052.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Irish_Range>                            | "2665.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Panoche_Hills>                                | "675.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Sierra_del_Escudo_de_Cabu%C3%A9rniga>         | "927.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+
+Construct query entity(type(MountainRange),maximumElevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainRange> ; 
+<http://dbpedia.org/ontology/maximumElevation> ?maximumElevation . }
+
+The query did not return any data. 
+
+Construct query entity(type,maximumElevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/maximumElevation> ?maximumElevation . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                     | type                                                                              | maximumElevation                                     |
+==========================================================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Acq>                                                           | <http://www.w3.org/2002/07/owl#Thing>                                             | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://schema.org/Place>                                                         | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/ontology/Place>                                               | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/ontology/Settlement>                                          | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://www.opengis.net/gml/_Feature>                                             | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/District108552138>                                 | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/Location100027167>                                 | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/Object100002684>                                   | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/Region108630985>                                   | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/Commune108541609>                                  | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/CommunesOfPas-de-Calais>                           | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Acq>                                                           | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | "145.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://www.w3.org/2002/07/owl#Thing>                                             | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://schema.org/AdministrativeArea>                                            | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://schema.org/Place>                                                         | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/AdministrativeRegion>                                | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/Place>                                               | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/Region>                                              | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia>                                                     | <http://umbel.org/umbel/rc/PopulatedPlace>                                        | "18.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://www.w3.org/2002/07/owl#Thing>                                             | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://schema.org/AdministrativeArea>                                            | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://schema.org/Place>                                                         | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/AdministrativeRegion>                                | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/Place>                                               | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/Region>                                              | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ampelakia,_Larissa>                                            | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "450.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://www.w3.org/2002/07/owl#Thing>                                             | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://schema.org/Place>                                                         | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/ontology/Place>                                               | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/ontology/Settlement>                                          | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://www.opengis.net/gml/_Feature>                                             | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/District108552138>                                 | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/Location100027167>                                 | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/Object100002684>                                   | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/Region108630985>                                   | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/Commune108541609>                                  | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/CommunesOfSeine-Maritime>                          | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Autigny,_Seine-Maritime>                                       | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | "114.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://www.w3.org/2002/07/owl#Thing>                                             | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://schema.org/Place>                                                         | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/ontology/Place>                                               | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/ontology/Settlement>                                          | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://www.opengis.net/gml/_Feature>                                             | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/District108552138>                                 | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/Location100027167>                                 | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/Object100002684>                                   | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/Region108630985>                                   | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/Commune108541609>                                  | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/CommunesOfEure-et-Loir>                            | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Eure-et-Loir>                                     | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | "151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://www.w3.org/2002/07/owl#Thing>                                             | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://schema.org/Place>                                                         | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/ontology/Place>                                               | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/ontology/PopulatedPlace>                                      | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/ontology/Settlement>                                          | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/ontology/Wikidata:Q532>                                       | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://www.opengis.net/gml/_Feature>                                             | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/District108552138>                                 | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/Location100027167>                                 | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/Object100002684>                                   | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/Region108630985>                                   | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/Commune108541609>                                  | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/CommunesOfSeine-Maritime>                          | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gommerville,_Seine-Maritime>                                   | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | "134.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Grandcourt,_Seine-Maritime>                                    | <http://www.w3.org/2002/07/owl#Thing>                                             | "204.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Grandcourt,_Seine-Maritime>                                    | <http://schema.org/Place>                                                         | "204.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+
+Construct query entity(type(MountainVolcano),firstAscent) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MountainVolcano> ; 
+<http://dbpedia.org/ontology/firstAscent> ?firstAscent . }
+
+The query did not return any data. 
+
+Construct query entity(type,firstAscent) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/firstAscent> ?firstAscent . }
+
+Construct query entity(type(Volcano),elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Volcano> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                 | elevation                                            |
+==================================================================================================================================
+| <http://dbpedia.org/resource/Mount_Aragats>                             | "4090.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Melbourne>                           | "2730.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Popa>                                | "1518.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_S%C3%BCphan>                         | "4058.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Scott_(Klamath_County,_Oregon)>      | "2723.08"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Mount_Westdahl>                            | "1653.84"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Nevado_de_Toluca>                          | "4680.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Palomo>                                    | "4860.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Sierra_Blanca_(New_Mexico)>                | "3651.81"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Volc%C3%A1n_Ipala>                         | "1650.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Manuk>                                     | "282.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monte_Grande_(Sal)>                        | "405.3"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Kusatsu-Shirane>                     | "2171.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Koshelev_(volcano)>                        | "1812.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Nagayama>                            | "1978.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Pambamarca>                                | "4100.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Kronotsky>                                 | "3527.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Semeru>                                    | "3676.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Leonard_Kniaseff>                          | "1190.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Empung>                              | "1340.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Qu%C3%B1uqranra>                           | "5822.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Tequila_Volcano>                           | "2920.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Alid_Volcano>                              | "904.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mahagnao_Volcano>                          | "860.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Romeral_(volcano)>                         | "3858.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Moffett>                             | "1196.04"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Escalante_(El_Apagado)>                    | "5819.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Ch%C5%ABbetsu>                       | "1962.8"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Klyuchevskaya_Sopka>                       | "4750.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Fuji>                                | "3776.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Ruapehu>                             | "2797.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_St._Helens>                          | "2549.65"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Mount_Amagi>                               | "1406.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Harcourt>                            | "1570.63"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Mount_Steller_(Aleutian_Range)>            | "2271.98"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Black_Tusk>                                | "2319.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Casablanca_(volcano)>                      | "2240.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ilyinsky_(volcano)>                        | "1578.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Miyake-jima>                               | "815.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monte_Gordo,_Cape_Verde>                   | "1312.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Alu>                                 | "95.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Hagen_(volcano)>                     | "3778.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Rishiri>                             | "1721.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Spurr>                               | "3374.14"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Nemrut_(volcano)>                          | "2948.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_My%C5%8Dk%C5%8D>                     | "2454.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Arjuno-Welirang>                           | "3339.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/B%C3%A1r%C3%B0arbunga>                     | "2009.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cerro_Negro_de_Mayasquer>                  | "4445.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Ma_Alalta>                           | "1815.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mousa_Ali>                                 | "2021.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ollag%C3%BCe>                              | "5868.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Garbuna_Group>                             | "564.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Pico_do_Vento>                             | "434.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Akita-Yake-Yama>                           | "1366.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bakening>                                  | "2276.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Chiliques>                                 | "5778.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Binuluan>                            | "2329.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Boucherie>                           | "758.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Natib>                               | "1253.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Sierra_Negra>                              | "4640.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gada_Ale>                                  | "287.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Pulosari>                                  | "1346.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cerro_Toco>                                | "5604.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lonquimay_(volcano)>                       | "2865.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Gahinga>                             | "3474.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Norikura>                            | "3025.64"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Narcondam_Island>                          | "710.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Talagabodas>                               | "2201.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Afdera_(volcano)>                          | "1295.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ilimuda>                                   | "1100.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Meakan>                              | "1499.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Volc%C3%A1n_Tajumulco>                     | "4220.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Antillanca_Group>                          | "1990.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Moyuta_(volcano)>                          | "1662.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Segula_Volcano>                            | "1153.06"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Kizimen>                                   | "2376.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ampato>                                    | "6288.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dzenzursky>                                | "2285.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ebulobo>                                   | "2124.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gorely>                                    | "1829.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Kambalny>                                  | "2156.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Khodutka>                                  | "2090.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lewotolo>                                  | "1423.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Takuan_Group>                              | "2210.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Zheltovsky>                                | "1953.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Isarog>                              | "2000.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dotsero>                                   | "2067.46"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Mount_Lokon>                               | "1580.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Mahawu>                              | "1324.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Dempo>                               | "3173.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Fentale>                             | "2007.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Lawu>                                | "3265.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Atna_Peaks>                                | "4224.53"^^<http://www.w3.org/2001/XMLSchema#double> |
+| <http://dbpedia.org/resource/Meheti'a>                                  | "435.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Cerro_Paniri>                              | "5960.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Ice_Peak>                                  | "2526.0"^^<http://www.w3.org/2001/XMLSchema#double>  |
+

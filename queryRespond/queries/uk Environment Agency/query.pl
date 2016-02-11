@@ -1,0 +1,2 @@
+uk_BathingWaters( subject('10065'), 'SampleClassification','PrefLabel','Long','Lat','Northing','Easting','LatestComplianceAssessment','Type','Country','District','Envelope','LatestBathingWaterProfile','SedimentTypesPresent','UriSet','RegionalOrganization','YearDesignated','LatestSampleAssessment','EubWidNotation','WaterQualityImpactedByHeavyRain','ZoneOfInfluence','SamplingPoint','ComplianceClassification','PrimaryTopic','ExtendedMetadataVersion','Definition','Label').
+

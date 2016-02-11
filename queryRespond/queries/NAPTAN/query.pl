@@ -1,0 +1,1 @@
+stopAvailability(subject(20399),'AtcoCode','StartDate','EndDate','AvailabilityStatus','Note','NoteLang','TransferStopAtcoCode','CreationDateTime','ModificationDateTime','RevisionNumber','Modification').

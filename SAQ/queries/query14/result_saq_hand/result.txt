@@ -1,0 +1,14 @@
+Query:  entity(type(US_State),admittedAt) 
+Construct query entity(type(US_State),admittedAt) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/US_State> ; 
+<admittedAt> ?admittedAt . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  
+
+No matches found for  US_State(admittedAt) 
+
+Cannot respond to   entity(type(US_State),admittedAt) 
+

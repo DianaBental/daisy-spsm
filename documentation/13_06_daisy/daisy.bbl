@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{buscaldi}
+Davide Buscaldi, Paolo Rosso, and Emilio~Sanchis Arnal.
+\newblock A wordnet-based query expansion method for geographical information
+  retrieval.
+\newblock In {\em Working notes for the CLEF workshop}, 2005.
+
+\bibitem{obda}
+Diego Calvanese, Giuseppe De~Giacomo, Domenico Lembo, Maurizio Lenzerini,
+  Antonella Poggi, Mariano Rodriguez-Muro, Riccardo Rosati, Marco Ruzzi, and
+  Domenico~Fabio Savo.
+\newblock The mastro system for ontology-based data access.
+\newblock {\em Semantic Web Journal}, 2(1):43--53, 2011.
+
+\bibitem{chu92}
+Wesley~W. Chu and Qiming Chen.
+\newblock Neighborhood and associative query answering.
+\newblock {\em Journal of Intelligent Information Systems}, 1(3-4):355--382,
+  1992.
+
+\bibitem{spsm}
+Fausto Giunchiglia, Fiona McNeill, Mikalai Yatskevich, Juan Pane, Paolo Besana,
+  and Pavel Shvaiko.
+\newblock Approximate {S}tructure-{P}reserving {S}emantic {M}atching.
+\newblock In {\em 7th {I}nternational {C}onference on {O}ntologies, {D}atabases
+  and {A}pplications of {S}emantics ({ODBASE})}, pages 1217--1234, November
+  2008.
+
+\bibitem{hagedornS13}
+Stefan Hagedorn and Kai-Uwe Sattler.
+\newblock Discovery querying in linked open data.
+\newblock In {\em EDBT/ICDT Workshops}, pages 38--44, 2013.
+
+\bibitem{hanintelligentquery}
+Jiawei Han, Yue Huang, Nick Cercone, and Yongjian Fu.
+\newblock Intelligent query answering by knowledge discovery techniques.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  8:373--390, 1995.
+
+\bibitem{hollink}
+Laura Hollink, Schreiber Guus, and Bob Wielinga.
+\newblock Patterns of semantic relations to improve image content search.
+\newblock {\em Web Semantics: Science, Services and Agents on the World Wide
+  Web}, 5.3:195--203, 2007.
+
+\bibitem{trust}
+Nardine Osman, Carles Sierra, Fiona McNeill, Juan Pane, and John Debenhaml.
+\newblock Trust and {M}atching {A}lgorithms for {S}electing {S}uitable
+  {A}gents.
+\newblock {\em {ACM} {T}ransactions on {I}ntelligent {S}ystems and {T}echnology
+  ({TIST})}, in press.
+
+\bibitem{pitt-report}
+The {Pitt} review: Lessons learned from the 2007 floods.
+\newblock HMSO, London, 2007.
+
+\bibitem{treematching}
+Dennis Shasha and Kaizhong Zhang.
+\newblock Approximate {T}ree {P}attern {M}atching.
+\newblock {\em In Pattern Matching Algorithms}, pages 341--371, 1997.
+
+\end{thebibliography}

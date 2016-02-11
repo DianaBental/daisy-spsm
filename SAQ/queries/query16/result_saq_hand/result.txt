@@ -1,0 +1,123 @@
+Query:  entity(type(Movie),directedBy(Francis_Ford_Coppola)) 
+Construct query entity(type(Movie),directedBy(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Movie> ; 
+<directedBy> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Film 
+
+Matching query schema Movie(directedBy) 
+to dataset schema Film(director) 
+Created match data: 
+similarity(0.5).
+match(none).
+match([[Movie],=,[Film]]).
+
+Construct query entity(type(Film)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                                                                           |
+=====================================================================================================================================================================================================
+| <http://dbpedia.org/resource/Alraune_(1918_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Alraune_(1928_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Alraune_(1952_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/April_Love_(film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Ascendancy_(film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Chervona_Ruta_(film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Dead_City_(film)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/Doughboys_(1930_film)>                                                                                                                                               |
+| <http://dbpedia.org/resource/Fanny_by_Gaslight_(film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Furnace_(film)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/Germany,_Year_Zero>                                                                                                                                                  |
+| <http://dbpedia.org/resource/Kekexili:_Mountain_Patrol>                                                                                                                                           |
+| <http://dbpedia.org/resource/Knight_Rider_(2008_film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Knight_Rider_2000>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Knight_Rider_2010>                                                                                                                                                   |
+| <http://dbpedia.org/resource/La_Ci%C3%A9naga_(film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Lipstick_(film)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/Nacho_Libre>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Panic_in_Year_Zero!>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Peg_o'_My_Heart_(1922_film)>                                                                                                                                         |
+| <http://dbpedia.org/resource/Peg_o'_My_Heart_(1933_film)>                                                                                                                                         |
+| <http://dbpedia.org/resource/Red_Light_(film)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/Red_Lights_(2004_film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Red_Lights_(2012_film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Seenu_(1999_film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Seenu_(2000_film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/Smile_Pinki>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Someone_to_Love_(film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Stella_Dallas_(1925_film)>                                                                                                                                           |
+| <http://dbpedia.org/resource/Stella_Dallas_(1937_film)>                                                                                                                                           |
+| <http://dbpedia.org/resource/Tekken:_The_Motion_Picture>                                                                                                                                          |
+| <http://dbpedia.org/resource/Tekken_(1990_film)>                                                                                                                                                  |
+| <http://dbpedia.org/resource/Tekken_(2010_film)>                                                                                                                                                  |
+| <http://dbpedia.org/resource/The_Big_Store>                                                                                                                                                       |
+| <http://dbpedia.org/resource/The_Fighting_Heart_(1919_film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/The_Fighting_Heart_(1925_film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/The_Gold_Diggers_(1923_film)>                                                                                                                                        |
+| <http://dbpedia.org/resource/The_Taking_of_Pelham_One_Two_Three_(1974_film)>                                                                                                                      |
+| <http://dbpedia.org/resource/The_Taking_of_Pelham_One_Two_Three_(1998_film)>                                                                                                                      |
+| <http://dbpedia.org/resource/Voltaire_(film)>                                                                                                                                                     |
+| <http://dbpedia.org/resource/Why_I_Wore_Lipstick_to_My_Mastectomy>                                                                                                                                |
+| <http://dbpedia.org/resource/%C3%89tienne_(film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/%C3%89toile_(film)>                                                                                                                                                  |
+| <http://dbpedia.org/resource/08/15_(film_series)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/101_Dalmatians_II:_Patch's_London_Adventure>                                                                                                                         |
+| <http://dbpedia.org/resource/2002_(film)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/21_(2008_film)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/23_Skidoo_(film)>                                                                                                                                                    |
+| <http://dbpedia.org/resource/42_(film)>                                                                                                                                                           |
+| <http://dbpedia.org/resource/500_Days_of_Summer>                                                                                                                                                  |
+| <http://dbpedia.org/resource/500_Dunam_on_the_Moon>                                                                                                                                               |
+| <http://dbpedia.org/resource/500_Years_Later>                                                                                                                                                     |
+| <http://dbpedia.org/resource/5_Days_of_War>                                                                                                                                                       |
+| <http://dbpedia.org/resource/99_(1918_film)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/99_(2009_film)>                                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Bandit>                                                                                                                                                            |
+| <http://dbpedia.org/resource/A_Flower_of_Evil>                                                                                                                                                    |
+| <http://dbpedia.org/resource/A_Girl_in_Every_Port_(1928_film)>                                                                                                                                    |
+| <http://dbpedia.org/resource/A_Girl_in_Every_Port_(1952_film)>                                                                                                                                    |
+| <http://dbpedia.org/resource/A_Kiss_Before_Dying_(1956_film)>                                                                                                                                     |
+| <http://dbpedia.org/resource/A_Kiss_Before_Dying_(1991_film)>                                                                                                                                     |
+| <http://dbpedia.org/resource/A_Letter_from_Death_Row_(film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Little_Piece_of_Heaven_(film)>                                                                                                                                     |
+| <http://dbpedia.org/resource/A_More_Perfect_Union_(film)>                                                                                                                                         |
+| <http://dbpedia.org/resource/A_New_Life_(film)>                                                                                                                                                   |
+| <http://dbpedia.org/resource/A_Perfect_Fit>                                                                                                                                                       |
+| <http://dbpedia.org/resource/A_Roman_Scandal_(film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/A_Simple_Story_(1970_film)>                                                                                                                                          |
+| <http://dbpedia.org/resource/A_Simple_Story_(1978_film)>                                                                                                                                          |
+| <http://dbpedia.org/resource/A_Small_Town_Girl>                                                                                                                                                   |
+| <http://dbpedia.org/resource/A_Son_of_David>                                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Study_in_Scarlet_(1914_film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Study_in_Scarlet_(1933_film)>                                                                                                                                      |
+| <http://dbpedia.org/resource/A_Terrible_Beauty_(film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/A_Woman's_Revenge_(1921_film)>                                                                                                                                       |
+| <http://dbpedia.org/resource/A_Woman's_Revenge_(1990_film)>                                                                                                                                       |
+| <http://dbpedia.org/resource/Aakrosh_(1980_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Aakrosh_(1998_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Aakrosh_(2010_film)>                                                                                                                                                 |
+| <http://dbpedia.org/resource/Aatish:_Feel_the_Fire>                                                                                                                                               |
+| <http://dbpedia.org/resource/Aatish_(film)>                                                                                                                                                       |
+| <http://dbpedia.org/resource/Abby_(film)>                                                                                                                                                         |
+| <http://dbpedia.org/resource/Accident_(1928_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(1976_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(1985_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(2008_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(2009_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Accident_(2012_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Ace_High_(1919_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Ace_High_(1968_film)>                                                                                                                                                |
+| <http://dbpedia.org/resource/Across_the_Universe_(film)>                                                                                                                                          |
+| <http://dbpedia.org/resource/Adam's_Rib_(1923_film)>                                                                                                                                              |
+| <http://dbpedia.org/resource/Adam_and_Eve_(1949_film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Adam_and_Eve_(1953_film)>                                                                                                                                            |
+| <http://dbpedia.org/resource/Adventures_of_the_Barber_of_Seville>                                                                                                                                 |
+| <http://dbpedia.org/resource/After_Midnight_(1927_film)>                                                                                                                                          |
+| <http://dbpedia.org/resource/After_Midnight_(1989_film)>                                                                                                                                          |
+

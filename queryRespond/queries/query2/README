@@ -1,0 +1,7 @@
+bathingWater: does not exist
+catchment: exists in bathingWaterLocations.n3
+'Highland' -localAuthority : correct at bathingWaterLocations.n3
+
+this query produces matches for 3 datasets:
+bathingWaterLocations (correct one), waterBodyMeasures, waterBodyPressures
+

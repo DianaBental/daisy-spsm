@@ -1,0 +1,76 @@
+Query:  entity(type(Island),belongTo(Japan)) 
+Construct query entity(type(Island),belongTo(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<belongTo> <http://dbpedia.org/resource/Japan> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Archipelago CricketGround Island 
+
+Matching query schema Island(belongTo) 
+to dataset schema CricketGround(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Island(belongTo) 
+to dataset schema Archipelago(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.005813953488372103).
+match(none).
+match([[Island],<,[Archipelago]]).
+match([[Island,belongTo],<,[Archipelago,land]]).
+
+Matching query schema Island(belongTo) 
+to dataset schema Island(PopulatedPlaceArea,PopulatedPlaceAreaMetro,PopulatedPlaceAreaTotal,PopulatedPlaceAreaUrban,PopulatedPlacePopulationDensity,PopulatedPlacePopulationMetroDensity,PopulatedPlacePopulationUrbanDensity,administrativeHeadCity,agglomeration,agglomerationArea,agglomerationDemographics,alemmanicName,altitude,annualTemperature,anthem,apskritis,arberishtName,areaCode,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaRural,areaTotal,areaTotalRanking,areaUrban,areaWater,arrondissement,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,barangays,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,border,borough,budgetYear,building,cableCar,calabrianName,cannonNumber,capital,capitalCoordinates,capitalCountry,capitalDistrict,capitalElevation,capitalMountain,capitalPlace,capitalPosition,capitalRegion,catholicPercentage,ccaState,censusYear,ceremonialCounty,circle,cityLink,citySince,cityType,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,colonialName,commissioner,commissionerDate,communityIsoCode,coordinates,councilArea,countySeat,currencyCode,cyrilliqueName,dateAgreement,daylightSavingTimeZone,delegateMayor,delegation,deme,demographics,demographicsAsOf,department,departmentPosition,depth,depthQuote,depths,different,disappearanceDate,discovery,dissolutionDate,dissolutionYear,district,ekatteCode,elevation,elevationQuote,emblem,endangeredSince,eruption,ethnicGroup,eventDate,fauna,fipsCode,firstMention,flora,flower,foresterDistrict,foundation,foundationDate,foundingPerson,frenchName,frioulanName,frontierLength,gagaouze,geolocDual,geologicPeriod,germanName,giniCoefficient,giniCoefficientAsOf,giniCoefficientCategory,giniCoefficientRanking,gnisCode,gnl,governingBody,government,governmentCountry,governmentElevation,governmentMountain,governmentPlace,governmentPosition,governmentRegion,governorate,greekName,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProduct,grossDomesticProductAsOf,grossDomesticProductNominalPerCapita,grossDomesticProductPerPeople,grossDomesticProductPurchasingPowerParityPerCapita,grossDomesticProductRank,heritageRegister,highestPointIsland,highestRegion,highestState,historicalMap,historicalName,historicalRegion,hraState,humanDevelopmentIndex,humanDevelopmentIndexAsOf,humanDevelopmentIndexRank,humanDevelopmentIndexRankingCategory,illiteracy,income,infantMortality,information,informationName,internationalPhonePrefix,internationalPhonePrefixLabel,isoCode,isoCode,ist,istat,italianName,kanjiName,kindOfCoordinate,kindOfRock,ladinName,lake,land,landArea,landPercentage,largestCity,largestCountry,largestSettlement,lawCountry,leaderName,leaderParty,leaderTitle,leftChild,lengthQuote,licenceNumber,licenceNumberLabel,lieutenancy,lieutenancyArea,lifeExpectancy,limit,linkedSpace,localPhonePrefix,localization,localizationThumbnail,localizationThumbnailCaption,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,lowestRegion,lowestState,luxembourgishName,mainIsland,mainIslands,majorIsland,managementCountry,managementRegion,maoriName,map,mapCaption,mapDescription,material,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,metropolitanBorough,minimumArea,minimumAreaQuote,minimumElevation,moldavianName,municipalityCode,namedByLanguage,nation,nationalTopographicSystemMapNumber,nearestCity,neighboringMunicipality,neighbourRegion,nextEntity,nisCode,numberOfCantons,numberOfCapitalDeputies,numberOfCounties,numberOfFederalDeputies,numberOfIsland,numberOfIslands,numberOfMunicipalities,numberOfStateDeputies,nutsCode,observatory,occitanName,officialLanguage,okatoCode,oldDistrict,oldName,oldProvince,otherName,output,outskirts,parish,parliament,parliamentType,peopleName,perCapitaIncome,perCapitaIncomeAsOf,perCapitaIncomeRank,phonePrefix,phonePrefixName,pisciculturalPopulation,plant,pluviometry,policeName,politicGovernmentDepartment,politicalLeader,population,populationAsOf,populationDate,populationDensity,populationMetro,populationMetroDensity,populationPctChildren,populationPctMen,populationPctWomen,populationQuote,populationRural,populationRuralDensity,populationTotalRanking,populationUrban,populationUrbanDensity,populationYear,postalCode,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousDemographics,previousEntity,previousName,previousPopulation,previousPopulationTotal,principalArea,protectionStatus,protestantPercentage,province,provinceIsoCode,provinceLink,purchasingPowerParity,purchasingPowerParityRank,purchasingPowerParityYear,quote,rankAgreement,rankArea,rankPopulation,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalLanguage,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,rightChild,river,route,saint,sardinianName,scale,scotishName,scotsName,sea,senior,seniunija,settlement,sharingOut,sharingOutArea,sharingOutPopulation,sharingOutPopulationName,sharingOutPopulationYear,sheading,sicilianName,simcCode,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,smallestCountry,snowParkNumber,sovereignCountry,statusYear,subPrefecture,subdivision,subdivisionLink,subdivisionName,subdivisions,subregion,subsystem,subsystemLink,supply,termOfOffice,terytCode,timeZone,topic,touristicSite,tree,tu,typeCoordinate,unesco,unitaryAuthority,unlcCode,unloCode,utcOffset,vehicleCode,viceLeader,viceLeaderParty,volcanicActivity,volcanicType,volcanoId,volumeQuote,water,waterArea,waterPercentage,watercourse,wholeArea,widthQuote,yearOfConstruction,zipCode) 
+Created match data: 
+similarity(0.003826530612244916).
+match(none).
+match([[Island],=,[Island]]).
+match([[Island,belongTo],<,[Island,highestPointIsland]]).
+
+Construct query entity(type(Archipelago),land(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Archipelago> ; 
+<http://dbpedia.org/ontology/land> <http://dbpedia.org/resource/Japan> . }
+
+The query did not return any data. 
+
+Construct query entity(type,land(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/land> <http://dbpedia.org/resource/Japan> . }
+
+Construct query entity(type(Archipelago),land) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Archipelago> ; 
+<http://dbpedia.org/ontology/land> ?land . }
+
+Construct query entity(type,land) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/land> ?land . }
+
+Construct query entity(type(Island),highestPointIsland(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<http://dbpedia.org/ontology/highestPointIsland> <http://dbpedia.org/resource/Japan> . }
+
+The query did not return any data. 
+
+Construct query entity(type,highestPointIsland(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/highestPointIsland> <http://dbpedia.org/resource/Japan> . }
+
+Construct query entity(type(Island),highestPointIsland) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<http://dbpedia.org/ontology/highestPointIsland> ?highestPointIsland . }
+
+Construct query entity(type,highestPointIsland) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/highestPointIsland> ?highestPointIsland . }
+

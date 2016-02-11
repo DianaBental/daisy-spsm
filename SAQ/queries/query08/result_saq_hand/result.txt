@@ -1,0 +1,123 @@
+Query:  entity(type(Formula1Driver),numberOfRaces) 
+Construct query entity(type(Formula1Driver),numberOfRaces) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Formula1Driver> ; 
+<numberOfRaces> ?numberOfRaces . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  FormulaOneRacer 
+
+Matching query schema Formula1Driver(numberOfRaces) 
+to dataset schema FormulaOneRacer(races) 
+Created match data: 
+similarity(0.25).
+match(none).
+match([[Formula1Driver],<,[FormulaOneRacer]]).
+
+Construct query entity(type(FormulaOneRacer)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/FormulaOneRacer> . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------------------------
+| subject                                                                  |
+============================================================================
+| <http://dbpedia.org/resource/Kevin_Cogan>                                |
+| <http://dbpedia.org/resource/Andr%C3%A9_Simon_(racing_driver)>           |
+| <http://dbpedia.org/resource/Brian_Naylor>                               |
+| <http://dbpedia.org/resource/Christian_Danner>                           |
+| <http://dbpedia.org/resource/Eric_Thompson_(racing_driver)>              |
+| <http://dbpedia.org/resource/Franck_Lagorce>                             |
+| <http://dbpedia.org/resource/Frank_Gardner_(racing_driver)>              |
+| <http://dbpedia.org/resource/Jacques_Pollet>                             |
+| <http://dbpedia.org/resource/Jo_Vonlanthen>                              |
+| <http://dbpedia.org/resource/Johnny_Claes>                               |
+| <http://dbpedia.org/resource/Karl_Kling>                                 |
+| <http://dbpedia.org/resource/Luigi_Musso>                                |
+| <http://dbpedia.org/resource/Luiz_Bueno>                                 |
+| <http://dbpedia.org/resource/Mark_Blundell>                              |
+| <http://dbpedia.org/resource/Mark_Donohue>                               |
+| <http://dbpedia.org/resource/Peter_Gethin>                               |
+| <http://dbpedia.org/resource/Rudi_Fischer>                               |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Bourdais>                    |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Buemi>                       |
+| <http://dbpedia.org/resource/Tony_Dean_(racing_driver)>                  |
+| <http://dbpedia.org/resource/Giedo_van_der_Garde>                        |
+| <http://dbpedia.org/resource/J%C3%A9r%C3%B4me_d'Ambrosio>                |
+| <http://dbpedia.org/resource/Tony_Lanfranchi>                            |
+| <http://dbpedia.org/resource/Daniel_Ricciardo>                           |
+| <http://dbpedia.org/resource/Esteban_Guti%C3%A9rrez>                     |
+| <http://dbpedia.org/resource/Jean-Pierre_Beltoise__-__1>                 |
+| <http://dbpedia.org/resource/Mike_Hailwood__1>                           |
+| <http://dbpedia.org/resource/John_McCutcheon_(racing_driver)>            |
+| <http://dbpedia.org/resource/John_Smith_(racing_driver)>                 |
+| <http://dbpedia.org/resource/Les_Murphy>                                 |
+| <http://dbpedia.org/resource/Robert_Mazaud>                              |
+| <http://dbpedia.org/resource/Rupert_Steele>                              |
+| <http://dbpedia.org/resource/Alan_Hamilton>                              |
+| <http://dbpedia.org/resource/Anthony_Powys-Lybbe>                        |
+| <http://dbpedia.org/resource/Christian_Riecken>                          |
+| <http://dbpedia.org/resource/Cyril_Paul>                                 |
+| <http://dbpedia.org/resource/Ernest_Friderich>                           |
+| <http://dbpedia.org/resource/Esteban_Tort>                               |
+| <http://dbpedia.org/resource/Alain_Prost>                                |
+| <http://dbpedia.org/resource/Jochen_Rindt>                               |
+| <http://dbpedia.org/resource/Juan_Manuel_Fangio>                         |
+| <http://dbpedia.org/resource/Manfred_Winkelhock>                         |
+| <http://dbpedia.org/resource/Mika_H%C3%A4kkinen>                         |
+| <http://dbpedia.org/resource/Niki_Lauda>                                 |
+| <http://dbpedia.org/resource/Riccardo_Patrese>                           |
+| <http://dbpedia.org/resource/Franck_Montagny>                            |
+| <http://dbpedia.org/resource/Tony_Shelly>                                |
+| <http://dbpedia.org/resource/Al_Pease>                                   |
+| <http://dbpedia.org/resource/Alberto_Crespo>                             |
+| <http://dbpedia.org/resource/Alejandro_de_Tomaso>                        |
+| <http://dbpedia.org/resource/Andrea_Chiesa>                              |
+| <http://dbpedia.org/resource/Archie_Scott_Brown>                         |
+| <http://dbpedia.org/resource/Bob_Drake_(racing_driver)>                  |
+| <http://dbpedia.org/resource/Bobby_Rahal>                                |
+| <http://dbpedia.org/resource/Chico_Landi>                                |
+| <http://dbpedia.org/resource/Clemente_Biondetti>                         |
+| <http://dbpedia.org/resource/David_Prophet>                              |
+| <http://dbpedia.org/resource/Hans-Joachim_Stuck>                         |
+| <http://dbpedia.org/resource/Hans_Stuck>                                 |
+| <http://dbpedia.org/resource/Helmut_Marko>                               |
+| <http://dbpedia.org/resource/Henry_Taylor_(racing_driver)>               |
+| <http://dbpedia.org/resource/Jaime_Alguersuari>                          |
+| <http://dbpedia.org/resource/John_Briggs_(racing_driver)>                |
+| <http://dbpedia.org/resource/Leslie_Marr>                                |
+| <http://dbpedia.org/resource/Miguel_%C3%81ngel_Guerra>                   |
+| <http://dbpedia.org/resource/Richard_Robarts>                            |
+| <http://dbpedia.org/resource/Rupert_Keegan>                              |
+| <http://dbpedia.org/resource/Tom_Pryce>                                  |
+| <http://dbpedia.org/resource/Xavier_Perrot>                              |
+| <http://dbpedia.org/resource/Zsolt_Baumgartner>                          |
+| <http://dbpedia.org/resource/H%C3%A9ctor_Rebaque>                        |
+| <http://dbpedia.org/resource/Guido_Dacc%C3%B2>                           |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           |
+| <http://dbpedia.org/resource/Ray_Reed>                                   |
+| <http://dbpedia.org/resource/Jack_Brabham>                               |
+| <http://dbpedia.org/resource/Michael_Schumacher>                         |
+| <http://dbpedia.org/resource/Willard_Cantrell>                           |
+| <http://dbpedia.org/resource/Damon_Hill>                                 |
+| <http://dbpedia.org/resource/Gilles_Villeneuve>                          |
+| <http://dbpedia.org/resource/Alan_Rees>                                  |
+| <http://dbpedia.org/resource/Alfonso_Thiele>                             |
+| <http://dbpedia.org/resource/Bill_Schindler>                             |
+| <http://dbpedia.org/resource/Christijan_Albers>                          |
+| <http://dbpedia.org/resource/Eddie_Sachs>                                |
+| <http://dbpedia.org/resource/Giovanni_Lavaggi>                           |
+| <http://dbpedia.org/resource/JJ_Lehto>                                   |
+| <http://dbpedia.org/resource/Jacques_Villeneuve_(elder)>                 |
+| <http://dbpedia.org/resource/Jim_Crawford_(racing_driver)>               |
+| <http://dbpedia.org/resource/Jim_Hall_(racing_driver)>                   |
+| <http://dbpedia.org/resource/John_Rhodes_(racing_driver)>                |
+| <http://dbpedia.org/resource/Kamui_Kobayashi>                            |
+| <http://dbpedia.org/resource/Luis_P%C3%A9rez-Sala>                       |
+| <http://dbpedia.org/resource/Mike_Parkes>                                |
+| <http://dbpedia.org/resource/Peter_Westbury>                             |
+| <http://dbpedia.org/resource/Ricardo_Rosset>                             |
+| <http://dbpedia.org/resource/Sergio_P%C3%A9rez>                          |
+| <http://dbpedia.org/resource/Takuma_Sato>                                |
+

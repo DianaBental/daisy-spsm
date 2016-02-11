@@ -1,0 +1,468 @@
+Query:  entity(type(Politician),religion(Methodism)) 
+Construct query entity(type(Politician),religion(Methodism)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician> ; 
+<religion> <http://dbpedia.org/resource/Methodism> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Governor Mayor Politician PoliticianSpouse 
+
+Matching query schema Politician(religion) 
+to dataset schema PoliticianSpouse(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0017730496453900457).
+match(none).
+match([[Politician],>,[PoliticianSpouse]]).
+
+Matching query schema Politician(religion) 
+to dataset schema Governor(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,prefect,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0017667844522968323).
+match(none).
+match([[Politician],>,[Governor]]).
+
+Matching query schema Politician(religion) 
+to dataset schema Politician(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,prefect,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0035335689045936647).
+match(none).
+match([[Politician],=,[Politician]]).
+
+Matching query schema Politician(religion) 
+to dataset schema Mayor(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,mayorMandate,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,prefect,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0017605633802817433).
+match(none).
+match([[Politician],>,[Mayor]]).
+
+Construct query entity(type(Governor)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Governor> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------
+| subject                                                                                           |
+=====================================================================================================
+| <http://dbpedia.org/resource/Carlos_E._Gim%C3%A9nez>                                              |
+| <http://dbpedia.org/resource/Eduardo_Fellner>                                                     |
+| <http://dbpedia.org/resource/Liliana_Fellner>                                                     |
+| <http://dbpedia.org/resource/Abdullahi_Adamu>                                                     |
+| <http://dbpedia.org/resource/Adebayo_Adefarati>                                                   |
+| <http://dbpedia.org/resource/Alonso_de_Ribera>                                                    |
+| <http://dbpedia.org/resource/Andrew_George_(governor)>                                            |
+| <http://dbpedia.org/resource/Babatunde_Fashola>                                                   |
+| <http://dbpedia.org/resource/Benjamin_Guerard>                                                    |
+| <http://dbpedia.org/resource/Benjamin_Tasker,_Sr.>                                                |
+| <http://dbpedia.org/resource/ER_Ejercito>                                                         |
+| <http://dbpedia.org/resource/Edward_Winter_(English_administrator)>                               |
+| <http://dbpedia.org/resource/Elias_M._Ammons>                                                     |
+| <http://dbpedia.org/resource/Eugene_Semple>                                                       |
+| <http://dbpedia.org/resource/Francis_Hastings_of_Madras>                                          |
+| <http://dbpedia.org/resource/Francis_Howard,_5th_Baron_Howard_of_Effingham>                       |
+| <http://dbpedia.org/resource/Francisco_de_Toledo>                                                 |
+| <http://dbpedia.org/resource/George_Latimer_(Pennsylvania_politician)>                            |
+| <http://dbpedia.org/resource/Harold_Houser>                                                       |
+| <http://dbpedia.org/resource/Harry_Kelly_(politician)>                                            |
+| <http://dbpedia.org/resource/Henry_Augustus_Buchtel>                                              |
+| <http://dbpedia.org/resource/Henry_Holt_(North_Dakota_politician)>                                |
+| <http://dbpedia.org/resource/Izzatullah_Wasifi>                                                   |
+| <http://dbpedia.org/resource/Jack_Bursey>                                                         |
+| <http://dbpedia.org/resource/James_Allred>                                                        |
+| <http://dbpedia.org/resource/James_F._Hinkle>                                                     |
+| <http://dbpedia.org/resource/John_Humphrey_(Massachusetts)>                                       |
+| <http://dbpedia.org/resource/John_Tyler,_Sr.>                                                     |
+| <http://dbpedia.org/resource/John_W._Davis_(governor)>                                            |
+| <http://dbpedia.org/resource/Jos%C3%A9_de_Armend%C3%A1riz,_1st_Marquis_of_Castelfuerte>           |
+| <http://dbpedia.org/resource/Judi_Dutcher>                                                        |
+| <http://dbpedia.org/resource/Leon_Abbett>                                                         |
+| <http://dbpedia.org/resource/Leonel_Godoy_Rangel>                                                 |
+| <http://dbpedia.org/resource/Lope_D%C3%ADez_de_Armend%C3%A1riz,_marqu%C3%A9s_de_Cadereyta>        |
+| <http://dbpedia.org/resource/Mariano_Osorio>                                                      |
+| <http://dbpedia.org/resource/Meredith_Miles_Marmaduke>                                            |
+| <http://dbpedia.org/resource/Niyi_Adebayo>                                                        |
+| <http://dbpedia.org/resource/Owen_Aspinall>                                                       |
+| <http://dbpedia.org/resource/Robert_Lucas_(governor)>                                             |
+| <http://dbpedia.org/resource/Samuel_Shute>                                                        |
+| <http://dbpedia.org/resource/Surjit_Singh_Barnala>                                                |
+| <http://dbpedia.org/resource/Teodoro_A._Dehesa_M%C3%A9ndez>                                       |
+| <http://dbpedia.org/resource/Thomas_J._Mabry>                                                     |
+| <http://dbpedia.org/resource/Thomas_Watkins_Ligon>                                                |
+| <http://dbpedia.org/resource/William_Goebel>                                                      |
+| <http://dbpedia.org/resource/William_Haile>                                                       |
+| <http://dbpedia.org/resource/William_Hutchinson_(Rhode_Island)>                                   |
+| <http://dbpedia.org/resource/Diego_de_Vargas>                                                     |
+| <http://dbpedia.org/resource/George_A._Ramsdell>                                                  |
+| <http://dbpedia.org/resource/Godwin_Abbe>                                                         |
+| <http://dbpedia.org/resource/Jeremy_Clarke_(governor)>                                            |
+| <http://dbpedia.org/resource/John_Lawrence_Manning>                                               |
+| <http://dbpedia.org/resource/Juan_Carlos_Rousselot>                                               |
+| <http://dbpedia.org/resource/Keramuddin_Keram>                                                    |
+| <http://dbpedia.org/resource/Maurice_Closs>                                                       |
+| <http://dbpedia.org/resource/Pedro_Men%C3%A9ndez_M%C3%A1rquez>                                    |
+| <http://dbpedia.org/resource/Roman_Kopin>                                                         |
+| <http://dbpedia.org/resource/Silverio_Cavazos>                                                    |
+| <http://dbpedia.org/resource/Thomas_Corbett,_2nd_Baron_Rowallan>                                  |
+| <http://dbpedia.org/resource/Adetokunbo_Kayode>                                                   |
+| <http://dbpedia.org/resource/Akpan_Isemin>                                                        |
+| <http://dbpedia.org/resource/Aminu_Isa_Kontagora>                                                 |
+| <http://dbpedia.org/resource/Bukola_Saraki>                                                       |
+| <http://dbpedia.org/resource/Claudio_Poggi>                                                       |
+| <http://dbpedia.org/resource/George_Salisbury_(governor)>                                         |
+| <http://dbpedia.org/resource/Gerardo_Morales_(politician)>                                        |
+| <http://dbpedia.org/resource/Godswill_Akpabio>                                                    |
+| <http://dbpedia.org/resource/Igwe_Aja-Nwachukwu>                                                  |
+| <http://dbpedia.org/resource/James_M._Harvey_(politician)>                                        |
+| <http://dbpedia.org/resource/Jibril_Yakubu>                                                       |
+| <http://dbpedia.org/resource/John_J._Jacob_(West_Virginia)>                                       |
+| <http://dbpedia.org/resource/Jos%C3%A9_Alperovich>                                                |
+| <http://dbpedia.org/resource/William_Dummer>                                                      |
+| <http://dbpedia.org/resource/Albert_Sleeper>                                                      |
+| <http://dbpedia.org/resource/Arthur_A._Link>                                                      |
+| <http://dbpedia.org/resource/Chase_Osborn>                                                        |
+| <http://dbpedia.org/resource/Crist%C3%B3bal_Vaca_de_Castro>                                       |
+| <http://dbpedia.org/resource/George_Mallet>                                                       |
+| <http://dbpedia.org/resource/John_S._Phelps>                                                      |
+| <http://dbpedia.org/resource/John_W._King>                                                        |
+| <http://dbpedia.org/resource/Kintzing_Prichette>                                                  |
+| <http://dbpedia.org/resource/Luren_Dickinson>                                                     |
+| <http://dbpedia.org/resource/Murray_Van_Wagoner>                                                  |
+| <http://dbpedia.org/resource/Tom%C3%A1s_Yarrington>                                               |
+| <http://dbpedia.org/resource/William_Comstock>                                                    |
+| <http://dbpedia.org/resource/William_E._Stevenson>                                                |
+| <http://dbpedia.org/resource/William_J._Bulow>                                                    |
+| <http://dbpedia.org/resource/Beverley_Randolph>                                                   |
+| <http://dbpedia.org/resource/Thomas_Joseph_Meskill>                                               |
+| <http://dbpedia.org/resource/Rees_Hill>                                                           |
+| <http://dbpedia.org/resource/Robert_Straniere>                                                    |
+| <http://dbpedia.org/resource/Levi_K._Fuller>                                                      |
+| <http://dbpedia.org/resource/Michael_Hahn>                                                        |
+| <http://dbpedia.org/resource/Anthony_Colve>                                                       |
+| <http://dbpedia.org/resource/Humberto_Moreira>                                                    |
+| <http://dbpedia.org/resource/Carlton_Skinner>                                                     |
+| <http://dbpedia.org/resource/Dennis_J._Roberts>                                                   |
+
+Construct query entity(type(Mayor)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mayor> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------
+| subject                                                                             |
+=======================================================================================
+| <http://dbpedia.org/resource/Fred_Ashton_(politician)>                              |
+| <http://dbpedia.org/resource/Alf_Ivar_Samuelsen>                                    |
+| <http://dbpedia.org/resource/B%C3%B8rre_R%C3%B8nningen>                             |
+| <http://dbpedia.org/resource/Charles-S%C3%A9raphin_Rodier_(mayor)>                  |
+| <http://dbpedia.org/resource/Christian_Holm_(Norwegian_politician)>                 |
+| <http://dbpedia.org/resource/Egil_Solin_Ranheim>                                    |
+| <http://dbpedia.org/resource/Eivind_Bolle>                                          |
+| <http://dbpedia.org/resource/Ingmar_Ljones>                                         |
+| <http://dbpedia.org/resource/James_Dahlman>                                         |
+| <http://dbpedia.org/resource/Janie_Finlay>                                          |
+| <http://dbpedia.org/resource/Jean_Dor%C3%A9>                                        |
+| <http://dbpedia.org/resource/Kjell_Arild_Svendsen>                                  |
+| <http://dbpedia.org/resource/Konstantina_Lukes>                                     |
+| <http://dbpedia.org/resource/Nikolay_Skvortsov_(politician)>                        |
+| <http://dbpedia.org/resource/Olav_Kjetilson_Nylund>                                 |
+| <http://dbpedia.org/resource/Olivier_Durocher>                                      |
+| <http://dbpedia.org/resource/Pam_Iorio>                                             |
+| <http://dbpedia.org/resource/Peter_Davies_(politician)>                             |
+| <http://dbpedia.org/resource/Richie_Robb>                                           |
+| <http://dbpedia.org/resource/Ronald_O._Loveridge>                                   |
+| <http://dbpedia.org/resource/Torhild_Johnsen>                                       |
+| <http://dbpedia.org/resource/Trygve_Nilsen>                                         |
+| <http://dbpedia.org/resource/Trygve_Olsen>                                          |
+| <http://dbpedia.org/resource/Valentina_Matviyenko>                                  |
+| <http://dbpedia.org/resource/Vicente_%C3%81lvarez_Travieso>                         |
+| <http://dbpedia.org/resource/W._Peter_Gilbertson>                                   |
+| <http://dbpedia.org/resource/%C5%A0imun_de_Michieli-Vitturi>                        |
+| <http://dbpedia.org/resource/Carlos_Echazarreta_I%C3%B1iguez>                       |
+| <http://dbpedia.org/resource/Carlos_Echazarreta_Larra%C3%ADn>                       |
+| <http://dbpedia.org/resource/Dud_Lastrapes>                                         |
+| <http://dbpedia.org/resource/Geir_Waage>                                            |
+| <http://dbpedia.org/resource/Gunnar_Birgisson>                                      |
+| <http://dbpedia.org/resource/Ivo_Tijardovi%C4%87>                                   |
+| <http://dbpedia.org/resource/J.M._McCorkindale>                                     |
+| <http://dbpedia.org/resource/Jakov_Cindro>                                          |
+| <http://dbpedia.org/resource/John_Pridgeon,_Jr.>                                    |
+| <http://dbpedia.org/resource/Jos%C3%A9_Mar%C3%ADa_Caro_Mart%C3%ADnez>               |
+| <http://dbpedia.org/resource/Joseph-Oscar_Auger>                                    |
+| <http://dbpedia.org/resource/Levon_Mirzoyan>                                        |
+| <http://dbpedia.org/resource/Mehmed_Kapetanovi%C4%87>                               |
+| <http://dbpedia.org/resource/Milan_Raspopovi%C4%87>                                 |
+| <http://dbpedia.org/resource/Philip_Breitmeyer>                                     |
+| <http://dbpedia.org/resource/Ruth_Lilian_Brekke>                                    |
+| <http://dbpedia.org/resource/Sean_Finn_(politician)>                                |
+| <http://dbpedia.org/resource/Sr%C4%91an_Ognjanovi%C4%87>                            |
+| <http://dbpedia.org/resource/Alija_Behmen>                                          |
+| <http://dbpedia.org/resource/Asgeir_Alm%C3%A5s>                                     |
+| <http://dbpedia.org/resource/Edward_Stillings>                                      |
+| <http://dbpedia.org/resource/Einar_Dahl_(politician)>                               |
+| <http://dbpedia.org/resource/Ion_Costin>                                            |
+| <http://dbpedia.org/resource/Jake_Godbold>                                          |
+| <http://dbpedia.org/resource/John_Tyler_Hammons>                                    |
+| <http://dbpedia.org/resource/John_Urquhart_(politician)>                            |
+| <http://dbpedia.org/resource/Knut_Hanselmann>                                       |
+| <http://dbpedia.org/resource/Nicolae_Costin>                                        |
+| <http://dbpedia.org/resource/Reidar_%C3%85sg%C3%A5rd>                               |
+| <http://dbpedia.org/resource/Sigrid_Brattab%C3%B8_Handegard>                        |
+| <http://dbpedia.org/resource/Teodosie_B%C3%A2rc%C4%83>                              |
+| <http://dbpedia.org/resource/Virginio_Merola>                                       |
+| <http://dbpedia.org/resource/Arthur_J._O'Keefe>                                     |
+| <http://dbpedia.org/resource/Bill_Gluba>                                            |
+| <http://dbpedia.org/resource/Byron_Brown>                                           |
+| <http://dbpedia.org/resource/Charles_Sparrow>                                       |
+| <http://dbpedia.org/resource/Toni_Atkins>                                           |
+| <http://dbpedia.org/resource/Anders_Vassbotn>                                       |
+| <http://dbpedia.org/resource/Jos%C3%A9_Guillermo_Rodr%C3%ADguez>                    |
+| <http://dbpedia.org/resource/Alexandru_Moraru>                                      |
+| <http://dbpedia.org/resource/Dagfinn_Hjertenes>                                     |
+| <http://dbpedia.org/resource/Meynardo_A._Sabili>                                    |
+| <http://dbpedia.org/resource/Nicolae_M%C4%83m%C4%83lig%C4%83>                       |
+| <http://dbpedia.org/resource/Leif_Helge_Kongshaug>                                  |
+| <http://dbpedia.org/resource/Svein_Roald_Hansen>                                    |
+| <http://dbpedia.org/resource/Hans_J%C3%B8rgen_Reutz_Synnestvedt>                    |
+| <http://dbpedia.org/resource/Ilarion_Buiuc>                                         |
+| <http://dbpedia.org/resource/Pat_Ahumada>                                           |
+| <http://dbpedia.org/resource/Sigbj%C3%B8rn_Larsen>                                  |
+| <http://dbpedia.org/resource/Terence_Roberts>                                       |
+| <http://dbpedia.org/resource/Arlene_B._Arcillas>                                    |
+| <http://dbpedia.org/resource/Billy_Kenoi>                                           |
+| <http://dbpedia.org/resource/Carl_E._Wang>                                          |
+| <http://dbpedia.org/resource/Hans_Nicolai_Lange>                                    |
+| <http://dbpedia.org/resource/James_W._McHenry>                                      |
+| <http://dbpedia.org/resource/Noel_A._Mitchell>                                      |
+| <http://dbpedia.org/resource/O._Normann_Sand>                                       |
+| <http://dbpedia.org/resource/Vasile_B%C3%A2rc%C4%83>                                |
+| <http://dbpedia.org/resource/Lori_Cohen_Moseley>                                    |
+| <http://dbpedia.org/resource/Lemuel_Soto>                                           |
+| <http://dbpedia.org/resource/Ruth_Bascom>                                           |
+| <http://dbpedia.org/resource/Alfredo_Alejandro_Carri%C3%B3n>                        |
+| <http://dbpedia.org/resource/Nicolae_Cernov>                                        |
+| <http://dbpedia.org/resource/Einar_Wang>                                            |
+| <http://dbpedia.org/resource/Jos%C3%A9_Santos_Becerra>                              |
+| <http://dbpedia.org/resource/Magne_Johnsen_Rongved>                                 |
+| <http://dbpedia.org/resource/Nezir_%C5%A0kalji%C4%87>                               |
+| <http://dbpedia.org/resource/Christian_Garup_Meidell>                               |
+| <http://dbpedia.org/resource/Eli_C._King>                                           |
+| <http://dbpedia.org/resource/Walter_Davey>                                          |
+
+Construct query entity(type(Politician)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------
+| subject                                                                                            |
+======================================================================================================
+| <http://dbpedia.org/resource/Andrew_Foley_(MP)>                                                    |
+| <http://dbpedia.org/resource/Carlos_A._Gim%C3%A9nez>                                               |
+| <http://dbpedia.org/resource/Carlos_E._Gim%C3%A9nez>                                               |
+| <http://dbpedia.org/resource/Dean_Constable>                                                       |
+| <http://dbpedia.org/resource/Eduardo_Fellner>                                                      |
+| <http://dbpedia.org/resource/Edward_C._Kehr>                                                       |
+| <http://dbpedia.org/resource/Edward_Harley_(1664%E2%80%931735)>                                    |
+| <http://dbpedia.org/resource/Fred_Ashton_(politician)>                                             |
+| <http://dbpedia.org/resource/Harry_Jones_(politician)>                                             |
+| <http://dbpedia.org/resource/Henry_McGhee>                                                         |
+| <http://dbpedia.org/resource/Jacques_Lafleur>                                                      |
+| <http://dbpedia.org/resource/Kim_Hames>                                                            |
+| <http://dbpedia.org/resource/Liliana_Fellner>                                                      |
+| <http://dbpedia.org/resource/Norman_Smith_(politician)>                                            |
+| <http://dbpedia.org/resource/Patrick_Cogan>                                                        |
+| <http://dbpedia.org/resource/Peter_Gummer,_Baron_Chadlington>                                      |
+| <http://dbpedia.org/resource/Robert_Rugge>                                                         |
+| <http://dbpedia.org/resource/Voltaire_Molesworth>                                                  |
+| <http://dbpedia.org/resource/Aaron_Farrugia>                                                       |
+| <http://dbpedia.org/resource/Abdul_Zahir_(Afghan_Prime_Minister)>                                  |
+| <http://dbpedia.org/resource/Abdullahi_Adamu>                                                      |
+| <http://dbpedia.org/resource/Abiel_Wood>                                                           |
+| <http://dbpedia.org/resource/Abraham_B._Venable>                                                   |
+| <http://dbpedia.org/resource/Adalberto_Madero>                                                     |
+| <http://dbpedia.org/resource/Adam_Hofman>                                                          |
+| <http://dbpedia.org/resource/Adam_Lipi%C5%84ski>                                                   |
+| <http://dbpedia.org/resource/Adebayo_Adefarati>                                                    |
+| <http://dbpedia.org/resource/Adolfo_Zald%C3%ADvar>                                                 |
+| <http://dbpedia.org/resource/Agenor_Maria_Go%C5%82uchowski>                                        |
+| <http://dbpedia.org/resource/Alan_Chambers_(Canadian_politician)>                                  |
+| <http://dbpedia.org/resource/Alan_Steelman>                                                        |
+| <http://dbpedia.org/resource/Albert_Thompson_(Australian_politician)>                              |
+| <http://dbpedia.org/resource/Alberto_Herrera_y_Franchi>                                            |
+| <http://dbpedia.org/resource/Alexander_Hay_(Australian_politician)>                                |
+| <http://dbpedia.org/resource/Alexander_Oxenford>                                                   |
+| <http://dbpedia.org/resource/Alexander_Robertson_(MP)>                                             |
+| <http://dbpedia.org/resource/Alexander_Tucker_(commissioner)>                                      |
+| <http://dbpedia.org/resource/Alexandros_Papanastasiou>                                             |
+| <http://dbpedia.org/resource/Alf_Ivar_Samuelsen>                                                   |
+| <http://dbpedia.org/resource/Alfonso_Pecoraro_Scanio>                                              |
+| <http://dbpedia.org/resource/Alfred_Blaisdell>                                                     |
+| <http://dbpedia.org/resource/Alfred_Lucking>                                                       |
+| <http://dbpedia.org/resource/Alfred_Waterson>                                                      |
+| <http://dbpedia.org/resource/Ali-Reza_Asgari>                                                      |
+| <http://dbpedia.org/resource/Ali_Babacan>                                                          |
+| <http://dbpedia.org/resource/Alina_Gut>                                                            |
+| <http://dbpedia.org/resource/Alina_Pienkowska>                                                     |
+| <http://dbpedia.org/resource/Allen_West_(politician)>                                              |
+| <http://dbpedia.org/resource/Alonso_de_Ribera>                                                     |
+| <http://dbpedia.org/resource/Alyson_Kennedy>                                                       |
+| <http://dbpedia.org/resource/Andrew_George_(governor)>                                             |
+| <http://dbpedia.org/resource/Andrew_Green_(Jersey_politician)>                                     |
+| <http://dbpedia.org/resource/Andrew_Robb>                                                          |
+| <http://dbpedia.org/resource/Andrew_Wood_(diplomat)>                                               |
+| <http://dbpedia.org/resource/Andrzej_Adamczyk>                                                     |
+| <http://dbpedia.org/resource/Angelo_Farrugia>                                                      |
+| <http://dbpedia.org/resource/Anne_Kerr_(politician)>                                               |
+| <http://dbpedia.org/resource/Anthony_Mason_(judge)>                                                |
+| <http://dbpedia.org/resource/Aristides_Gomes>                                                      |
+| <http://dbpedia.org/resource/Arjan_El_Fassed>                                                      |
+| <http://dbpedia.org/resource/Arnold_McCallum>                                                      |
+| <http://dbpedia.org/resource/Arthur_Davidson_(politician)>                                         |
+| <http://dbpedia.org/resource/Arthur_Porter_(MP)>                                                   |
+| <http://dbpedia.org/resource/Arthur_Richards_(French_politician)>                                  |
+| <http://dbpedia.org/resource/Ashley_Cooper_(politician)>                                           |
+| <http://dbpedia.org/resource/August_Flamme>                                                        |
+| <http://dbpedia.org/resource/Austin_Taylor_(British_politician)>                                   |
+| <http://dbpedia.org/resource/B%C3%B8rre_R%C3%B8nningen>                                            |
+| <http://dbpedia.org/resource/B%C3%BClent_Ar%C4%B1n%C3%A7>                                          |
+| <http://dbpedia.org/resource/Babatunde_Fashola>                                                    |
+| <http://dbpedia.org/resource/Baha_Araji>                                                           |
+| <http://dbpedia.org/resource/Bannon_Goforth_Thibodeaux>                                            |
+| <http://dbpedia.org/resource/Barnabas_Sibusiso_Dlamini>                                            |
+| <http://dbpedia.org/resource/Barrie_Chivers>                                                       |
+| <http://dbpedia.org/resource/Beatrice_Trew>                                                        |
+| <http://dbpedia.org/resource/Benjamin_Guerard>                                                     |
+| <http://dbpedia.org/resource/Benjamin_Jones_(congressman)>                                         |
+| <http://dbpedia.org/resource/Benjamin_Tasker,_Jr.>                                                 |
+| <http://dbpedia.org/resource/Benjamin_Tasker,_Sr.>                                                 |
+| <http://dbpedia.org/resource/Bernardino_de_Sousa_Monteiro>                                         |
+| <http://dbpedia.org/resource/Bernie_Kilgariff>                                                     |
+| <http://dbpedia.org/resource/Bert_Kelly>                                                           |
+| <http://dbpedia.org/resource/Bill_Drews>                                                           |
+| <http://dbpedia.org/resource/Bill_Heffernan>                                                       |
+| <http://dbpedia.org/resource/Bill_Jordan,_Baron_Jordan>                                            |
+| <http://dbpedia.org/resource/Bill_McKnight>                                                        |
+| <http://dbpedia.org/resource/Billy_Fox_(politician)>                                               |
+| <http://dbpedia.org/resource/Bj%C3%B6rn_J%C3%B3nsson>                                              |
+| <http://dbpedia.org/resource/Bob_Corker>                                                           |
+| <http://dbpedia.org/resource/Bob_Debus>                                                            |
+| <http://dbpedia.org/resource/Borys_Kolesnikov>                                                     |
+| <http://dbpedia.org/resource/Brad_Avakian>                                                         |
+| <http://dbpedia.org/resource/Brampton_Gurdon_(of_Assington_and_Letton)>                            |
+| <http://dbpedia.org/resource/Brampton_Gurdon_(of_Letton)>                                          |
+| <http://dbpedia.org/resource/Brian_Burke>                                                          |
+| <http://dbpedia.org/resource/Brian_Gibson_(Australian_politician)>                                 |
+| <http://dbpedia.org/resource/Bryce_Gaudry>                                                         |
+
+Construct query entity(type(PoliticianSpouse)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/PoliticianSpouse> . }
+
+The query did not return any data. 
+
+Construct query entity(type) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                    | type                                                               |
+===================================================================================================================================================================================================================
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>                                                                                          | <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>              |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default>                                                                                   | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-nullable>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt>                                                                            | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt-nullable>                                                                   | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-lang>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-lang-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-fixedlang-x-any>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-fixedlang-x-any-nullable>                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-dt>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-dt-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-lang>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-lang-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-fixedlang-x-any>                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-fixedlang-x-any-nullable>                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-dt>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-dt-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-lang>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-lang-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-fixedlang-x-any>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-fixedlang-x-any-nullable>                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-literal>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-literal-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-dt>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-dt-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-lang>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-lang-nullable>                                                            | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-fixedlang-x-any>                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-fixedlang-x-any-nullable>                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarbinary>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarbinary-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-literal>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-literal-nullable>                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date>                                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-nullable>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time>                                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-nullable>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-literal>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-literal-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri>                                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri-nullable>                                                                    | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri-fn-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal-fn-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri-fn-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal-fn-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-fn>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-fn-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+

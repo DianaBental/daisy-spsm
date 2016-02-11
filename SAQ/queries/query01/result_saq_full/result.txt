@@ -1,0 +1,122 @@
+Query:  entity(type(Cosmonaut)) 
+Construct query entity(type(Cosmonaut)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Cosmonaut> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Astronaut 
+
+Matching query schema Cosmonaut 
+to dataset schema Astronaut(AstronautTimeInSpace,PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selection,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0035211267605633756).
+match(none).
+match([[Cosmonaut],>,[Astronaut,AstronautTimeInSpace]]).
+
+Construct query entity(type(Astronaut)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Astronaut> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------
+| subject                                                                                  |
+============================================================================================
+| <http://dbpedia.org/resource/Edward_Givens>                                              |
+| <http://dbpedia.org/resource/Joan_Higginbotham>                                          |
+| <http://dbpedia.org/resource/Stephen_Bowen_(astronaut)>                                  |
+| <http://dbpedia.org/resource/Takuya_Onishi>                                              |
+| <http://dbpedia.org/resource/Yvonne_Cagle>                                               |
+| <http://dbpedia.org/resource/Fernando_Caldeiro>                                          |
+| <http://dbpedia.org/resource/Mikhail_Korniyenko>                                         |
+| <http://dbpedia.org/resource/Gregory_Olsen>                                              |
+| <http://dbpedia.org/resource/Michael_E._Fossum>                                          |
+| <http://dbpedia.org/resource/Sunita_Williams>                                            |
+| <http://dbpedia.org/resource/Fei_Junlong>                                                |
+| <http://dbpedia.org/resource/Jing_Haipeng>                                               |
+| <http://dbpedia.org/resource/Kenneth_Ham>                                                |
+| <http://dbpedia.org/resource/Liu_Wang>                                                   |
+| <http://dbpedia.org/resource/Nie_Haisheng>                                               |
+| <http://dbpedia.org/resource/Zhai_Zhigang>                                               |
+| <http://dbpedia.org/resource/Neil_Woodward>                                              |
+| <http://dbpedia.org/resource/Alan_Shepard>                                               |
+| <http://dbpedia.org/resource/Buzz_Aldrin>                                                |
+| <http://dbpedia.org/resource/Edward_Higgins_White>                                       |
+| <http://dbpedia.org/resource/Elliot_See>                                                 |
+| <http://dbpedia.org/resource/Gus_Grissom>                                                |
+| <http://dbpedia.org/resource/Roger_B._Chaffee>                                           |
+| <http://dbpedia.org/resource/Sonny_Carter>                                               |
+| <http://dbpedia.org/resource/Toktar_Aubakirov>                                           |
+| <http://dbpedia.org/resource/Vladimir_Komarov>                                           |
+| <http://dbpedia.org/resource/Yuri_Gagarin>                                               |
+| <http://dbpedia.org/resource/Kjell_N._Lindgren>                                          |
+| <http://dbpedia.org/resource/Carlos_I._Noriega>                                          |
+| <http://dbpedia.org/resource/Chiaki_Mukai>                                               |
+| <http://dbpedia.org/resource/Christopher_Loria>                                          |
+| <http://dbpedia.org/resource/Georgi_Ivanov>                                              |
+| <http://dbpedia.org/resource/Luca_Parmitano>                                             |
+| <http://dbpedia.org/resource/Faiz_Khaleed>                                               |
+| <http://dbpedia.org/resource/Jeremy_Hansen>                                              |
+| <http://dbpedia.org/resource/Alexander_Gerst>                                            |
+| <http://dbpedia.org/resource/Shannon_Walker>                                             |
+| <http://dbpedia.org/resource/Anatoli_Ivanishin>                                          |
+| <http://dbpedia.org/resource/John_L._Finley>                                             |
+| <http://dbpedia.org/resource/Ko_San>                                                     |
+| <http://dbpedia.org/resource/Sergey_Alexandrovich_Volkov>                                |
+| <http://dbpedia.org/resource/Yi_So-Yeon>                                                 |
+| <http://dbpedia.org/resource/Richard_E._Lawyer>                                          |
+| <http://dbpedia.org/resource/Andrew_R._Morgan>                                           |
+| <http://dbpedia.org/resource/Anne_McClain>                                               |
+| <http://dbpedia.org/resource/Christina_Hammock>                                          |
+| <http://dbpedia.org/resource/Michael_Lampton>                                            |
+| <http://dbpedia.org/resource/Nicole_Aunapu_Mann>                                         |
+| <http://dbpedia.org/resource/Bill_Bridgeman>                                             |
+| <http://dbpedia.org/resource/Catherine_Coleman>                                          |
+| <http://dbpedia.org/resource/Charles_Edward_Jones>                                       |
+| <http://dbpedia.org/resource/Neil_Armstrong>                                             |
+| <http://dbpedia.org/resource/Tamara_E._Jernigan>                                         |
+| <http://dbpedia.org/resource/Douglas_H._Wheelock>                                        |
+| <http://dbpedia.org/resource/Eric_Boe>                                                   |
+| <http://dbpedia.org/resource/Gregory_H._Johnson>                                         |
+| <http://dbpedia.org/resource/Yelena_Kondakova>                                           |
+| <http://dbpedia.org/resource/Bert_R._Bulkin>                                             |
+| <http://dbpedia.org/resource/Christopher_Cassidy>                                        |
+| <http://dbpedia.org/resource/Timothy_Peake>                                              |
+| <http://dbpedia.org/resource/Sergei_Revin>                                               |
+| <http://dbpedia.org/resource/Evgeny_Tarelkin>                                            |
+| <http://dbpedia.org/resource/Alan_Bean>                                                  |
+| <http://dbpedia.org/resource/Chris_Hadfield>                                             |
+| <http://dbpedia.org/resource/Christa_McAuliffe>                                          |
+| <http://dbpedia.org/resource/Frank_Borman>                                               |
+| <http://dbpedia.org/resource/Loren_Acton>                                                |
+| <http://dbpedia.org/resource/Michael_Collins_(astronaut)>                                |
+| <http://dbpedia.org/resource/Roberta_Bondar>                                             |
+| <http://dbpedia.org/resource/William_Anders>                                             |
+| <http://dbpedia.org/resource/Alfred_Worden>                                              |
+| <http://dbpedia.org/resource/Daisuke_Enomoto>                                            |
+| <http://dbpedia.org/resource/Gerhard_Thiele>                                             |
+| <http://dbpedia.org/resource/Gregory_R._Wiseman>                                         |
+| <http://dbpedia.org/resource/Hans_Schlegel>                                              |
+| <http://dbpedia.org/resource/James_H._Newman>                                            |
+| <http://dbpedia.org/resource/Michael_J._Bloomfield>                                      |
+| <http://dbpedia.org/resource/Oleg_Atkov>                                                 |
+| <http://dbpedia.org/resource/S._David_Griggs>                                            |
+| <http://dbpedia.org/resource/Satoshi_Furukawa>                                           |
+| <http://dbpedia.org/resource/Scott_J._Horowitz>                                          |
+| <http://dbpedia.org/resource/Steven_Smith_(astronaut)>                                   |
+| <http://dbpedia.org/resource/Susan_Kilrain>                                              |
+| <http://dbpedia.org/resource/Aleksandr_Poleshchuk>                                       |
+| <http://dbpedia.org/resource/Charles_J._Precourt>                                        |
+| <http://dbpedia.org/resource/Gennady_Padalka>                                            |
+| <http://dbpedia.org/resource/James_A._Pawelczyk>                                         |
+| <http://dbpedia.org/resource/John_L._Phillips>                                           |
+| <http://dbpedia.org/resource/Mark_L._Polansky>                                           |
+| <http://dbpedia.org/resource/Ronald_A._Parise>                                           |
+| <http://dbpedia.org/resource/Scott_E._Parazynski>                                        |
+| <http://dbpedia.org/resource/William_A._Pailes>                                          |
+| <http://dbpedia.org/resource/William_R._Pogue>                                           |
+| <http://dbpedia.org/resource/Albert_Sacco>                                               |
+| <http://dbpedia.org/resource/Anatoly_Solovyev>                                           |
+| <http://dbpedia.org/resource/Boris_Morukov>                                              |
+| <http://dbpedia.org/resource/Bruce_E._Melnick>                                           |
+

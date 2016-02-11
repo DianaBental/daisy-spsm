@@ -1,0 +1,106 @@
+Query:  entity(subject(Jane_Fonda),spouse) 
+Construct query entity(subject(Jane_Fonda),spouse) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Jane_Fonda> <http://dbpedia.org/property/spouse> ?spouse . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------
+| spouse                                    |
+=============================================
+| <http://dbpedia.org/resource/Ted_Turner>  |
+| <http://dbpedia.org/resource/Roger_Vadim> |
+| <http://dbpedia.org/resource/Tom_Hayden>  |
+---------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,spouse) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.16666666666666663).
+match(none).
+match([[entity],=,[entity]]).
+match([[entity,subject],<,[entity,language]]).
+
+Construct query entity(type(entity),subject(Jane_Fonda)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Jane_Fonda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(Jane_Fonda)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Jane_Fonda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------------------------------
+| type                                                                           |
+==================================================================================
+| <http://xmlns.com/foaf/0.1/Person>                                             |
+| <http://schema.org/Person>                                                     |
+| <http://dbpedia.org/class/yago/TranscendentalMeditationPractitioners>          |
+| <http://dbpedia.org/class/yago/VassarCollegeAlumni>                            |
+| <http://wikidata.dbpedia.org/resource/Q215627>                                 |
+| <http://www.w3.org/2002/07/owl#Thing>                                          |
+| <http://wikidata.dbpedia.org/resource/Q5>                                      |
+| <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                  |
+| <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>          |
+| <http://dbpedia.org/ontology/Actor>                                            |
+| <http://dbpedia.org/ontology/Agent>                                            |
+| <http://dbpedia.org/ontology/Artist>                                           |
+| <http://dbpedia.org/ontology/Person>                                           |
+| <http://umbel.org/umbel/rc/Actor>                                              |
+| <http://dbpedia.org/class/yago/20th-centuryActors>                             |
+| <http://dbpedia.org/class/yago/21st-centuryActors>                             |
+| <http://dbpedia.org/class/yago/Actor109765278>                                 |
+| <http://dbpedia.org/class/yago/ActorsFromNewYork>                              |
+| <http://dbpedia.org/class/yago/ActorsStudioAlumni>                             |
+| <http://dbpedia.org/class/yago/Adult109605289>                                 |
+| <http://dbpedia.org/class/yago/AfricanAmericans'RightsActivists>               |
+| <http://dbpedia.org/class/yago/Alumnus109786338>                               |
+| <http://dbpedia.org/class/yago/AmericanAnti%E2%80%93IraqWarActivists>          |
+| <http://dbpedia.org/class/yago/AmericanAnti%E2%80%93VietnamWarActivists>       |
+| <http://dbpedia.org/class/yago/AmericanExerciseInstructors>                    |
+| <http://dbpedia.org/class/yago/AmericanFemaleModels>                           |
+| <http://dbpedia.org/class/yago/AmericanFilmActors>                             |
+| <http://dbpedia.org/class/yago/AmericanPeopleOfDutchDescent>                   |
+| <http://dbpedia.org/class/yago/Anti%E2%80%93IraqWarActivists>                  |
+| <http://dbpedia.org/class/yago/Anti%E2%80%93VietnamWarActivists>               |
+| <http://dbpedia.org/class/yago/Artist109812338>                                |
+| <http://dbpedia.org/class/yago/Assistant109815790>                             |
+| <http://dbpedia.org/class/yago/BreastCancerSurvivors>                          |
+| <http://dbpedia.org/class/yago/CausalAgent100007347>                           |
+| <http://dbpedia.org/class/yago/Convert109962414>                               |
+| <http://dbpedia.org/class/yago/Creator109614315>                               |
+| <http://dbpedia.org/class/yago/Disputant109615465>                             |
+| <http://dbpedia.org/class/yago/Educator110045713>                              |
+| <http://dbpedia.org/class/yago/Entertainer109616922>                           |
+| <http://dbpedia.org/class/yago/Intellectual109621545>                          |
+| <http://dbpedia.org/class/yago/LivingThing100004258>                           |
+| <http://dbpedia.org/class/yago/Militant110315837>                              |
+| <http://dbpedia.org/class/yago/Model110324560>                                 |
+| <http://dbpedia.org/class/yago/Object100002684>                                |
+| <http://dbpedia.org/class/yago/Organism100004475>                              |
+| <http://dbpedia.org/class/yago/Performer110415638>                             |
+| <http://dbpedia.org/class/yago/Person100007846>                                |
+| <http://dbpedia.org/class/yago/Practitioner110462860>                          |
+| <http://dbpedia.org/class/yago/Professional110480253>                          |
+| <http://dbpedia.org/class/yago/Reformer110515194>                              |
+| <http://dbpedia.org/class/yago/Scholar110557854>                               |
+| <http://dbpedia.org/class/yago/Survivor110681194>                              |
+| <http://dbpedia.org/class/yago/Teacher110694258>                               |
+| <http://dbpedia.org/class/yago/Unfortunate109630641>                           |
+| <http://dbpedia.org/class/yago/Whole100003553>                                 |
+| <http://dbpedia.org/class/yago/Worker109632518>                                |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                              |
+| <http://dbpedia.org/class/yago/NativeAmericans'RightsActivists>                |
+| <http://dbpedia.org/class/yago/PeopleFromAtlanta,Georgia>                      |
+| <http://dbpedia.org/class/yago/PeopleFromFireIsland,NewYork>                   |
+| <http://dbpedia.org/class/yago/YagoLegalActor>                                 |
+| <http://dbpedia.org/class/yago/ConvertsToChristianityFromAtheismOrAgnosticism> |
+| <http://dbpedia.org/class/yago/EmmaWillardSchoolAlumni>                        |
+| <http://dbpedia.org/class/yago/FeministArtists>                                |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>                        |
+| <http://dbpedia.org/class/yago/LivingPeople>                                   |
+----------------------------------------------------------------------------------
+

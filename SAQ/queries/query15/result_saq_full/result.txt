@@ -1,0 +1,236 @@
+Query:  entity(type(Language),spoken(Turkmenistan)) 
+Construct query entity(type(Language),spoken(Turkmenistan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Language> ; 
+<spoken> <http://dbpedia.org/resource/Turkmenistan> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Language ProgrammingLanguage 
+
+Matching query schema Language(spoken) 
+to dataset schema Language(isoCode,isoCode,isoCode,languageCode,languageFamily,numberOfSpeakers,silCode,spokenIn) 
+Created match data: 
+similarity(0.11111111111111116).
+match(none).
+match([[Language],=,[Language]]).
+
+Matching query schema Language(spoken) 
+to dataset schema ProgrammingLanguage(SoftwareFileSize,WorkRuntime,alternativeTitle,aspectRatio,author,basedOn,chiefEditor,completionDate,composer,computingInput,computingMedia,computingPlatform,cpu,frequentlyUpdated,latestPreviewDate,latestPreviewVersion,latestReleaseDate,latestReleaseVersion,license,mainCharacter,musicComposer,operatingSystem,originalLanguage,originalTitle,previousWork,producer,productionCompany,programmingLanguage,releaseDate,resolution,runtime,starring,subjectTerm,subsequentWork,translator,writer) 
+Created match data: 
+similarity(0.013513513513513487).
+match(none).
+match([[Language],>,[ProgrammingLanguage]]).
+
+Construct query entity(type(Language)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Language> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------
+| subject                                                                                   |
+=============================================================================================
+| <http://dbpedia.org/resource/Bukawa_language>                                             |
+| <http://dbpedia.org/resource/Komo_language>                                               |
+| <http://dbpedia.org/resource/Puerto_Rican_Spanish>                                        |
+| <http://dbpedia.org/resource/Achawa_language>                                             |
+| <http://dbpedia.org/resource/Adai_language>                                               |
+| <http://dbpedia.org/resource/Amri_language>                                               |
+| <http://dbpedia.org/resource/Ayi_language_(Papua_New_Guinea)>                             |
+| <http://dbpedia.org/resource/Bandjalang_language>                                         |
+| <http://dbpedia.org/resource/Beng_language>                                               |
+| <http://dbpedia.org/resource/Berau_Malay_language>                                        |
+| <http://dbpedia.org/resource/Bissa_language>                                              |
+| <http://dbpedia.org/resource/Bokar_language>                                              |
+| <http://dbpedia.org/resource/Bori_language>                                               |
+| <http://dbpedia.org/resource/Bube_language>                                               |
+| <http://dbpedia.org/resource/Chakobo_language>                                            |
+| <http://dbpedia.org/resource/Chang-Du_dialect>                                            |
+| <http://dbpedia.org/resource/Changzhou_dialect>                                           |
+| <http://dbpedia.org/resource/Cheng_language>                                              |
+| <http://dbpedia.org/resource/Chong_language>                                              |
+| <http://dbpedia.org/resource/Cook_Islands_M%C4%81ori>                                     |
+| <http://dbpedia.org/resource/Dai_language_(Austronesian)>                                 |
+| <http://dbpedia.org/resource/Dhuwal_language>                                             |
+| <http://dbpedia.org/resource/Djabugay_language>                                           |
+| <http://dbpedia.org/resource/Fer_language>                                                |
+| <http://dbpedia.org/resource/Fiji_Hindi>                                                  |
+| <http://dbpedia.org/resource/French_language_in_Cambodia>                                 |
+| <http://dbpedia.org/resource/Fwe_language>                                                |
+| <http://dbpedia.org/resource/Gao-Yang_Yue>                                                |
+| <http://dbpedia.org/resource/Ghari_language>                                              |
+| <http://dbpedia.org/resource/Guyanese_Creole>                                             |
+| <http://dbpedia.org/resource/Hieroglyphic_Luwian>                                         |
+| <http://dbpedia.org/resource/Huli_language>                                               |
+| <http://dbpedia.org/resource/Jara_language>                                               |
+| <http://dbpedia.org/resource/Jeh_language>                                                |
+| <http://dbpedia.org/resource/Jinan_dialect>                                               |
+| <http://dbpedia.org/resource/Jiru_language>                                               |
+| <http://dbpedia.org/resource/Kagwahiva_language>                                          |
+| <http://dbpedia.org/resource/Kako_language>                                               |
+| <http://dbpedia.org/resource/Kamu_language>                                               |
+| <http://dbpedia.org/resource/Karipuna_language_(Amap%C3%A1)>                              |
+| <http://dbpedia.org/resource/Kete_language>                                               |
+| <http://dbpedia.org/resource/Khowar_language>                                             |
+| <http://dbpedia.org/resource/Kiowa_language>                                              |
+| <http://dbpedia.org/resource/Konni_language>                                              |
+| <http://dbpedia.org/resource/Kuhmareyi_language>                                          |
+| <http://dbpedia.org/resource/Laha_language>                                               |
+| <http://dbpedia.org/resource/Laha_language_(Indonesia)>                                   |
+| <http://dbpedia.org/resource/Lela_language>                                               |
+| <http://dbpedia.org/resource/Lufu_language>                                               |
+| <http://dbpedia.org/resource/Mandjak_language>                                            |
+| <http://dbpedia.org/resource/Mbembe_language>                                             |
+| <http://dbpedia.org/resource/Moran_language>                                              |
+| <http://dbpedia.org/resource/Mota_language>                                               |
+| <http://dbpedia.org/resource/Naba_language>                                               |
+| <http://dbpedia.org/resource/Nahuan_languages>                                            |
+| <http://dbpedia.org/resource/Nganasan_language>                                           |
+| <http://dbpedia.org/resource/Ngbaka_Minagende_language>                                   |
+| <http://dbpedia.org/resource/Ningbo_dialect>                                              |
+| <http://dbpedia.org/resource/Nuk_language>                                                |
+| <http://dbpedia.org/resource/Palawa_kani>                                                 |
+| <http://dbpedia.org/resource/Quanzhou_dialect>                                            |
+| <http://dbpedia.org/resource/Riang_language>                                              |
+| <http://dbpedia.org/resource/Samo_language_(Burkina)>                                     |
+| <http://dbpedia.org/resource/Samo_language_(New_Guinea)>                                  |
+| <http://dbpedia.org/resource/Sanie_language>                                              |
+| <http://dbpedia.org/resource/Semnani_language>                                            |
+| <http://dbpedia.org/resource/Shehri_language>                                             |
+| <http://dbpedia.org/resource/Shihhi_Arabic>                                               |
+| <http://dbpedia.org/resource/Skolt_Sami_language>                                         |
+| <http://dbpedia.org/resource/Tayo_Creole>                                                 |
+| <http://dbpedia.org/resource/Tigon_language>                                              |
+| <http://dbpedia.org/resource/Tiro_language>                                               |
+| <http://dbpedia.org/resource/Tumi_language>                                               |
+| <http://dbpedia.org/resource/Ume_Sami_language>                                           |
+| <http://dbpedia.org/resource/Ura_language_(Papua_New_Guinea)>                             |
+| <http://dbpedia.org/resource/Ura_language_(Vanuatu)>                                      |
+| <http://dbpedia.org/resource/Vere_language>                                               |
+| <http://dbpedia.org/resource/Wushi_language>                                              |
+| <http://dbpedia.org/resource/Yagua_language>                                              |
+| <http://dbpedia.org/resource/Yar%C3%AD_language>                                          |
+| <http://dbpedia.org/resource/Yeyi_language>                                               |
+| <http://dbpedia.org/resource/Zhenan_Min>                                                  |
+| <http://dbpedia.org/resource/Afenmai_language>                                            |
+| <http://dbpedia.org/resource/Aluo_language>                                               |
+| <http://dbpedia.org/resource/Beeke_language>                                              |
+| <http://dbpedia.org/resource/Cafund%C3%B3_language>                                       |
+| <http://dbpedia.org/resource/Chulung_language>                                            |
+| <http://dbpedia.org/resource/Eini_dialect>                                                |
+| <http://dbpedia.org/resource/Fa%E2%80%99_language>                                        |
+| <http://dbpedia.org/resource/Garawa_language>                                             |
+| <http://dbpedia.org/resource/Heiltsuk-Oowekyala_language>                                 |
+| <http://dbpedia.org/resource/Heiltsuk_dialect>                                            |
+| <http://dbpedia.org/resource/Huave_language>                                              |
+| <http://dbpedia.org/resource/Inoke_language>                                              |
+| <http://dbpedia.org/resource/Jek_language>                                                |
+| <http://dbpedia.org/resource/Karang_language>                                             |
+| <http://dbpedia.org/resource/Karuk_language>                                              |
+
+Construct query entity(type(ProgrammingLanguage)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/ProgrammingLanguage> . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------
+| subject                                                                           |
+=====================================================================================
+| <http://dbpedia.org/resource/BANCStar_programming_language>                       |
+| <http://dbpedia.org/resource/Boo_(programming_language)>                          |
+| <http://dbpedia.org/resource/C_Object_Processor>                                  |
+| <http://dbpedia.org/resource/Ciao_(programming_language)>                         |
+| <http://dbpedia.org/resource/Guido_van_Robot>                                     |
+| <http://dbpedia.org/resource/Jasmin_(software)>                                   |
+| <http://dbpedia.org/resource/Julia_(programming_language)>                        |
+| <http://dbpedia.org/resource/MOL-360>                                             |
+| <http://dbpedia.org/resource/OpenMusic>                                           |
+| <http://dbpedia.org/resource/Soot_(software)>                                     |
+| <http://dbpedia.org/resource/Croma>                                               |
+| <http://dbpedia.org/resource/Simple_Knowledge_Organization_System>                |
+| <http://dbpedia.org/resource/High-level_shader_language>                          |
+| <http://dbpedia.org/resource/Self-documenting>                                    |
+| <http://dbpedia.org/resource/TclX>                                                |
+| <http://dbpedia.org/resource/EasyLanguage>                                        |
+| <http://dbpedia.org/resource/Ferite>                                              |
+| <http://dbpedia.org/resource/Halide_(programming_language)>                       |
+| <http://dbpedia.org/resource/Potion_(programming_language)>                       |
+| <http://dbpedia.org/resource/GNU_E>                                               |
+| <http://dbpedia.org/resource/2.PAK>                                               |
+| <http://dbpedia.org/resource/20-GATE>                                             |
+| <http://dbpedia.org/resource/A-0_System>                                          |
+| <http://dbpedia.org/resource/ABC_ALGOL>                                           |
+| <http://dbpedia.org/resource/ARITH-MATIC>                                         |
+| <http://dbpedia.org/resource/AutoLISP>                                            |
+| <http://dbpedia.org/resource/BBC_BASIC>                                           |
+| <http://dbpedia.org/resource/Befunge>                                             |
+| <http://dbpedia.org/resource/Borland_Turbo_C>                                     |
+| <http://dbpedia.org/resource/Common_Intermediate_Language>                        |
+| <http://dbpedia.org/resource/Common_Language_Runtime>                             |
+| <http://dbpedia.org/resource/Curl_(programming_language)>                         |
+| <http://dbpedia.org/resource/English_(programming_language)>                      |
+| <http://dbpedia.org/resource/GNU_m4>                                              |
+| <http://dbpedia.org/resource/JavaServer_Pages>                                    |
+| <http://dbpedia.org/resource/Liberty_BASIC>                                       |
+| <http://dbpedia.org/resource/Lisp_Machine_Lisp>                                   |
+| <http://dbpedia.org/resource/Lua_(programming_language)>                          |
+| <http://dbpedia.org/resource/MAD_(programming_language)>                          |
+| <http://dbpedia.org/resource/NewtonScript>                                        |
+| <http://dbpedia.org/resource/OCaml>                                               |
+| <http://dbpedia.org/resource/Plankalk%C3%BCl>                                     |
+| <http://dbpedia.org/resource/Planner_(programming_language)>                      |
+| <http://dbpedia.org/resource/PowerBASIC>                                          |
+| <http://dbpedia.org/resource/PureBasic>                                           |
+| <http://dbpedia.org/resource/SISAL>                                               |
+| <http://dbpedia.org/resource/Self_(programming_language)>                         |
+| <http://dbpedia.org/resource/VBScript>                                            |
+| <http://dbpedia.org/resource/VHDL>                                                |
+| <http://dbpedia.org/resource/Verilog>                                             |
+| <http://dbpedia.org/resource/Visual_Basic_for_Applications>                       |
+| <http://dbpedia.org/resource/XSL>                                                 |
+| <http://dbpedia.org/resource/XSLT>                                                |
+| <http://dbpedia.org/resource/Yacc>                                                |
+| <http://dbpedia.org/resource/Haskell_(programming_language)>                      |
+| <http://dbpedia.org/resource/Helium_(Haskell)>                                    |
+| <http://dbpedia.org/resource/Lapis_(programming_language)>                        |
+| <http://dbpedia.org/resource/Lustre_(programming_language)>                       |
+| <http://dbpedia.org/resource/Roy_(programming_language)>                          |
+| <http://dbpedia.org/resource/Actor-Based_Concurrent_Language>                     |
+| <http://dbpedia.org/resource/Agda_(programming_language)>                         |
+| <http://dbpedia.org/resource/Ceylon_(programming_language)>                       |
+| <http://dbpedia.org/resource/Chapel_(programming_language)>                       |
+| <http://dbpedia.org/resource/Charity_(programming_language)>                      |
+| <http://dbpedia.org/resource/Claire_(programming_language)>                       |
+| <http://dbpedia.org/resource/Cool_(programming_language)>                         |
+| <http://dbpedia.org/resource/Extensible_Embeddable_Language>                      |
+| <http://dbpedia.org/resource/F*_(programming_language)>                           |
+| <http://dbpedia.org/resource/Formatting_Output_Specification_Instance>            |
+| <http://dbpedia.org/resource/Genie_(programming_language)>                        |
+| <http://dbpedia.org/resource/Kaleidoscope_(programming_language)>                 |
+| <http://dbpedia.org/resource/Manifest_expression>                                 |
+| <http://dbpedia.org/resource/Manifest_typing>                                     |
+| <http://dbpedia.org/resource/Object_Definition_Language>                          |
+| <http://dbpedia.org/resource/Ox_(programming_language)>                           |
+| <http://dbpedia.org/resource/PLEX_(programming_language)>                         |
+| <http://dbpedia.org/resource/Rust_(programming_language)>                         |
+| <http://dbpedia.org/resource/SK8>                                                 |
+| <http://dbpedia.org/resource/SPARQL>                                              |
+| <http://dbpedia.org/resource/Snowball_(programming_language)>                     |
+| <http://dbpedia.org/resource/Tulip_(python_project)>                              |
+| <http://dbpedia.org/resource/Web_Rule_Language>                                   |
+| <http://dbpedia.org/resource/Write_once,_compile_anywhere>                        |
+| <http://dbpedia.org/resource/Language_construct>                                  |
+| <http://dbpedia.org/resource/Multi-user_BASIC>                                    |
+| <http://dbpedia.org/resource/OGNL>                                                |
+| <http://dbpedia.org/resource/Brutus2D>                                            |
+| <http://dbpedia.org/resource/Concurrent_Euclid>                                   |
+| <http://dbpedia.org/resource/Java_backporting_tools>                              |
+| <http://dbpedia.org/resource/KonsolScript>                                        |
+| <http://dbpedia.org/resource/Hummingbird_QuickScript>                             |
+| <http://dbpedia.org/resource/List_of_CLI_languages>                               |
+| <http://dbpedia.org/resource/Markdown_extensions>                                 |
+| <http://dbpedia.org/resource/SICStus_Prolog>                                      |
+| <http://dbpedia.org/resource/SQL/PSM>                                             |
+| <http://dbpedia.org/resource/SCSI_Pass-Through_Direct>                            |
+| <http://dbpedia.org/resource/Impulse_C>                                           |
+

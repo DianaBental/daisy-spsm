@@ -1,0 +1,123 @@
+Query:  entity(type(Island),belongTo(Japan)) 
+Construct query entity(type(Island),belongTo(Japan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> ; 
+<belongTo> <http://dbpedia.org/resource/Japan> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Island 
+
+Matching query schema Island(belongTo) 
+to dataset schema Island(country) 
+Created match data: 
+similarity(0.5).
+match(none).
+match([[Island],=,[Island]]).
+
+Construct query entity(type(Island)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Island> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------
+| subject                                                                                            |
+======================================================================================================
+| <http://dbpedia.org/resource/Dog_Island_(Nunavut)>                                                 |
+| <http://dbpedia.org/resource/Acklins>                                                              |
+| <http://dbpedia.org/resource/Alger_Island,_Russia>                                                 |
+| <http://dbpedia.org/resource/Amirante_Islands>                                                     |
+| <http://dbpedia.org/resource/Beata_Island>                                                         |
+| <http://dbpedia.org/resource/Bere_Island>                                                          |
+| <http://dbpedia.org/resource/Bibby_Island>                                                         |
+| <http://dbpedia.org/resource/Bj%C3%B8rn%C3%B8ya,_Haram>                                            |
+| <http://dbpedia.org/resource/Charles_Island>                                                       |
+| <http://dbpedia.org/resource/Christopher_Hall_Island>                                              |
+| <http://dbpedia.org/resource/Clack_Island>                                                         |
+| <http://dbpedia.org/resource/Crescent_Island_(Nunavut)>                                            |
+| <http://dbpedia.org/resource/Curtis_Island,_New_Zealand>                                           |
+| <http://dbpedia.org/resource/Dimn%C3%B8ya>                                                         |
+| <http://dbpedia.org/resource/Disappointment_Island>                                                |
+| <http://dbpedia.org/resource/Fairholme_Island>                                                     |
+| <http://dbpedia.org/resource/Fleming_Island_(Saskatchewan)>                                        |
+| <http://dbpedia.org/resource/Garten>                                                               |
+| <http://dbpedia.org/resource/Heiss_Island>                                                         |
+| <http://dbpedia.org/resource/Hermit_Island_(Antarctic)>                                            |
+| <http://dbpedia.org/resource/Herring_Island>                                                       |
+| <http://dbpedia.org/resource/Herring_Island_(Victoria)>                                            |
+| <http://dbpedia.org/resource/Holmes_Island_(Indiana)>                                              |
+| <http://dbpedia.org/resource/Holmes_Rock>                                                          |
+| <http://dbpedia.org/resource/Honeyman_Island>                                                      |
+| <http://dbpedia.org/resource/Hopkins_Island>                                                       |
+| <http://dbpedia.org/resource/House_Island_(Massachusetts)>                                         |
+| <http://dbpedia.org/resource/Isla_Bartolom%C3%A9>                                                  |
+| <http://dbpedia.org/resource/Jacquemart_Island>                                                    |
+| <http://dbpedia.org/resource/James_Ross_Island>                                                    |
+| <http://dbpedia.org/resource/Jintang_Island>                                                       |
+| <http://dbpedia.org/resource/Karls%C3%B8ya_(Troms)>                                                |
+| <http://dbpedia.org/resource/Lavoisier_Island>                                                     |
+| <http://dbpedia.org/resource/Leeward_Islands_(Society_Islands)>                                    |
+| <http://dbpedia.org/resource/Lindeman_Island>                                                      |
+| <http://dbpedia.org/resource/Londonderry_Island>                                                   |
+| <http://dbpedia.org/resource/Michipicoten_Island>                                                  |
+| <http://dbpedia.org/resource/Mill_Island>                                                          |
+| <http://dbpedia.org/resource/Mill_Island_(Nunavut)>                                                |
+| <http://dbpedia.org/resource/Mota_(island)>                                                        |
+| <http://dbpedia.org/resource/North_East_Island,_New_Zealand>                                       |
+| <http://dbpedia.org/resource/North_Harbour_Island>                                                 |
+| <http://dbpedia.org/resource/Palmaria_(island)>                                                    |
+| <http://dbpedia.org/resource/Pamban_Island>                                                        |
+| <http://dbpedia.org/resource/Passage_Island_(Michigan)>                                            |
+| <http://dbpedia.org/resource/Pigeon_Island_(Houtman_Abrolhos)>                                     |
+| <http://dbpedia.org/resource/Pigeon_Island_(New_Zealand)>                                          |
+| <http://dbpedia.org/resource/Pigeon_Island_(North_Queensland)>                                     |
+| <http://dbpedia.org/resource/Plover_Islands>                                                       |
+| <http://dbpedia.org/resource/Premuda>                                                              |
+| <http://dbpedia.org/resource/Pullen_Island_(South_Australia)>                                      |
+| <http://dbpedia.org/resource/Quail_Island,_New_Zealand>                                            |
+| <http://dbpedia.org/resource/Quail_Island_(Northern_Territory)>                                    |
+| <http://dbpedia.org/resource/Ram_Island_(Connecticut)>                                             |
+| <http://dbpedia.org/resource/River_Conon>                                                          |
+| <http://dbpedia.org/resource/Ross_Island_(Oregon)>                                                 |
+| <http://dbpedia.org/resource/Shag_Rock_(Houtman_Abrolhos)>                                         |
+| <http://dbpedia.org/resource/Sherman_Island_(Antarctica)>                                          |
+| <http://dbpedia.org/resource/Sheshan_Island>                                                       |
+| <http://dbpedia.org/resource/South_Wolf_Island>                                                    |
+| <http://dbpedia.org/resource/St._George_Island_(Florida)>                                          |
+| <http://dbpedia.org/resource/Stockport_Islands>                                                    |
+| <http://dbpedia.org/resource/Stony_Island,_Newfoundland_and_Labrador>                              |
+| <http://dbpedia.org/resource/Tarva_(Norway)>                                                       |
+| <http://dbpedia.org/resource/Ter%C3%B8ya,_Haram>                                                   |
+| <http://dbpedia.org/resource/The_Aldermen_Islands>                                                 |
+| <http://dbpedia.org/resource/Tongo_Island>                                                         |
+| <http://dbpedia.org/resource/Twin_Islands_(British_Columbia)>                                      |
+| <http://dbpedia.org/resource/Twin_Islands_(Nunavut)>                                               |
+| <http://dbpedia.org/resource/Vansittart_Island_(Nunavut)>                                          |
+| <http://dbpedia.org/resource/Vele_Srakane>                                                         |
+| <http://dbpedia.org/resource/Walrus_Island_(Hudson_Bay,_Nunavut)>                                  |
+| <http://dbpedia.org/resource/Zalzala_Koh>                                                          |
+| <http://dbpedia.org/resource/Zealandia_Bank>                                                       |
+| <http://dbpedia.org/resource/Burnaby_Island>                                                       |
+| <http://dbpedia.org/resource/Camp_Island_(Nunavut)>                                                |
+| <http://dbpedia.org/resource/Captina_Island>                                                       |
+| <http://dbpedia.org/resource/Cayo_Levisa>                                                          |
+| <http://dbpedia.org/resource/Dixon_Island_(Canada)>                                                |
+| <http://dbpedia.org/resource/Dove_Island_(Canada)>                                                 |
+| <http://dbpedia.org/resource/Flaherty_Island>                                                      |
+| <http://dbpedia.org/resource/Flat_Islands_(Antarctica)>                                            |
+| <http://dbpedia.org/resource/Glen_Island_Park>                                                     |
+| <http://dbpedia.org/resource/Grindall_Island>                                                      |
+| <http://dbpedia.org/resource/Hastings_Island_(Papua_New_Guinea)>                                   |
+| <http://dbpedia.org/resource/Hopen,_Svalbard>                                                      |
+| <http://dbpedia.org/resource/Horse_Head_Island>                                                    |
+| <http://dbpedia.org/resource/Isabel_Island_(Chile)>                                                |
+| <http://dbpedia.org/resource/Kume_Island>                                                          |
+| <http://dbpedia.org/resource/Losna_(island)>                                                       |
+| <http://dbpedia.org/resource/Luro,_Hordaland>                                                      |
+| <http://dbpedia.org/resource/Mary_Island_(Nunavut)>                                                |
+| <http://dbpedia.org/resource/Ohlin_Island>                                                         |
+| <http://dbpedia.org/resource/Ohtakari>                                                             |
+| <http://dbpedia.org/resource/Pascal_Island_(Antarctica)>                                           |
+| <http://dbpedia.org/resource/Poverty_Island>                                                       |
+| <http://dbpedia.org/resource/Sacca_Fisola>                                                         |
+

@@ -1,0 +1,62 @@
+Query:  entity(type(Person),birthPlace(Vienna),deathPlace(Berlin)) 
+Construct query entity(type(Person),birthPlace(Vienna),deathPlace(Berlin)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person> ; 
+<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Vienna> ; 
+<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Berlin> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------
+| subject                                              |
+========================================================
+| <http://dbpedia.org/resource/Alfred_Halm>            |
+| <http://dbpedia.org/resource/Richard_Thurnwald>      |
+| <http://dbpedia.org/resource/Grete_von_Zieritz>      |
+| <http://dbpedia.org/resource/Eduard_von_Winterstein> |
+| <http://dbpedia.org/resource/Karl_Hellmer>           |
+| <http://dbpedia.org/resource/Hilde_K%C3%B6rber>      |
+| <http://dbpedia.org/resource/Adolf_Klein>            |
+| <http://dbpedia.org/resource/Michael_von_Newlinsky>  |
+| <http://dbpedia.org/resource/Hugo_Flink>             |
+| <http://dbpedia.org/resource/Erik_Jan_Hanussen>      |
+| <http://dbpedia.org/resource/Therese_Gr%C3%BCnbaum>  |
+| <http://dbpedia.org/resource/Karl_Etlinger>          |
+| <http://dbpedia.org/resource/Steffie_Spira>          |
+--------------------------------------------------------
+
+Narrowed to these target datasets:  Person 
+
+Matching query schema Person(birthPlace,deathPlace) 
+to dataset schema Person(occupation,birthPlace,birthName,deathPlace,instrument,spouse,battle) 
+Created match data: 
+similarity(0.375).
+match(none).
+match([[Person],=,[Person]]).
+match([[Person,birthPlace],=,[Person,birthPlace]]).
+match([[Person,deathPlace],=,[Person,deathPlace]]).
+
+Construct query entity(type(Person),birthPlace(Vienna),deathPlace(Berlin)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person> ; 
+<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Vienna> ; 
+<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Berlin> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------
+| subject                                              |
+========================================================
+| <http://dbpedia.org/resource/Alfred_Halm>            |
+| <http://dbpedia.org/resource/Richard_Thurnwald>      |
+| <http://dbpedia.org/resource/Grete_von_Zieritz>      |
+| <http://dbpedia.org/resource/Eduard_von_Winterstein> |
+| <http://dbpedia.org/resource/Karl_Hellmer>           |
+| <http://dbpedia.org/resource/Hilde_K%C3%B6rber>      |
+| <http://dbpedia.org/resource/Adolf_Klein>            |
+| <http://dbpedia.org/resource/Michael_von_Newlinsky>  |
+| <http://dbpedia.org/resource/Hugo_Flink>             |
+| <http://dbpedia.org/resource/Erik_Jan_Hanussen>      |
+| <http://dbpedia.org/resource/Therese_Gr%C3%BCnbaum>  |
+| <http://dbpedia.org/resource/Karl_Etlinger>          |
+| <http://dbpedia.org/resource/Steffie_Spira>          |
+--------------------------------------------------------
+

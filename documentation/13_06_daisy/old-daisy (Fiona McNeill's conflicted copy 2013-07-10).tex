@@ -1,0 +1,167 @@
+%% LyX 1.6.4.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{llncs}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+
+\usepackage{graphicx}
+\usepackage[unicode=true, pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\begin{document}
+
+\title{Dynamic query matching}
+
+
+\author{Fiona McNeill and Andriana Gkaniatsou}
+\vspace{-10pt}
+\institute{University of Edinburgh}
+\maketitle
+\begin{abstract}
+
+\end{abstract}
+
+\section {\label{sec:Introduction}Introduction\vspace{-1mm}}
+Fast, effective data sharing is essential in many situations; one of the fields in which this is particularly pressing is in the field of emergency response.  Emergency response situations are characterised by the coming together of large numbers of organisations, each which is likely to have large amounts of data, much or some of which may be pertinent to the current emergency.  Some of these organisations may be well known to each other, but others will be unknown and potentially untrusted.  Datasources even of known organisations may be highly dynamic.  Reports into previous responses frequently cite poor communication and failure to effectively share information as a significant barrier to an effective response (*cite*).  There is much interested in increasing levels of automation in this process as an attempt to address these problems (*cite stuff?*).  There are many problems surrounding such automation; the one in which we are particularly interested is that of mismatch between data sources.
+
+Successful querying of a datasource depends on a good understanding of that datasource, thereby ensuring that the schema of the query correctly aligns with the schema of the queried datasource.  If data querying is part of an automated process, such knowledge depends on being able to anticipate in advance exactly what datasources will be relevant and knowing accurately what the schema and data representations of that source will be at the time of querying.  In a highly dynamic environment, such as emergency response, such assumptions are often not valid.  It both precludes the possibility of dynamic interaction with new organisations not anticipated at design-time and of interacting with known organisations who have updated or altered their data in some way.  Since speed is of the essence in emergency situations, relying on human ability to identify these problems and update queries accordingly is not feasible; in addition, this depends on the ability to access the schema of other people's data, which is not always reasonable.  We therefore believe that automatic reformulation of queries based on matching between the schema of the original query and that of the queried datasource is a necessary part of automating this communication process.
+
+This paper introduces the CHAIn (Combining Heterogeneous Agencies' INformation) system, which can be used by an owner of a datasource to formulate appropriate responses to incoming queries, even when these queries fail to match the datasource at the schema level and/or the data level.  Potential responses are ranked, and the process may be fully automated or may be used as a basis for fast, efficient human interaction with large datasources.  
+
+The matching component of CHAIn is based on the structure-preserving semantic matching (SPSM) algorithm (*cite*), originally developed in the OpenKnowledge project (*ref*) for dynamic service integration.  The main contribution of this paper is in the adaptation of this successful matching process to the problem of dynamic query matching in (potentially) large data.
+
+The paper is organised as follows.  Section \ref{sec:worked-ex} uses a worked example to describe the aims of the system.  Section \ref{sec:process} describes the process of the system in more detail.  Section \ref{sec:imp} briefly describes the current implementation of CHAIn as a proof-of-concept system.  Section \ref{sec:eval} discusses the results we have obtained by using this system on various emergency response datasources.  Section \ref{sec:related-work} puts our work in the context of other related work.  Section \ref{sec:concs} concludes the paper and discusses some of the key issues we need to address in developing CHAIn from a proof-of-concept system to a system that is usable in the field, and the context which is necessary to allow this.
+
+
+\section{\label{sec:worked-ex}Worked Example}
+We have primarily been considering this situation with relation to an emergency response scenario.  Such situations are data rich, and are characterised by the need to share data quickly and effectively with collaborators who may be previously unknown, and may not be trusted.  Formulating correct queries under these circumstances is extremely difficult, and there is therefore a pressing need for automated query reformulation.
+
+Consider a flooding scenario.  Many organisations have an interest in discovering where to return appropriate responses to a query on a dataset which have been (potentially) approved by an expert/owner of that dataset, together with sufficient information for the querier to determine whether or not they want to use the response.
+
+If there is no mismatch at either the data or the schema level, the query will succeed and appropriate responses will be returned without the need to invoke the CHAIn system.  If, however, mismatches do occur then returning an appropriate response will require matching.  
+
+Imagine an environmental organisation which is trying to determine how full the rivers are to anticipate the course of the floods.  They will have their own sensors monitoring this, but may want to get additional information from other organisations which also have sensors - for example, other environmental agencies from upstream regions and private companies who monitor water levels for their own commercial purposes, but may be agreeable to sharing data during an emergency.  Perhaps in their own data sources they frame readings from their sensors as follows:
+
+$measurement(Reporter_ID,Node,Level,Date)$
+If the organisation were automatically developing queries to populate this table, the query that would be formulated would be as illustrated in Figure \ref{fig:initquery}.
+
+\begin{figure}[htbp]
+\begin{center}
+
+\caption{Initial query based on data of querying organisation}
+\label{fig:initiquery}
+\end{center}
+\end{figure}
+
+
+\section{\label{sec:process}Process}
+The goal of the CHAIn system is to return an appropriate response to a query on a datasource despite the fact that the query is not correctly formulated for that data source.  Whenever a query fails, CHAIn will first investigate whether the schema used by the query is correct with reference to the schema of the queried data source.  If it is not, matching is used to determine whether there is anything in the schema of the datasource which approximates to the schema of the query, and, if so, reformulates the query accordingly.  If a query fails when there is no mismatch in the schema - either because the original schema of the query was correct according to the schema of the data source, or because the query has been reformulated to reflect the schema of the datasource - the CHAIn system will then consider potential mismatches at the data level, and use matching to identify these.  Ultimately, the query will be responded to using the data that CHAIn considers the most appropriate response to the original query, or it will fail if there is nothing in the queries data source which is considered sufficiently relevant.
+
+In this section, we describe the various aspects of the process, with reference (where appropriate) to the worked example in Section \ref{sec:worked-ex}.  
+
+\subsection{The role of humans}
+CHAIn can operate completely automatically because the matching process ranks potential matches.  It is therefore possible to always choose the best match at each stage, to produce a single best-ranked response to the original query.  Setting CHAIn to be fully automated is the best approach where responses are needed very quickly and quality of matching is not important.  However, we also view CHAIn as a method for allowing human users to interact with large data sources quickly and effectively, providing them with the tools to make informed decisions.  It is therefore the general expectation that when the matching process is completed, a set of results passing a given threshold for matching quality, or constrained by the number of required results, is presented to a user that owns, or belongs to an organisation that owns, the queried data source.  These results will be presented with clear information about where approximations were made, where parts of the query were left unanswered, and so on.  This allows for the input of local knowledge into context-free matching, and helps data sources where localised terminology is used to become more universal comprehensible.  For example, ** look up a good example using wordnet **.
+
+This user can decide to send back one or more (or none) of the responses suggested by CHAIn to the querier.  Again, the querying organisation can automatically accept this response if desired, or it can also be filtered by a human user within that organisation to determine whether to accept the response, or which of a list of potential responses is most appropriate.  This will depend on what the information is needed for; for example, a response missing one particular attribute of the query may be useless, whereas one missing another attribute may be of some value.  *example from example query*
+
+\subsection{Lifecycle of the Process}
+\begin{enumerate}
+\item A query to a particular data source is received by the organisation (or individual) that owns the data source.
+\item If the query fails, it is first determined whether this is due to mismatch at the the schema level.  If not, go to step 6.  If so, naive matching is done on the schema of the datasource to narrow down the search space to likely matches (see Section \ref{sec:narrowing}).  We can assume that the schema is available without loss of privacy, because this matching is begin down by a version of CHAIn which is owned by the owner of the datasource, and details of the schema need not be passed to any other party.
+\item Potential matches are sent pair-wise with the query to the SPSM matcher.
+\item The SPSM matcher returns matches together with a score, which can be used to reject poor matches and rank good matches.
+\item The query is reformulated according to the match and resent to the data source.
+\item If the query fails, ** need more detail about how this works ***
+\item Any potential responses to the query passing a given threshold are presented, with appropriate annotation describing the match, to a user who is knowledgable about the data source.  This user then choses any number of matches to be returned to the querier.  (This step can be omitted and the responses can be returned according to automatic ranking if required).
+\item The querier receives the response(s) to their original query, together with information about the matches that were used to produce the response, and uses these as they feel appropriate.
+\end{enumerate}
+
+
+\subsection{Format of the data source}
+The matching part of the process matches first-order terms: that is, terms of the form $predicate(Arg_1,Arg_2, ..., Arg_N)$, where each $Arg_i$ may itself be a function.  This process is therefore applicable to data formats that can be translated into this format.  Since this is a very general format, this includes a vast number of common representations.  Currently, the CHAIn system can be used for SPARQL queries to RDF data sources and for SQL queries to RDB data sources, but it could easily be extended to be applicable to more formats.  Extending to a new format requires extensions to the querying and reformulating part of the process, but does not affect matching, the central part of the process, or the interaction with the user.
+
+\subsection{\label{sec:narrowing}Narrowing down search space}
+The matching part of the process is done by the SPSM algorithm, which does pairwise matching of structured terms.  This is an expensive process, and it is not feasible to do it between a single query and every possible match in the queried data source.  It is therefore necessary to perform a filtering step, narrowing down the (potentially large) data source to a subset of likely candidates.  This is done through fairly naive keyword matching on the predicate name of the query **phrase this better**.  The *predicate* name is annotated with synonyms, hyponyms and hypernyms, and the schema of the datasource is sorted to extract parts of it that match any of these terms\footnote{There is a considerable body of work on matching keywords, and incorporating some of this would allow us to develop a more sophisticated approach to this step of the process.  We have chosen to do this in a naive way because we are developing a proof-of-concept system, but this would be an important part of future work.}.   There is, of course, a tension in determining how wide this net should be cast: we do not wish to exclude potentially good matches; however, we do not wish to end up with a very large subset of the data, to perform complex matching on which would be very expensive.  Initial results (see Section \ref{sec:eval})  indicate our approach is workable, but extensive simulation is necessary to determine more precisely where this sweet spot lies.
+
+For example, *refer back to the worked example*.
+
+\subsection{Structure-preserving semantic matching}
+The Structure-Preserving Semantic Matching algorithm (SPSM) has been extensively described elsewhere (*cite*), so we do not cover it in detail here.  Rather, we provide the reader with sufficient information to understand the principals of the process.
+
+la la la some stuff here.  
+
+
+\subsection{Reformulating the query}
+The SPSM algorithm will return a list of ranked responses; for example *make a list from worked example*.
+
+For each response, the mappings in the match are then used to reformulate the query.  Figure *?* illustrates this process.  *figure should include original  query, mappings and reformulated query*.  For aspects of the query for which mappings are found, the original term is replaced by the matched term; aspects of the query for which no mappings are found are removed from the query.  If the latter occurs, the response will not constitute a complete response to the query but may contain sufficient detail to be useful.
+
+
+\subsection{Data-level matching}
+The reformulated query is then submitted to the datasource.  If failure now occurs, this cannot be to do with schema mismatch because the reformulated query must be correct according to the schema of the datasource.  We can therefore conclude that the query failed because no matches were found at the data level.  This may be because the datasource simply does not contain pertinent information; however, it may be because mismatches at the data level led to potentially relevant data not being recognised.  We therefore continue matching at the data level to determine whether a suitable response to the original query can be extracted from the data source, or whether failure of the query is in fact the appropriate response.
+
+*more detail about how this is performed*.
+
+
+\subsection{Returning query responses}
+Up to this point, the process has been fully automated and, as mentioned earlier, it is possible to run the CHAIn system without any user interaction if desired.  However, we feel\footnote{more extensive evaluation is necessary to clearly demonstrate this} that some level of user interaction will be important in improving the quality of results.  We also see the CHAIn system as a useful tool in allowing efficient human interaction with large datasource, guiding the human as to how to appropriately respond to queries to the datasource by reducing a large datasource to a handful of potential responses, together with information to help them understand in what way the responses answer the query, and which aspects of the query are unanswered.
+
+Helping users, who may have a good understanding of the data used by their organisation, but are unlikely to be experts in representation and matching, to appropriately and efficiently evaluate a set of potential responses to a query, weighing them against each other with reference to the particular ways in which each individual response fails to be an exact response to the original query, is a complex and demanding task, requiring high-quality techniques in human-computer interaction.  Whilst building such expertise into the system will be essential before this approach is usable in the field, we do not pretend to such expertise ourselves, and therefore have a much simpler approach to user interaction, with a complete approach to this relegated to future work.
+
+Figure *?* illustrates the way in which information about potential matches is displayed within the current system.
+
+
+\section{\label{sec:imp}Implementation}
+Do we really need this section?
+
+
+\section{\label{sec:eval}Evaluation}
+Large-scale evaluation of this kind of matching is difficult.  This is chiefly because:
+\begin{itemize}
+\item we need to develop specific queries in each case, ideally generated from data and schema from existing datasources;
+\item these need to be sent to a datasource from which we could realistically expect an answer - that is, the query and the receiving datasource need to be similar enough to expect results;
+\item we need to analyse the results, with the help of experts where appropriate, to judge whether or not the responses are appropriate;
+\item we need to examine the receiving datasource to see if there were any appropriate responses which were not returned.
+\end{itemize}
+A robust evaluation of this approach requires these queries to be generated during the kind of automated process we envisage this work be used in, and the effective of these matches determined through large-scale simulation, to determine what the actual impact of using these matches are.  This is outside the scale of our current project (see Section \ref{sec:concs} for discussions of our plans to do this).
+
+We have therefore carried out the evaluation as follows:
+\begin{enumerate}
+\item We have sourced appropriate data from a collaborator, SEPA (Scottish Environmental Protection Agency).
+\item We have sourced online various different datasource which discuss similar things, such that we might expect a query from such a datasource to have some chance of finding an appropriate response in our SEPA data.
+\end{enumerate}
+
+
+\section{\label{sec:related-work}Related Work}
+
+Hmmm .... kind of hard to know what to put in here.
+
+\section{\label{sec:concs}Conculsions and Further Work}
+
+
+
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+
+
+
+%Frege, G. (1892) "On Sense and Reference", in Ludlow, P. (ed.) (1997) Readings in the Philosophy of Language, Cambridge, Mass.: MIT, pp. 563-583.
+
+%Vander Wal, T. (2005) "Explaining and showing broad and narrow folksonomies", online at http://www.vanderwal.net/random/entrysel.php?blog=1635
+
+
+
+
+\end{document}

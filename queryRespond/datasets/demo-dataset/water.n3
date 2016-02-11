@@ -1,0 +1,964 @@
+# This is a file for demo purposes which is intended to work as the
+# source dataset for some demo queries.
+# It is derived from the sepa dataset and consists of one record from
+# each of of the sepa n3 files.
+# If the sepa dataset is used as a target dataset then the demo queries should
+# match exactly.
+# This file is needed to test the automatic extraction of rdf prefixes
+# from rdf predicates.
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sepaw:   <http://data.sepa.org.uk/ont/Water#> .
+@prefix sepaidw:  <http://data.sepa.org.uk/id/Water/> .
+@prefix sepaloc:  <http://data.sepa.org.uk/ont/Location#> .
+@prefix sepaidloc:  <http://data.sepa.org.uk/id/Location/> .
+
+
+sepaidw:200115_2008
+      sepaw:classificationYear
+              "2008" ;
+      sepaw:parameter
+              [ sepaw:certainty "99.9" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "131" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "DIN (field salinity)" ;
+                sepaw:reportingParameterCode
+                        "1-3-1-8-3" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "654" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Benthic invertebrates" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-3" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "2358" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Overall status" ;
+                sepaw:reportingParameterCode
+                        "1" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "702" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Overall ecology" ;
+                sepaw:reportingParameterCode
+                        "1-3" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "704" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Hydromorphology" ;
+                sepaw:reportingParameterCode
+                        "1-3-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "705" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Pre-HMWB status" ;
+                sepaw:reportingParameterCode
+                        "1-1" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "99.9" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "1577" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Dissolved inorganic nitrogen" ;
+                sepaw:reportingParameterCode
+                        "1-3-1-8" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "691" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Alien species" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "2316" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Macroalgae" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-7" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "135" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:135309 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "pp-DDT" ;
+                sepaw:reportingParameterCode
+                        "1-2-1-16" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "1" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:135309 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Hexachlorobutadiene" ;
+                sepaw:reportingParameterCode
+                        "1-2-1-38" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "317" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Benthic invertebrates (IQI)" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-3-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "657" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Morphology" ;
+                sepaw:reportingParameterCode
+                        "1-3-4-1" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "100" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "205" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Dissolved Oxygen" ;
+                sepaw:reportingParameterCode
+                        "1-3-1-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "100" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "645" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Physico-Chem" ;
+                sepaw:reportingParameterCode
+                        "1-3-1" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "308" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:135309 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Imposex assessment" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-3-1" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "327" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Phytoplankton" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-6" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:classificationParameter
+                        "2328" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Water quality" ;
+                sepaw:reportingParameterCode
+                        "1-3-6-1" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "1574" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "DIN (laboratory salinity)" ;
+                sepaw:reportingParameterCode
+                        "1-3-1-8-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "2315" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:336235 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Macroalgae (FSL)" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-7-1" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "703" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Overall chemistry" ;
+                sepaw:reportingParameterCode
+                        "1-2" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "100" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "685" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Specific pollutants" ;
+                sepaw:reportingParameterCode
+                        "1-3-3" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "650" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Biological elements" ;
+                sepaw:reportingParameterCode
+                        "1-3-2" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "206" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:135309 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Hexachlorobenzene" ;
+                sepaw:reportingParameterCode
+                        "1-2-1-11" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "201" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:336235 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Macroalgae (RSL)" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-7-2" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "100" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "202" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Unionised ammonia" ;
+                sepaw:reportingParameterCode
+                        "1-3-3-15" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "684" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Priority substances" ;
+                sepaw:reportingParameterCode
+                        "1-2-1" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:waterBodyId sepaidw:200115 .
+
+sepaidw:200115_2008
+      sepaw:classificationYear
+              "2008" ;
+      sepaw:parameter
+              [ sepaw:certainty "99.9" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "131" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "DIN (field salinity)" ;
+                sepaw:reportingParameterCode
+                        "1-3-1-8-3" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "654" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Benthic invertebrates" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-3" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "2358" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Overall status" ;
+                sepaw:reportingParameterCode
+                        "1" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "702" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Overall ecology" ;
+                sepaw:reportingParameterCode
+                        "1-3" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "704" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Hydromorphology" ;
+                sepaw:reportingParameterCode
+                        "1-3-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "705" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Pre-HMWB status" ;
+                sepaw:reportingParameterCode
+                        "1-1" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "99.9" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "1577" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Dissolved inorganic nitrogen" ;
+                sepaw:reportingParameterCode
+                        "1-3-1-8" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "691" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Alien species" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "2316" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Macroalgae" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-7" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "135" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:135309 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "pp-DDT" ;
+                sepaw:reportingParameterCode
+                        "1-2-1-16" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "1" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:135309 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Hexachlorobutadiene" ;
+                sepaw:reportingParameterCode
+                        "1-2-1-38" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "317" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Benthic invertebrates (IQI)" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-3-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "657" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Morphology" ;
+                sepaw:reportingParameterCode
+                        "1-3-4-1" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "100" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "205" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Dissolved Oxygen" ;
+                sepaw:reportingParameterCode
+                        "1-3-1-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "100" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "645" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Physico-Chem" ;
+                sepaw:reportingParameterCode
+                        "1-3-1" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "308" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:135309 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Imposex assessment" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-3-1" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "49" ;
+                sepaw:certaintyBand "Medium" ;
+                sepaw:classificationParameter
+                        "327" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Phytoplankton" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-6" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:classificationParameter
+                        "2328" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Water quality" ;
+                sepaw:reportingParameterCode
+                        "1-3-6-1" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "1574" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "DIN (laboratory salinity)" ;
+                sepaw:reportingParameterCode
+                        "1-3-1-8-4" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "2315" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:336235 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Macroalgae (FSL)" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-7-1" ;
+                sepaw:status "H" ;
+                sepaw:statusDescription
+                        "High"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "703" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Overall chemistry" ;
+                sepaw:reportingParameterCode
+                        "1-2" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "100" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "685" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Specific pollutants" ;
+                sepaw:reportingParameterCode
+                        "1-3-3" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "650" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Biological elements" ;
+                sepaw:reportingParameterCode
+                        "1-3-2" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "206" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:135309 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Hexachlorobenzene" ;
+                sepaw:reportingParameterCode
+                        "1-2-1-11" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "72.37" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "201" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:336235 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Macroalgae (RSL)" ;
+                sepaw:reportingParameterCode
+                        "1-3-2-7-2" ;
+                sepaw:status "G" ;
+                sepaw:statusDescription
+                        "Good"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "100" ;
+                sepaw:certaintyBand "High" ;
+                sepaw:classificationParameter
+                        "202" ;
+                sepaw:contributingLocationCode
+                        sepaidloc:335401 ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Unionised ammonia" ;
+                sepaw:reportingParameterCode
+                        "1-3-3-15" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:parameter
+              [ sepaw:certainty "0" ;
+                sepaw:certaintyBand "Low" ;
+                sepaw:classificationParameter
+                        "684" ;
+                sepaw:lessThanGood "N" ;
+                sepaw:reportingParameter
+                        "Priority substances" ;
+                sepaw:reportingParameterCode
+                        "1-2-1" ;
+                sepaw:status "P" ;
+                sepaw:statusDescription
+                        "Pass"
+              ] ;
+      sepaw:waterBodyId sepaidw:200115 .
+
+sepaidloc:202936
+      sepaloc:catchment "Dornoch Coastal" ;
+      sepaloc:hydrocode "9\\5\\125.671" ;
+      sepaloc:localAuthority
+              "Highland" ;
+      sepaloc:locationCode
+              sepaidloc:202936 ;
+      sepaloc:locationDescription
+              "DORNOCH, BATHING WATER AT CARAVAN SITE" ;
+      sepaloc:ngr "NH 80500 89400" ;
+      sepaloc:sepaRegion "North" ;
+      sepaloc:sepaTeam "North Highland" ;
+      sepaloc:year "2012" ;
+      geo:lat "57.8779972" ;
+      geo:long "-4.0166487" .
+
+sepaidw:UKS7616073_2011
+      sepaw:bathingWaterId
+              "UKS7616073" ;
+      sepaw:bwLocation sepaidloc:9337 ;
+      sepaw:classDescription
+              "Mandatory" ;
+      sepaw:description "Kirkcaldy (Seafield)" ;
+      sepaw:year "2011" .
+
+sepaidw:200168
+      sepaw:areaSqKm "2.7604" ;
+      sepaw:category "Coastal" ;
+      sepaw:classificationCertainty
+              "64.28" ;
+      sepaw:classificationCertaintyBand
+              "High" ;
+      sepaw:currentClassificationYear
+              "2010" ;
+      sepaw:currentOverallClassification
+              "Overall status - Good" ;
+      sepaw:dataSource "SEPA" ;
+      sepaw:ecoRegion "1" ;
+      sepaw:genre "SURFACE WATER" ;
+      sepaw:isArtificial "N" ;
+      sepaw:isHeavilyModified
+              "N" ;
+      sepaw:isLessThanGood
+              "N" ;
+      sepaw:noDetRiskAssessment
+              "2b" ;
+      sepaw:rbdCode "1" ;
+      sepaw:riverBasinDistrict
+              "Scotland" ;
+      sepaw:sbdCode "8" ;
+      sepaw:statusRiskAssessment
+              "2b" ;
+      sepaw:subBasinDistrict
+              "West Highland" ;
+      sepaw:targetClass "Good by 2015" ;
+      sepaw:team "Hebrides & C. H/land" ;
+      sepaw:waterBodyId "200168" ;
+      sepaw:waterBodyName "Loch Bhrollum" ;
+      sepaw:wiseCode "UKSC200168" ;
+      geo:lat "57.93482" ;
+      geo:long "-6.53629" .
+
+<sepaidw:6646_78061_20>
+      sepaloc:locationCode
+              sepaidloc:355976 ;
+      sepaw:agreed "Y" ;
+      sepaw:atGepCurClassYear
+              "N/A" ;
+      sepaw:atGepCurrentPeriod
+              "N/A" ;
+      sepaw:atGepNextPeriod
+              "N/A" ;
+      sepaw:atGepPeriodAfterNext
+              "N/A" ;
+      sepaw:atGepSysdate "N/A" ;
+      sepaw:comments "Principle mitigation required as part of derogation process (See Decision Tree)" ;
+      sepaw:dataSource "SEPA" ;
+      sepaw:deadline "2008-12-31" ;
+      sepaw:measureFixedDate
+              "2008-12-31" ;
+      sepaw:measureId "20" ;
+      sepaw:onTrack "Y" ;
+      sepaw:owner "Operator" ;
+      sepaw:pressureId sepaidw:6646_78061 ;
+      sepaw:primaryMeasure
+              "Control Abstraction" ;
+      sepaw:projected "Y" ;
+      sepaw:secondaryMeasure
+              "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" ;
+      sepaw:waterBodyId sepaidw:6646 .
+
+sepaidw:100053_96341
+      sepaw:activity "Impounding - weir / dam" ;
+      sepaw:activityCode "I02" ;
+      sepaw:assessmentCategory
+              "Morphology and Fish Continuity" ;
+      sepaw:assessmentParameter
+              "Fish passage" ;
+      sepaw:atGepCurClassYear
+              "N/A" ;
+      sepaw:atGepCurrentPeriod
+              "N/A" ;
+      sepaw:atGepNextPeriod
+              "N/A" ;
+      sepaw:atGepPeriodAfterNext
+              "N/A" ;
+      sepaw:atGepSysdate "N/A" ;
+      sepaw:comments "Location code - 315018" ;
+      sepaw:dataSource "SEPA" ;
+      sepaw:eiAfterConfidence
+              "L" ;
+      sepaw:eiCurrentConfidence
+              "L" ;
+      sepaw:eiCurrentFailReason
+              "Implementation of the measure by an earlier deadline would impose disproportionate burdens" ;
+      sepaw:eiNextConfidence
+              "L" ;
+      sepaw:eiNextFailReason
+              "Implementation of the measure by an earlier deadline would impose disproportionate burdens" ;
+      sepaw:envImprovementAfterNext
+              "Good by 2027" ;
+      sepaw:envImprovementCurrent
+              "Poor by 2015" ;
+      sepaw:envImprovementNext
+              "Poor by 2021" ;
+      sepaw:identifiedDate
+              "2009-09-03" ;
+      sepaw:industrySector
+              "Production of renewable electricity (NB nuclear and pumped hydro are not renewable forms of electricity generation)" ;
+      sepaw:industrySectorCode
+              "E4016" ;
+      sepaw:isPrimary "Y" ;
+      sepaw:pressureId "96341" ;
+      sepaw:pressureType "Morphological Alterations" ;
+      sepaw:swmiSector "Morphological Alterations - Electricity generation" ;
+      sepaw:waterBodyId sepaidw:100053 .
+

@@ -1,0 +1,83 @@
+Query:  entity(subject(Berlin),leader) 
+Construct query entity(subject(Berlin),leader) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Berlin> <http://dbpedia.org/ontology/leader> ?leader . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------
+| leader                                       |
+================================================
+| <http://dbpedia.org/resource/Klaus_Wowereit> |
+------------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,leader) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.2222222222222222).
+match(none).
+match([[entity,subject],<,[entity,language]]).
+match([[entity],=,[entity]]).
+match([[entity,leader],=,[entity,leader]]).
+
+Construct query entity(type(entity),subject(Berlin),leader) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> ; 
+<http://dbpedia.org/ontology/leader> ?leader . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(Berlin),leader) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/leader> ?leader . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------------------------------
+| type                                                                       | leader                                       |
+=============================================================================================================================
+| <http://www.w3.org/2002/07/owl#Thing>                                      | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://schema.org/AdministrativeArea>                                     | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://schema.org/Place>                                                  | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/ontology/AdministrativeRegion>                         | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/ontology/Place>                                        | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/ontology/PopulatedPlace>                               | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/ontology/Region>                                       | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/ontology/Wikidata:Q532>                                | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://www.opengis.net/gml/_Feature>                                      | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://umbel.org/umbel/rc/City>                                           | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://umbel.org/umbel/rc/Location_Underspecified>                        | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://umbel.org/umbel/rc/PopulatedPlace>                                 | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://umbel.org/umbel/rc/Village>                                        | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>            | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Area108497294>                              | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Capital108518505>                           | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/CapitalsInEurope>                           | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Center108523483>                            | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/City108524735>                              | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Country108544813>                           | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/District108552138>                          | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Location100027167>                          | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Object100002684>                            | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Region108630985>                            | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Seat108647945>                              | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Site108651247>                              | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Tract108673395>                             | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/UrbanArea108675967>                         | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/YagoGeoEntity>                              | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                          | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/PopulatedPlacesEstablishedInThe13thCentury> | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/EuropeanCapitalsOfCulture>                  | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/GeographicalArea108574314>                  | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/Municipality108626283>                      | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>                    | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/StateCapital108695539>                      | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>               | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/StatesAndTerritoriesEstablishedIn1237>      | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/StatesOfGermany>                            | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/GermanStateCapitals>                        | <http://dbpedia.org/resource/Klaus_Wowereit> |
+| <http://dbpedia.org/class/yago/HostCitiesOfTheSummerOlympicGames>          | <http://dbpedia.org/resource/Klaus_Wowereit> |
+-----------------------------------------------------------------------------------------------------------------------------
+

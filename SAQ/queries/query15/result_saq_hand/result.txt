@@ -1,0 +1,14 @@
+Query:  entity(type(Language),spoken(Turkmenistan)) 
+Construct query entity(type(Language),spoken(Turkmenistan)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Language> ; 
+<spoken> <http://dbpedia.org/resource/Turkmenistan> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  
+
+No matches found for  Language(spoken) 
+
+Cannot respond to   entity(type(Language),spoken(Turkmenistan)) 
+

@@ -1,0 +1,2 @@
+entity(type('City'), country('Germany'), populationTotal)
+entity(type('Town'), country('Germany'), populationTotal)

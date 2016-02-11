@@ -1,0 +1,8 @@
+This directory gets pointed to as the "source" dataset, as it
+simulates the idea that a query must be derived from a real dataset
+somewhere, which uses real prefixes.
+The directory contains a random asssortment of files intended to allow
+the program to derive an initial set of rdf prefixes.  Each file needs to
+have the same name as the predicate in the query file.
+Most files are variations of SEPA files, with cut down contents. Some
+are guessed from the query.

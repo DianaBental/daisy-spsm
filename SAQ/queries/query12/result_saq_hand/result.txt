@@ -1,0 +1,124 @@
+Query:  entity(type(person),bornIn(Vienna),diedIn(Berlin)) 
+Construct query entity(type(person),bornIn(Vienna),diedIn(Berlin)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/person> ; 
+<bornIn> <http://dbpedia.org/resource/Vienna> ; 
+<diedIn> <http://dbpedia.org/resource/Berlin> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Person 
+
+Matching query schema person(bornIn,diedIn) 
+to dataset schema Person(occupation,birthPlace,birthName,deathPlace,instrument,spouse,battle) 
+Created match data: 
+similarity(0.125).
+match(none).
+match([[person],=,[Person]]).
+
+Construct query entity(type(Person)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------
+| subject                                                                                            |
+======================================================================================================
+| <http://dbpedia.org/resource/%C3%81ngel_Gim%C3%A9nez>                                              |
+| <http://dbpedia.org/resource/Aaron_Lines>                                                          |
+| <http://dbpedia.org/resource/Abel_Lafleur>                                                         |
+| <http://dbpedia.org/resource/Ada_Maimon>                                                           |
+| <http://dbpedia.org/resource/Adam_Krikorian>                                                       |
+| <http://dbpedia.org/resource/Albert_Constable>                                                     |
+| <http://dbpedia.org/resource/Alex_Reid_(actress)>                                                  |
+| <http://dbpedia.org/resource/Alex_Reid_(art_dealer)>                                               |
+| <http://dbpedia.org/resource/Alex_Reid_(fighter)>                                                  |
+| <http://dbpedia.org/resource/Alex_Reid_(footballer)>                                               |
+| <http://dbpedia.org/resource/Alex_Reid_(screenwriter)>                                             |
+| <http://dbpedia.org/resource/Alex_Tait_(cricketer)>                                                |
+| <http://dbpedia.org/resource/Alex_Tait_(footballer)>                                               |
+| <http://dbpedia.org/resource/Alex_Tait_(rugby_union)>                                              |
+| <http://dbpedia.org/resource/Alexander_Smit>                                                       |
+| <http://dbpedia.org/resource/Alexander_Y._Malcomson>                                               |
+| <http://dbpedia.org/resource/Alexander_Ziskind_Maimon>                                             |
+| <http://dbpedia.org/resource/Alfred_Ploetz>                                                        |
+| <http://dbpedia.org/resource/Alfred_Urba%C5%84ski>                                                 |
+| <http://dbpedia.org/resource/Allan_La_Fontaine>                                                    |
+| <http://dbpedia.org/resource/Allen_Holub>                                                          |
+| <http://dbpedia.org/resource/Alma_Cogan>                                                           |
+| <http://dbpedia.org/resource/Anastasios_Christopoulos>                                             |
+| <http://dbpedia.org/resource/Andrew_Constable,_Lord_Constable>                                     |
+| <http://dbpedia.org/resource/Andrew_Foley_(MP)>                                                    |
+| <http://dbpedia.org/resource/Andrew_Foley_(writer)>                                                |
+| <http://dbpedia.org/resource/Andy_Park_(comics)>                                                   |
+| <http://dbpedia.org/resource/Andy_Park_(musician)>                                                 |
+| <http://dbpedia.org/resource/Andy_Parker_(illustrator)>                                            |
+| <http://dbpedia.org/resource/Anika_Smit>                                                           |
+| <http://dbpedia.org/resource/Anthony_Caruso_(actor)>                                               |
+| <http://dbpedia.org/resource/Anthony_Caruso_(entrepreneur)>                                        |
+| <http://dbpedia.org/resource/Antonio_V%C3%A1zquez_(archer)>                                        |
+| <http://dbpedia.org/resource/Antonio_V%C3%A1zquez_(sport_shooter)>                                 |
+| <http://dbpedia.org/resource/Antonio_V%C3%A1zquez_de_Espinosa>                                     |
+| <http://dbpedia.org/resource/Arie_Jan_Haagen-Smit>                                                 |
+| <http://dbpedia.org/resource/Arie_Smit>                                                            |
+| <http://dbpedia.org/resource/Arij_Smit>                                                            |
+| <http://dbpedia.org/resource/Art_LaFleur>                                                          |
+| <http://dbpedia.org/resource/Arthur_Harris_(High_Sheriff_of_Essex)>                                |
+| <http://dbpedia.org/resource/Arvid_Smit>                                                           |
+| <http://dbpedia.org/resource/Ashley_Hames>                                                         |
+| <http://dbpedia.org/resource/Athanasios_Christopoulos>                                             |
+| <http://dbpedia.org/resource/Batuk_Vora>                                                           |
+| <http://dbpedia.org/resource/Beata_Holub>                                                          |
+| <http://dbpedia.org/resource/Ben_Gummer>                                                           |
+| <http://dbpedia.org/resource/Bernard_Brodeur>                                                      |
+| <http://dbpedia.org/resource/Bernie_Constable>                                                     |
+| <http://dbpedia.org/resource/Billy_Woodward_(footballer)>                                          |
+| <http://dbpedia.org/resource/Billy_Wrigglesworth>                                                  |
+| <http://dbpedia.org/resource/Bo%C5%A1ko_Palkovljevi%C4%87_Pinki>                                   |
+| <http://dbpedia.org/resource/Bob_Hames>                                                            |
+| <http://dbpedia.org/resource/Brian_Cogan>                                                          |
+| <http://dbpedia.org/resource/Carlos_A._Gim%C3%A9nez>                                               |
+| <http://dbpedia.org/resource/Carlos_E._Gim%C3%A9nez>                                               |
+| <http://dbpedia.org/resource/Carola_Smit>                                                          |
+| <http://dbpedia.org/resource/Carolyn_Abbate>                                                       |
+| <http://dbpedia.org/resource/Ceferino_Gim%C3%A9nez_Malla>                                          |
+| <http://dbpedia.org/resource/Cenn_F%C3%A1elad>                                                     |
+| <http://dbpedia.org/resource/Cenn_F%C3%A1elad_hua_Mugthigirn>                                      |
+| <http://dbpedia.org/resource/Cenn_F%C3%A1elad_mac_Ailella>                                         |
+| <http://dbpedia.org/resource/Cenn_F%C3%A1elad_mac_Colgan>                                          |
+| <http://dbpedia.org/resource/Chandra_Mohan_(1905%E2%80%931949)>                                    |
+| <http://dbpedia.org/resource/Chandra_Mohan_(actor)>                                                |
+| <http://dbpedia.org/resource/Chandra_Mohan_Patowary>                                               |
+| <http://dbpedia.org/resource/Charles_de_Lambert_(aviator)>                                         |
+| <http://dbpedia.org/resource/Charles_de_Lambert_(soldier)>                                         |
+| <http://dbpedia.org/resource/Choi_Buk>                                                             |
+| <http://dbpedia.org/resource/Chris_Sparling>                                                       |
+| <http://dbpedia.org/resource/Christian_Eduardo_Gim%C3%A9nez>                                       |
+| <http://dbpedia.org/resource/Christian_Reus-Smit>                                                  |
+| <http://dbpedia.org/resource/Christopher_X._Brodeur>                                               |
+| <http://dbpedia.org/resource/Claude_Ake>                                                           |
+| <http://dbpedia.org/resource/Cuthbert_Constable>                                                   |
+| <http://dbpedia.org/resource/Dami%C3%A1n_Gim%C3%A9nez>                                             |
+| <http://dbpedia.org/resource/Daniel_J._McGillicuddy>                                               |
+| <http://dbpedia.org/resource/Daryn_Smit>                                                           |
+| <http://dbpedia.org/resource/David_Krikorian>                                                      |
+| <http://dbpedia.org/resource/David_LaFleur>                                                        |
+| <http://dbpedia.org/resource/David_Maimon>                                                         |
+| <http://dbpedia.org/resource/David_McGhee>                                                         |
+| <http://dbpedia.org/resource/David_Smit>                                                           |
+| <http://dbpedia.org/resource/David_Wellington_(author)>                                            |
+| <http://dbpedia.org/resource/David_Wellington_(director)>                                          |
+| <http://dbpedia.org/resource/David_Yelland_(actor)>                                                |
+| <http://dbpedia.org/resource/David_Yelland_(journalist)>                                           |
+| <http://dbpedia.org/resource/Dean_Constable>                                                       |
+| <http://dbpedia.org/resource/Denis_Brodeur>                                                        |
+| <http://dbpedia.org/resource/Dennis_Constable>                                                     |
+| <http://dbpedia.org/resource/Dimitrios_Christopoulos>                                              |
+| <http://dbpedia.org/resource/Don_Gummer>                                                           |
+| <http://dbpedia.org/resource/Dorothy_Gaiter_and_John_Brecher>                                      |
+| <http://dbpedia.org/resource/Doughboy_(comics)>                                                    |
+| <http://dbpedia.org/resource/Eamon_Heery>                                                          |
+| <http://dbpedia.org/resource/Edison_Gim%C3%A9nez>                                                  |
+| <http://dbpedia.org/resource/Edmond_Brodeur>                                                       |
+| <http://dbpedia.org/resource/Eduardo_Fellner>                                                      |
+

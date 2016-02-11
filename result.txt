@@ -1,0 +1,375 @@
+### What follows is the expected result of installing daisy-spsm and
+### running the first successful query as described in
+### installation.docx
+### It is a copy of the file in daisy-spsm/output/result.pl
+
+Original Query : water([resource,measure,geo,timePeriod,10065]).
+Query Original Schema: water([subject,resource,measure,geo,timePeriod]).
+
+
+-------------------------
+Schema Mappings Summary  
+-------------------------
+
+
+
+
+****** 
+Mappings for Dataset: waterBodyMeasures
+****** 
+
+*Dataset Mapping: water --> waterBodyMeasures
+
+*Arguments Mappings: 
+resource --> dataSource
+timePeriod --> waterBodyId
+measure --> primaryMeasure
+geo --> no match 
+
+*Suggested Query Schema: 
+waterBodyMeasures([waterBodyId,primaryMeasure,dataSource]).
+resource --> dataSource
+timePeriod --> waterBodyId
+measure --> secondaryMeasure
+geo --> no match 
+
+*Suggested Query Schema: 
+waterBodyMeasures([waterBodyId,secondaryMeasure,dataSource]).
+
+
+
+****** 
+Mappings for Dataset: waterBodyPressures
+****** 
+
+*Dataset Mapping: water --> waterBodyPressures
+
+*Arguments Mappings: 
+resource --> source
+measure --> assessmentCategory
+geo --> waterBodyId
+timePeriod --> identifiedDate
+
+*Suggested Query Schema: 
+waterBodyPressures([water,identifiedDate,waterBodyId,assessmentCategory,source]).
+
+------------------
+Repaired Queries
+------------------
+
+
+
+------
+Repair
+------
+
+***Query  Schema Mappings: 
+The following schema mappings
+water --> waterBodyPressures
+resource --> source
+measure --> assessmentCategory
+geo --> waterBodyId
+timePeriod --> identifiedDate
+result to the above queries: 
+
+- Repaired Query: 
+waterBodyPressures([10065,identifiedDate,waterBodyId,assessmentCategory,source]).
+Answers: none 
+
+*Data Repair* 
+10065 --> subject 
+
+- Repaired Query: 
+waterBodyPressures([subject,identifiedDate,waterBodyId,assessmentCategory,source]).
+Answers: 
+-------------------------------------------------------------------------------
+| identifiedDate | waterBodyId   | assessmentCategory               | source  |
+===============================================================================
+| "2008-04-01"   | sepaidw:23339 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20176 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:23080 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:23332 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20199 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:23345 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20303 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:20587 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20098 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20289 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:20788 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:20304 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:20227 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20257 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:23086 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:23350 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20508 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:23641 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:23092 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20173 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20770 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20778 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:20497 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:23334 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:23092 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20281 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:20175 | "Morphology and Fish Continuity" | "Lake"  |
+| "2008-04-01"   | sepaidw:23138 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:23088 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:20261 | "Morphology and Fish Continuity" | "River" |
+| "2008-04-01"   | sepaidw:23158 | "Morphology and Fish Continuity" | "River" |
+-------------------------------------------------------------------------------
+* Data Level Repair *
+No data 
+
+
+------
+Repair
+------
+
+***Query  Schema Mappings: 
+The following schema mappings
+water --> waterBodyMeasures
+resource --> dataSource
+measure --> secondaryMeasure
+timePeriod --> waterBodyId
+result to the above queries: 
+
+
+- Repaired Query: 
+waterBodyMeasures([10065,waterBodyId,secondaryMeasure,dataSource]).
+Answers: none 
+
+*Data Repair* 
+10065 --> subject 
+
+- Repaired Query: 
+waterBodyMeasures([subject,waterBodyId,secondaryMeasure,dataSource]).
+Answers: 
+-------------------------------------------------------------------------------------------------------------------------------
+| waterBodyId    | secondaryMeasure                                                                              | dataSource |
+===============================================================================================================================
+| sepaidw:150342 | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:100269 | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:10757  | "Non-urban land management measures"                                                          | "SEPA"     |
+| sepaidw:23330  | "Improvement to condition of riparian zone and/or wetland habitats"                           | "SEPA"     |
+| sepaidw:23190  | "Improvement to condition of riparian zone and/or wetland habitats"                           | "SEPA"     |
+| sepaidw:5802   | "Improvement to condition of riparian zone and/or wetland habitats"                           | "SEPA"     |
+| sepaidw:10211  | "Improvement to condition of riparian zone and/or wetland habitats"                           | "SEPA"     |
+| sepaidw:10042  | "Change timing or frequency of discharge"                                                     | "SEPA"     |
+| sepaidw:10214  | "Improvement to condition of riparian zone and/or wetland habitats"                           | "SEPA"     |
+| sepaidw:150104 | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:3002   | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:23482  | "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" | "SEPA"     |
+| sepaidw:20278  | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:10000  | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:6503   | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:6525   | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:5904   | "Increase treatment"                                                                          | "SEPA"     |
+| sepaidw:23322  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:100291 | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:6563   | "Relocate all or part of discharge"                                                           | "SEPA"     |
+| sepaidw:10202  | "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" | "SEPA"     |
+| sepaidw:20307  | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:10063  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:4206   | "Reduce Diffuse Source Inputs"                                                                | "SEPA"     |
+| sepaidw:6525   | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:20342  | "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" | "SEPA"     |
+| sepaidw:20609  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:4000   | "Increase treatment"                                                                          | "SEPA"     |
+| sepaidw:10022  | "Change timing or frequency of discharge"                                                     | "SEPA"     |
+| sepaidw:10673  | "Provide appropriate baseline flow regime downstream of impoundment"                          | "SEPA"     |
+| sepaidw:10251  | "Improvement to condition of riparian zone and/or wetland habitats"                           | "SEPA"     |
+| sepaidw:23182  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:10047  | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:10003  | "Change timing or frequency of discharge"                                                     | "SEPA"     |
+| sepaidw:10029  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:10458  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:20245  | "Improvement to condition of channel/bed and/or banks/shoreline"                              | "SEPA"     |
+| sepaidw:23223  | "Reduce Diffuse Source Inputs"                                                                | "SEPA"     |
+| sepaidw:23270  | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:3000   | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:6882   | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:4207   | "Reduce Point Source Inputs"                                                                  | "SEPA"     |
+| sepaidw:20387  | "Reduce Diffuse Source Inputs"                                                                | "SEPA"     |
+| sepaidw:6311   | "Change timing or frequency of discharge"                                                     | "SEPA"     |
+| sepaidw:100232 | "Appropriate management of rate and range of artificial drawdown"                             | "SEPA"     |
+| sepaidw:6503   | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:150279 | "Non-urban land management measures"                                                          | "SEPA"     |
+| sepaidw:6911   | "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" | "SEPA"     |
+| sepaidw:10705  | "Improvement to sediment management maintenance regime"                                       | "SEPA"     |
+| sepaidw:23025  | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:3014   | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:10501  | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:6568   | "Provide appropriate baseline flow regime downstream of impoundment"                          | "SEPA"     |
+| sepaidw:10048  | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:10545  | "Removal of engineering structure"                                                            | "SEPA"     |
+| sepaidw:6815   | "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" | "SEPA"     |
+| sepaidw:10076  | "Non-urban land management measures"                                                          | "SEPA"     |
+| sepaidw:10583  | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:23571  | "Provide appropriate baseline flow regime downstream of impoundment"                          | "SEPA"     |
+| sepaidw:3107   | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:20161  | "Improve Regulated Flows"                                                                     | "SEPA"     |
+| sepaidw:23149  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:6585   | "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" | "SEPA"     |
+| sepaidw:4301   | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:23634  | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:150270 | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:23236  | "Reduce Diffuse Source Inputs"                                                                | "SEPA"     |
+| sepaidw:6527   | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:10040  | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:6804   | "Reduce Point Source Inputs"                                                                  | "SEPA"     |
+| sepaidw:150182 | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:20254  | "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" | "SEPA"     |
+| sepaidw:10919  | "Increase treatment"                                                                          | "SEPA"     |
+| sepaidw:150342 | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:20190  | "Appropriate management of rate and range of artificial drawdown"                             | "SEPA"     |
+| sepaidw:150342 | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:200437 | "Reduce Point Source Inputs"                                                                  | "SEPA"     |
+| sepaidw:10251  | "Control Abstraction"                                                                         | "SEPA"     |
+| sepaidw:23088  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:23243  | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:23263  | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:23113  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:10924  | "Reduce Diffuse Source Inputs"                                                                | "SEPA"     |
+| sepaidw:10526  | "Improvement to condition of riparian zone and/or wetland habitats"                           | "SEPA"     |
+| sepaidw:100211 | "Control pattern/timing of abstraction (Hands off flow/utilisation of storage (new/existing)" | "SEPA"     |
+| sepaidw:3003   | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:20026  | "Improve Modified Habitat"                                                                    | "SEPA"     |
+| sepaidw:20355  | "Provide appropriate baseline flow regime downstream of impoundment"                          | "SEPA"     |
+| sepaidw:20245  | "Reduce at source"                                                                            | "SEPA"     |
+| sepaidw:4213   | "Retrofit/improve existing SUDS"                                                              | "SEPA"     |
+| sepaidw:200185 | "Relocate all or part of discharge"                                                           | "SEPA"     |
+| sepaidw:20226  | "Provide appropriate baseline flow regime downstream of impoundment"                          | "SEPA"     |
+| sepaidw:100239 | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+| sepaidw:6209   | "Use alternative source/relocate abstraction"                                                 | "SEPA"     |
+| sepaidw:3302   | "Relocate all or part of discharge"                                                           | "SEPA"     |
+| sepaidw:100100 | "Reduce Point Source Inputs"                                                                  | "SEPA"     |
+| sepaidw:10614  | "Removal of barriers or provision of mechanisms to enable fish migration"                     | "SEPA"     |
+* Data Level Repair *
+No data 
+
+
+------
+Repair
+------
+
+***Query  Schema Mappings: 
+The following schema mappings
+water --> waterBodyMeasures
+resource --> dataSource
+measure --> primaryMeasure
+timePeriod --> waterBodyId
+result to the above queries: 
+
+
+- Repaired Query: 
+waterBodyMeasures([10065,waterBodyId,primaryMeasure,dataSource]).
+Answers: none 
+
+*Data Repair* 
+10065 --> subject 
+
+- Repaired Query: 
+waterBodyMeasures([subject,waterBodyId,primaryMeasure,dataSource]).
+Answers: 
+----------------------------------------------------------------
+| waterBodyId    | primaryMeasure                 | dataSource |
+================================================================
+| sepaidw:150342 | "Control Abstraction"          | "SEPA"     |
+| sepaidw:100269 | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:10757  | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:23330  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:23190  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:5802   | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:10211  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:10042  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10214  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:150104 | "Control Abstraction"          | "SEPA"     |
+| sepaidw:3002   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:23482  | "Control Abstraction"          | "SEPA"     |
+| sepaidw:20278  | "Control Abstraction"          | "SEPA"     |
+| sepaidw:10000  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:6503   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:6525   | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:5904   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:23322  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:100291 | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:6563   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10202  | "Control Abstraction"          | "SEPA"     |
+| sepaidw:20307  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:10063  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:4206   | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:6525   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:20342  | "Control Abstraction"          | "SEPA"     |
+| sepaidw:20609  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:4000   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10022  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10673  | "Improve Regulated Flows"      | "SEPA"     |
+| sepaidw:10251  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:23182  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:10047  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10003  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10029  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:10458  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:20245  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:23223  | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:23270  | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:3000   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:6882   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:4207   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:20387  | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:6311   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:100232 | "Improve Regulated Flows"      | "SEPA"     |
+| sepaidw:6503   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:150279 | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:6911   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:10705  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:23025  | "Control Abstraction"          | "SEPA"     |
+| sepaidw:3014   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:10501  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:6568   | "Improve Regulated Flows"      | "SEPA"     |
+| sepaidw:10048  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10545  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:6815   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:10076  | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:10583  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:23571  | "Improve Regulated Flows"      | "SEPA"     |
+| sepaidw:3107   | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:20161  | "Improve Regulated Flows"      | "SEPA"     |
+| sepaidw:23149  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:6585   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:4301   | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:23634  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:150270 | "Control Abstraction"          | "SEPA"     |
+| sepaidw:23236  | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:6527   | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:10040  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:6804   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:150182 | "Control Abstraction"          | "SEPA"     |
+| sepaidw:20254  | "Control Abstraction"          | "SEPA"     |
+| sepaidw:10919  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:150342 | "Control Abstraction"          | "SEPA"     |
+| sepaidw:20190  | "Improve Regulated Flows"      | "SEPA"     |
+| sepaidw:150342 | "Control Abstraction"          | "SEPA"     |
+| sepaidw:200437 | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10251  | "Control Abstraction"          | "SEPA"     |
+| sepaidw:23088  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:23243  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:23263  | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:23113  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:10924  | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:10526  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:100211 | "Control Abstraction"          | "SEPA"     |
+| sepaidw:3003   | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:20026  | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:20355  | "Improve Regulated Flows"      | "SEPA"     |
+| sepaidw:20245  | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:4213   | "Reduce Diffuse Source Inputs" | "SEPA"     |
+| sepaidw:200185 | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:20226  | "Improve Regulated Flows"      | "SEPA"     |
+| sepaidw:100239 | "Improve Modified Habitat"     | "SEPA"     |
+| sepaidw:6209   | "Control Abstraction"          | "SEPA"     |
+| sepaidw:3302   | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:100100 | "Reduce Point Source Inputs"   | "SEPA"     |
+| sepaidw:10614  | "Improve Modified Habitat"     | "SEPA"     |
+* Data Level Repair *
+No data 

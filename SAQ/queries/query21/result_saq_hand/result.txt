@@ -1,0 +1,137 @@
+Query:  entity(subject(Lawrence_of_Arabia),militaryConflicts) 
+Construct query entity(subject(Lawrence_of_Arabia),militaryConflicts) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Lawrence_of_Arabia> <militaryConflicts> ?militaryConflicts . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,militaryConflicts) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.16666666666666663).
+match(none).
+match([[entity,subject],<,[entity,language]]).
+match([[entity],=,[entity]]).
+
+Construct query entity(type(entity),subject(Lawrence_of_Arabia)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Lawrence_of_Arabia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(Lawrence_of_Arabia)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Lawrence_of_Arabia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+Construct query entity(type(entity),subject) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> . }
+
+Construct query entity(type,subject) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                    | type                                                               |
+===================================================================================================================================================================================================================
+| <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>                                                                                          | <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>              |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default>                                                                                   | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#default-nullable>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt>                                                                            | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt-nullable>                                                                   | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-lang>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-lang-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-fixedlang-x-any>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-fixedlang-x-any-nullable>                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-dt>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-dt-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-lang>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-lang-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-fixedlang-x-any>                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarchar-fixedlang-x-any-nullable>                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-dt>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-dt-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-lang>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-lang-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-fixedlang-x-any>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-fixedlang-x-any-nullable>                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-literal>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-literal-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-dt>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-dt-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-lang>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-lang-nullable>                                                            | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-fixedlang-x-any>                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longnvarchar-fixedlang-x-any-nullable>                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarbinary>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-longvarbinary-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric>                                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-nullable>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri>                                                                           | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-literal>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-literal-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-literal>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-doubleprecision-literal-nullable>                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date>                                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-nullable>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-date-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time>                                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-nullable>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-time-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-literal>                                                                      | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-datetime-literal-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri>                                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri-nullable>                                                                    | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal>                                                                         | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal-nullable>                                                                | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-uri-fn-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#multipart-literal-fn-nullable>                                                             | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri>                                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri-nullable>                                                                     | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal>                                                                          | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal-nullable>                                                                 | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-uri-fn-nullable>                                                                  | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#zeropart-literal-fn-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-fn>                                                                       | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-nvarchar-uri-fn-nullable>                                                              | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-integer-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-fn>                                                                        | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+| <http://www.openlinksw.com/virtrdf-data-formats#sql-numeric-uri-fn-nullable>                                                               | <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat>          |
+

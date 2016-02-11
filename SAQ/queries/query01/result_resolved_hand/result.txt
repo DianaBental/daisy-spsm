@@ -1,0 +1,167 @@
+Query:  entity(type(Astronaut),nationality(Russia)) 
+Construct query entity(type(Astronaut),nationality(Russia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Astronaut> ; 
+<http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Russia> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------
+| subject                                                          |
+====================================================================
+| <http://dbpedia.org/resource/Mikhail_Korniyenko>                 |
+| <http://dbpedia.org/resource/Anatoli_Ivanishin>                  |
+| <http://dbpedia.org/resource/Sergey_Alexandrovich_Volkov>        |
+| <http://dbpedia.org/resource/Yelena_Kondakova>                   |
+| <http://dbpedia.org/resource/Sergei_Revin>                       |
+| <http://dbpedia.org/resource/Evgeny_Tarelkin>                    |
+| <http://dbpedia.org/resource/Oleg_Atkov>                         |
+| <http://dbpedia.org/resource/Aleksandr_Poleshchuk>               |
+| <http://dbpedia.org/resource/Gennady_Padalka>                    |
+| <http://dbpedia.org/resource/Anatoly_Solovyev>                   |
+| <http://dbpedia.org/resource/Boris_Morukov>                      |
+| <http://dbpedia.org/resource/Fyodor_Yurchikhin>                  |
+| <http://dbpedia.org/resource/Mikhail_Tyurin>                     |
+| <http://dbpedia.org/resource/Roman_Romanenko>                    |
+| <http://dbpedia.org/resource/Salizhan_Sharipov>                  |
+| <http://dbpedia.org/resource/Sergei_Treshchov>                   |
+| <http://dbpedia.org/resource/Valeri_Tokarev>                     |
+| <http://dbpedia.org/resource/Vladimir_Dezhurov>                  |
+| <http://dbpedia.org/resource/Yury_Onufriyenko>                   |
+| <http://dbpedia.org/resource/Yury_Usachov>                       |
+| <http://dbpedia.org/resource/Yuri_Shargin>                       |
+| <http://dbpedia.org/resource/Aleksandr_Ivanchenkov>              |
+| <http://dbpedia.org/resource/Aleksandr_Lazutkin>                 |
+| <http://dbpedia.org/resource/Aleksandr_Serebrov>                 |
+| <http://dbpedia.org/resource/Aleksandr_Viktorenko>               |
+| <http://dbpedia.org/resource/Gennadi_Manakov>                    |
+| <http://dbpedia.org/resource/Sergei_Avdeyev>                     |
+| <http://dbpedia.org/resource/Vasily_Tsibliyev>                   |
+| <http://dbpedia.org/resource/Viktor_Savinykh>                    |
+| <http://dbpedia.org/resource/Nikolai_Tikhonov_(cosmonaut)>       |
+| <http://dbpedia.org/resource/Oleg_Artemyev>                      |
+| <http://dbpedia.org/resource/Svetlana_Savitskaya>                |
+| <http://dbpedia.org/resource/Valentina_Tereshkova>               |
+| <http://dbpedia.org/resource/Aleksandr_Kaleri>                   |
+| <http://dbpedia.org/resource/Vladimir_Solovyov_(cosmonaut)>      |
+| <http://dbpedia.org/resource/Nikolai_Budarin>                    |
+| <http://dbpedia.org/resource/Sergei_Zalyotin>                    |
+| <http://dbpedia.org/resource/Yury_Lonchakov>                     |
+| <http://dbpedia.org/resource/Vladimir_Georgiyevich_Titov>        |
+| <http://dbpedia.org/resource/Sergei_Krikalev>                    |
+| <http://dbpedia.org/resource/Valery_Korzun>                      |
+| <http://dbpedia.org/resource/Viktor_Mikhailovich_Afanasyev>      |
+| <http://dbpedia.org/resource/Yuri_Gidzenko>                      |
+| <http://dbpedia.org/resource/Boris_Andreyev_(cosmonaut)>         |
+| <http://dbpedia.org/resource/Dmitri_Kondratyev>                  |
+| <http://dbpedia.org/resource/Oleg_Skripochka>                    |
+| <http://dbpedia.org/resource/Oleg_Grigoryevich_Makarov>          |
+| <http://dbpedia.org/resource/Talgat_Musabayev>                   |
+| <http://dbpedia.org/resource/Yuri_Baturin>                       |
+| <http://dbpedia.org/resource/Yuri_Malenchenko>                   |
+| <http://dbpedia.org/resource/Oleg_Kotov>                         |
+| <http://dbpedia.org/resource/Oleg_Novitskiy>                     |
+| <http://dbpedia.org/resource/Aleksandr_Aleksandrovich_Skvortsov> |
+| <http://dbpedia.org/resource/Andrei_Borisenko>                   |
+| <http://dbpedia.org/resource/Pavel_Vinogradov>                   |
+| <http://dbpedia.org/resource/Vladimir_Kovalyonok>                |
+| <http://dbpedia.org/resource/Oleg_Kononenko>                     |
+| <http://dbpedia.org/resource/Maksim_Surayev>                     |
+| <http://dbpedia.org/resource/Aleksandr_Nikolayevich_Balandin>    |
+| <http://dbpedia.org/resource/Alexander_Misurkin>                 |
+| <http://dbpedia.org/resource/Anton_Shkaplerov>                   |
+| <http://dbpedia.org/resource/Konstantin_Valkov>                  |
+| <http://dbpedia.org/resource/Yury_Romanenko>                     |
+| <http://dbpedia.org/resource/Yelena_Serova>                      |
+| <http://dbpedia.org/resource/Anatoly_Artsebarsky>                |
+| <http://dbpedia.org/resource/Sergey_Ryazansky>                   |
+| <http://dbpedia.org/resource/Aleksandr_Samokutyayev>             |
+--------------------------------------------------------------------
+
+Narrowed to these target datasets:  Astronaut 
+
+Matching query schema Astronaut(nationality) 
+to dataset schema Astronaut(nationality) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[Astronaut,nationality],=,[Astronaut,nationality]]).
+match([[Astronaut],=,[Astronaut]]).
+
+Construct query entity(type(Astronaut),nationality(Russia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Astronaut> ; 
+<http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Russia> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------
+| subject                                                          |
+====================================================================
+| <http://dbpedia.org/resource/Mikhail_Korniyenko>                 |
+| <http://dbpedia.org/resource/Anatoli_Ivanishin>                  |
+| <http://dbpedia.org/resource/Sergey_Alexandrovich_Volkov>        |
+| <http://dbpedia.org/resource/Yelena_Kondakova>                   |
+| <http://dbpedia.org/resource/Sergei_Revin>                       |
+| <http://dbpedia.org/resource/Evgeny_Tarelkin>                    |
+| <http://dbpedia.org/resource/Oleg_Atkov>                         |
+| <http://dbpedia.org/resource/Aleksandr_Poleshchuk>               |
+| <http://dbpedia.org/resource/Gennady_Padalka>                    |
+| <http://dbpedia.org/resource/Anatoly_Solovyev>                   |
+| <http://dbpedia.org/resource/Boris_Morukov>                      |
+| <http://dbpedia.org/resource/Fyodor_Yurchikhin>                  |
+| <http://dbpedia.org/resource/Mikhail_Tyurin>                     |
+| <http://dbpedia.org/resource/Roman_Romanenko>                    |
+| <http://dbpedia.org/resource/Salizhan_Sharipov>                  |
+| <http://dbpedia.org/resource/Sergei_Treshchov>                   |
+| <http://dbpedia.org/resource/Valeri_Tokarev>                     |
+| <http://dbpedia.org/resource/Vladimir_Dezhurov>                  |
+| <http://dbpedia.org/resource/Yury_Onufriyenko>                   |
+| <http://dbpedia.org/resource/Yury_Usachov>                       |
+| <http://dbpedia.org/resource/Yuri_Shargin>                       |
+| <http://dbpedia.org/resource/Aleksandr_Ivanchenkov>              |
+| <http://dbpedia.org/resource/Aleksandr_Lazutkin>                 |
+| <http://dbpedia.org/resource/Aleksandr_Serebrov>                 |
+| <http://dbpedia.org/resource/Aleksandr_Viktorenko>               |
+| <http://dbpedia.org/resource/Gennadi_Manakov>                    |
+| <http://dbpedia.org/resource/Sergei_Avdeyev>                     |
+| <http://dbpedia.org/resource/Vasily_Tsibliyev>                   |
+| <http://dbpedia.org/resource/Viktor_Savinykh>                    |
+| <http://dbpedia.org/resource/Nikolai_Tikhonov_(cosmonaut)>       |
+| <http://dbpedia.org/resource/Oleg_Artemyev>                      |
+| <http://dbpedia.org/resource/Svetlana_Savitskaya>                |
+| <http://dbpedia.org/resource/Valentina_Tereshkova>               |
+| <http://dbpedia.org/resource/Aleksandr_Kaleri>                   |
+| <http://dbpedia.org/resource/Vladimir_Solovyov_(cosmonaut)>      |
+| <http://dbpedia.org/resource/Nikolai_Budarin>                    |
+| <http://dbpedia.org/resource/Sergei_Zalyotin>                    |
+| <http://dbpedia.org/resource/Yury_Lonchakov>                     |
+| <http://dbpedia.org/resource/Vladimir_Georgiyevich_Titov>        |
+| <http://dbpedia.org/resource/Sergei_Krikalev>                    |
+| <http://dbpedia.org/resource/Valery_Korzun>                      |
+| <http://dbpedia.org/resource/Viktor_Mikhailovich_Afanasyev>      |
+| <http://dbpedia.org/resource/Yuri_Gidzenko>                      |
+| <http://dbpedia.org/resource/Boris_Andreyev_(cosmonaut)>         |
+| <http://dbpedia.org/resource/Dmitri_Kondratyev>                  |
+| <http://dbpedia.org/resource/Oleg_Skripochka>                    |
+| <http://dbpedia.org/resource/Oleg_Grigoryevich_Makarov>          |
+| <http://dbpedia.org/resource/Talgat_Musabayev>                   |
+| <http://dbpedia.org/resource/Yuri_Baturin>                       |
+| <http://dbpedia.org/resource/Yuri_Malenchenko>                   |
+| <http://dbpedia.org/resource/Oleg_Kotov>                         |
+| <http://dbpedia.org/resource/Oleg_Novitskiy>                     |
+| <http://dbpedia.org/resource/Aleksandr_Aleksandrovich_Skvortsov> |
+| <http://dbpedia.org/resource/Andrei_Borisenko>                   |
+| <http://dbpedia.org/resource/Pavel_Vinogradov>                   |
+| <http://dbpedia.org/resource/Vladimir_Kovalyonok>                |
+| <http://dbpedia.org/resource/Oleg_Kononenko>                     |
+| <http://dbpedia.org/resource/Maksim_Surayev>                     |
+| <http://dbpedia.org/resource/Aleksandr_Nikolayevich_Balandin>    |
+| <http://dbpedia.org/resource/Alexander_Misurkin>                 |
+| <http://dbpedia.org/resource/Anton_Shkaplerov>                   |
+| <http://dbpedia.org/resource/Konstantin_Valkov>                  |
+| <http://dbpedia.org/resource/Yury_Romanenko>                     |
+| <http://dbpedia.org/resource/Yelena_Serova>                      |
+| <http://dbpedia.org/resource/Anatoly_Artsebarsky>                |
+| <http://dbpedia.org/resource/Sergey_Ryazansky>                   |
+| <http://dbpedia.org/resource/Aleksandr_Samokutyayev>             |
+--------------------------------------------------------------------
+

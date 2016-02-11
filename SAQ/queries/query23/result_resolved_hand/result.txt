@@ -1,0 +1,163 @@
+Query:  entity(type(Company),location(Munich)) 
+Construct query entity(type(Company),location(Munich)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> ; 
+<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Munich> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------
+| subject                                                             |
+=======================================================================
+| <http://dbpedia.org/resource/Keil_(company)>                        |
+| <http://dbpedia.org/resource/Augustiner_Br%C3%A4u>                  |
+| <http://dbpedia.org/resource/Klotz_Digital>                         |
+| <http://dbpedia.org/resource/Certina_Holding>                       |
+| <http://dbpedia.org/resource/30_Digits>                             |
+| <http://dbpedia.org/resource/Torry_Harris_Business_Solutions>       |
+| <http://dbpedia.org/resource/M%C3%BCnchner_Bank>                    |
+| <http://dbpedia.org/resource/Biomax_Informatics_AG>                 |
+| <http://dbpedia.org/resource/MAN_Truck_&_Bus>                       |
+| <http://dbpedia.org/resource/RedSpotGames>                          |
+| <http://dbpedia.org/resource/Impuls>                                |
+| <http://dbpedia.org/resource/Target_Partners>                       |
+| <http://dbpedia.org/resource/Travelzoo>                             |
+| <http://dbpedia.org/resource/Coreplay>                              |
+| <http://dbpedia.org/resource/MAN_SE>                                |
+| <http://dbpedia.org/resource/Siemens>                               |
+| <http://dbpedia.org/resource/Chimera_Entertainment>                 |
+| <http://dbpedia.org/resource/Wellington_Partners>                   |
+| <http://dbpedia.org/resource/HgCapital>                             |
+| <http://dbpedia.org/resource/ACT_Music>                             |
+| <http://dbpedia.org/resource/Fraunhofer_Society>                    |
+| <http://dbpedia.org/resource/Dehns>                                 |
+| <http://dbpedia.org/resource/HypoVereinsbank>                       |
+| <http://dbpedia.org/resource/Wacker_Chemie>                         |
+| <http://dbpedia.org/resource/Wacker_Neuson>                         |
+| <http://dbpedia.org/resource/Auer+Weber+Assoziierte>                |
+| <http://dbpedia.org/resource/Nemetschek>                            |
+| <http://dbpedia.org/resource/Arri>                                  |
+| <http://dbpedia.org/resource/Tokyo_Dawn_Records>                    |
+| <http://dbpedia.org/resource/Dresdner-Cetelem_Kreditbank_GmbH>      |
+| <http://dbpedia.org/resource/Unify_GmbH_&_Co._KG>                   |
+| <http://dbpedia.org/resource/Allianz>                               |
+| <http://dbpedia.org/resource/Equistone_Partners_Europe>             |
+| <http://dbpedia.org/resource/Rohde_&_Schwarz>                       |
+| <http://dbpedia.org/resource/Epcos>                                 |
+| <http://dbpedia.org/resource/Bumblehood>                            |
+| <http://dbpedia.org/resource/White_Line_Hotels>                     |
+| <http://dbpedia.org/resource/Munich_Re>                             |
+| <http://dbpedia.org/resource/Osram>                                 |
+| <http://dbpedia.org/resource/MCON_GROUP>                            |
+| <http://dbpedia.org/resource/HAWE_Hydraulik_SE>                     |
+| <http://dbpedia.org/resource/BSH_Bosch_und_Siemens_Hausger%C3%A4te> |
+| <http://dbpedia.org/resource/ECM_Records>                           |
+| <http://dbpedia.org/resource/Gigaset_Communications>                |
+| <http://dbpedia.org/resource/Roland_Berger_Strategy_Consultants>    |
+| <http://dbpedia.org/resource/Shin'en_Multimedia>                    |
+| <http://dbpedia.org/resource/Realmforge_Studios>                    |
+| <http://dbpedia.org/resource/Siemens_Financial_Services>            |
+| <http://dbpedia.org/resource/Hugendubel>                            |
+| <http://dbpedia.org/resource/MTU_Aero_Engines>                      |
+| <http://dbpedia.org/resource/Qimonda>                               |
+| <http://dbpedia.org/resource/Dyckerhoff_&_Widmann>                  |
+| <http://dbpedia.org/resource/Discovery_Networks_Deutschland>        |
+| <http://dbpedia.org/resource/Scanline_VFX>                          |
+| <http://dbpedia.org/resource/Stern_Stewart_&_Co>                    |
+| <http://dbpedia.org/resource/Kuckuck_Schallplatten>                 |
+| <http://dbpedia.org/resource/Hypo_Real_Estate>                      |
+| <http://dbpedia.org/resource/Rodenstock_GmbH>                       |
+| <http://dbpedia.org/resource/Neff_GmbH>                             |
+| <http://dbpedia.org/resource/Escada>                                |
+| <http://dbpedia.org/resource/Iobox>                                 |
+| <http://dbpedia.org/resource/MAN_Turbo>                             |
+| <http://dbpedia.org/resource/Dubbing_Brothers>                      |
+| <http://dbpedia.org/resource/Genomatix>                             |
+| <http://dbpedia.org/resource/BayernLB>                              |
+-----------------------------------------------------------------------
+
+Narrowed to these target datasets:  Company 
+
+Matching query schema Company(location) 
+to dataset schema Company(location,headquarter,locationCity) 
+Created match data: 
+similarity(0.5).
+match(none).
+match([[Company,location],=,[Company,location]]).
+match([[Company],=,[Company]]).
+
+Construct query entity(type(Company),location(Munich)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> ; 
+<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Munich> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------
+| subject                                                             |
+=======================================================================
+| <http://dbpedia.org/resource/Keil_(company)>                        |
+| <http://dbpedia.org/resource/Augustiner_Br%C3%A4u>                  |
+| <http://dbpedia.org/resource/Klotz_Digital>                         |
+| <http://dbpedia.org/resource/Certina_Holding>                       |
+| <http://dbpedia.org/resource/30_Digits>                             |
+| <http://dbpedia.org/resource/Torry_Harris_Business_Solutions>       |
+| <http://dbpedia.org/resource/M%C3%BCnchner_Bank>                    |
+| <http://dbpedia.org/resource/Biomax_Informatics_AG>                 |
+| <http://dbpedia.org/resource/MAN_Truck_&_Bus>                       |
+| <http://dbpedia.org/resource/RedSpotGames>                          |
+| <http://dbpedia.org/resource/Impuls>                                |
+| <http://dbpedia.org/resource/Target_Partners>                       |
+| <http://dbpedia.org/resource/Travelzoo>                             |
+| <http://dbpedia.org/resource/Coreplay>                              |
+| <http://dbpedia.org/resource/MAN_SE>                                |
+| <http://dbpedia.org/resource/Siemens>                               |
+| <http://dbpedia.org/resource/Chimera_Entertainment>                 |
+| <http://dbpedia.org/resource/Wellington_Partners>                   |
+| <http://dbpedia.org/resource/HgCapital>                             |
+| <http://dbpedia.org/resource/ACT_Music>                             |
+| <http://dbpedia.org/resource/Fraunhofer_Society>                    |
+| <http://dbpedia.org/resource/Dehns>                                 |
+| <http://dbpedia.org/resource/HypoVereinsbank>                       |
+| <http://dbpedia.org/resource/Wacker_Chemie>                         |
+| <http://dbpedia.org/resource/Wacker_Neuson>                         |
+| <http://dbpedia.org/resource/Auer+Weber+Assoziierte>                |
+| <http://dbpedia.org/resource/Nemetschek>                            |
+| <http://dbpedia.org/resource/Arri>                                  |
+| <http://dbpedia.org/resource/Tokyo_Dawn_Records>                    |
+| <http://dbpedia.org/resource/Dresdner-Cetelem_Kreditbank_GmbH>      |
+| <http://dbpedia.org/resource/Unify_GmbH_&_Co._KG>                   |
+| <http://dbpedia.org/resource/Allianz>                               |
+| <http://dbpedia.org/resource/Equistone_Partners_Europe>             |
+| <http://dbpedia.org/resource/Rohde_&_Schwarz>                       |
+| <http://dbpedia.org/resource/Epcos>                                 |
+| <http://dbpedia.org/resource/Bumblehood>                            |
+| <http://dbpedia.org/resource/White_Line_Hotels>                     |
+| <http://dbpedia.org/resource/Munich_Re>                             |
+| <http://dbpedia.org/resource/Osram>                                 |
+| <http://dbpedia.org/resource/MCON_GROUP>                            |
+| <http://dbpedia.org/resource/HAWE_Hydraulik_SE>                     |
+| <http://dbpedia.org/resource/BSH_Bosch_und_Siemens_Hausger%C3%A4te> |
+| <http://dbpedia.org/resource/ECM_Records>                           |
+| <http://dbpedia.org/resource/Gigaset_Communications>                |
+| <http://dbpedia.org/resource/Roland_Berger_Strategy_Consultants>    |
+| <http://dbpedia.org/resource/Shin'en_Multimedia>                    |
+| <http://dbpedia.org/resource/Realmforge_Studios>                    |
+| <http://dbpedia.org/resource/Siemens_Financial_Services>            |
+| <http://dbpedia.org/resource/Hugendubel>                            |
+| <http://dbpedia.org/resource/MTU_Aero_Engines>                      |
+| <http://dbpedia.org/resource/Qimonda>                               |
+| <http://dbpedia.org/resource/Dyckerhoff_&_Widmann>                  |
+| <http://dbpedia.org/resource/Discovery_Networks_Deutschland>        |
+| <http://dbpedia.org/resource/Scanline_VFX>                          |
+| <http://dbpedia.org/resource/Stern_Stewart_&_Co>                    |
+| <http://dbpedia.org/resource/Kuckuck_Schallplatten>                 |
+| <http://dbpedia.org/resource/Hypo_Real_Estate>                      |
+| <http://dbpedia.org/resource/Rodenstock_GmbH>                       |
+| <http://dbpedia.org/resource/Neff_GmbH>                             |
+| <http://dbpedia.org/resource/Escada>                                |
+| <http://dbpedia.org/resource/Iobox>                                 |
+| <http://dbpedia.org/resource/MAN_Turbo>                             |
+| <http://dbpedia.org/resource/Dubbing_Brothers>                      |
+| <http://dbpedia.org/resource/Genomatix>                             |
+| <http://dbpedia.org/resource/BayernLB>                              |
+-----------------------------------------------------------------------
+

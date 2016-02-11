@@ -1,0 +1,139 @@
+Query:  entity(type(StatesOfTheUnitedStates),admittancedate) 
+Construct query entity(type(StatesOfTheUnitedStates),admittancedate) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/StatesOfTheUnitedStates> ; 
+<http://dbpedia.org/property/admittancedate> ?admittancedate . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------
+| subject                                            | admittancedate                                                   |
+=========================================================================================================================
+| <http://dbpedia.org/resource/Georgia_(U.S._state)> | "1788-01-02+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Utah>                 | "1896-01-04+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Vermont>              | "1791-03-04+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Virginia>             | "1788-06-25+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/West_Virginia>        | "1863-06-20+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Wisconsin>            | "1848-05-29+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Wyoming>              | "1890-07-10+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Alabama>              | "1819-12-14+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Alaska>               | "1959-01-03+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Arkansas>             | "1836-06-15+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/California>           | "1850-09-09+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Colorado>             | "1876-08-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Connecticut>          | "1788-01-09+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Delaware>             | "1787-12-07+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Hawaii>               | "1959-08-21+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Idaho>                | "1890-07-03+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Illinois>             | "1818-12-03+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Kansas>               | "1861-01-29+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Kentucky>             | "1792-06-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Louisiana>            | "1812-04-30+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Maine>                | "1820-03-15+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Maryland>             | "1788-04-28+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Michigan>             | "1837-01-26+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Minnesota>            | "1858-05-11+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Missouri>             | "1821-08-10+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Montana>              | "1889-11-08+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Nebraska>             | "1867-03-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Nevada>               | "1864-10-31+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/New_Hampshire>        | "1788-06-21+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/New_Jersey>           | "1787-12-18+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/New_Mexico>           | "1912-01-06+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/North_Carolina>       | "1789-11-21+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/North_Dakota>         | "0001-11-02+02:00"^^<http://www.w3.org/2001/XMLSchema#gMonthDay> |
+| <http://dbpedia.org/resource/Ohio>                 | "1803-03-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Oklahoma>             | "1907-11-16+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Pennsylvania>         | "1787-12-12+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Rhode_Island>         | "1790-05-29+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/South_Carolina>       | "1788-05-23+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/South_Dakota>         | "1889-11-02+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Tennessee>            | "1796-06-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Texas>                | "1845-12-29+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Arizona>              | "1912-02-14+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Mississippi>          | "1817-12-10+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/New_York>             | "1788-07-26+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Oregon>               | "1859-02-14+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Washington_(state)>   | "1889-11-11+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Florida>              | "1845-03-03+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Indiana>              | "1816-12-11+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Iowa>                 | "1846-12-28+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Massachusetts>        | "1788-02-06+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+-------------------------------------------------------------------------------------------------------------------------
+
+Narrowed to these target datasets:  FormulaOneRacer StatesOfTheUnitedStates 
+
+Matching query schema StatesOfTheUnitedStates(admittancedate) 
+to dataset schema FormulaOneRacer(races) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema StatesOfTheUnitedStates(admittancedate) 
+to dataset schema StatesOfTheUnitedStates(admittancedate) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[StatesOfTheUnitedStates,admittancedate],=,[StatesOfTheUnitedStates,admittancedate]]).
+match([[StatesOfTheUnitedStates],=,[StatesOfTheUnitedStates]]).
+
+Construct query entity(type(StatesOfTheUnitedStates),admittancedate) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/StatesOfTheUnitedStates> ; 
+<http://dbpedia.org/property/admittancedate> ?admittancedate . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------------------------------------------------------------
+| subject                                            | admittancedate                                                   |
+=========================================================================================================================
+| <http://dbpedia.org/resource/Georgia_(U.S._state)> | "1788-01-02+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Utah>                 | "1896-01-04+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Vermont>              | "1791-03-04+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Virginia>             | "1788-06-25+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/West_Virginia>        | "1863-06-20+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Wisconsin>            | "1848-05-29+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Wyoming>              | "1890-07-10+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Alabama>              | "1819-12-14+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Alaska>               | "1959-01-03+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Arkansas>             | "1836-06-15+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/California>           | "1850-09-09+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Colorado>             | "1876-08-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Connecticut>          | "1788-01-09+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Delaware>             | "1787-12-07+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Hawaii>               | "1959-08-21+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Idaho>                | "1890-07-03+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Illinois>             | "1818-12-03+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Kansas>               | "1861-01-29+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Kentucky>             | "1792-06-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Louisiana>            | "1812-04-30+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Maine>                | "1820-03-15+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Maryland>             | "1788-04-28+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Michigan>             | "1837-01-26+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Minnesota>            | "1858-05-11+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Missouri>             | "1821-08-10+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Montana>              | "1889-11-08+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Nebraska>             | "1867-03-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Nevada>               | "1864-10-31+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/New_Hampshire>        | "1788-06-21+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/New_Jersey>           | "1787-12-18+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/New_Mexico>           | "1912-01-06+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/North_Carolina>       | "1789-11-21+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/North_Dakota>         | "0001-11-02+02:00"^^<http://www.w3.org/2001/XMLSchema#gMonthDay> |
+| <http://dbpedia.org/resource/Ohio>                 | "1803-03-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Oklahoma>             | "1907-11-16+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Pennsylvania>         | "1787-12-12+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Rhode_Island>         | "1790-05-29+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/South_Carolina>       | "1788-05-23+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/South_Dakota>         | "1889-11-02+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Tennessee>            | "1796-06-01+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Texas>                | "1845-12-29+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Arizona>              | "1912-02-14+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Mississippi>          | "1817-12-10+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/New_York>             | "1788-07-26+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Oregon>               | "1859-02-14+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Washington_(state)>   | "1889-11-11+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Florida>              | "1845-03-03+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Indiana>              | "1816-12-11+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Iowa>                 | "1846-12-28+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+| <http://dbpedia.org/resource/Massachusetts>        | "1788-02-06+02:00"^^<http://www.w3.org/2001/XMLSchema#date>      |
+-------------------------------------------------------------------------------------------------------------------------
+

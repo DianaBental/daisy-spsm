@@ -1,0 +1,14 @@
+Query:  entity(type(professionalSkateboarder),nationality(Sweden)) 
+Construct query entity(type(professionalSkateboarder),nationality(Sweden)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/professionalSkateboarder> ; 
+<http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Sweden> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  
+
+No matches found for  professionalSkateboarder(nationality) 
+
+Cannot respond to   entity(type(professionalSkateboarder),nationality(Sweden)) 
+

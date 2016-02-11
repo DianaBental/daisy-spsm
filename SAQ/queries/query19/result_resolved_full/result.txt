@@ -1,0 +1,26 @@
+Query:  entity(subject(Jane_Fonda),spouse) 
+Construct query entity(subject(Jane_Fonda),spouse) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Jane_Fonda> <http://dbpedia.org/ontology/spouse> ?spouse . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------
+| spouse                                    |
+=============================================
+| <http://dbpedia.org/resource/Ted_Turner>  |
+| <http://dbpedia.org/resource/Roger_Vadim> |
+| <http://dbpedia.org/resource/Tom_Hayden>  |
+---------------------------------------------
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(subject,spouse) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(subject,spouse) 
+
+Cannot respond to   entity(subject(Jane_Fonda),spouse) 
+

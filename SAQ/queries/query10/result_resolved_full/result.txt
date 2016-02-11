@@ -1,0 +1,75 @@
+Query:  entity(type(River),length) 
+Construct query entity(type(River),length) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/River> ; 
+<length> ?length . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  River Stream BodyOfWater CollectionOfValuables 
+
+Matching query schema River(length) 
+to dataset schema CollectionOfValuables(WorkRuntime,alternativeTitle,author,basedOn,chiefEditor,completionDate,composer,license,mainCharacter,musicComposer,originalLanguage,originalTitle,previousWork,producer,productionCompany,releaseDate,runtime,starring,subjectTerm,subsequentWork,translator,writer) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema River(length) 
+to dataset schema BodyOfWater(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema River(length) 
+to dataset schema Stream(StreamDischarge,StreamDischargeAverage,StreamMaximumDischarge,StreamMinimumDischarge,StreamWatershed,altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sourceCountry,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,watershed,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.005586592178770999).
+match(none).
+match([[River,length],<,[Stream,coastLength]]).
+match([[River],<,[Stream]]).
+
+Matching query schema River(length) 
+to dataset schema River(StreamDischarge,StreamDischargeAverage,StreamMaximumDischarge,StreamMinimumDischarge,StreamWatershed,altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,leftTributary,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,mouthCountry,mouthDistrict,mouthMountain,mouthPlace,mouthPosition,mouthRegion,mouthState,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,rightTributary,river,riverBranch,riverBranchOf,riverMouth,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sourceConfluence,sourceConfluenceCountry,sourceConfluenceMountain,sourceConfluencePlace,sourceConfluencePosition,sourceConfluenceRegion,sourceConfluenceState,sourceCountry,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,watershed,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.010101010101010055).
+match(none).
+match([[River,length],=,[River,frontierLength]]).
+match([[River,length],=,[River,coastLength]]).
+match([[River],=,[River]]).
+
+Construct query entity(type(River),coastLength) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/River> ; 
+<http://dbpedia.org/ontology/coastLength> ?coastLength . }
+
+The query did not return any data. 
+
+Construct query entity(type,coastLength) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/coastLength> ?coastLength . }
+
+Construct query entity(type(River),frontierLength) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/River> ; 
+<http://dbpedia.org/ontology/frontierLength> ?frontierLength . }
+
+The query did not return any data. 
+
+Construct query entity(type,frontierLength) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/frontierLength> ?frontierLength . }
+
+Construct query entity(type(Stream),coastLength) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Stream> ; 
+<http://dbpedia.org/ontology/coastLength> ?coastLength . }
+
+The query did not return any data. 
+
+Construct query entity(type,coastLength) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/coastLength> ?coastLength . }
+

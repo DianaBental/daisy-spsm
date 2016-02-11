@@ -1,0 +1,231 @@
+Query:  entity(type(Automobile),assembly(Germany)) 
+Construct query entity(type(Automobile),assembly(Germany)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Automobile> ; 
+<http://dbpedia.org/ontology/assembly> <http://dbpedia.org/resource/Germany> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------
+| subject                                                                                  |
+============================================================================================
+| <http://dbpedia.org/resource/BMW_New_Class>                                              |
+| <http://dbpedia.org/resource/Trabant_601>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_T2>                                           |
+| <http://dbpedia.org/resource/Mercedes-Benz_W142>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_320A>                                         |
+| <http://dbpedia.org/resource/Ford_C-Max__First_generation__1>                            |
+| <http://dbpedia.org/resource/BMW_303__BMW_309__1>                                        |
+| <http://dbpedia.org/resource/Mercedes-Benz_500E>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_W15>                                          |
+| <http://dbpedia.org/resource/BMW_3_Series_(E90)>                                         |
+| <http://dbpedia.org/resource/Audi_Type_B>                                                |
+| <http://dbpedia.org/resource/Messerschmitt_KR175>                                        |
+| <http://dbpedia.org/resource/Volkswagen_Type_14A_(Hebm%C3%BCller_Cabriolet)>             |
+| <http://dbpedia.org/resource/Neoplan_Skyliner>                                           |
+| <http://dbpedia.org/resource/Audi_Type_M>                                                |
+| <http://dbpedia.org/resource/Porsche_928>                                                |
+| <http://dbpedia.org/resource/Porsche_944>                                                |
+| <http://dbpedia.org/resource/Porsche_968>                                                |
+| <http://dbpedia.org/resource/Porsche_Boxster>                                            |
+| <http://dbpedia.org/resource/Benz_10/30_PS>                                              |
+| <http://dbpedia.org/resource/Audi_Front>                                                 |
+| <http://dbpedia.org/resource/E-Wolf_e2>                                                  |
+| <http://dbpedia.org/resource/Mercedes-Benz_W204>                                         |
+| <http://dbpedia.org/resource/Audi_Type_D>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_W11>                                          |
+| <http://dbpedia.org/resource/BMW_328>                                                    |
+| <http://dbpedia.org/resource/Audi_A5>                                                    |
+| <http://dbpedia.org/resource/Audi_Quattro>                                               |
+| <http://dbpedia.org/resource/BMW_i3>                                                     |
+| <http://dbpedia.org/resource/Mercedes-Benz_CLK_GTR>                                      |
+| <http://dbpedia.org/resource/Mercedes-Benz_SSK>                                          |
+| <http://dbpedia.org/resource/Opel_Adam>                                                  |
+| <http://dbpedia.org/resource/Porsche_550>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_W201>                                         |
+| <http://dbpedia.org/resource/Porsche_996>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_W212>                                         |
+| <http://dbpedia.org/resource/Artega_GT>                                                  |
+| <http://dbpedia.org/resource/Mercedes-Benz_500K>                                         |
+| <http://dbpedia.org/resource/Ford_Model_T>                                               |
+| <http://dbpedia.org/resource/Porsche_Cayenne>                                            |
+| <http://dbpedia.org/resource/Ford_Cougar>                                                |
+| <http://dbpedia.org/resource/Volkswagen_CC>                                              |
+| <http://dbpedia.org/resource/Volkswagen_Phaeton>                                         |
+| <http://dbpedia.org/resource/Cadillac_Catera>                                            |
+| <http://dbpedia.org/resource/Neoplan_Jumbocruiser>                                       |
+| <http://dbpedia.org/resource/BMW_Z4_(E89)>                                               |
+| <http://dbpedia.org/resource/MAN_NL202>                                                  |
+| <http://dbpedia.org/resource/Volkswagen_Crafter>                                         |
+| <http://dbpedia.org/resource/Volkswagen_Polo_Mk4>                                        |
+| <http://dbpedia.org/resource/Audi_Coup%C3%A9_(B2)>                                       |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk2>                                        |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk3>                                        |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk4>                                        |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk5>                                        |
+| <http://dbpedia.org/resource/Mercedes_24/100/140_PS>                                     |
+| <http://dbpedia.org/resource/Opel_Kadett_B>                                              |
+| <http://dbpedia.org/resource/Audi_S4>                                                    |
+| <http://dbpedia.org/resource/Audi_S5>                                                    |
+| <http://dbpedia.org/resource/BMW_3_Series_(E36)>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_CLS-Class>                                    |
+| <http://dbpedia.org/resource/Porsche_Carrera_GT>                                         |
+| <http://dbpedia.org/resource/Audi_S6>                                                    |
+| <http://dbpedia.org/resource/BMW_7_Series>                                               |
+| <http://dbpedia.org/resource/Mercedes-Benz_300SL>                                        |
+| <http://dbpedia.org/resource/Porsche_993>                                                |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk1>                                        |
+| <http://dbpedia.org/resource/BMW_5_Series_(E60)>                                         |
+| <http://dbpedia.org/resource/BMW_5_Series_(F10)>                                         |
+| <http://dbpedia.org/resource/BMW_7_Series_(E38)>                                         |
+| <http://dbpedia.org/resource/Porsche_911_GT2>                                            |
+| <http://dbpedia.org/resource/Mercedes-Benz_Atego>                                        |
+| <http://dbpedia.org/resource/Mercedes-Benz_R230>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_W108>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_W08>                                          |
+| <http://dbpedia.org/resource/Volkswagen_Passat_(B4)>                                     |
+| <http://dbpedia.org/resource/Volkswagen_EA489_Basistransporter>                          |
+| <http://dbpedia.org/resource/Neoplan_Megaliner>                                          |
+| <http://dbpedia.org/resource/Volkswagen_Polo_Mk3>                                        |
+| <http://dbpedia.org/resource/Meillerwagen>                                               |
+| <http://dbpedia.org/resource/Mercedes_15/70/100_PS>                                      |
+| <http://dbpedia.org/resource/Porsche_991>                                                |
+| <http://dbpedia.org/resource/Audi_Type_T>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_W153>                                         |
+| <http://dbpedia.org/resource/Fiat_508>                                                   |
+| <http://dbpedia.org/resource/Audi_RS_2_Avant>                                            |
+| <http://dbpedia.org/resource/Mercedes-Benz_W221>                                         |
+| <http://dbpedia.org/resource/Volkswagen_Polo_G40>                                        |
+| <http://dbpedia.org/resource/Neoplan_Centroliner>                                        |
+| <http://dbpedia.org/resource/Bentley_Continental_Flying_Spur_(2005)>                     |
+| <http://dbpedia.org/resource/Audi_RS_4>                                                  |
+| <http://dbpedia.org/resource/BMW_7_Series_(F01)>                                         |
+| <http://dbpedia.org/resource/Opel_Corsa__D__1>                                           |
+| <http://dbpedia.org/resource/BMW_1_Series_(E87)>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_S-Class>                                      |
+| <http://dbpedia.org/resource/BMW_3/20>                                                   |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk6>                                        |
+| <http://dbpedia.org/resource/Merkur_Scorpio>                                             |
+
+Narrowed to these target datasets:  Automobile FormulaOneRacer 
+
+Matching query schema Automobile(assembly) 
+to dataset schema Automobile(assembly) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[Automobile,assembly],=,[Automobile,assembly]]).
+match([[Automobile],=,[Automobile]]).
+
+Matching query schema Automobile(assembly) 
+to dataset schema FormulaOneRacer(races) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Construct query entity(type(Automobile),assembly(Germany)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Automobile> ; 
+<http://dbpedia.org/ontology/assembly> <http://dbpedia.org/resource/Germany> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------
+| subject                                                                                  |
+============================================================================================
+| <http://dbpedia.org/resource/BMW_New_Class>                                              |
+| <http://dbpedia.org/resource/Trabant_601>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_T2>                                           |
+| <http://dbpedia.org/resource/Mercedes-Benz_W142>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_320A>                                         |
+| <http://dbpedia.org/resource/Ford_C-Max__First_generation__1>                            |
+| <http://dbpedia.org/resource/BMW_303__BMW_309__1>                                        |
+| <http://dbpedia.org/resource/Mercedes-Benz_500E>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_W15>                                          |
+| <http://dbpedia.org/resource/BMW_3_Series_(E90)>                                         |
+| <http://dbpedia.org/resource/Audi_Type_B>                                                |
+| <http://dbpedia.org/resource/Messerschmitt_KR175>                                        |
+| <http://dbpedia.org/resource/Volkswagen_Type_14A_(Hebm%C3%BCller_Cabriolet)>             |
+| <http://dbpedia.org/resource/Neoplan_Skyliner>                                           |
+| <http://dbpedia.org/resource/Audi_Type_M>                                                |
+| <http://dbpedia.org/resource/Porsche_928>                                                |
+| <http://dbpedia.org/resource/Porsche_944>                                                |
+| <http://dbpedia.org/resource/Porsche_968>                                                |
+| <http://dbpedia.org/resource/Porsche_Boxster>                                            |
+| <http://dbpedia.org/resource/Benz_10/30_PS>                                              |
+| <http://dbpedia.org/resource/Audi_Front>                                                 |
+| <http://dbpedia.org/resource/E-Wolf_e2>                                                  |
+| <http://dbpedia.org/resource/Mercedes-Benz_W204>                                         |
+| <http://dbpedia.org/resource/Audi_Type_D>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_W11>                                          |
+| <http://dbpedia.org/resource/BMW_328>                                                    |
+| <http://dbpedia.org/resource/Audi_A5>                                                    |
+| <http://dbpedia.org/resource/Audi_Quattro>                                               |
+| <http://dbpedia.org/resource/BMW_i3>                                                     |
+| <http://dbpedia.org/resource/Mercedes-Benz_CLK_GTR>                                      |
+| <http://dbpedia.org/resource/Mercedes-Benz_SSK>                                          |
+| <http://dbpedia.org/resource/Opel_Adam>                                                  |
+| <http://dbpedia.org/resource/Porsche_550>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_W201>                                         |
+| <http://dbpedia.org/resource/Porsche_996>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_W212>                                         |
+| <http://dbpedia.org/resource/Artega_GT>                                                  |
+| <http://dbpedia.org/resource/Mercedes-Benz_500K>                                         |
+| <http://dbpedia.org/resource/Ford_Model_T>                                               |
+| <http://dbpedia.org/resource/Porsche_Cayenne>                                            |
+| <http://dbpedia.org/resource/Ford_Cougar>                                                |
+| <http://dbpedia.org/resource/Volkswagen_CC>                                              |
+| <http://dbpedia.org/resource/Volkswagen_Phaeton>                                         |
+| <http://dbpedia.org/resource/Cadillac_Catera>                                            |
+| <http://dbpedia.org/resource/Neoplan_Jumbocruiser>                                       |
+| <http://dbpedia.org/resource/BMW_Z4_(E89)>                                               |
+| <http://dbpedia.org/resource/MAN_NL202>                                                  |
+| <http://dbpedia.org/resource/Volkswagen_Crafter>                                         |
+| <http://dbpedia.org/resource/Volkswagen_Polo_Mk4>                                        |
+| <http://dbpedia.org/resource/Audi_Coup%C3%A9_(B2)>                                       |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk2>                                        |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk3>                                        |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk4>                                        |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk5>                                        |
+| <http://dbpedia.org/resource/Mercedes_24/100/140_PS>                                     |
+| <http://dbpedia.org/resource/Opel_Kadett_B>                                              |
+| <http://dbpedia.org/resource/Audi_S4>                                                    |
+| <http://dbpedia.org/resource/Audi_S5>                                                    |
+| <http://dbpedia.org/resource/BMW_3_Series_(E36)>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_CLS-Class>                                    |
+| <http://dbpedia.org/resource/Porsche_Carrera_GT>                                         |
+| <http://dbpedia.org/resource/Audi_S6>                                                    |
+| <http://dbpedia.org/resource/BMW_7_Series>                                               |
+| <http://dbpedia.org/resource/Mercedes-Benz_300SL>                                        |
+| <http://dbpedia.org/resource/Porsche_993>                                                |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk1>                                        |
+| <http://dbpedia.org/resource/BMW_5_Series_(E60)>                                         |
+| <http://dbpedia.org/resource/BMW_5_Series_(F10)>                                         |
+| <http://dbpedia.org/resource/BMW_7_Series_(E38)>                                         |
+| <http://dbpedia.org/resource/Porsche_911_GT2>                                            |
+| <http://dbpedia.org/resource/Mercedes-Benz_Atego>                                        |
+| <http://dbpedia.org/resource/Mercedes-Benz_R230>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_W108>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_W08>                                          |
+| <http://dbpedia.org/resource/Volkswagen_Passat_(B4)>                                     |
+| <http://dbpedia.org/resource/Volkswagen_EA489_Basistransporter>                          |
+| <http://dbpedia.org/resource/Neoplan_Megaliner>                                          |
+| <http://dbpedia.org/resource/Volkswagen_Polo_Mk3>                                        |
+| <http://dbpedia.org/resource/Meillerwagen>                                               |
+| <http://dbpedia.org/resource/Mercedes_15/70/100_PS>                                      |
+| <http://dbpedia.org/resource/Porsche_991>                                                |
+| <http://dbpedia.org/resource/Audi_Type_T>                                                |
+| <http://dbpedia.org/resource/Mercedes-Benz_W153>                                         |
+| <http://dbpedia.org/resource/Fiat_508>                                                   |
+| <http://dbpedia.org/resource/Audi_RS_2_Avant>                                            |
+| <http://dbpedia.org/resource/Mercedes-Benz_W221>                                         |
+| <http://dbpedia.org/resource/Volkswagen_Polo_G40>                                        |
+| <http://dbpedia.org/resource/Neoplan_Centroliner>                                        |
+| <http://dbpedia.org/resource/Bentley_Continental_Flying_Spur_(2005)>                     |
+| <http://dbpedia.org/resource/Audi_RS_4>                                                  |
+| <http://dbpedia.org/resource/BMW_7_Series_(F01)>                                         |
+| <http://dbpedia.org/resource/Opel_Corsa__D__1>                                           |
+| <http://dbpedia.org/resource/BMW_1_Series_(E87)>                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_S-Class>                                      |
+| <http://dbpedia.org/resource/BMW_3/20>                                                   |
+| <http://dbpedia.org/resource/Volkswagen_Golf_Mk6>                                        |
+| <http://dbpedia.org/resource/Merkur_Scorpio>                                             |
+

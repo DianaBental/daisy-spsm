@@ -1,0 +1,138 @@
+Query:  entity(mission(Apollo_14)) 
+Construct query entity(mission(Apollo_14)) 
+SELECT *
+WHERE { ?subject <http://dbpedia.org/ontology/mission> <http://dbpedia.org/resource/Apollo_14> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------
+| subject                                      |
+================================================
+| <http://dbpedia.org/resource/Alan_Shepard>   |
+| <http://dbpedia.org/resource/Edgar_Mitchell> |
+| <http://dbpedia.org/resource/Stuart_Roosa>   |
+------------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(mission) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.2222222222222222).
+match(none).
+match([[entity,mission],=,[entity,mission]]).
+match([[entity],=,[entity]]).
+
+Construct query entity(type(entity),mission(Apollo_14)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> ; 
+<http://dbpedia.org/ontology/mission> <http://dbpedia.org/resource/Apollo_14> . }
+
+The query did not return any data. 
+
+Construct query entity(type,mission(Apollo_14)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/mission> <http://dbpedia.org/resource/Apollo_14> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------------------------
+| subject                                      | type                                                                  |
+========================================================================================================================
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://xmlns.com/foaf/0.1/Person>                                    |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://schema.org/Person>                                            |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/UnitedStatesNavalAcademyAlumni>        |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/UnitedStatesNavalAviators>             |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/UnitedStatesNavyAdmirals>              |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://wikidata.dbpedia.org/resource/Q215627>                        |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://www.w3.org/2002/07/owl#Thing>                                 |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://wikidata.dbpedia.org/resource/Q5>                             |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>         |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/ontology/Agent>                                   |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/ontology/Astronaut>                               |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/ontology/Person>                                  |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://umbel.org/umbel/rc/Astronaut>                                 |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://umbel.org/umbel/rc/PersonWithOccupation>                      |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Admiral109771204>                      |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/AdmiralFarragutAcademyAlumni>          |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Alumnus109786338>                      |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/AmericanAstronauts>                    |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/ApolloProgramAstronauts>               |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Astronaut109818022>                    |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Aviator109826204>                      |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/CausalAgent100007347>                  |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/CommissionedNavalOfficer109943541>     |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/FlagOfficer110094584>                  |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Intellectual109621545>                 |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/LivingThing100004258>                  |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/MilitaryOfficer110317007>              |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Object100002684>                       |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Organism100004475>                     |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Person100007846>                       |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Scholar110557854>                      |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Serviceman110582746>                   |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/SkilledWorker110605985>                |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Traveler109629752>                     |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Whole100003553>                        |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/Worker109632518>                       |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                     |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/NavalWarCollegeAlumni>                 |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/PeopleFromDerry,NewHampshire>          |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/PeopleWhoHaveWalkedOnTheMoon>          |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/YagoLegalActor>                        |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/CommissionedOfficer109942970>          |
+| <http://dbpedia.org/resource/Alan_Shepard>   | <http://dbpedia.org/class/yago/PhysicalEntity100001930>               |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://xmlns.com/foaf/0.1/Person>                                    |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://schema.org/Person>                                            |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/USAFTestPilotSchoolAlumni>             |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/UnitedStatesNavalAviators>             |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/UnitedStatesNavyOfficers>              |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://wikidata.dbpedia.org/resource/Q215627>                        |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://www.w3.org/2002/07/owl#Thing>                                 |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://wikidata.dbpedia.org/resource/Q5>                             |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>         |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/ontology/Agent>                                   |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/ontology/Astronaut>                               |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/ontology/Person>                                  |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://umbel.org/umbel/rc/Astronaut>                                 |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://umbel.org/umbel/rc/PersonWithOccupation>                      |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Alumnus109786338>                      |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/AmericanAstronauts>                    |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/ApolloProgramAstronauts>               |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Astronaut109818022>                    |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Aviator109826204>                      |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/CarnegieMellonUniversityAlumni>        |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/CausalAgent100007347>                  |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Intellectual109621545>                 |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/LivingThing100004258>                  |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/MilitaryOfficer110317007>              |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Object100002684>                       |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Organism100004475>                     |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Person100007846>                       |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Psychologist110488865>                 |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Scholar110557854>                      |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Scientist110560637>                    |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Serviceman110582746>                   |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/SkilledWorker110605985>                |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Traveler109629752>                     |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Whole100003553>                        |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Worker109632518>                       |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                     |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Parapsychologists>                     |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/PeopleFromDeafSmithCounty,Texas>       |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/PeopleWhoHaveWalkedOnTheMoon>          |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/YagoLegalActor>                        |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/Parapsychologist110398806>             |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/PhysicalEntity100001930>               |
+| <http://dbpedia.org/resource/Edgar_Mitchell> | <http://dbpedia.org/class/yago/LivingPeople>                          |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://xmlns.com/foaf/0.1/Person>                                    |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://schema.org/Person>                                            |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://dbpedia.org/class/yago/USAFTestPilotSchoolAlumni>             |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://dbpedia.org/class/yago/UnitedStatesAirForceOfficers>          |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://wikidata.dbpedia.org/resource/Q215627>                        |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://www.w3.org/2002/07/owl#Thing>                                 |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://wikidata.dbpedia.org/resource/Q5>                             |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>         |
+| <http://dbpedia.org/resource/Stuart_Roosa>   | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson> |
+

@@ -1,0 +1,403 @@
+Query:  entity(type(car),producedIn(Germany)) 
+Construct query entity(type(car),producedIn(Germany)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/car> ; 
+<producedIn> <http://dbpedia.org/resource/Germany> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  AmericanFootballCoach AutoRacingLeague Automobile AutomobileEngine BusCompany Coach CollegeCoach FormulaOneRacer MotocycleRacer MotorsportRacer Train VolleyballCoach 
+
+Matching query schema car(producedIn) 
+to dataset schema Train(MeanOfTransportationDiameter,MeanOfTransportationHeight,MeanOfTransportationLength,MeanOfTransportationMass,MeanOfTransportationWeight,MeanOfTransportationWidth,assembly,class,designCompany,discharge,dischargeAverage,engineType,introductionDate,modelEndDate,modelEndYear,modelStartDate,modelStartYear,numberOfCrew,numberOfLaunches,numberOfSeats,powerType,rebuilder,relatedMeanOfTransportation,version) 
+Created match data: 
+similarity(0.020000000000000018).
+match(none).
+match([[car],<,[Train]]).
+
+Matching query schema car(producedIn) 
+to dataset schema Automobile(AutomobileFuelCapacity,AutomobileWheelbase,MeanOfTransportationDiameter,MeanOfTransportationHeight,MeanOfTransportationLength,MeanOfTransportationMass,MeanOfTransportationWeight,MeanOfTransportationWidth,assembly,automobilePlatform,bodyStyle,class,designCompany,discharge,dischargeAverage,engine,engineType,fuelCapacity,introductionDate,layout,modelEndDate,modelEndYear,modelStartDate,modelStartYear,numberOfCrew,numberOfLaunches,numberOfSeats,powerType,rebuilder,relatedMeanOfTransportation,transmission,version,wheelbase) 
+Created match data: 
+similarity(0.02941176470588236).
+match(none).
+match([[car],=,[Automobile]]).
+
+Matching query schema car(producedIn) 
+to dataset schema AutomobileEngine(AutomobileEngineAcceleration,AutomobileEngineCoEmission,AutomobileEngineCylinderBore,AutomobileEngineDiameter,AutomobileEngineDisplacement,AutomobileEngineHeight,AutomobileEngineLength,AutomobileEnginePistonStroke,AutomobileEnginePowerOutput,AutomobileEngineTopSpeed,AutomobileEngineTorqueOutput,AutomobileEngineWeight,AutomobileEngineWidth,acceleration,automobileModel,blockAlloy,coEmission,compressionRatio,configuration,coolingSystem,cylinderBore,displacement,endYearOfInsertion,fuelConsumption,fuelSystem,fuelType,headAlloy,note,oilSystem,pistonStroke,powerOutput,redline,startYearOfInsertion,torqueOutput,valvetrain) 
+Created match data: 
+similarity(0.01388888888888884).
+match(none).
+match([[car],>,[AutomobileEngine]]).
+
+Matching query schema car(producedIn) 
+to dataset schema AutoRacingLeague(affiliation,age,artPatron,ceo,chairperson,childOrganisation,currentSeason,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfTeams,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema car(producedIn) 
+to dataset schema BusCompany(affiliation,age,artPatron,assetUnderManagement,assets,ceo,chairperson,childOrganisation,codeStockExchange,discipline,endowment,equity,extinctionDate,extinctionYear,fate,formationDate,formationYear,foundationPlace,generalCouncil,groundsForLiquidation,headquarter,hometown,honours,ideology,industry,internationally,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,marketCapitalisation,membership,nationalSelection,netIncome,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,operatingIncome,organisationMember,parentOrganisation,playerSeason,product,production,regionServed,regionalCouncil,registration,revenue,season,secretaryGeneral,service,slogan,stockExchange,subsidiary,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema car(producedIn) 
+to dataset schema AmericanFootballCoach(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema car(producedIn) 
+to dataset schema Coach(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema car(producedIn) 
+to dataset schema VolleyballCoach(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema car(producedIn) 
+to dataset schema CollegeCoach(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bowlRecord,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coachedTeam,coachingRecord,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentRecord,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,overallRecord,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tournamentRecord,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema car(producedIn) 
+to dataset schema MotocycleRacer(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema car(producedIn) 
+to dataset schema MotorsportRacer(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema car(producedIn) 
+to dataset schema FormulaOneRacer(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,carNumber,careerPoints,careerStation,case,cashPrice,catch,causeOfDeath,championships,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,fastestLap,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,firstRace,firstWin,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastPosition,lastProMatch,lastRace,lastSeason,lastWin,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,podiums,polePosition,poles,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,races,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Construct query entity(type(Automobile)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Automobile> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                 |
+===========================================================================================================================
+| <http://dbpedia.org/resource/AEC_T-type>                                                                                |
+| <http://dbpedia.org/resource/Alfa_Romeo_Arna>                                                                           |
+| <http://dbpedia.org/resource/Ascari_KZ1>                                                                                |
+| <http://dbpedia.org/resource/Autobianchi_Primula>                                                                       |
+| <http://dbpedia.org/resource/BMW_335_(1939%E2%80%9341)>                                                                 |
+| <http://dbpedia.org/resource/BMW_New_Class>                                                                             |
+| <http://dbpedia.org/resource/Campbell-Railton_Blue_Bird>                                                                |
+| <http://dbpedia.org/resource/Chery_Tiggo>                                                                               |
+| <http://dbpedia.org/resource/Classic_(transit_bus)>                                                                     |
+| <http://dbpedia.org/resource/Dodge_Demon_Concept>                                                                       |
+| <http://dbpedia.org/resource/Eagle_Medallion>                                                                           |
+| <http://dbpedia.org/resource/Ferrari_Monza>                                                                             |
+| <http://dbpedia.org/resource/Fiat_500_(2007)>                                                                           |
+| <http://dbpedia.org/resource/Fuldamobil>                                                                                |
+| <http://dbpedia.org/resource/Great_Wall_Florid>                                                                         |
+| <http://dbpedia.org/resource/Honda_S500>                                                                                |
+| <http://dbpedia.org/resource/Honda_S800>                                                                                |
+| <http://dbpedia.org/resource/Hyundai_Portico>                                                                           |
+| <http://dbpedia.org/resource/Hyundai_i30>                                                                               |
+| <http://dbpedia.org/resource/IKCO_Dena>                                                                                 |
+| <http://dbpedia.org/resource/Isuzu_Giga>                                                                                |
+| <http://dbpedia.org/resource/Jaguar_Mark_VIII>                                                                          |
+| <http://dbpedia.org/resource/Jeep_Commander_(XK)>                                                                       |
+| <http://dbpedia.org/resource/Kia_Carens>                                                                                |
+| <http://dbpedia.org/resource/Lincoln_Mark_VIII>                                                                         |
+| <http://dbpedia.org/resource/Maruti_Gypsy>                                                                              |
+| <http://dbpedia.org/resource/Mercedes-Benz_F200>                                                                        |
+| <http://dbpedia.org/resource/Mitsuoka_Like>                                                                             |
+| <http://dbpedia.org/resource/Mitsuoka_Orochi>                                                                           |
+| <http://dbpedia.org/resource/Naylor_TF_1700>                                                                            |
+| <http://dbpedia.org/resource/Nissan_AD>                                                                                 |
+| <http://dbpedia.org/resource/Nissan_Prince_Royal>                                                                       |
+| <http://dbpedia.org/resource/Nissan_S30>                                                                                |
+| <http://dbpedia.org/resource/Opel_Monza>                                                                                |
+| <http://dbpedia.org/resource/Peel_P50>                                                                                  |
+| <http://dbpedia.org/resource/Plymouth_Acclaim>                                                                          |
+| <http://dbpedia.org/resource/Porsche_911_GT1>                                                                           |
+| <http://dbpedia.org/resource/Rolls-Royce_Silver_Cloud>                                                                  |
+| <http://dbpedia.org/resource/SsangYong_Musso>                                                                           |
+| <http://dbpedia.org/resource/SsangYong_Musso_Sports>                                                                    |
+| <http://dbpedia.org/resource/SsangYong_Rexton>                                                                          |
+| <http://dbpedia.org/resource/T.25>                                                                                      |
+| <http://dbpedia.org/resource/TVR_Typhon>                                                                                |
+| <http://dbpedia.org/resource/Tatra_163>                                                                                 |
+| <http://dbpedia.org/resource/Toyota_4Runner>                                                                            |
+| <http://dbpedia.org/resource/Toyota_Venza>                                                                              |
+| <http://dbpedia.org/resource/Volvo_ReCharge>                                                                            |
+| <http://dbpedia.org/resource/Citro%C3%ABn_Fukang>                                                                       |
+| <http://dbpedia.org/resource/Delahaye_134>                                                                              |
+| <http://dbpedia.org/resource/Delahaye_135>                                                                              |
+| <http://dbpedia.org/resource/Delahaye_171>                                                                              |
+| <http://dbpedia.org/resource/Delahaye_175>                                                                              |
+| <http://dbpedia.org/resource/Delahaye_235>                                                                              |
+| <http://dbpedia.org/resource/Delahaye_VLR>                                                                              |
+| <http://dbpedia.org/resource/Jeep_Renegade_(BU)>                                                                        |
+| <http://dbpedia.org/resource/Rumpler_Tropfenwagen>                                                                      |
+| <http://dbpedia.org/resource/Toyota_Raum>                                                                               |
+| <http://dbpedia.org/resource/Trabant_601>                                                                               |
+| <http://dbpedia.org/resource/Blue_Bird_All_American>                                                                    |
+| <http://dbpedia.org/resource/Chiva_bus>                                                                                 |
+| <http://dbpedia.org/resource/DeSoto_Adventurer>                                                                         |
+| <http://dbpedia.org/resource/Ferrari_195_Inter>                                                                         |
+| <http://dbpedia.org/resource/Ferrari_195_S>                                                                             |
+| <http://dbpedia.org/resource/Peugeot_301_(1932%E2%80%9336)>                                                             |
+| <http://dbpedia.org/resource/Scion_Hako_Coupe>                                                                          |
+| <http://dbpedia.org/resource/Smyk_(car)>                                                                                |
+| <http://dbpedia.org/resource/Alexander_Dennis_Enviro400>                                                                |
+| <http://dbpedia.org/resource/Aston_Martin_DBR9>                                                                         |
+| <http://dbpedia.org/resource/Bentley_Eight>                                                                             |
+| <http://dbpedia.org/resource/Devrim>                                                                                    |
+| <http://dbpedia.org/resource/Fiat_124_Sport_Spider>                                                                     |
+| <http://dbpedia.org/resource/Ford_R-Series>                                                                             |
+| <http://dbpedia.org/resource/Goggomobil>                                                                                |
+| <http://dbpedia.org/resource/Honda_FR-V>                                                                                |
+| <http://dbpedia.org/resource/Jaguar_S-Type_(1963)>                                                                      |
+| <http://dbpedia.org/resource/Lancia_Ypsilon>                                                                            |
+| <http://dbpedia.org/resource/Perodua_Kancil>                                                                            |
+| <http://dbpedia.org/resource/Renault_Sport_Spider>                                                                      |
+| <http://dbpedia.org/resource/VDL_SB250>                                                                                 |
+| <http://dbpedia.org/resource/Wright_Eclipse_Gemini>                                                                     |
+| <http://dbpedia.org/resource/Ford_Ranger_EV>                                                                            |
+| <http://dbpedia.org/resource/Jensen-Healey>                                                                             |
+| <http://dbpedia.org/resource/Renault_18>                                                                                |
+| <http://dbpedia.org/resource/Renault_20/30>                                                                             |
+| <http://dbpedia.org/resource/TVR_Sagaris>                                                                               |
+| <http://dbpedia.org/resource/VDL_SB200>                                                                                 |
+| <http://dbpedia.org/resource/Volvo_B12BLE>                                                                              |
+| <http://dbpedia.org/resource/Caterpillar_797B>                                                                          |
+| <http://dbpedia.org/resource/Ford_Thunderbird_(tenth_generation)>                                                       |
+| <http://dbpedia.org/resource/Iveco_Turbocity>                                                                           |
+| <http://dbpedia.org/resource/Rocar_De_Simon_U412E>                                                                      |
+| <http://dbpedia.org/resource/Brilliance_BC3>                                                                            |
+| <http://dbpedia.org/resource/Chrysler_ecoVoyager>                                                                       |
+| <http://dbpedia.org/resource/FPV_GT_R-spec>                                                                             |
+| <http://dbpedia.org/resource/Ford_Fiesta_RS_Turbo>                                                                      |
+| <http://dbpedia.org/resource/Ginetta_G55>                                                                               |
+| <http://dbpedia.org/resource/Kia_Pop>                                                                                   |
+
+Construct query entity(type(AutomobileEngine)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/AutomobileEngine> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                     |
+===============================================================================================================================================
+| <http://dbpedia.org/resource/Daimler_Double-Six_sleeve-valve_V12>                                                                           |
+| <http://dbpedia.org/resource/Toyota_Type_A_engine>                                                                                          |
+| <http://dbpedia.org/resource/Navistar_T444E_engine>                                                                                         |
+| <http://dbpedia.org/resource/Mercedes-Benz_OM642>                                                                                           |
+| <http://dbpedia.org/resource/BMC_ADO16__Austin_1100/1300__1__1>                                                                             |
+| <http://dbpedia.org/resource/BMC_ADO16__Austin_1100/1300__1__2>                                                                             |
+| <http://dbpedia.org/resource/BMC_ADO16__MG_1100/1300__1__1>                                                                                 |
+| <http://dbpedia.org/resource/BMC_ADO16__MG_1100/1300__1__2>                                                                                 |
+| <http://dbpedia.org/resource/BMC_ADO16__Morris_1100/1300__1__1>                                                                             |
+| <http://dbpedia.org/resource/BMC_ADO16__Morris_1100/1300__1__2>                                                                             |
+| <http://dbpedia.org/resource/BMC_ADO16__Riley_Kestrel_1100/1300__1__1>                                                                      |
+| <http://dbpedia.org/resource/BMC_ADO16__Riley_Kestrel_1100/1300__1__2>                                                                      |
+| <http://dbpedia.org/resource/BMC_ADO16__Vanden_Plas_Princess_1100/1275/1300__1__1>                                                          |
+| <http://dbpedia.org/resource/BMC_ADO16__Vanden_Plas_Princess_1100/1275/1300__1__2>                                                          |
+| <http://dbpedia.org/resource/BMC_ADO16__Wolseley_1100/1300__1__1>                                                                           |
+| <http://dbpedia.org/resource/BMC_ADO16__Wolseley_1100/1300__1__2>                                                                           |
+| <http://dbpedia.org/resource/BMC_ADO17__1>                                                                                                  |
+| <http://dbpedia.org/resource/BMC_ADO17__2>                                                                                                  |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__1>                                                                                       |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__2>                                                                                       |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__3>                                                                                       |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__316g__1>                                                                                 |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__316i__1>                                                                                 |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__316i__2>                                                                                 |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__318tds_diesel__1>                                                                        |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__318ti__1>                                                                                |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__318ti__2>                                                                                |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__323ti__1>                                                                                |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__4>                                                                                       |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__5>                                                                                       |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__6>                                                                                       |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__7>                                                                                       |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__1>                                                                             |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__2>                                                                             |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__3>                                                                             |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__316ti__1>                                                                      |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__318td_diesel__1>                                                               |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__318ti__1>                                                                      |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__320td_diesel__1>                                                               |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__325ti__1>                                                                      |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__4>                                                                             |
+| <http://dbpedia.org/resource/BMW_3_Series_Compact__E46/5__1__5>                                                                             |
+| <http://dbpedia.org/resource/BMW_M1__1>                                                                                                     |
+| <http://dbpedia.org/resource/BMW_M5__BMW_E28_M5__1__1>                                                                                      |
+| <http://dbpedia.org/resource/BMW_M5__BMW_E39_M5__1__1>                                                                                      |
+| <http://dbpedia.org/resource/BMW_M5__BMW_E60_M5__1__1>                                                                                      |
+| <http://dbpedia.org/resource/BMW_M5__BMW_F10_M5__1__1>                                                                                      |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fifth_generation__1__1>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fifth_generation__1__2>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fifth_generation__1__3>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fifth_generation__1__4>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fifth_generation__1__5>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fifth_generation__1__6>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fifth_generation__1__7>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__First_generation__1__1>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fourth_generation__1__1>                                                                        |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fourth_generation__1__2>                                                                        |
+| <http://dbpedia.org/resource/Buick_LeSabre__Fourth_generation__1__3>                                                                        |
+| <http://dbpedia.org/resource/Buick_LeSabre__Second_generation__1__1>                                                                        |
+| <http://dbpedia.org/resource/Buick_LeSabre__Seventh_generation__1__1>                                                                       |
+| <http://dbpedia.org/resource/Buick_LeSabre__Seventh_generation__1__2>                                                                       |
+| <http://dbpedia.org/resource/Buick_LeSabre__Sixth_generation__1__1>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Sixth_generation__1__2>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Sixth_generation__1__3>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Third_generation__1__1>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Third_generation__1__2>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Third_generation__1__3>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__Third_generation__1__4>                                                                         |
+| <http://dbpedia.org/resource/Buick_LeSabre__ighth_generation__1__1>                                                                         |
+| <http://dbpedia.org/resource/Buick_Park_Avenue__First_generation__1__1>                                                                     |
+| <http://dbpedia.org/resource/Buick_Park_Avenue__Second_generation__1__1>                                                                    |
+| <http://dbpedia.org/resource/Buick_Park_Avenue__Third_Generation__1__1>                                                                     |
+| <http://dbpedia.org/resource/Buick_Park_Avenue__Third_Generation__1__2>                                                                     |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fifth_generation__1__1>                                                                 |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fifth_generation__1__2>                                                                 |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fifth_generation__1__3>                                                                 |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fifth_generation__1__LS__1>                                                             |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fifth_generation__1__Z34__1>                                                            |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fifth_generation__1__Z34__2>                                                            |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fifth_generation__1__Z34__3>                                                            |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__First_generation__1__1>                                                                 |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__First_generation__1__2>                                                                 |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__First_generation__1__3>                                                                 |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__First_generation__1__4>                                                                 |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fourth_generation__1__1>                                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fourth_generation__1__2>                                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fourth_generation__1__3>                                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fourth_generation__1__4>                                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fourth_generation__1__5>                                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fourth_generation__1__6>                                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fourth_generation__1__7>                                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Fourth_generation__1__8>                                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Refreshed_sixth_generation__1__1>                                                       |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Refreshed_sixth_generation__1__2>                                                       |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Refreshed_sixth_generation__1__3>                                                       |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Refreshed_sixth_generation__1__LS-LT__1>                                                |
+| <http://dbpedia.org/resource/Chevrolet_Monte_Carlo__Refreshed_sixth_generation__1__LT-LTZ__1>                                               |
+
+Construct query entity(type(Train)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Train> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------
+| subject                                                                            |
+======================================================================================
+| <http://dbpedia.org/resource/2000_series_(Chicago_'L')>                            |
+| <http://dbpedia.org/resource/Aichi_Loop_Railway_2000_series>                       |
+| <http://dbpedia.org/resource/Chichibu_Railway_2000_series>                         |
+| <http://dbpedia.org/resource/Chichibu_Railway_3000_series>                         |
+| <http://dbpedia.org/resource/Choshi_Electric_Railway_2000_series>                  |
+| <http://dbpedia.org/resource/Keikyu_2000_series>                                   |
+| <http://dbpedia.org/resource/Keio_3000_series>                                     |
+| <http://dbpedia.org/resource/Keisei_3000_series>                                   |
+| <http://dbpedia.org/resource/Kobe_New_Transit_2000_series>                         |
+| <http://dbpedia.org/resource/Meitetsu_2000_series>                                 |
+| <http://dbpedia.org/resource/Nagano_Electric_Railway_2000_series>                  |
+| <http://dbpedia.org/resource/Nagoya_Municipal_Subway_2000_series>                  |
+| <http://dbpedia.org/resource/Nagoya_Municipal_Subway_3000_series>                  |
+| <http://dbpedia.org/resource/Odakyu_20000_series_RSE>                              |
+| <http://dbpedia.org/resource/Odakyu_2000_series>                                   |
+| <http://dbpedia.org/resource/Odakyu_3000_series>                                   |
+| <http://dbpedia.org/resource/Odakyu_3000_series_SE>                                |
+| <http://dbpedia.org/resource/Osaka_Monorail_2000_series>                           |
+| <http://dbpedia.org/resource/Saitama_Rapid_Railway_2000_series>                    |
+| <http://dbpedia.org/resource/Seibu_20000_series>                                   |
+| <http://dbpedia.org/resource/Sendai_Subway_2000_series>                            |
+| <http://dbpedia.org/resource/T%C5%8Dy%C5%8D_Rapid_2000_series>                     |
+| <http://dbpedia.org/resource/TRTA_3000_series>                                     |
+| <http://dbpedia.org/resource/TX-2000_series>                                       |
+| <http://dbpedia.org/resource/Tobu_20000_series>                                    |
+| <http://dbpedia.org/resource/Tobu_3000_series>                                     |
+| <http://dbpedia.org/resource/Tokyo_Monorail_2000_series>                           |
+| <http://dbpedia.org/resource/Tokyu_2000_series>                                    |
+| <http://dbpedia.org/resource/Tokyu_3000_series>                                    |
+| <http://dbpedia.org/resource/5000_series_(CTA)>                                    |
+| <http://dbpedia.org/resource/Alfa_Pendular>                                        |
+| <http://dbpedia.org/resource/Barcelona_Metro_9000_Series>                          |
+| <http://dbpedia.org/resource/Breda_A650>                                           |
+| <http://dbpedia.org/resource/Chichibu_Railway_5000_series>                         |
+| <http://dbpedia.org/resource/Chichibu_Railway_6000_series>                         |
+| <http://dbpedia.org/resource/Chichibu_Railway_7000_series>                         |
+| <http://dbpedia.org/resource/Echizen_Railway_7000_series>                          |
+| <http://dbpedia.org/resource/Fujikyu_6000_series>                                  |
+| <http://dbpedia.org/resource/Hankyu_6000_series>                                   |
+| <http://dbpedia.org/resource/Hankyu_8000_series>                                   |
+| <http://dbpedia.org/resource/Hankyu_9000_series>                                   |
+| <http://dbpedia.org/resource/JR_Shikoku_5000_series>                               |
+| <http://dbpedia.org/resource/JR_Shikoku_6000_series>                               |
+| <http://dbpedia.org/resource/JR_Shikoku_7000_series>                               |
+| <http://dbpedia.org/resource/JR_Shikoku_8000_series>                               |
+| <http://dbpedia.org/resource/Joshin_7000_series>                                   |
+| <http://dbpedia.org/resource/Keihan_8000_series>                                   |
+| <http://dbpedia.org/resource/Keio_5000_series>                                     |
+| <http://dbpedia.org/resource/Keio_6000_series>                                     |
+| <http://dbpedia.org/resource/Keio_7000_series>                                     |
+| <http://dbpedia.org/resource/Keio_8000_series>                                     |
+| <http://dbpedia.org/resource/Keio_9000_series>                                     |
+| <http://dbpedia.org/resource/Kobe_New_Transit_8000_series>                         |
+| <http://dbpedia.org/resource/MTR_SP1900/1500_EMU>                                  |
+| <http://dbpedia.org/resource/Meitetsu_5000_series_(1955)>                          |
+| <http://dbpedia.org/resource/Meitetsu_5000_series_(2008)>                          |
+| <http://dbpedia.org/resource/Meitetsu_6000_series>                                 |
+| <http://dbpedia.org/resource/Meitetsu_7000_series>                                 |
+| <http://dbpedia.org/resource/NSB_Class_73>                                         |
+| <http://dbpedia.org/resource/Nagoya_Municipal_Subway_5000_series>                  |
+| <http://dbpedia.org/resource/Nagoya_Municipal_Subway_6000_series>                  |
+| <http://dbpedia.org/resource/Nagoya_Municipal_Subway_7000_series>                  |
+| <http://dbpedia.org/resource/Nankai_8000_series>                                   |
+| <http://dbpedia.org/resource/Odakyu_30000_series_EXE>                              |
+| <http://dbpedia.org/resource/Odakyu_5000_series>                                   |
+| <http://dbpedia.org/resource/Odakyu_60000_series_MSE>                              |
+| <http://dbpedia.org/resource/Odakyu_7000_series_LSE>                               |
+| <http://dbpedia.org/resource/Osaka_Municipal_Subway_30000_series>                  |
+| <http://dbpedia.org/resource/R29_(New_York_City_Subway_car)>                       |
+| <http://dbpedia.org/resource/R33_(New_York_City_Subway_car)>                       |
+| <http://dbpedia.org/resource/R36_(New_York_City_Subway_car)>                       |
+| <http://dbpedia.org/resource/R38_(New_York_City_Subway_car)>                       |
+| <http://dbpedia.org/resource/S%C5%8Dtetsu_5000_series>                             |
+| <http://dbpedia.org/resource/S%C5%8Dtetsu_9000_series>                             |
+| <http://dbpedia.org/resource/Sapsan>                                               |
+| <http://dbpedia.org/resource/Seibu_30000_series>                                   |
+| <http://dbpedia.org/resource/Seibu_6000_series>                                    |
+| <http://dbpedia.org/resource/Shintetsu_6000_series>                                |
+| <http://dbpedia.org/resource/Tobu_30000_series>                                    |
+| <http://dbpedia.org/resource/Tobu_5000_series>                                     |
+| <http://dbpedia.org/resource/Tobu_60000_series>                                    |
+| <http://dbpedia.org/resource/Tobu_8000_series>                                     |
+| <http://dbpedia.org/resource/Tobu_9000_series>                                     |
+| <http://dbpedia.org/resource/Toei_6000_series>                                     |
+| <http://dbpedia.org/resource/Tokyo_Metro_5000_series>                              |
+| <http://dbpedia.org/resource/Tokyo_Metro_6000_series>                              |
+| <http://dbpedia.org/resource/Tokyo_Metro_7000_series>                              |
+| <http://dbpedia.org/resource/Tokyo_Metro_8000_series>                              |
+| <http://dbpedia.org/resource/Tokyo_Metro_9000_series>                              |
+| <http://dbpedia.org/resource/Tokyu_5000_series>                                    |
+| <http://dbpedia.org/resource/Tokyu_6000_series>                                    |
+| <http://dbpedia.org/resource/Tokyu_7000_series>                                    |
+| <http://dbpedia.org/resource/Canadian_Light_Rail_Vehicle>                          |
+| <http://dbpedia.org/resource/Hankyu_1300_series>                                   |
+| <http://dbpedia.org/resource/Hankyu_1300_series_(1957)>                            |
+| <http://dbpedia.org/resource/Chichibu_Railway_7800_series>                         |
+| <http://dbpedia.org/resource/ER1_electric_trainset>                                |
+

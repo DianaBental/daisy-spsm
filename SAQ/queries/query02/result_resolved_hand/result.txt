@@ -1,0 +1,228 @@
+Query:  entity(type(Town),country(Germany),populationTotal) 
+Construct query entity(type(Town),country(Germany),populationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/populationTotal> ?populationTotal . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------
+| subject                                                                | populationTotal |
+============================================================================================
+| <http://dbpedia.org/resource/Bad_S%C3%BClze>                           | 1838            |
+| <http://dbpedia.org/resource/Bad_Saulgau>                              | 17604           |
+| <http://dbpedia.org/resource/Breisach>                                 | 16500           |
+| <http://dbpedia.org/resource/Emmerich_am_Rhein>                        | 29752           |
+| <http://dbpedia.org/resource/Hille,_Germany>                           | 16343           |
+| <http://dbpedia.org/resource/Kaarst>                                   | 41816           |
+| <http://dbpedia.org/resource/Lich,_Hesse>                              | 13460           |
+| <http://dbpedia.org/resource/M%C3%BChldorf>                            | 17685           |
+| <http://dbpedia.org/resource/Schlitz,_Hesse>                           | 10134           |
+| <http://dbpedia.org/resource/Werben_(Elbe)>                            | 1266            |
+| <http://dbpedia.org/resource/Dietfurt>                                 | 6071            |
+| <http://dbpedia.org/resource/Heubach>                                  | 10105           |
+| <http://dbpedia.org/resource/Rodenberg>                                | 6244            |
+| <http://dbpedia.org/resource/Stadt_Wehlen>                             | 1724            |
+| <http://dbpedia.org/resource/Bad_Buchau>                               | 4080            |
+| <http://dbpedia.org/resource/Bad_S%C3%A4ckingen>                       | 16813           |
+| <http://dbpedia.org/resource/Hermeskeil>                               | 5698            |
+| <http://dbpedia.org/resource/Herrenberg>                               | 31394           |
+| <http://dbpedia.org/resource/Isny_im_Allg%C3%A4u>                      | 14550           |
+| <http://dbpedia.org/resource/Kellinghusen>                             | 8024            |
+| <http://dbpedia.org/resource/M%C3%BCnchberg>                           | 11249           |
+| <http://dbpedia.org/resource/Riedlingen>                               | 10351           |
+| <http://dbpedia.org/resource/Schweich>                                 | 6560            |
+| <http://dbpedia.org/resource/Vohenstrau%C3%9F>                         | 7688            |
+| <http://dbpedia.org/resource/T%C3%B6nning>                             | 5026            |
+| <http://dbpedia.org/resource/Elstra>                                   | 2976            |
+| <http://dbpedia.org/resource/Enzweihingen>                             | 3830            |
+| <http://dbpedia.org/resource/S%C3%BCdliches_Anhalt>                    | 10546           |
+| <http://dbpedia.org/resource/Augsburg>                                 | 278437          |
+| <http://dbpedia.org/resource/Bacharach>                                | 2089            |
+| <http://dbpedia.org/resource/Backnang>                                 | 35661           |
+| <http://dbpedia.org/resource/Bayreuth>                                 | 72576           |
+| <http://dbpedia.org/resource/Eisenach>                                 | 43626           |
+| <http://dbpedia.org/resource/Fulda>                                    | 63958           |
+| <http://dbpedia.org/resource/Heidelberg>                               | 145642          |
+| <http://dbpedia.org/resource/Meissen>                                  | 28544           |
+| <http://dbpedia.org/resource/Regensburg>                               | 130080          |
+| <http://dbpedia.org/resource/Schleswig,_Schleswig-Holstein>            | 24071           |
+| <http://dbpedia.org/resource/Weimar>                                   | 64720           |
+| <http://dbpedia.org/resource/Wernigerode>                              | 35041           |
+| <http://dbpedia.org/resource/Wiesbaden>                                | 275421          |
+| <http://dbpedia.org/resource/Wittenberg>                               | 48501           |
+| <http://dbpedia.org/resource/Worms,_Germany>                           | 82212           |
+| <http://dbpedia.org/resource/Zschopau>                                 | 11247           |
+| <http://dbpedia.org/resource/Zweibr%C3%BCcken>                         | 34842           |
+| <http://dbpedia.org/resource/Zwickau>                                  | 95089           |
+| <http://dbpedia.org/resource/Beckum,_Germany>                          | 37275           |
+| <http://dbpedia.org/resource/Coswig,_Anhalt>                           | 12573           |
+| <http://dbpedia.org/resource/Coswig,_Saxony>                           | 22164           |
+| <http://dbpedia.org/resource/F%C3%BCrstenau,_Germany>                  | 9934            |
+| <http://dbpedia.org/resource/Felsberg,_Hesse>                          | 10940           |
+| <http://dbpedia.org/resource/Jessen_(Elster)>                          | 14562           |
+| <http://dbpedia.org/resource/M%C3%BChlhausen>                          | 36874           |
+| <http://dbpedia.org/resource/M%C3%BChlheim_an_der_Donau>               | 3481            |
+| <http://dbpedia.org/resource/Seehausen,_Altmark>                       | 5055            |
+| <http://dbpedia.org/resource/Bad_Berka>                                | 7631            |
+| <http://dbpedia.org/resource/Bad_Colberg-Heldburg>                     | 2243            |
+| <http://dbpedia.org/resource/Bad_Grund>                                | 8957            |
+| <http://dbpedia.org/resource/Bad_Lobenstein>                           | 6820            |
+| <http://dbpedia.org/resource/Bad_Waldsee>                              | 19758           |
+| <http://dbpedia.org/resource/Berka/Werra>                              | 4648            |
+| <http://dbpedia.org/resource/Bernau_bei_Berlin>                        | 35546           |
+| <http://dbpedia.org/resource/Betzdorf,_Germany>                        | 10185           |
+| <http://dbpedia.org/resource/Boxberg,_Baden-W%C3%BCrttemberg>          | 7214            |
+| <http://dbpedia.org/resource/Brakel,_Germany>                          | 17097           |
+| <http://dbpedia.org/resource/Falkenberg/Elster>                        | 7627            |
+| <http://dbpedia.org/resource/Freyburg,_Germany>                        | 5196            |
+| <http://dbpedia.org/resource/Herten>                                   | 62878           |
+| <http://dbpedia.org/resource/Hessisch_Oldendorf>                       | 19547           |
+| <http://dbpedia.org/resource/Hilchenbach>                              | 15787           |
+| <http://dbpedia.org/resource/Kandel>                                   | 8385            |
+| <http://dbpedia.org/resource/Kirchheim_unter_Teck>                     | 39916           |
+| <http://dbpedia.org/resource/Laufenburg,_Germany>                      | 8571            |
+| <http://dbpedia.org/resource/Lengerich,_Westphalia>                    | 22277           |
+| <http://dbpedia.org/resource/Liebenau,_Hesse>                          | 3604            |
+| <http://dbpedia.org/resource/Limbach-Oberfrohna>                       | 26597           |
+| <http://dbpedia.org/resource/Lotte,_Germany>                           | 13584           |
+| <http://dbpedia.org/resource/Marne,_Germany>                           | 5967            |
+| <http://dbpedia.org/resource/Neuenkirchen,_Westphalia>                 | 14009           |
+| <http://dbpedia.org/resource/Preu%C3%9Fisch_Oldendorf>                 | 13043           |
+| <http://dbpedia.org/resource/Sch%C3%B6newalde>                         | 3634            |
+| <http://dbpedia.org/resource/Sch%C3%B6nwald,_Bavaria>                  | 3635            |
+| <http://dbpedia.org/resource/Scheer,_Germany>                          | 2605            |
+| <http://dbpedia.org/resource/Schenefeld,_Pinneberg>                    | 17852           |
+| <http://dbpedia.org/resource/Selters,_Rhineland-Palatinate>            | 2705            |
+| <http://dbpedia.org/resource/Stadtoldendorf>                           | 5855            |
+| <http://dbpedia.org/resource/Staufenberg,_Hesse>                       | 8307            |
+| <http://dbpedia.org/resource/Steinheim,_Westphalia>                    | 13379           |
+| <http://dbpedia.org/resource/Steinheim_an_der_Murr>                    | 11841           |
+| <http://dbpedia.org/resource/Stolberg_(Rhineland)>                     | 58540           |
+| <http://dbpedia.org/resource/Stollberg>                                | 12391           |
+| <http://dbpedia.org/resource/Straubing>                                | 44633           |
+| <http://dbpedia.org/resource/Sulzbach,_Saarland>                       | 18128           |
+| <http://dbpedia.org/resource/Tanna,_Germany>                           | 4039            |
+| <http://dbpedia.org/resource/V%C3%B6hringen,_Bavaria>                  | 13056           |
+| <http://dbpedia.org/resource/W%C3%B6rth_am_Rhein>                      | 17500           |
+| <http://dbpedia.org/resource/Wesenberg,_Mecklenburg-Vorpommern>        | 3249            |
+
+Narrowed to these target datasets:  Town 
+
+Matching query schema Town(country,populationTotal) 
+to dataset schema Town(country,populationTotal,leader) 
+Created match data: 
+similarity(0.75).
+match(none).
+match([[Town,populationTotal],=,[Town,populationTotal]]).
+match([[Town,country],=,[Town,country]]).
+match([[Town],=,[Town]]).
+
+Construct query entity(type(Town),country(Germany),populationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/populationTotal> ?populationTotal . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------
+| subject                                                                | populationTotal |
+============================================================================================
+| <http://dbpedia.org/resource/Bad_S%C3%BClze>                           | 1838            |
+| <http://dbpedia.org/resource/Bad_Saulgau>                              | 17604           |
+| <http://dbpedia.org/resource/Breisach>                                 | 16500           |
+| <http://dbpedia.org/resource/Emmerich_am_Rhein>                        | 29752           |
+| <http://dbpedia.org/resource/Hille,_Germany>                           | 16343           |
+| <http://dbpedia.org/resource/Kaarst>                                   | 41816           |
+| <http://dbpedia.org/resource/Lich,_Hesse>                              | 13460           |
+| <http://dbpedia.org/resource/M%C3%BChldorf>                            | 17685           |
+| <http://dbpedia.org/resource/Schlitz,_Hesse>                           | 10134           |
+| <http://dbpedia.org/resource/Werben_(Elbe)>                            | 1266            |
+| <http://dbpedia.org/resource/Dietfurt>                                 | 6071            |
+| <http://dbpedia.org/resource/Heubach>                                  | 10105           |
+| <http://dbpedia.org/resource/Rodenberg>                                | 6244            |
+| <http://dbpedia.org/resource/Stadt_Wehlen>                             | 1724            |
+| <http://dbpedia.org/resource/Bad_Buchau>                               | 4080            |
+| <http://dbpedia.org/resource/Bad_S%C3%A4ckingen>                       | 16813           |
+| <http://dbpedia.org/resource/Hermeskeil>                               | 5698            |
+| <http://dbpedia.org/resource/Herrenberg>                               | 31394           |
+| <http://dbpedia.org/resource/Isny_im_Allg%C3%A4u>                      | 14550           |
+| <http://dbpedia.org/resource/Kellinghusen>                             | 8024            |
+| <http://dbpedia.org/resource/M%C3%BCnchberg>                           | 11249           |
+| <http://dbpedia.org/resource/Riedlingen>                               | 10351           |
+| <http://dbpedia.org/resource/Schweich>                                 | 6560            |
+| <http://dbpedia.org/resource/Vohenstrau%C3%9F>                         | 7688            |
+| <http://dbpedia.org/resource/T%C3%B6nning>                             | 5026            |
+| <http://dbpedia.org/resource/Elstra>                                   | 2976            |
+| <http://dbpedia.org/resource/Enzweihingen>                             | 3830            |
+| <http://dbpedia.org/resource/S%C3%BCdliches_Anhalt>                    | 10546           |
+| <http://dbpedia.org/resource/Augsburg>                                 | 278437          |
+| <http://dbpedia.org/resource/Bacharach>                                | 2089            |
+| <http://dbpedia.org/resource/Backnang>                                 | 35661           |
+| <http://dbpedia.org/resource/Bayreuth>                                 | 72576           |
+| <http://dbpedia.org/resource/Eisenach>                                 | 43626           |
+| <http://dbpedia.org/resource/Fulda>                                    | 63958           |
+| <http://dbpedia.org/resource/Heidelberg>                               | 145642          |
+| <http://dbpedia.org/resource/Meissen>                                  | 28544           |
+| <http://dbpedia.org/resource/Regensburg>                               | 130080          |
+| <http://dbpedia.org/resource/Schleswig,_Schleswig-Holstein>            | 24071           |
+| <http://dbpedia.org/resource/Weimar>                                   | 64720           |
+| <http://dbpedia.org/resource/Wernigerode>                              | 35041           |
+| <http://dbpedia.org/resource/Wiesbaden>                                | 275421          |
+| <http://dbpedia.org/resource/Wittenberg>                               | 48501           |
+| <http://dbpedia.org/resource/Worms,_Germany>                           | 82212           |
+| <http://dbpedia.org/resource/Zschopau>                                 | 11247           |
+| <http://dbpedia.org/resource/Zweibr%C3%BCcken>                         | 34842           |
+| <http://dbpedia.org/resource/Zwickau>                                  | 95089           |
+| <http://dbpedia.org/resource/Beckum,_Germany>                          | 37275           |
+| <http://dbpedia.org/resource/Coswig,_Anhalt>                           | 12573           |
+| <http://dbpedia.org/resource/Coswig,_Saxony>                           | 22164           |
+| <http://dbpedia.org/resource/F%C3%BCrstenau,_Germany>                  | 9934            |
+| <http://dbpedia.org/resource/Felsberg,_Hesse>                          | 10940           |
+| <http://dbpedia.org/resource/Jessen_(Elster)>                          | 14562           |
+| <http://dbpedia.org/resource/M%C3%BChlhausen>                          | 36874           |
+| <http://dbpedia.org/resource/M%C3%BChlheim_an_der_Donau>               | 3481            |
+| <http://dbpedia.org/resource/Seehausen,_Altmark>                       | 5055            |
+| <http://dbpedia.org/resource/Bad_Berka>                                | 7631            |
+| <http://dbpedia.org/resource/Bad_Colberg-Heldburg>                     | 2243            |
+| <http://dbpedia.org/resource/Bad_Grund>                                | 8957            |
+| <http://dbpedia.org/resource/Bad_Lobenstein>                           | 6820            |
+| <http://dbpedia.org/resource/Bad_Waldsee>                              | 19758           |
+| <http://dbpedia.org/resource/Berka/Werra>                              | 4648            |
+| <http://dbpedia.org/resource/Bernau_bei_Berlin>                        | 35546           |
+| <http://dbpedia.org/resource/Betzdorf,_Germany>                        | 10185           |
+| <http://dbpedia.org/resource/Boxberg,_Baden-W%C3%BCrttemberg>          | 7214            |
+| <http://dbpedia.org/resource/Brakel,_Germany>                          | 17097           |
+| <http://dbpedia.org/resource/Falkenberg/Elster>                        | 7627            |
+| <http://dbpedia.org/resource/Freyburg,_Germany>                        | 5196            |
+| <http://dbpedia.org/resource/Herten>                                   | 62878           |
+| <http://dbpedia.org/resource/Hessisch_Oldendorf>                       | 19547           |
+| <http://dbpedia.org/resource/Hilchenbach>                              | 15787           |
+| <http://dbpedia.org/resource/Kandel>                                   | 8385            |
+| <http://dbpedia.org/resource/Kirchheim_unter_Teck>                     | 39916           |
+| <http://dbpedia.org/resource/Laufenburg,_Germany>                      | 8571            |
+| <http://dbpedia.org/resource/Lengerich,_Westphalia>                    | 22277           |
+| <http://dbpedia.org/resource/Liebenau,_Hesse>                          | 3604            |
+| <http://dbpedia.org/resource/Limbach-Oberfrohna>                       | 26597           |
+| <http://dbpedia.org/resource/Lotte,_Germany>                           | 13584           |
+| <http://dbpedia.org/resource/Marne,_Germany>                           | 5967            |
+| <http://dbpedia.org/resource/Neuenkirchen,_Westphalia>                 | 14009           |
+| <http://dbpedia.org/resource/Preu%C3%9Fisch_Oldendorf>                 | 13043           |
+| <http://dbpedia.org/resource/Sch%C3%B6newalde>                         | 3634            |
+| <http://dbpedia.org/resource/Sch%C3%B6nwald,_Bavaria>                  | 3635            |
+| <http://dbpedia.org/resource/Scheer,_Germany>                          | 2605            |
+| <http://dbpedia.org/resource/Schenefeld,_Pinneberg>                    | 17852           |
+| <http://dbpedia.org/resource/Selters,_Rhineland-Palatinate>            | 2705            |
+| <http://dbpedia.org/resource/Stadtoldendorf>                           | 5855            |
+| <http://dbpedia.org/resource/Staufenberg,_Hesse>                       | 8307            |
+| <http://dbpedia.org/resource/Steinheim,_Westphalia>                    | 13379           |
+| <http://dbpedia.org/resource/Steinheim_an_der_Murr>                    | 11841           |
+| <http://dbpedia.org/resource/Stolberg_(Rhineland)>                     | 58540           |
+| <http://dbpedia.org/resource/Stollberg>                                | 12391           |
+| <http://dbpedia.org/resource/Straubing>                                | 44633           |
+| <http://dbpedia.org/resource/Sulzbach,_Saarland>                       | 18128           |
+| <http://dbpedia.org/resource/Tanna,_Germany>                           | 4039            |
+| <http://dbpedia.org/resource/V%C3%B6hringen,_Bavaria>                  | 13056           |
+| <http://dbpedia.org/resource/W%C3%B6rth_am_Rhein>                      | 17500           |
+| <http://dbpedia.org/resource/Wesenberg,_Mecklenburg-Vorpommern>        | 3249            |
+

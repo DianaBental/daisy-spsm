@@ -1,0 +1,17 @@
+@prefix naptan: <http://fake.naptan/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+naptan:fakeid_001
+	naptan:AtcoCode "AtcoCode";
+	naptan:StartDate "2010-08-16";
+	naptan:EndDate "2011-08-16";
+	naptan:AvailabilityStatus "AvailabilityStatus";
+	naptan:Note "A fake NAPTAN file to source a NAPTAN query";
+	naptan:NoteLang "NoteLang";
+	naptan:TransferStopAtcoCode  "TransferStopAtcoCode";
+	naptan:CreationDateTime "2010-01-19T16:00:00Z";
+	naptan:ModificationDateTime "2010-01-19T16:00:00Z";
+	naptan:RevisionNumber 100;
+	naptan:Modification "Modification";
+	naptan:Label "How much faker can we get?" .
+

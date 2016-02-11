@@ -1,0 +1,360 @@
+Query:  entity(type(NonprofitOrganization),country(Australia)) 
+Construct query entity(type(NonprofitOrganization),country(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/NonprofitOrganization> ; 
+<country> <http://dbpedia.org/resource/Australia> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Activity AlgerianSettlement AnatomicalStructure ArchitecturalStructure ArchitecturalStructureMonument AustrianSettlement BelgiumSettlement BodyOfWater BusCompany CelestialBody ClericalOrder Company EducationalInstitution GeopoliticalOrganisation GermanSettlement HistoricalSettlement Host HungarySettlement LebanonSettlement LiechtensteinSettlement MilitaryStructure MilitaryUnit NationalCollegiateAthleticAssociationAthlete NonProfitOrganisation NorwaySettlement Organisation OrganisationMember OrganisationParish PoliticalParty PublicTransitSystem RadioHost RomaniaSettlement Settlement SpaceMission SwitzerlandSettlement TelevisionHost TradeUnion UnitOfWork WomensTennisAssociationTournament 
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema ArchitecturalStructureMonument(dutchMIPCode) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema AustrianSettlement(isCityState) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema LebanonSettlement(mukhtar) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema OrganisationParish(membershipAsOf) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema UnitOfWork(developer) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema GermanSettlement(licenceLetter,numberOfNeighbourhood) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema LiechtensteinSettlement(council,ward) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema RomaniaSettlement(authorityTitle,prefectMandate) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema NorwaySettlement(center,landskap,mostDownPoint) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema SwitzerlandSettlement(adjacentSettlement,locality,mayorFunction) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema HungarySettlement(comitat,mayorTitle,neighbourhood,signName) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema Activity(equipment,numberOfClubs,numberOfPeopleLicensed,numberOfPlayers,numberOfProfessionals) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema BelgiumSettlement(belgiumMergedSettlement,belgiumPoliticalMajority,belgiumPoliticalSeats,belgiumReffBourgmestre,legalArrondissement) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema AlgerianSettlement(administrativeCenter,employersCelebration,landRegistryCode,ons,settlementAttached,urbanArea) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema CelestialBody(absoluteMagnitude,apoapsis,maxAbsoluteMagnitude,maxApparentMagnitude,messierName,ngcName,orbitalEccentricity,periapsis,vonKlitzingConstant) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema AnatomicalStructure(artery,branchFrom,branchTo,dorlandsPrefix,dorlandsSuffix,drainsFrom,drainsTo,grayPage,graySubject,lymph,meshName,meshNumber,nerve,organSystem,precursor,vein) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema WomensTennisAssociationTournament(bronzeMedalist,causedBy,champion,championInDouble,championInDoubleFemale,championInDoubleMale,championInMixedDouble,championInSingle,championInSingleFemale,championInSingleMale,duration,endDate,followingEvent,goldMedalist,medalist,nextEvent,numberOfPeopleAttending,participant,previousEvent,raceTrack,silverMedalist,startDate) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema ClericalOrder(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema NonProfitOrganisation(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.033333333333333326).
+match(none).
+match([[NonprofitOrganization,country],>,[NonProfitOrganisation,foundationPlace]]).
+match([[NonprofitOrganization],=,[NonProfitOrganisation]]).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema Organisation(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema TradeUnion(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema GeopoliticalOrganisation(GeopoliticalOrganisationAreaMetro,GeopoliticalOrganisationPopulationDensity,affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema PublicTransitSystem(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLines,numberOfLocations,numberOfStaff,numberOfVehicles,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,reportingMark,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema SpaceMission(SpaceMissionCmpEvaDuration,SpaceMissionDistanceTraveled,SpaceMissionLunarEvaTime,SpaceMissionLunarOrbitTime,SpaceMissionLunarSampleMass,SpaceMissionLunarSurfaceTime,SpaceMissionMass,SpaceMissionMissionDuration,SpaceMissionStationEvaDuration,SpaceMissionStationVisitDuration,booster,causedBy,cmpEvaDuration,commandModule,crewMember,crewSize,distanceTraveled,duration,endDate,followingEvent,landingDate,landingSite,landingVehicle,launchDate,launchPad,launchSite,launchVehicle,lunarEvaTime,lunarLandingSite,lunarModule,lunarOrbitTime,lunarRover,lunarSampleMass,lunarSurfaceTime,missionDuration,nextEvent,nextMission,numberOfOrbits,numberOfPeopleAttending,orbitalInclination,participant,previousEvent,previousMission,serviceModule,shuttle,spacecraft,spacewalkBegin,spacewalkEnd,startDate,stationEvaDuration,stationVisitDuration) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema PoliticalParty(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,europeanAffiliation,europeanParliamentGroup,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,internationalAffiliation,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,mergedIntoParty,nationalAffiliation,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfMembersAsOf,numberOfSeatsInParliament,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,splitFromParty,spokesperson,superintendent,trustee,viafId,youthWing) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema EducationalInstitution(affiliation,age,alumni,artPatron,ceo,chairperson,childOrganisation,closed,dean,discipline,educationSystem,endowment,extinctionDate,extinctionYear,facultySize,formationDate,formationYear,foundationPlace,generalCouncil,head,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfAcademicStaff,numberOfEmployees,numberOfGraduateStudents,numberOfLocations,numberOfStaff,numberOfStudents,numberOfUndergraduateStudents,numberOfVolunteers,officialSchoolColour,organisationMember,parentOrganisation,playerSeason,principal,product,rector,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,staff,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema BusCompany(affiliation,age,artPatron,assetUnderManagement,assets,ceo,chairperson,childOrganisation,codeStockExchange,discipline,endowment,equity,extinctionDate,extinctionYear,fate,formationDate,formationYear,foundationPlace,generalCouncil,groundsForLiquidation,headquarter,hometown,honours,ideology,industry,internationally,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,marketCapitalisation,membership,nationalSelection,netIncome,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,operatingIncome,organisationMember,parentOrganisation,playerSeason,product,production,regionServed,regionalCouncil,registration,revenue,season,secretaryGeneral,service,slogan,stockExchange,subsidiary,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema Company(affiliation,age,artPatron,assetUnderManagement,assets,ceo,chairperson,childOrganisation,codeStockExchange,discipline,endowment,equity,extinctionDate,extinctionYear,fate,formationDate,formationYear,foundationPlace,generalCouncil,groundsForLiquidation,headquarter,hometown,honours,ideology,industry,internationally,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,marketCapitalisation,membership,nationalSelection,netIncome,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,operatingIncome,organisationMember,parentOrganisation,playerSeason,product,production,regionServed,regionalCouncil,registration,revenue,season,secretaryGeneral,service,slogan,stockExchange,subsidiary,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema MilitaryUnit(affiliation,age,aircraftAttack,aircraftBomber,aircraftElectronic,aircraftFighter,aircraftHelicopter,aircraftHelicopterAttack,aircraftHelicopterCargo,aircraftHelicopterMultirole,aircraftHelicopterObservation,aircraftHelicopterTransport,aircraftHelicopterUtility,aircraftInterceptor,aircraftPatrol,aircraftRecon,aircraftTrainer,aircraftTransport,anniversary,artPatron,battleHonours,ceo,chairperson,childOrganisation,commandStructure,disbanded,discipline,endowment,extinctionDate,extinctionYear,flyingHours,formationDate,formationYear,foundationPlace,fourthCommander,garrison,generalCouncil,headquarter,hometown,honours,identificationSymbol,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,march,membership,nationalSelection,nlaId,notableCommander,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,patron,playerSeason,product,regionServed,regionalCouncil,revenue,season,secondCommander,secretaryGeneral,slogan,superintendent,thirdCommander,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema BodyOfWater(altitude,annualTemperature,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,coordinates,currencyCode,dateAgreement,daylightSavingTimeZone,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,majorLake,majorVolcano,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema ArchitecturalStructure(altitude,annualTemperature,architect,architectualBureau,architecturalStyle,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,buildingEndDate,buildingEndYear,buildingStartDate,buildingStartYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,construction,constructionMaterial,coordinates,cost,currencyCode,currentlyUsedFor,dateAgreement,daylightSavingTimeZone,demolitionDate,demolitionYear,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,features,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,initiallyUsedFor,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,maintainedBy,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,openingDate,openingYear,operatedBy,originallyUsedFor,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,rebuildingDate,rebuildingYear,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,reopeningDate,reopeningYear,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,visitorStatisticsAsOf,visitorsPerDay,visitorsPerYear,visitorsPercentageChange,visitorsTotal,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema MilitaryStructure(altitude,annualTemperature,architect,architectualBureau,architecturalStyle,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaTotal,areaWater,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,budgetYear,buildingEndDate,buildingEndYear,buildingStartDate,buildingStartYear,cableCar,cannonNumber,capitalCoordinates,cityLink,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,construction,constructionMaterial,coordinates,cost,currencyCode,currentlyUsedFor,dateAgreement,daylightSavingTimeZone,demolitionDate,demolitionYear,depth,depthQuote,depths,different,district,elevation,elevationQuote,endangeredSince,eventDate,fauna,features,flora,flower,foresterDistrict,frontierLength,geolocDual,geologicPeriod,governingBody,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProductPerPeople,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,humanDevelopmentIndexRank,information,informationName,initiallyUsedFor,isoCode,isoCode,kindOfCoordinate,kindOfRock,lake,land,landArea,landPercentage,lawCountry,lengthQuote,limit,linkedSpace,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,mainIsland,maintainedBy,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,minimumArea,minimumAreaQuote,minimumElevation,municipalityCode,namedByLanguage,nationalTopographicSystemMapNumber,nearestCity,neighbourRegion,nextEntity,numberOfIsland,nutsCode,openingDate,openingYear,operatedBy,originallyUsedFor,output,parliament,parliamentType,perCapitaIncomeRank,pisciculturalPopulation,plant,politicalLeader,populationDate,populationQuote,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousEntity,protectionStatus,province,provinceLink,quote,rankAgreement,rebuildingDate,rebuildingYear,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalPrefecture,relatedPlaces,relief,reopeningDate,reopeningYear,representative,retentionTime,river,route,scale,sea,settlement,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,snowParkNumber,sovereignCountry,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,timeZone,tree,tu,typeCoordinate,unesco,unloCode,utcOffset,vehicleCode,visitorStatisticsAsOf,visitorsPerDay,visitorsPerYear,visitorsPercentageChange,visitorsTotal,volumeQuote,water,waterArea,waterPercentage,wholeArea,widthQuote,yearOfConstruction) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema Host(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema OrganisationMember(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema RadioHost(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema TelevisionHost(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema NationalCollegiateAthleticAssociationAthlete(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerHighschool,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema HistoricalSettlement(PopulatedPlaceArea,PopulatedPlaceAreaMetro,PopulatedPlaceAreaTotal,PopulatedPlaceAreaUrban,PopulatedPlacePopulationDensity,PopulatedPlacePopulationMetroDensity,PopulatedPlacePopulationUrbanDensity,administrativeCollectivity,administrativeDistrict,administrativeHeadCity,agglomeration,agglomerationArea,agglomerationDemographics,agglomerationPopulation,agglomerationPopulationYear,alemmanicName,algerianName,algerianSettlementName,altitude,annualTemperature,anthem,apskritis,arabicName,arberishtName,areaCode,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaRural,areaTotal,areaTotalRanking,areaUrban,areaWater,arrondissement,artificialSnowArea,associationOfLocalGovernment,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,barangays,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,borough,bourgmestre,budgetYear,cableCar,calabrianName,cannonNumber,canton,capital,capitalCoordinates,catholicPercentage,ccaState,censusYear,ceremonialCounty,chaouiName,circle,cityLink,citySince,cityType,climate,climbUpNumber,coastLength,coastLine,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,codeSettlement,collectivityMinority,colonialName,commissioner,commissionerDate,commune,communityIsoCode,coordinates,cornishName,councilArea,countySeat,currencyCode,cyrilliqueName,daira,dateAgreement,day,daylightSavingTimeZone,delegateMayor,delegation,deme,demographics,demographicsAsOf,department,departmentPosition,depth,depthQuote,depths,different,disappearanceDate,dissolutionDate,dissolutionYear,distanceToBelfast,distanceToCapital,distanceToCardiff,distanceToCharingCross,distanceToDouglas,distanceToDublin,distanceToEdinburgh,distanceToLondon,district,dutchName,ekatteCode,elevation,elevationQuote,emblem,endangeredSince,englishName,ethnicGroup,eventDate,fauna,federalState,finnishName,fipsCode,firstMention,flora,flower,foresterDistrict,foundation,foundationDate,foundingPerson,frazioni,frenchName,frioulanName,frontierLength,gaelicName,gagaouze,geolocDepartment,geolocDual,geologicPeriod,germanName,giniCoefficient,giniCoefficientAsOf,giniCoefficientCategory,giniCoefficientRanking,gnisCode,gnl,governingBody,governorate,greekName,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProduct,grossDomesticProductAsOf,grossDomesticProductNominalPerCapita,grossDomesticProductPerPeople,grossDomesticProductPurchasingPowerParityPerCapita,grossDomesticProductRank,heritageRegister,highestPoint,historicalMap,historicalName,historicalRegion,hraState,humanDevelopmentIndex,humanDevelopmentIndexAsOf,humanDevelopmentIndexRank,humanDevelopmentIndexRankingCategory,illiteracy,income,infantMortality,information,informationName,inseeCode,internationalPhonePrefix,internationalPhonePrefixLabel,irishName,isoCode,isoCode,isoCodeRegion,ist,istat,italianName,jointCommunity,kabyleName,kanjiName,kindOfCoordinate,kindOfRock,ladinName,lake,land,landArea,landPercentage,largestCity,largestCountry,largestMetro,largestSettlement,lawCountry,leaderName,leaderParty,leaderTitle,lengthQuote,licenceNumber,licenceNumberLabel,lieutenancy,lieutenancyArea,lifeExpectancy,limit,linkedSpace,localPhonePrefix,localizationThumbnail,localizationThumbnailCaption,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,lowestPoint,luxembourgishName,mainIsland,manxName,maoriName,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,meaning,mergedSettlement,mergerDate,metropolitanBorough,minimumArea,minimumAreaQuote,minimumElevation,minority,moldavianName,mozabiteName,municipalityCode,namedByLanguage,nation,nationalTopographicSystemMapNumber,nearestCity,neighboringMunicipality,neighbourRegion,nextEntity,nisCode,numberOfCantons,numberOfCapitalDeputies,numberOfCounties,numberOfFederalDeputies,numberOfIsland,numberOfMunicipalities,numberOfStateDeputies,nutsCode,occitanName,officialLanguage,officialName,ofsCode,okatoCode,oldDistrict,oldName,oldProvince,otherInformation,otherLanguage,otherName,output,outskirts,parish,parliament,parliamentType,patronSaint,peopleName,perCapitaIncome,perCapitaIncomeAsOf,perCapitaIncomeRank,phonePrefix,phonePrefixLabel,phonePrefixName,pisciculturalPopulation,plant,pluviometry,policeName,politicGovernmentDepartment,politicalLeader,politicalMajority,politicalSeats,population,populationAsOf,populationDate,populationDensity,populationMetro,populationMetroDensity,populationPctChildren,populationPctMen,populationPctWomen,populationQuote,populationRural,populationRuralDensity,populationTotalRanking,populationTotalReference,populationUrban,populationUrbanDensity,populationYear,postalCode,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousDemographics,previousEntity,previousName,previousPopulation,previousPopulationTotal,principalArea,protectionStatus,protestantPercentage,provCode,province,provinceIsoCode,provinceLink,purchasingPowerParity,purchasingPowerParityRank,purchasingPowerParityYear,quote,rankAgreement,rankArea,rankPopulation,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,reffBourgmestre,refgen,refgeo,refpol,regency,regionLink,regionType,regionalLanguage,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,saint,sameName,sardinianName,scale,scotishName,scotsName,scottishName,sea,senior,seniunija,settlement,sharingOut,sharingOutArea,sharingOutName,sharingOutPopulation,sharingOutPopulationName,sharingOutPopulationYear,sheading,sicilianName,simcCode,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,smallestCountry,snowParkNumber,sovereignCountry,statusYear,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,summerTemperature,supply,tamazightName,tamazightSettlementName,termOfOffice,terytCode,timeZone,topic,touaregName,touaregSettlementName,touristicSite,tree,tu,twinCity,typeCoordinate,unesco,unitaryAuthority,unlcCode,unloCode,utcOffset,vehicleCode,viceLeader,viceLeaderParty,volumeQuote,water,waterArea,waterPercentage,watercourse,welshName,wholeArea,widthQuote,wilaya,winterTemperature,yearOfConstruction,zipCode) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema NonprofitOrganization(country) 
+to dataset schema Settlement(PopulatedPlaceArea,PopulatedPlaceAreaMetro,PopulatedPlaceAreaTotal,PopulatedPlaceAreaUrban,PopulatedPlacePopulationDensity,PopulatedPlacePopulationMetroDensity,PopulatedPlacePopulationUrbanDensity,administrativeCollectivity,administrativeDistrict,administrativeHeadCity,agglomeration,agglomerationArea,agglomerationDemographics,agglomerationPopulation,agglomerationPopulationYear,alemmanicName,algerianName,algerianSettlementName,altitude,annualTemperature,anthem,apskritis,arabicName,arberishtName,areaCode,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaRural,areaTotal,areaTotalRanking,areaUrban,areaWater,arrondissement,artificialSnowArea,associationOfLocalGovernment,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,barangays,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,borough,bourgmestre,budgetYear,cableCar,calabrianName,cannonNumber,canton,capital,capitalCoordinates,catholicPercentage,ccaState,censusYear,ceremonialCounty,chaouiName,circle,cityLink,citySince,cityType,climate,climbUpNumber,coastLength,coastLine,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,codeSettlement,collectivityMinority,colonialName,commissioner,commissionerDate,commune,communityIsoCode,coordinates,cornishName,councilArea,countySeat,currencyCode,cyrilliqueName,daira,dateAgreement,day,daylightSavingTimeZone,delegateMayor,delegation,deme,demographics,demographicsAsOf,department,departmentPosition,depth,depthQuote,depths,different,disappearanceDate,dissolutionDate,dissolutionYear,distanceToBelfast,distanceToCapital,distanceToCardiff,distanceToCharingCross,distanceToDouglas,distanceToDublin,distanceToEdinburgh,distanceToLondon,district,dutchName,ekatteCode,elevation,elevationQuote,emblem,endangeredSince,englishName,ethnicGroup,eventDate,fauna,federalState,finnishName,fipsCode,firstMention,flora,flower,foresterDistrict,foundation,foundationDate,foundingPerson,frazioni,frenchName,frioulanName,frontierLength,gaelicName,gagaouze,geolocDepartment,geolocDual,geologicPeriod,germanName,giniCoefficient,giniCoefficientAsOf,giniCoefficientCategory,giniCoefficientRanking,gnisCode,gnl,governingBody,governorate,greekName,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProduct,grossDomesticProductAsOf,grossDomesticProductNominalPerCapita,grossDomesticProductPerPeople,grossDomesticProductPurchasingPowerParityPerCapita,grossDomesticProductRank,heritageRegister,highestPoint,historicalMap,historicalName,historicalRegion,hraState,humanDevelopmentIndex,humanDevelopmentIndexAsOf,humanDevelopmentIndexRank,humanDevelopmentIndexRankingCategory,illiteracy,income,infantMortality,information,informationName,inseeCode,internationalPhonePrefix,internationalPhonePrefixLabel,irishName,isoCode,isoCode,isoCodeRegion,ist,istat,italianName,jointCommunity,kabyleName,kanjiName,kindOfCoordinate,kindOfRock,ladinName,lake,land,landArea,landPercentage,largestCity,largestCountry,largestMetro,largestSettlement,lawCountry,leaderName,leaderParty,leaderTitle,lengthQuote,licenceNumber,licenceNumberLabel,lieutenancy,lieutenancyArea,lifeExpectancy,limit,linkedSpace,localPhonePrefix,localizationThumbnail,localizationThumbnailCaption,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,lowestPoint,luxembourgishName,mainIsland,manxName,maoriName,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,meaning,mergedSettlement,mergerDate,metropolitanBorough,minimumArea,minimumAreaQuote,minimumElevation,minority,moldavianName,mozabiteName,municipalityCode,namedByLanguage,nation,nationalTopographicSystemMapNumber,nearestCity,neighboringMunicipality,neighbourRegion,nextEntity,nisCode,numberOfCantons,numberOfCapitalDeputies,numberOfCounties,numberOfFederalDeputies,numberOfIsland,numberOfMunicipalities,numberOfStateDeputies,nutsCode,occitanName,officialLanguage,officialName,ofsCode,okatoCode,oldDistrict,oldName,oldProvince,otherInformation,otherLanguage,otherName,output,outskirts,parish,parliament,parliamentType,patronSaint,peopleName,perCapitaIncome,perCapitaIncomeAsOf,perCapitaIncomeRank,phonePrefix,phonePrefixLabel,phonePrefixName,pisciculturalPopulation,plant,pluviometry,policeName,politicGovernmentDepartment,politicalLeader,politicalMajority,politicalSeats,population,populationAsOf,populationDate,populationDensity,populationMetro,populationMetroDensity,populationPctChildren,populationPctMen,populationPctWomen,populationQuote,populationRural,populationRuralDensity,populationTotalRanking,populationTotalReference,populationUrban,populationUrbanDensity,populationYear,postalCode,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousDemographics,previousEntity,previousName,previousPopulation,previousPopulationTotal,principalArea,protectionStatus,protestantPercentage,provCode,province,provinceIsoCode,provinceLink,purchasingPowerParity,purchasingPowerParityRank,purchasingPowerParityYear,quote,rankAgreement,rankArea,rankPopulation,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,reffBourgmestre,refgen,refgeo,refpol,regency,regionLink,regionType,regionalLanguage,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,saint,sameName,sardinianName,scale,scotishName,scotsName,scottishName,sea,senior,seniunija,settlement,sharingOut,sharingOutArea,sharingOutName,sharingOutPopulation,sharingOutPopulationName,sharingOutPopulationYear,sheading,sicilianName,simcCode,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,smallestCountry,snowParkNumber,sovereignCountry,statusYear,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,summerTemperature,supply,tamazightName,tamazightSettlementName,termOfOffice,terytCode,timeZone,topic,touaregName,touaregSettlementName,touristicSite,tree,tu,twinCity,typeCoordinate,unesco,unitaryAuthority,unlcCode,unloCode,utcOffset,vehicleCode,viceLeader,viceLeaderParty,volumeQuote,water,waterArea,waterPercentage,watercourse,welshName,wholeArea,widthQuote,wilaya,winterTemperature,yearOfConstruction,zipCode) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Construct query entity(type(NonProfitOrganisation),foundationPlace(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/NonProfitOrganisation> ; 
+<http://dbpedia.org/ontology/foundationPlace> <http://dbpedia.org/resource/Australia> . }
+
+The query did not return any data. 
+
+Construct query entity(type,foundationPlace(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/foundationPlace> <http://dbpedia.org/resource/Australia> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                            | type                                                                             |
+=========================================================================================================================================================
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://www.w3.org/2002/07/owl#Thing>                                            |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://schema.org/Organization>                                                 |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                    |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>             |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/ontology/Agent>                                              |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/ontology/Company>                                            |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/ontology/Organisation>                                       |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/Abstraction100002137>                             |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/Company108058098>                                 |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/Group100031264>                                   |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/Institution108053576>                             |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/Organization108008335>                            |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/SocialGroup107950920>                             |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/YagoLegalActor>                                   |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/CompaniesEstablishedIn1973>                       |
+| <http://dbpedia.org/resource/CalorieKing>                          | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                     |
+| <http://dbpedia.org/resource/Wridgways>                            | <http://www.w3.org/2002/07/owl#Thing>                                            |
+| <http://dbpedia.org/resource/Wridgways>                            | <http://schema.org/Organization>                                                 |
+| <http://dbpedia.org/resource/Wridgways>                            | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                    |
+| <http://dbpedia.org/resource/Wridgways>                            | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>             |
+| <http://dbpedia.org/resource/Wridgways>                            | <http://dbpedia.org/ontology/Agent>                                              |
+| <http://dbpedia.org/resource/Wridgways>                            | <http://dbpedia.org/ontology/Company>                                            |
+| <http://dbpedia.org/resource/Wridgways>                            | <http://dbpedia.org/ontology/Organisation>                                       |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://www.w3.org/2002/07/owl#Thing>                                            |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://schema.org/Organization>                                                 |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                    |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>             |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/ontology/Agent>                                              |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/ontology/Company>                                            |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/ontology/Organisation>                                       |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/Abstraction100002137>                             |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/Company108058098>                                 |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/Group100031264>                                   |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/Institution108053576>                             |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/Organization108008335>                            |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/SocialGroup107950920>                             |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/YagoLegalActor>                                   |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                     |
+| <http://dbpedia.org/resource/Sausage_Software>                     | <http://dbpedia.org/class/yago/InformationTechnologyCompaniesOfAustralia>        |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://www.w3.org/2002/07/owl#Thing>                                            |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://schema.org/Organization>                                                 |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                    |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>             |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/ontology/Agent>                                              |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/ontology/Company>                                            |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/ontology/Organisation>                                       |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/Abstraction100002137>                             |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/Company108058098>                                 |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/Group100031264>                                   |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/Institution108053576>                             |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/Organization108008335>                            |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/SocialGroup107950920>                             |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/YagoLegalActor>                                   |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/CompaniesBasedInSydney>                           |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/ConglomerateCompanies>                            |
+| <http://dbpedia.org/resource/Washington_H._Soul_Pattinson>         | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                     |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://www.w3.org/2002/07/owl#Thing>                                            |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://schema.org/Organization>                                                 |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                    |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>             |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/ontology/Agent>                                              |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/ontology/Company>                                            |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/ontology/Organisation>                                       |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/Abstraction100002137>                             |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/Company108058098>                                 |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/Group100031264>                                   |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/Institution108053576>                             |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/Organization108008335>                            |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/SocialGroup107950920>                             |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/YagoLegalActor>                                   |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/ClothingCompaniesOfAustralia>                     |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/CompaniesEstablishedIn1991>                       |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                     |
+| <http://dbpedia.org/resource/Cotton_On>                            | <http://dbpedia.org/class/yago/RetailCompaniesOfAustralia>                       |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://www.w3.org/2002/07/owl#Thing>                                            |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://schema.org/Organization>                                                 |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                    |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>             |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/ontology/Agent>                                              |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/ontology/Company>                                            |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/ontology/Organisation>                                       |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/Abstraction100002137>                             |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/Company108058098>                                 |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/Group100031264>                                   |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/Institution108053576>                             |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/Organization108008335>                            |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/SocialGroup107950920>                             |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/YagoLegalActor>                                   |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/CompaniesBasedInSydney>                           |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/CompaniesEstablishedIn2010>                       |
+| <http://dbpedia.org/resource/LeadBolt>                             | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                     |
+| <http://dbpedia.org/resource/Citect>                               | <http://www.w3.org/2002/07/owl#Thing>                                            |
+

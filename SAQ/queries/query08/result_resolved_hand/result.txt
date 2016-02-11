@@ -1,0 +1,237 @@
+Query:  entity(type(FormulaOneRacer),races) 
+Construct query entity(type(FormulaOneRacer),races) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/FormulaOneRacer> ; 
+<http://dbpedia.org/ontology/races> ?races . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------
+| subject                                                                  | races |
+====================================================================================
+| <http://dbpedia.org/resource/Kevin_Cogan>                                | 2     |
+| <http://dbpedia.org/resource/Andr%C3%A9_Simon_(racing_driver)>           | 12    |
+| <http://dbpedia.org/resource/Brian_Naylor>                               | 8     |
+| <http://dbpedia.org/resource/Christian_Danner>                           | 47    |
+| <http://dbpedia.org/resource/Eric_Thompson_(racing_driver)>              | 1     |
+| <http://dbpedia.org/resource/Franck_Lagorce>                             | 2     |
+| <http://dbpedia.org/resource/Frank_Gardner_(racing_driver)>              | 9     |
+| <http://dbpedia.org/resource/Jacques_Pollet>                             | 5     |
+| <http://dbpedia.org/resource/Jo_Vonlanthen>                              | 1     |
+| <http://dbpedia.org/resource/Johnny_Claes>                               | 25    |
+| <http://dbpedia.org/resource/Karl_Kling>                                 | 11    |
+| <http://dbpedia.org/resource/Luigi_Musso>                                | 25    |
+| <http://dbpedia.org/resource/Luiz_Bueno>                                 | 1     |
+| <http://dbpedia.org/resource/Mark_Blundell>                              | 63    |
+| <http://dbpedia.org/resource/Mark_Donohue>                               | 16    |
+| <http://dbpedia.org/resource/Peter_Gethin>                               | 31    |
+| <http://dbpedia.org/resource/Rudi_Fischer>                               | 8     |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Bourdais>                    | 27    |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Buemi>                       | 55    |
+| <http://dbpedia.org/resource/Tony_Lanfranchi>                            | 3     |
+| <http://dbpedia.org/resource/Jean-Pierre_Beltoise__-__1>                 | 88    |
+| <http://dbpedia.org/resource/Mike_Hailwood__1>                           | 50    |
+| <http://dbpedia.org/resource/Alain_Prost>                                | 202   |
+| <http://dbpedia.org/resource/Jochen_Rindt>                               | 62    |
+| <http://dbpedia.org/resource/Juan_Manuel_Fangio>                         | 52    |
+| <http://dbpedia.org/resource/Manfred_Winkelhock>                         | 56    |
+| <http://dbpedia.org/resource/Mika_H%C3%A4kkinen>                         | 165   |
+| <http://dbpedia.org/resource/Niki_Lauda>                                 | 177   |
+| <http://dbpedia.org/resource/Riccardo_Patrese>                           | 257   |
+| <http://dbpedia.org/resource/Franck_Montagny>                            | 7     |
+| <http://dbpedia.org/resource/Tony_Shelly>                                | 3     |
+| <http://dbpedia.org/resource/Al_Pease>                                   | 3     |
+| <http://dbpedia.org/resource/Alberto_Crespo>                             | 1     |
+| <http://dbpedia.org/resource/Alejandro_de_Tomaso>                        | 2     |
+| <http://dbpedia.org/resource/Andrea_Chiesa>                              | 10    |
+| <http://dbpedia.org/resource/Archie_Scott_Brown>                         | 1     |
+| <http://dbpedia.org/resource/Bob_Drake_(racing_driver)>                  | 1     |
+| <http://dbpedia.org/resource/Bobby_Rahal>                                | 2     |
+| <http://dbpedia.org/resource/Chico_Landi>                                | 6     |
+| <http://dbpedia.org/resource/Clemente_Biondetti>                         | 1     |
+| <http://dbpedia.org/resource/David_Prophet>                              | 2     |
+| <http://dbpedia.org/resource/Hans-Joachim_Stuck>                         | 81    |
+| <http://dbpedia.org/resource/Hans_Stuck>                                 | 5     |
+| <http://dbpedia.org/resource/Helmut_Marko>                               | 10    |
+| <http://dbpedia.org/resource/Henry_Taylor_(racing_driver)>               | 11    |
+| <http://dbpedia.org/resource/Jaime_Alguersuari>                          | 46    |
+| <http://dbpedia.org/resource/Leslie_Marr>                                | 2     |
+| <http://dbpedia.org/resource/Miguel_%C3%81ngel_Guerra>                   | 4     |
+| <http://dbpedia.org/resource/Richard_Robarts>                            | 4     |
+| <http://dbpedia.org/resource/Rupert_Keegan>                              | 37    |
+| <http://dbpedia.org/resource/Tom_Pryce>                                  | 42    |
+| <http://dbpedia.org/resource/Xavier_Perrot>                              | 1     |
+| <http://dbpedia.org/resource/Zsolt_Baumgartner>                          | 20    |
+| <http://dbpedia.org/resource/H%C3%A9ctor_Rebaque>                        | 58    |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | 6     |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | 10    |
+| <http://dbpedia.org/resource/Ray_Reed>                                   | 1     |
+| <http://dbpedia.org/resource/Jack_Brabham>                               | 128   |
+| <http://dbpedia.org/resource/Willard_Cantrell>                           | 1     |
+| <http://dbpedia.org/resource/Damon_Hill>                                 | 122   |
+| <http://dbpedia.org/resource/Gilles_Villeneuve>                          | 68    |
+| <http://dbpedia.org/resource/Alan_Rees>                                  | 3     |
+| <http://dbpedia.org/resource/Alfonso_Thiele>                             | 1     |
+| <http://dbpedia.org/resource/Bill_Schindler>                             | 3     |
+| <http://dbpedia.org/resource/Christijan_Albers>                          | 46    |
+| <http://dbpedia.org/resource/Eddie_Sachs>                                | 7     |
+| <http://dbpedia.org/resource/Giovanni_Lavaggi>                           | 10    |
+| <http://dbpedia.org/resource/JJ_Lehto>                                   | 70    |
+| <http://dbpedia.org/resource/Jacques_Villeneuve_(elder)>                 | 3     |
+| <http://dbpedia.org/resource/Jim_Crawford_(racing_driver)>               | 2     |
+| <http://dbpedia.org/resource/Jim_Hall_(racing_driver)>                   | 12    |
+| <http://dbpedia.org/resource/John_Rhodes_(racing_driver)>                | 1     |
+| <http://dbpedia.org/resource/Luis_P%C3%A9rez-Sala>                       | 32    |
+| <http://dbpedia.org/resource/Mike_Parkes>                                | 7     |
+| <http://dbpedia.org/resource/Peter_Westbury>                             | 2     |
+| <http://dbpedia.org/resource/Ricardo_Rosset>                             | 33    |
+| <http://dbpedia.org/resource/Takuma_Sato>                                | 92    |
+| <http://dbpedia.org/resource/Tom_Bridger>                                | 1     |
+| <http://dbpedia.org/resource/Tony_Bettenhausen>                          | 11    |
+| <http://dbpedia.org/resource/Giancarlo_Fisichella>                       | 231   |
+| <http://dbpedia.org/resource/Christian_Klien>                            | 51    |
+| <http://dbpedia.org/resource/Gianmaria_Bruni>                            | 18    |
+| <http://dbpedia.org/resource/Giorgio_Pantano>                            | 15    |
+| <http://dbpedia.org/resource/Nanni_Galli>                                | 20    |
+| <http://dbpedia.org/resource/Nick_Heidfeld>                              | 185   |
+| <http://dbpedia.org/resource/Cliff_Allison>                              | 18    |
+| <http://dbpedia.org/resource/Conny_Andersson_(racing_driver)>            | 5     |
+| <http://dbpedia.org/resource/Marco_Apicella>                             | 1     |
+| <http://dbpedia.org/resource/Philippe_Alliot>                            | 116   |
+| <http://dbpedia.org/resource/Fred_Agabashian>                            | 9     |
+| <http://dbpedia.org/resource/Jean-Louis_Schlesser>                       | 2     |
+| <http://dbpedia.org/resource/Kenny_Acheson>                              | 10    |
+| <http://dbpedia.org/resource/Kurt_Adolff>                                | 1     |
+| <http://dbpedia.org/resource/Michele_Alboreto>                           | 215   |
+| <http://dbpedia.org/resource/Philippe_Adams>                             | 2     |
+| <http://dbpedia.org/resource/Ricardo_Zunino>                             | 11    |
+| <http://dbpedia.org/resource/Danny_Kladis>                               | 5     |
+
+Narrowed to these target datasets:  Automobile FormulaOneRacer StatesOfTheUnitedStates 
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema Automobile(assembly) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema FormulaOneRacer(races) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[FormulaOneRacer,races],=,[FormulaOneRacer,races]]).
+match([[FormulaOneRacer],=,[FormulaOneRacer]]).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema StatesOfTheUnitedStates(admittancedate) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Construct query entity(type(FormulaOneRacer),races) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/FormulaOneRacer> ; 
+<http://dbpedia.org/ontology/races> ?races . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------
+| subject                                                                  | races |
+====================================================================================
+| <http://dbpedia.org/resource/Kevin_Cogan>                                | 2     |
+| <http://dbpedia.org/resource/Andr%C3%A9_Simon_(racing_driver)>           | 12    |
+| <http://dbpedia.org/resource/Brian_Naylor>                               | 8     |
+| <http://dbpedia.org/resource/Christian_Danner>                           | 47    |
+| <http://dbpedia.org/resource/Eric_Thompson_(racing_driver)>              | 1     |
+| <http://dbpedia.org/resource/Franck_Lagorce>                             | 2     |
+| <http://dbpedia.org/resource/Frank_Gardner_(racing_driver)>              | 9     |
+| <http://dbpedia.org/resource/Jacques_Pollet>                             | 5     |
+| <http://dbpedia.org/resource/Jo_Vonlanthen>                              | 1     |
+| <http://dbpedia.org/resource/Johnny_Claes>                               | 25    |
+| <http://dbpedia.org/resource/Karl_Kling>                                 | 11    |
+| <http://dbpedia.org/resource/Luigi_Musso>                                | 25    |
+| <http://dbpedia.org/resource/Luiz_Bueno>                                 | 1     |
+| <http://dbpedia.org/resource/Mark_Blundell>                              | 63    |
+| <http://dbpedia.org/resource/Mark_Donohue>                               | 16    |
+| <http://dbpedia.org/resource/Peter_Gethin>                               | 31    |
+| <http://dbpedia.org/resource/Rudi_Fischer>                               | 8     |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Bourdais>                    | 27    |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Buemi>                       | 55    |
+| <http://dbpedia.org/resource/Tony_Lanfranchi>                            | 3     |
+| <http://dbpedia.org/resource/Jean-Pierre_Beltoise__-__1>                 | 88    |
+| <http://dbpedia.org/resource/Mike_Hailwood__1>                           | 50    |
+| <http://dbpedia.org/resource/Alain_Prost>                                | 202   |
+| <http://dbpedia.org/resource/Jochen_Rindt>                               | 62    |
+| <http://dbpedia.org/resource/Juan_Manuel_Fangio>                         | 52    |
+| <http://dbpedia.org/resource/Manfred_Winkelhock>                         | 56    |
+| <http://dbpedia.org/resource/Mika_H%C3%A4kkinen>                         | 165   |
+| <http://dbpedia.org/resource/Niki_Lauda>                                 | 177   |
+| <http://dbpedia.org/resource/Riccardo_Patrese>                           | 257   |
+| <http://dbpedia.org/resource/Franck_Montagny>                            | 7     |
+| <http://dbpedia.org/resource/Tony_Shelly>                                | 3     |
+| <http://dbpedia.org/resource/Al_Pease>                                   | 3     |
+| <http://dbpedia.org/resource/Alberto_Crespo>                             | 1     |
+| <http://dbpedia.org/resource/Alejandro_de_Tomaso>                        | 2     |
+| <http://dbpedia.org/resource/Andrea_Chiesa>                              | 10    |
+| <http://dbpedia.org/resource/Archie_Scott_Brown>                         | 1     |
+| <http://dbpedia.org/resource/Bob_Drake_(racing_driver)>                  | 1     |
+| <http://dbpedia.org/resource/Bobby_Rahal>                                | 2     |
+| <http://dbpedia.org/resource/Chico_Landi>                                | 6     |
+| <http://dbpedia.org/resource/Clemente_Biondetti>                         | 1     |
+| <http://dbpedia.org/resource/David_Prophet>                              | 2     |
+| <http://dbpedia.org/resource/Hans-Joachim_Stuck>                         | 81    |
+| <http://dbpedia.org/resource/Hans_Stuck>                                 | 5     |
+| <http://dbpedia.org/resource/Helmut_Marko>                               | 10    |
+| <http://dbpedia.org/resource/Henry_Taylor_(racing_driver)>               | 11    |
+| <http://dbpedia.org/resource/Jaime_Alguersuari>                          | 46    |
+| <http://dbpedia.org/resource/Leslie_Marr>                                | 2     |
+| <http://dbpedia.org/resource/Miguel_%C3%81ngel_Guerra>                   | 4     |
+| <http://dbpedia.org/resource/Richard_Robarts>                            | 4     |
+| <http://dbpedia.org/resource/Rupert_Keegan>                              | 37    |
+| <http://dbpedia.org/resource/Tom_Pryce>                                  | 42    |
+| <http://dbpedia.org/resource/Xavier_Perrot>                              | 1     |
+| <http://dbpedia.org/resource/Zsolt_Baumgartner>                          | 20    |
+| <http://dbpedia.org/resource/H%C3%A9ctor_Rebaque>                        | 58    |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | 6     |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | 10    |
+| <http://dbpedia.org/resource/Ray_Reed>                                   | 1     |
+| <http://dbpedia.org/resource/Jack_Brabham>                               | 128   |
+| <http://dbpedia.org/resource/Willard_Cantrell>                           | 1     |
+| <http://dbpedia.org/resource/Damon_Hill>                                 | 122   |
+| <http://dbpedia.org/resource/Gilles_Villeneuve>                          | 68    |
+| <http://dbpedia.org/resource/Alan_Rees>                                  | 3     |
+| <http://dbpedia.org/resource/Alfonso_Thiele>                             | 1     |
+| <http://dbpedia.org/resource/Bill_Schindler>                             | 3     |
+| <http://dbpedia.org/resource/Christijan_Albers>                          | 46    |
+| <http://dbpedia.org/resource/Eddie_Sachs>                                | 7     |
+| <http://dbpedia.org/resource/Giovanni_Lavaggi>                           | 10    |
+| <http://dbpedia.org/resource/JJ_Lehto>                                   | 70    |
+| <http://dbpedia.org/resource/Jacques_Villeneuve_(elder)>                 | 3     |
+| <http://dbpedia.org/resource/Jim_Crawford_(racing_driver)>               | 2     |
+| <http://dbpedia.org/resource/Jim_Hall_(racing_driver)>                   | 12    |
+| <http://dbpedia.org/resource/John_Rhodes_(racing_driver)>                | 1     |
+| <http://dbpedia.org/resource/Luis_P%C3%A9rez-Sala>                       | 32    |
+| <http://dbpedia.org/resource/Mike_Parkes>                                | 7     |
+| <http://dbpedia.org/resource/Peter_Westbury>                             | 2     |
+| <http://dbpedia.org/resource/Ricardo_Rosset>                             | 33    |
+| <http://dbpedia.org/resource/Takuma_Sato>                                | 92    |
+| <http://dbpedia.org/resource/Tom_Bridger>                                | 1     |
+| <http://dbpedia.org/resource/Tony_Bettenhausen>                          | 11    |
+| <http://dbpedia.org/resource/Giancarlo_Fisichella>                       | 231   |
+| <http://dbpedia.org/resource/Christian_Klien>                            | 51    |
+| <http://dbpedia.org/resource/Gianmaria_Bruni>                            | 18    |
+| <http://dbpedia.org/resource/Giorgio_Pantano>                            | 15    |
+| <http://dbpedia.org/resource/Nanni_Galli>                                | 20    |
+| <http://dbpedia.org/resource/Nick_Heidfeld>                              | 185   |
+| <http://dbpedia.org/resource/Cliff_Allison>                              | 18    |
+| <http://dbpedia.org/resource/Conny_Andersson_(racing_driver)>            | 5     |
+| <http://dbpedia.org/resource/Marco_Apicella>                             | 1     |
+| <http://dbpedia.org/resource/Philippe_Alliot>                            | 116   |
+| <http://dbpedia.org/resource/Fred_Agabashian>                            | 9     |
+| <http://dbpedia.org/resource/Jean-Louis_Schlesser>                       | 2     |
+| <http://dbpedia.org/resource/Kenny_Acheson>                              | 10    |
+| <http://dbpedia.org/resource/Kurt_Adolff>                                | 1     |
+| <http://dbpedia.org/resource/Michele_Alboreto>                           | 215   |
+| <http://dbpedia.org/resource/Philippe_Adams>                             | 2     |
+| <http://dbpedia.org/resource/Ricardo_Zunino>                             | 11    |
+| <http://dbpedia.org/resource/Danny_Kladis>                               | 5     |
+

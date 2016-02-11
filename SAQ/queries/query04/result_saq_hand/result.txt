@@ -1,0 +1,138 @@
+Query:  entity(type(Mountain),locatedOn(Earth),height) 
+Construct query entity(type(Mountain),locatedOn(Earth),height) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<locatedOn> <http://dbpedia.org/resource/Earth> ; 
+<height> ?height . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Mountain 
+
+Matching query schema Mountain(locatedOn,height) 
+to dataset schema Mountain(elevation) 
+Created match data: 
+similarity(0.5).
+match(none).
+match([[Mountain,locatedOn],<,[Mountain,elevation]]).
+match([[Mountain],=,[Mountain]]).
+
+Construct query entity(type(Mountain),elevation(Earth)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<http://dbpedia.org/ontology/elevation> <http://dbpedia.org/resource/Earth> . }
+
+The query did not return any data. 
+
+Construct query entity(type,elevation(Earth)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/elevation> <http://dbpedia.org/resource/Earth> . }
+
+Construct query entity(type(Mountain),elevation) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Mountain> ; 
+<http://dbpedia.org/ontology/elevation> ?elevation . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                 | elevation                                             |
+===================================================================================================================================================
+| <http://dbpedia.org/resource/Clark_Peak_(Medicine_Bow_Mountains)>                       | "3948.38"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gummer's_How>                                              | "321.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Itcha_Mountain>                                            | "2290.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Pillow_Ridge>                                              | "2400.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Yucca_Mountain>                                            | "2044.29"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Abert_Rim>                                                 | "2300.63"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Anahim_Peak>                                               | "1897.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Antler_Peak>                                               | "3067.2"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Arenig_Fawr>                                               | "854.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Ash_Mountain_(British_Columbia)>                           | "2125.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Ash_Mountain_(Montana)>                                    | "3123.59"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bare_Mountain_(Massachusetts)>                             | "309.067"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Beda_Fell>                                                 | "509.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Blackjack_Mountain_(Carroll_County,_Georgia)>              | "470.916"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Blackjack_Mountain_(Oklahoma)>                             | "381.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Blakeley_Raise>                                            | "389.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Bolna,_Rana>                                               | "1460.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Brahmagiri_(hill)>                                         | "1608.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Bread_Loaf_Mountain>                                       | "1168.91"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Brindlee_Mountain>                                         | "402.946"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Bukhansan>                                                 | "836.5"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Burke_Mountain_(Vermont)>                                  | "996.696"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Castej%C3%B3n_Mountains>                                   | "747.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Cha%C3%AEne_de_l'%C3%89pine>                               | "1425.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Chaux_Ronde>                                               | "2028.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Chinese_Wall_(Idaho)>                                      | "3425.34"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Cockscomb_(mountain)>                                      | "1768.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Corne_de_Sorebois>                                         | "2896.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crag_Mountain_(Massachusetts)>                             | "458.114"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Crap_Grisch>                                               | "2861.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Masegn>                                               | "2516.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Mats>                                                 | "2947.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_Sogn_Gion>                                            | "2252.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crap_la_Pala>                                              | "2151.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Crinkle_Crags>                                             | "859.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Crystal_Peak_(Box_Elder_County,_Utah)>                     | "2371.34"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Crystal_Peak_(Tenmile_Range)>                              | "4224.22"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Dallol_(volcano)>                                          | "-48.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Disappointment_Mountain>                                   | "552.907"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Discovery_Peak_(California)>                               | "1171.35"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Doyle_Peak>                                                | "3494.23"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/East_Peak_(New_Haven_County,_Connecticut)>                 | "297.485"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Fort_Mountain_(Maine)>                                     | "1178.66"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Fort_Mountain_(Murray_County,_Georgia)>                    | "868.68"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Gaviota_Peak>                                              | "749.808"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Gypsy_Peak>                                                | "2232.66"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Hayden_Mountain_(Oregon)>                                  | "1562.1"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Hochberg_(Chiemgau)>                                       | "775.6"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Hochberg_(Haardt)>                                         | "636.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Hochberg_(Swabian_Alb)>                                    | "1009.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Hohenstaufen_(mountain)>                                   | "684.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Howse_Peak>                                                | "3295.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Kassianspitze>                                             | "2581.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Lank_Rigg>                                                 | "541.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Lone_Butte_(British_Columbia)>                             | "1237.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Lone_Mountain_(California)>                                | "128.321"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Lone_Mountain_(New_York)>                                  | "1134.16"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Malheur_Butte>                                             | "811.073"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Manzano_Peak>                                              | "3077.87"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Marjan>                                                    | "178.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/McKnight_Mountain>                                         | "3098.29"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mnich_(mountain)>                                          | "2068.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monadnock_Mountain_(Vermont)>                              | "959.51"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mont_Bellevue>                                             | "333.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Monte_Binga>                                               | "2439.6"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monte_Salmone>                                             | "1560.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Monte_San_Salvatore>                                       | "912.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Monte_Verena>                                              | "2015.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Achilles_(Tasmania)>                                 | "1363.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Bielawski>                                           | "985.723"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Craig_(North_Carolina)>                              | "2026.01"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Deborah>                                             | "3760.93"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Faget>                                               | "3360.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Forget>                                              | "2122.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Fox_(Canada)>                                        | "2973.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Fox_(Queensland)>                                    | "120.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_French_(Queensland)>                                 | "579.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Haku_(Hy%C5%8Dgo)>                                   | "510.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Holmes>                                              | "3150.41"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Hosmer_(Iowa)>                                       | "316.992"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Huckle>                                              | "2500.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Kanmuri_(Gifu,_Fukui)>                               | "1256.6"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Kinka_(Gifu)>                                        | "328.9"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Liberty_(New_Hampshire)>                             | "1359.1"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Lindesay_(New_South_Wales)>                          | "1373.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Lindesay_(Queensland)>                               | "1177.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Longhu>                                              | "150.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Matsuo>                                              | "687.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_McPhail>                                             | "2886.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Michelson_(Chugach_Mountains)>                       | "2652.06"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Miwa>                                                | "467.1"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Moran>                                               | "3842.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Rose_(Nevada)>                                       | "3287.27"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Sanford_(British_Columbia)>                          | "1827.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+| <http://dbpedia.org/resource/Mount_Sanford_(Connecticut)>                               | "270.053"^^<http://www.w3.org/2001/XMLSchema#double>  |
+| <http://dbpedia.org/resource/Mount_Scott_(Antarctica)>                                  | "880.0"^^<http://www.w3.org/2001/XMLSchema#double>    |
+| <http://dbpedia.org/resource/Mount_Scott_(Canada)>                                      | "3296.0"^^<http://www.w3.org/2001/XMLSchema#double>   |
+

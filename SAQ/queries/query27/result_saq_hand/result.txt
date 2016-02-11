@@ -1,0 +1,14 @@
+Query:  entity(type(ProfessionalSurfers),bornIn(Australia)) 
+Construct query entity(type(ProfessionalSurfers),bornIn(Australia)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/ProfessionalSurfers> ; 
+<bornIn> <http://dbpedia.org/resource/Australia> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  
+
+No matches found for  ProfessionalSurfers(bornIn) 
+
+Cannot respond to   entity(type(ProfessionalSurfers),bornIn(Australia)) 
+

@@ -1,0 +1,14 @@
+Query:  entity(type(Games),developedBy(GMT)) 
+Construct query entity(type(Games),developedBy(GMT)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Games> ; 
+<developedBy> <http://dbpedia.org/resource/GMT> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  
+
+No matches found for  Games(developedBy) 
+
+Cannot respond to   entity(type(Games),developedBy(GMT)) 
+

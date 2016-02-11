@@ -1,0 +1,128 @@
+Query:  entity(type(MunichCompany)) 
+Construct query entity(type(MunichCompany)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/MunichCompany> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  City Company 
+
+Matching query schema MunichCompany 
+to dataset schema City(country,populationTotal) 
+Created match data: 
+similarity(0.16666666666666663).
+match(none).
+
+Matching query schema MunichCompany 
+to dataset schema Company(location,headquarter,locationCity) 
+Created match data: 
+similarity(0.25).
+match(none).
+match([[MunichCompany],=,[Company,location]]).
+
+Construct query entity(type(Company)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                       |
+=================================================================================================================================
+| <http://dbpedia.org/resource/American_River_Transportation_Company>                                                           |
+| <http://dbpedia.org/resource/Arvand_Free_Zone>                                                                                |
+| <http://dbpedia.org/resource/Constable_&_Robinson>                                                                            |
+| <http://dbpedia.org/resource/FRE_Records>                                                                                     |
+| <http://dbpedia.org/resource/Grands_Express_A%C3%A9riens>                                                                     |
+| <http://dbpedia.org/resource/Hazama_Corporation>                                                                              |
+| <http://dbpedia.org/resource/Heery_International>                                                                             |
+| <http://dbpedia.org/resource/Ixia_(company)>                                                                                  |
+| <http://dbpedia.org/resource/Nacho_King!>                                                                                     |
+| <http://dbpedia.org/resource/Orchard_Supply_Hardware>                                                                         |
+| <http://dbpedia.org/resource/Rediffusion_Television>                                                                          |
+| <http://dbpedia.org/resource/Thales_Training_&_Simulation>                                                                    |
+| <http://dbpedia.org/resource/20th_Century_Fox_Records>                                                                        |
+| <http://dbpedia.org/resource/42_Entertainment>                                                                                |
+| <http://dbpedia.org/resource/505_Games>                                                                                       |
+| <http://dbpedia.org/resource/99_Records>                                                                                      |
+| <http://dbpedia.org/resource/ABBYY>                                                                                           |
+| <http://dbpedia.org/resource/ALFA_(Mexico)>                                                                                   |
+| <http://dbpedia.org/resource/ASSIA_(company)>                                                                                 |
+| <http://dbpedia.org/resource/AT&T_Alascom>                                                                                    |
+| <http://dbpedia.org/resource/AT&T_Broadband>                                                                                  |
+| <http://dbpedia.org/resource/AT&T_Laboratories>                                                                               |
+| <http://dbpedia.org/resource/AT&T_Labs>                                                                                       |
+| <http://dbpedia.org/resource/Abacus_5>                                                                                        |
+| <http://dbpedia.org/resource/Abacus_Federal_Savings_Bank>                                                                     |
+| <http://dbpedia.org/resource/AbsInt>                                                                                          |
+| <http://dbpedia.org/resource/Acqua_Minerale_San_Benedetto>                                                                    |
+| <http://dbpedia.org/resource/Actus_Tragicus_(comics)>                                                                         |
+| <http://dbpedia.org/resource/Acumen_(organization)>                                                                           |
+| <http://dbpedia.org/resource/Aedas>                                                                                           |
+| <http://dbpedia.org/resource/Aeria_Games_and_Entertainment>                                                                   |
+| <http://dbpedia.org/resource/Agitprop!_Records>                                                                               |
+| <http://dbpedia.org/resource/Al-Barakat>                                                                                      |
+| <http://dbpedia.org/resource/Alfa_(Lebanon)>                                                                                  |
+| <http://dbpedia.org/resource/Alfa_Aesar>                                                                                      |
+| <http://dbpedia.org/resource/Alfa_Brewery>                                                                                    |
+| <http://dbpedia.org/resource/Alfa_Matrix>                                                                                     |
+| <http://dbpedia.org/resource/Aller_Media>                                                                                     |
+| <http://dbpedia.org/resource/Alliance_Air_(Uganda)>                                                                           |
+| <http://dbpedia.org/resource/Alliance_Airlines>                                                                               |
+| <http://dbpedia.org/resource/Allis-Chalmers>                                                                                  |
+| <http://dbpedia.org/resource/Allstream_Inc.>                                                                                  |
+| <http://dbpedia.org/resource/Almaz-Antey>                                                                                     |
+| <http://dbpedia.org/resource/Alta_Dena>                                                                                       |
+| <http://dbpedia.org/resource/Amalgam_Digital>                                                                                 |
+| <http://dbpedia.org/resource/Aman_Futures_Group>                                                                              |
+| <http://dbpedia.org/resource/Amer_Sports>                                                                                     |
+| <http://dbpedia.org/resource/America_Records_(France)>                                                                        |
+| <http://dbpedia.org/resource/American_Public_Power_Association>                                                               |
+| <http://dbpedia.org/resource/American_Water_(company)>                                                                        |
+| <http://dbpedia.org/resource/Andritz_AG>                                                                                      |
+| <http://dbpedia.org/resource/Angang_Steel_Company>                                                                            |
+| <http://dbpedia.org/resource/Annapurna_Pictures>                                                                              |
+| <http://dbpedia.org/resource/Annapurna_Studios>                                                                               |
+| <http://dbpedia.org/resource/Antix_Productions>                                                                               |
+| <http://dbpedia.org/resource/Antler_Luggage>                                                                                  |
+| <http://dbpedia.org/resource/Arctic_Slope_Regional_Corporation>                                                               |
+| <http://dbpedia.org/resource/Armstrong_Teasdale>                                                                              |
+| <http://dbpedia.org/resource/Arnott's_Biscuits>                                                                               |
+| <http://dbpedia.org/resource/As_seen_on_TV>                                                                                   |
+| <http://dbpedia.org/resource/Ashworth_(clothing)>                                                                             |
+| <http://dbpedia.org/resource/Asia_Airfreight_Terminal>                                                                        |
+| <http://dbpedia.org/resource/Atlantic_Airlines_(Nicaragua)>                                                                   |
+| <http://dbpedia.org/resource/Atlantic_Airlines_(United_Kingdom)>                                                              |
+| <http://dbpedia.org/resource/Atlantic_Airlines_de_Honduras>                                                                   |
+| <http://dbpedia.org/resource/Attention_To_Detail>                                                                             |
+| <http://dbpedia.org/resource/Audio_Dregs>                                                                                     |
+| <http://dbpedia.org/resource/Avlon_Industries>                                                                                |
+| <http://dbpedia.org/resource/B&H_Airlines>                                                                                    |
+| <http://dbpedia.org/resource/B&H_Photo_Video>                                                                                 |
+| <http://dbpedia.org/resource/BGW_Systems>                                                                                     |
+| <http://dbpedia.org/resource/BHC_Communications>                                                                              |
+| <http://dbpedia.org/resource/BKW_FMB_Energie>                                                                                 |
+| <http://dbpedia.org/resource/BMARC>                                                                                           |
+| <http://dbpedia.org/resource/Badcock_Home_Furniture>                                                                          |
+| <http://dbpedia.org/resource/Balch_&_Bingham>                                                                                 |
+| <http://dbpedia.org/resource/Balkan_(motorcycle)>                                                                             |
+| <http://dbpedia.org/resource/BancVue>                                                                                         |
+| <http://dbpedia.org/resource/Banco_Alfa>                                                                                      |
+| <http://dbpedia.org/resource/Bandit.fm>                                                                                       |
+| <http://dbpedia.org/resource/Bank_Internasional_Indonesia>                                                                    |
+| <http://dbpedia.org/resource/Barnaby_Records>                                                                                 |
+| <http://dbpedia.org/resource/Beatrice_Foods>                                                                                  |
+| <http://dbpedia.org/resource/Beatrice_International_Models>                                                                   |
+| <http://dbpedia.org/resource/Bega_Group>                                                                                      |
+| <http://dbpedia.org/resource/Beijing_Capital_International_Airport_Company_Limited>                                           |
+| <http://dbpedia.org/resource/Being_Inc.>                                                                                      |
+| <http://dbpedia.org/resource/Belgravia_(magazine)>                                                                            |
+| <http://dbpedia.org/resource/Bene_AG>                                                                                         |
+| <http://dbpedia.org/resource/Bergner's>                                                                                       |
+| <http://dbpedia.org/resource/Berjaya_Air>                                                                                     |
+| <http://dbpedia.org/resource/Berjaya_Group>                                                                                   |
+| <http://dbpedia.org/resource/Better_World_Books>                                                                              |
+| <http://dbpedia.org/resource/BiblioBazaar>                                                                                    |
+| <http://dbpedia.org/resource/Biesterfeld_(company)>                                                                           |
+| <http://dbpedia.org/resource/Big_C>                                                                                           |
+| <http://dbpedia.org/resource/Big_Huge_Games>                                                                                  |
+

@@ -1,0 +1,109 @@
+Query:  entity(subject(Turkmenistan),language) 
+Construct query entity(subject(Turkmenistan),language) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Turkmenistan> <http://dbpedia.org/ontology/language> ?language . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------
+| language                                       |
+==================================================
+| <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/resource/Turkmen_language> |
+--------------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,language) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.2222222222222222).
+match(none).
+match([[entity],=,[entity]]).
+match([[entity,language],=,[entity,language]]).
+
+Construct query entity(type(entity),subject(Turkmenistan),language) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Turkmenistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> ; 
+<http://dbpedia.org/ontology/language> ?language . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(Turkmenistan),language) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/Turkmenistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/language> ?language . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------------------------------------------------
+| type                                                                              | language                                       |
+======================================================================================================================================
+| <http://www.w3.org/2002/07/owl#Thing>                                             | <http://dbpedia.org/resource/Russian_language> |
+| <http://schema.org/Country>                                                       | <http://dbpedia.org/resource/Russian_language> |
+| <http://schema.org/Place>                                                         | <http://dbpedia.org/resource/Russian_language> |
+| <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/ontology/Country>                                             | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/ontology/Place>                                               | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/ontology/PopulatedPlace>                                      | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/ontology/Wikidata:Q532>                                       | <http://dbpedia.org/resource/Russian_language> |
+| <http://www.opengis.net/gml/_Feature>                                             | <http://dbpedia.org/resource/Russian_language> |
+| <http://umbel.org/umbel/rc/Country>                                               | <http://dbpedia.org/resource/Russian_language> |
+| <http://umbel.org/umbel/rc/Location_Underspecified>                               | <http://dbpedia.org/resource/Russian_language> |
+| <http://umbel.org/umbel/rc/PopulatedPlace>                                        | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Abstraction100002137>                              | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Country108544813>                                  | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/District108552138>                                 | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Economy108366753>                                  | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Group100031264>                                    | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Location100027167>                                 | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Object100002684>                                   | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Region108630985>                                   | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/System108435388>                                   | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/CentralAsianCountries>                             | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Russian-speakingCountriesAndTerritories>           | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/Single-partyStates>                                | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/StatesAndTerritoriesEstablishedIn1991>             | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/LandlockedCountries>                               | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/MemberStatesOfTheOrganisationOfIslamicCooperation> | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/MemberStatesOfTheUnitedNations>                    | <http://dbpedia.org/resource/Russian_language> |
+| <http://dbpedia.org/class/yago/ModernTurkicStates>                                | <http://dbpedia.org/resource/Russian_language> |
+| <http://www.w3.org/2002/07/owl#Thing>                                             | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://schema.org/Country>                                                       | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://schema.org/Place>                                                         | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://www.ontologydesignpatterns.org/ont/d0.owl#Location>                       | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/ontology/Country>                                             | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/ontology/Place>                                               | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/ontology/PopulatedPlace>                                      | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/ontology/Wikidata:Q532>                                       | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://www.opengis.net/gml/_Feature>                                             | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://umbel.org/umbel/rc/Country>                                               | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://umbel.org/umbel/rc/Location_Underspecified>                               | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://umbel.org/umbel/rc/PopulatedPlace>                                        | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Abstraction100002137>                              | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/AdministrativeDistrict108491826>                   | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Country108544813>                                  | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/District108552138>                                 | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Economy108366753>                                  | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Group100031264>                                    | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Location100027167>                                 | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Object100002684>                                   | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Region108630985>                                   | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/System108435388>                                   | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/YagoGeoEntity>                                     | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                 | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/CentralAsianCountries>                             | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>                           | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>                      | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Russian-speakingCountriesAndTerritories>           | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/Single-partyStates>                                | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/StatesAndTerritoriesEstablishedIn1991>             | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/LandlockedCountries>                               | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/MemberStatesOfTheOrganisationOfIslamicCooperation> | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/MemberStatesOfTheUnitedNations>                    | <http://dbpedia.org/resource/Turkmen_language> |
+| <http://dbpedia.org/class/yago/ModernTurkicStates>                                | <http://dbpedia.org/resource/Turkmen_language> |
+--------------------------------------------------------------------------------------------------------------------------------------
+

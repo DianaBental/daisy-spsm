@@ -1,0 +1,547 @@
+Query:  entity(type(Company),location(Munich)) 
+Construct query entity(type(Company),location(Munich)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> ; 
+<location> <http://dbpedia.org/resource/Munich> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Band BusCompany Company EducationalInstitution GeopoliticalOrganisation MilitaryUnit NonProfitOrganisation Organisation OrganisationMember OrganisationParish PoliticalParty UnitOfWork 
+
+Matching query schema Company(location) 
+to dataset schema OrganisationParish(membershipAsOf) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Company(location) 
+to dataset schema UnitOfWork(developer) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Company(location) 
+to dataset schema NonProfitOrganisation(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Company(location) 
+to dataset schema Organisation(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.011111111111111072).
+match(none).
+match([[Company],<,[Organisation]]).
+
+Matching query schema Company(location) 
+to dataset schema Band(affiliation,age,artPatron,bandMember,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,formerBandMember,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.010638297872340385).
+match(none).
+match([[Company],<,[Band]]).
+
+Matching query schema Company(location) 
+to dataset schema GeopoliticalOrganisation(GeopoliticalOrganisationAreaMetro,GeopoliticalOrganisationPopulationDensity,affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Company(location) 
+to dataset schema PoliticalParty(affiliation,age,artPatron,ceo,chairperson,childOrganisation,discipline,endowment,europeanAffiliation,europeanParliamentGroup,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,internationalAffiliation,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,mergedIntoParty,nationalAffiliation,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfMembersAsOf,numberOfSeatsInParliament,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,splitFromParty,spokesperson,superintendent,trustee,viafId,youthWing) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Company(location) 
+to dataset schema EducationalInstitution(affiliation,age,alumni,artPatron,ceo,chairperson,childOrganisation,closed,dean,discipline,educationSystem,endowment,extinctionDate,extinctionYear,facultySize,formationDate,formationYear,foundationPlace,generalCouncil,head,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfAcademicStaff,numberOfEmployees,numberOfGraduateStudents,numberOfLocations,numberOfStaff,numberOfStudents,numberOfUndergraduateStudents,numberOfVolunteers,officialSchoolColour,organisationMember,parentOrganisation,playerSeason,principal,product,rector,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,staff,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Company(location) 
+to dataset schema BusCompany(affiliation,age,artPatron,assetUnderManagement,assets,ceo,chairperson,childOrganisation,codeStockExchange,discipline,endowment,equity,extinctionDate,extinctionYear,fate,formationDate,formationYear,foundationPlace,generalCouncil,groundsForLiquidation,headquarter,hometown,honours,ideology,industry,internationally,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,marketCapitalisation,membership,nationalSelection,netIncome,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,operatingIncome,organisationMember,parentOrganisation,playerSeason,product,production,regionServed,regionalCouncil,registration,revenue,season,secretaryGeneral,service,slogan,stockExchange,subsidiary,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.016393442622950838).
+match(none).
+match([[Company],>,[BusCompany]]).
+match([[Company,location],>,[BusCompany,foundationPlace]]).
+
+Matching query schema Company(location) 
+to dataset schema Company(affiliation,age,artPatron,assetUnderManagement,assets,ceo,chairperson,childOrganisation,codeStockExchange,discipline,endowment,equity,extinctionDate,extinctionYear,fate,formationDate,formationYear,foundationPlace,generalCouncil,groundsForLiquidation,headquarter,hometown,honours,ideology,industry,internationally,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,marketCapitalisation,membership,nationalSelection,netIncome,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,operatingIncome,organisationMember,parentOrganisation,playerSeason,product,production,regionServed,regionalCouncil,registration,revenue,season,secretaryGeneral,service,slogan,stockExchange,subsidiary,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.024590163934426257).
+match(none).
+match([[Company],=,[Company]]).
+match([[Company,location],>,[Company,foundationPlace]]).
+
+Matching query schema Company(location) 
+to dataset schema MilitaryUnit(affiliation,age,aircraftAttack,aircraftBomber,aircraftElectronic,aircraftFighter,aircraftHelicopter,aircraftHelicopterAttack,aircraftHelicopterCargo,aircraftHelicopterMultirole,aircraftHelicopterObservation,aircraftHelicopterTransport,aircraftHelicopterUtility,aircraftInterceptor,aircraftPatrol,aircraftRecon,aircraftTrainer,aircraftTransport,anniversary,artPatron,battleHonours,ceo,chairperson,childOrganisation,commandStructure,disbanded,discipline,endowment,extinctionDate,extinctionYear,flyingHours,formationDate,formationYear,foundationPlace,fourthCommander,garrison,generalCouncil,headquarter,hometown,honours,identificationSymbol,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,march,membership,nationalSelection,nlaId,notableCommander,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,patron,playerSeason,product,regionServed,regionalCouncil,revenue,season,secondCommander,secretaryGeneral,slogan,superintendent,thirdCommander,trustee,viafId) 
+Created match data: 
+similarity(0.006756756756756799).
+match(none).
+match([[Company],<,[MilitaryUnit]]).
+
+Matching query schema Company(location) 
+to dataset schema OrganisationMember(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Construct query entity(type(Band)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Band> . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------
+| subject                                                                               |
+=========================================================================================
+| <http://dbpedia.org/resource/America's_Most_Wanted_(group)>                           |
+| <http://dbpedia.org/resource/Chervona_Ruta_(ensemble)>                                |
+| <http://dbpedia.org/resource/Doughboys_(Canadian_band)>                               |
+| <http://dbpedia.org/resource/Lycia_(band)>                                            |
+| <http://dbpedia.org/resource/Saros_(band)>                                            |
+| <http://dbpedia.org/resource/The_Doughboys_(New_Jersey_band)>                         |
+| <http://dbpedia.org/resource/Whitechapel_(band)>                                      |
+| <http://dbpedia.org/resource/2002_(band)>                                             |
+| <http://dbpedia.org/resource/27_(band)>                                               |
+| <http://dbpedia.org/resource/3+2_(band)>                                              |
+| <http://dbpedia.org/resource/3X_Krazy>                                                |
+| <http://dbpedia.org/resource/4-4-1>                                                   |
+| <http://dbpedia.org/resource/5_Seconds_of_Summer>                                     |
+| <http://dbpedia.org/resource/AJR_(band)>                                              |
+| <http://dbpedia.org/resource/ARORA_(vocal_group)>                                     |
+| <http://dbpedia.org/resource/Agent_X_(producers)>                                     |
+| <http://dbpedia.org/resource/Airbourne_(band)>                                        |
+| <http://dbpedia.org/resource/Aleksandar_Makedonski>                                   |
+| <http://dbpedia.org/resource/All_the_King's_Men_(King's_College_London)>              |
+| <http://dbpedia.org/resource/Allies_(band)>                                           |
+| <http://dbpedia.org/resource/Alton_McClain_and_Destiny>                               |
+| <http://dbpedia.org/resource/Alyson_Avenue>                                           |
+| <http://dbpedia.org/resource/Antaeus_(band)>                                          |
+| <http://dbpedia.org/resource/Antony_Hodgkinson>                                       |
+| <http://dbpedia.org/resource/Appa_(band)>                                             |
+| <http://dbpedia.org/resource/Apple_Pie_(band)>                                        |
+| <http://dbpedia.org/resource/Art_of_Fighting_(band)>                                  |
+| <http://dbpedia.org/resource/Artists_United_Against_Apartheid>                        |
+| <http://dbpedia.org/resource/Ashley_Cooper_(singer)>                                  |
+| <http://dbpedia.org/resource/Astarte_(band)>                                          |
+| <http://dbpedia.org/resource/Audio_Adrenaline>                                        |
+| <http://dbpedia.org/resource/Balkan_(band)>                                           |
+| <http://dbpedia.org/resource/Ballyhoo!>                                               |
+| <http://dbpedia.org/resource/Bandit_(band)>                                           |
+| <http://dbpedia.org/resource/Banket_(band)>                                           |
+| <http://dbpedia.org/resource/Barnabas_(band)>                                         |
+| <http://dbpedia.org/resource/Base_Ball_Bear>                                          |
+| <http://dbpedia.org/resource/Baumer_(band)>                                           |
+| <http://dbpedia.org/resource/Beatrice_(band)>                                         |
+| <http://dbpedia.org/resource/Beethoven's_Wig>                                         |
+| <http://dbpedia.org/resource/Bell_Tower_(band)>                                       |
+| <http://dbpedia.org/resource/Best_Kept_Secret_(production_team)>                      |
+| <http://dbpedia.org/resource/Bifrost_(band)>                                          |
+| <http://dbpedia.org/resource/Biology_(band)>                                          |
+| <http://dbpedia.org/resource/Blasphemy_(band)>                                        |
+| <http://dbpedia.org/resource/Bleed_the_Sky_(band)>                                    |
+| <http://dbpedia.org/resource/Blond_(band)>                                            |
+| <http://dbpedia.org/resource/Blonds_(band)>                                           |
+| <http://dbpedia.org/resource/Bloodthirsty_Butchers>                                   |
+| <http://dbpedia.org/resource/Boo!_(band)>                                             |
+| <http://dbpedia.org/resource/BoomBox_(American_band)>                                 |
+| <http://dbpedia.org/resource/BoomBox_(Ukrainian_band)>                                |
+| <http://dbpedia.org/resource/Boris_(band)>                                            |
+| <http://dbpedia.org/resource/Born_of_Osiris>                                          |
+| <http://dbpedia.org/resource/Boston_Common_(quartet)>                                 |
+| <http://dbpedia.org/resource/Bracken_(band)>                                          |
+| <http://dbpedia.org/resource/Brazzaville_(US_band)>                                   |
+| <http://dbpedia.org/resource/C'mon_(band)>                                            |
+| <http://dbpedia.org/resource/Capercaillie_(band)>                                     |
+| <http://dbpedia.org/resource/Cardiac_Kidz>                                            |
+| <http://dbpedia.org/resource/Cauldron_(band)>                                         |
+| <http://dbpedia.org/resource/Cavalera_Conspiracy>                                     |
+| <http://dbpedia.org/resource/Cazals_(band)>                                           |
+| <http://dbpedia.org/resource/Chakra_(band)>                                           |
+| <http://dbpedia.org/resource/Chant_(band)>                                            |
+| <http://dbpedia.org/resource/Cinder_(band)>                                           |
+| <http://dbpedia.org/resource/Claire_Voyant_(band)>                                    |
+| <http://dbpedia.org/resource/Claw_Hammer>                                             |
+| <http://dbpedia.org/resource/Coalesce_(band)>                                         |
+| <http://dbpedia.org/resource/Coaltar_of_the_Deepers>                                  |
+| <http://dbpedia.org/resource/Collapsed_Lung_(band)>                                   |
+| <http://dbpedia.org/resource/Collide_(band)>                                          |
+| <http://dbpedia.org/resource/Confession_(band)>                                       |
+| <http://dbpedia.org/resource/Crucified_Barbara>                                       |
+| <http://dbpedia.org/resource/Cruzados>                                                |
+| <http://dbpedia.org/resource/Cute_(Japanese_band)>                                    |
+| <http://dbpedia.org/resource/Cute_(Maltese_band)>                                     |
+| <http://dbpedia.org/resource/D-Boys>                                                  |
+| <http://dbpedia.org/resource/DJ_Luck_&_MC_Neat>                                       |
+| <http://dbpedia.org/resource/Dah_(band)>                                              |
+| <http://dbpedia.org/resource/Dark_Latin_Groove>                                       |
+| <http://dbpedia.org/resource/Darling_Violetta>                                        |
+| <http://dbpedia.org/resource/Darna_(band)>                                            |
+| <http://dbpedia.org/resource/David_MacDonald_(Christian_musician)>                    |
+| <http://dbpedia.org/resource/Decadence_(band)>                                        |
+| <http://dbpedia.org/resource/Deer_Tick_(band)>                                        |
+| <http://dbpedia.org/resource/Denim_(band)>                                            |
+| <http://dbpedia.org/resource/Desecration_(band)>                                      |
+| <http://dbpedia.org/resource/Destination_(group)>                                     |
+| <http://dbpedia.org/resource/Devil_Doll_(Slovenian_band)>                             |
+| <http://dbpedia.org/resource/Dimension_Zero_(American_band)>                          |
+| <http://dbpedia.org/resource/Displacer_(band)>                                        |
+| <http://dbpedia.org/resource/Dixiana_(band)>                                          |
+| <http://dbpedia.org/resource/Dixie_Dregs>                                             |
+| <http://dbpedia.org/resource/Dodo_and_the_Dodos>                                      |
+| <http://dbpedia.org/resource/Domine>                                                  |
+| <http://dbpedia.org/resource/Dorp_(band)>                                             |
+
+Construct query entity(type(MilitaryUnit)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MilitaryUnit> . }
+
+The query succeeded. The returned answers are: 
+----------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                  |
+============================================================================================================================
+| <http://dbpedia.org/resource/6_Squadron_SAAF>                                                                            |
+| <http://dbpedia.org/resource/No._6_Squadron_(Finland)>                                                                   |
+| <http://dbpedia.org/resource/No._6_Squadron_(Pakistan_Air_Force)>                                                        |
+| <http://dbpedia.org/resource/No._6_Squadron_RAAF>                                                                        |
+| <http://dbpedia.org/resource/No._6_Squadron_RNZAF>                                                                       |
+| <http://dbpedia.org/resource/101_Squadron_(Israel)>                                                                      |
+| <http://dbpedia.org/resource/101_Squadron_(Portugal)>                                                                    |
+| <http://dbpedia.org/resource/10th_Baluch_Regiment>                                                                       |
+| <http://dbpedia.org/resource/10th_Cavalry_Brigade_(British_Indian_Army)>                                                 |
+| <http://dbpedia.org/resource/113_Squadron_(Israel)>                                                                      |
+| <http://dbpedia.org/resource/11_Squadron_(Belgium)>                                                                      |
+| <http://dbpedia.org/resource/12_Squadron_SAAF>                                                                           |
+| <http://dbpedia.org/resource/13th_Regiment_Illinois_Volunteer_Cavalry>                                                   |
+| <http://dbpedia.org/resource/13th_Regiment_Massachusetts_Volunteer_Infantry>                                             |
+| <http://dbpedia.org/resource/14th_Brigade_(Australia)>                                                                   |
+| <http://dbpedia.org/resource/14th_Brigade_(Japan)>                                                                       |
+| <http://dbpedia.org/resource/14th_Regiment_(New_York_State_Militia)>                                                     |
+| <http://dbpedia.org/resource/14th_Regiment_Alabama_Infantry>                                                             |
+| <http://dbpedia.org/resource/14th_Regiment_Illinois_Volunteer_Cavalry>                                                   |
+| <http://dbpedia.org/resource/14th_Regiment_Royal_Artillery>                                                              |
+| <http://dbpedia.org/resource/15th_Brigade_(Australia)>                                                                   |
+| <http://dbpedia.org/resource/15th_Brigade_(Japan)>                                                                       |
+| <http://dbpedia.org/resource/15th_Regiment_Alabama_Infantry>                                                             |
+| <http://dbpedia.org/resource/15th_Regiment_Illinois_Volunteer_Cavalry>                                                   |
+| <http://dbpedia.org/resource/15th_Regiment_Massachusetts_Volunteer_Infantry>                                             |
+| <http://dbpedia.org/resource/16th_Brigade_(Australia)>                                                                   |
+| <http://dbpedia.org/resource/16th_Regiment_Illinois_Volunteer_Cavalry>                                                   |
+| <http://dbpedia.org/resource/16th_Regiment_Royal_Artillery>                                                              |
+| <http://dbpedia.org/resource/18th_Army_(German_Empire)>                                                                  |
+| <http://dbpedia.org/resource/18th_Army_(Soviet_Union)>                                                                   |
+| <http://dbpedia.org/resource/18th_Army_(Wehrmacht)>                                                                      |
+| <http://dbpedia.org/resource/19th_Battalion_(Australia)>                                                                 |
+| <http://dbpedia.org/resource/19th_Battalion_(United_States_Marine_Corps)>                                                |
+| <http://dbpedia.org/resource/1st/19th_Battalion,_Royal_New_South_Wales_Regiment>                                         |
+| <http://dbpedia.org/resource/1st_(Halifax-Dartmouth)_Field_Artillery_Regiment>                                           |
+| <http://dbpedia.org/resource/1st_Aviation_Regiment_(Australia)>                                                          |
+| <http://dbpedia.org/resource/1st_Aviation_Regiment_(United_States)>                                                      |
+| <http://dbpedia.org/resource/1st_Field_Artillery_Regiment_(Belgium)>                                                     |
+| <http://dbpedia.org/resource/1st_Field_Artillery_Regiment_(United_States)>                                               |
+| <http://dbpedia.org/resource/1st_Guards_Army_(Soviet_Union)>                                                             |
+| <http://dbpedia.org/resource/21st_Division_(German_Empire)>                                                              |
+| <http://dbpedia.org/resource/21st_Division_(United_Kingdom)>                                                             |
+| <http://dbpedia.org/resource/21st_Waffen_Mountain_Division_of_the_SS_Skanderbeg_(1st_Albanian)>                          |
+| <http://dbpedia.org/resource/22nd_Division_(German_Empire)>                                                              |
+| <http://dbpedia.org/resource/22nd_Division_(Imperial_Japanese_Army)>                                                     |
+| <http://dbpedia.org/resource/22nd_Division_(United_Kingdom)>                                                             |
+| <http://dbpedia.org/resource/23rd_Infantry_Division_Ferrara>                                                             |
+| <http://dbpedia.org/resource/23rd_Waffen_Mountain_Division_of_the_SS_Kama_(2nd_Croatian)>                                |
+| <http://dbpedia.org/resource/24th_Cavalry_Division_(Soviet_Union)>                                                       |
+| <http://dbpedia.org/resource/24th_Cavalry_Division_(United_States)>                                                      |
+| <http://dbpedia.org/resource/25th_Motorised_Division_Bologna>                                                            |
+| <http://dbpedia.org/resource/29_Squadron_SAAF>                                                                           |
+| <http://dbpedia.org/resource/29th_Brigade_(Australia)>                                                                   |
+| <http://dbpedia.org/resource/2nd_Cavalry_Brigade_(Australia)>                                                            |
+| <http://dbpedia.org/resource/2nd_Cavalry_Brigade_(United_Kingdom)>                                                       |
+| <http://dbpedia.org/resource/3rd_Brigade,_104th_Division_(United_States)>                                                |
+| <http://dbpedia.org/resource/3rd_Brigade,_7th_Infantry_Division_(United_States)>                                         |
+| <http://dbpedia.org/resource/3rd_Brigade_(Australia)>                                                                    |
+| <http://dbpedia.org/resource/3rd_Brigade_Combat_Team,_10th_Mountain_Division_(United_States)>                            |
+| <http://dbpedia.org/resource/3rd_Brigade_Combat_Team,_1st_Cavalry_Division>                                              |
+| <http://dbpedia.org/resource/3rd_Brigade_Combat_Team,_1st_Infantry_Division_(United_States)>                             |
+| <http://dbpedia.org/resource/40th_Division_(German_Empire)>                                                              |
+| <http://dbpedia.org/resource/40th_Division_(Imperial_Japanese_Army)>                                                     |
+| <http://dbpedia.org/resource/41st_Battalion,_Royal_New_South_Wales_Regiment>                                             |
+| <http://dbpedia.org/resource/41st_Battalion_Iowa_Volunteer_Infantry>                                                     |
+| <http://dbpedia.org/resource/44th_Infantry_Division_Cremona>                                                             |
+| <http://dbpedia.org/resource/49th_Infantry_Division_(United_States)>                                                     |
+| <http://dbpedia.org/resource/4th_Brigade,_104th_Division_(United_States)>                                                |
+| <http://dbpedia.org/resource/4th_Brigade_(Australia)>                                                                    |
+| <http://dbpedia.org/resource/4th_Brigade_Combat_Team,_10th_Mountain_Division>                                            |
+| <http://dbpedia.org/resource/4th_Brigade_Combat_Team,_1st_Armored_Division_(United_States)>                              |
+| <http://dbpedia.org/resource/4th_Brigade_Combat_Team,_2nd_Infantry_Division>                                             |
+| <http://dbpedia.org/resource/4th_Cavalry_Brigade_(Australia)>                                                            |
+| <http://dbpedia.org/resource/4th_Cavalry_Brigade_(United_Kingdom)>                                                       |
+| <http://dbpedia.org/resource/4th_Cavalry_Brigade_(United_States)>                                                        |
+| <http://dbpedia.org/resource/4th_Medical_Battalion_(United_States_Marine_Corps)>                                         |
+| <http://dbpedia.org/resource/500th_Air_Expeditionary_Group>                                                              |
+| <http://dbpedia.org/resource/552_Squadron_(Portugal)>                                                                    |
+| <http://dbpedia.org/resource/58th_(Rutlandshire)_Regiment_of_Foot>                                                       |
+| <http://dbpedia.org/resource/58th_Regiment_Alabama_Infantry>                                                             |
+| <http://dbpedia.org/resource/62nd_(Wiltshire)_Regiment_of_Foot>                                                          |
+| <http://dbpedia.org/resource/65th_(2nd_Lowland)_Division>                                                                |
+| <http://dbpedia.org/resource/71st_Airmobile_Brigade_(Greece)>                                                            |
+| <http://dbpedia.org/resource/71st_Infantry_Division_(United_States)>                                                     |
+| <http://dbpedia.org/resource/71st_New_York_Infantry>                                                                     |
+| <http://dbpedia.org/resource/72nd_Regiment,_Duke_of_Albany's_Own_Highlanders>                                            |
+| <http://dbpedia.org/resource/84th_Indiana_Infantry_Regiment>                                                             |
+| <http://dbpedia.org/resource/89th_Division_(People's_Republic_of_China)>                                                 |
+| <http://dbpedia.org/resource/8_Squadron_SAAF>                                                                            |
+| <http://dbpedia.org/resource/9_Squadron_(Belgium)>                                                                       |
+| <http://dbpedia.org/resource/9th_Brigade_(Australia)>                                                                    |
+| <http://dbpedia.org/resource/9th_SS_Panzer_Division_Hohenstaufen>                                                        |
+| <http://dbpedia.org/resource/Air_Force_Inspection_Agency>                                                                |
+| <http://dbpedia.org/resource/Alpine_Brigade_Julia>                                                                       |
+| <http://dbpedia.org/resource/Blue_Eagles>                                                                                |
+| <http://dbpedia.org/resource/Chicago_Board_of_Trade_Independent_Battery_Light_Artillery>                                 |
+| <http://dbpedia.org/resource/Civil_Air_Patrol>                                                                           |
+
+Construct query entity(type(Organisation)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Organisation> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                                                                                                                                                                                                                    |
+==============================================================================================================================================================================================================================================================================
+| <http://dbpedia.org/resource/6_Squadron_SAAF>                                                                                                                                                                                                                              |
+| <http://dbpedia.org/resource/Action_civique_de_Qu%C3%A9bec>                                                                                                                                                                                                                |
+| <http://dbpedia.org/resource/America's_Most_Wanted_(group)>                                                                                                                                                                                                                |
+| <http://dbpedia.org/resource/American_River_Transportation_Company>                                                                                                                                                                                                        |
+| <http://dbpedia.org/resource/Arvand_Free_Zone>                                                                                                                                                                                                                             |
+| <http://dbpedia.org/resource/Bayero_University_Kano>                                                                                                                                                                                                                       |
+| <http://dbpedia.org/resource/Bentworth_School_District>                                                                                                                                                                                                                    |
+| <http://dbpedia.org/resource/Brigidine_College,_Indooroopilly>                                                                                                                                                                                                             |
+| <http://dbpedia.org/resource/Brigidine_College,_St_Ives>                                                                                                                                                                                                                   |
+| <http://dbpedia.org/resource/Brigidine_College_Randwick>                                                                                                                                                                                                                   |
+| <http://dbpedia.org/resource/British_Universities_Snowsports_Council>                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/Chervona_Ruta_(ensemble)>                                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/Constable_&_Robinson>                                                                                                                                                                                                                         |
+| <http://dbpedia.org/resource/Dhammakaya_Open_University>                                                                                                                                                                                                                   |
+| <http://dbpedia.org/resource/Doughboys_(Canadian_band)>                                                                                                                                                                                                                    |
+| <http://dbpedia.org/resource/FRE_Records>                                                                                                                                                                                                                                  |
+| <http://dbpedia.org/resource/Global_Water_Policy_Project>                                                                                                                                                                                                                  |
+| <http://dbpedia.org/resource/Grands_Express_A%C3%A9riens>                                                                                                                                                                                                                  |
+| <http://dbpedia.org/resource/HC_Davos>                                                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/Hazama_Corporation>                                                                                                                                                                                                                           |
+| <http://dbpedia.org/resource/Heery_International>                                                                                                                                                                                                                          |
+| <http://dbpedia.org/resource/Inter_Region_Economic_Network>                                                                                                                                                                                                                |
+| <http://dbpedia.org/resource/Ixia_(company)>                                                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/KPPC_(defunct)>                                                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/Lycia_(band)>                                                                                                                                                                                                                                 |
+| <http://dbpedia.org/resource/Middlesbrough_Bears>                                                                                                                                                                                                                          |
+| <http://dbpedia.org/resource/Middlesbrough_Futsal_Club>                                                                                                                                                                                                                    |
+| <http://dbpedia.org/resource/Nacho_King!>                                                                                                                                                                                                                                  |
+| <http://dbpedia.org/resource/No._6_Squadron_(Finland)>                                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/No._6_Squadron_(Pakistan_Air_Force)>                                                                                                                                                                                                          |
+| <http://dbpedia.org/resource/No._6_Squadron_RAAF>                                                                                                                                                                                                                          |
+| <http://dbpedia.org/resource/No._6_Squadron_RNZAF>                                                                                                                                                                                                                         |
+| <http://dbpedia.org/resource/North_Raleigh_Christian_Academy>                                                                                                                                                                                                              |
+| <http://dbpedia.org/resource/Old_Swinford_Hospital>                                                                                                                                                                                                                        |
+| <http://dbpedia.org/resource/Orchard_Supply_Hardware>                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/Orissa_University_of_Agriculture_and_Technology>                                                                                                                                                                                              |
+| <http://dbpedia.org/resource/Passage_GAA_(Waterford)>                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/Pikes_Peak_Christian_School>                                                                                                                                                                                                                  |
+| <http://dbpedia.org/resource/Portora_Royal_School>                                                                                                                                                                                                                         |
+| <http://dbpedia.org/resource/Queen_City_Yacht_Club_(Seattle)>                                                                                                                                                                                                              |
+| <http://dbpedia.org/resource/Queen_City_Yacht_Club_(Toronto)>                                                                                                                                                                                                              |
+| <http://dbpedia.org/resource/Raynes_Park_High_School>                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/Rediffusion_Television>                                                                                                                                                                                                                       |
+| <http://dbpedia.org/resource/Ridge_Point_High_School>                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/Ridgefield_Park_High_School>                                                                                                                                                                                                                  |
+| <http://dbpedia.org/resource/Risdon_Park_High_School>                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/S.P._Tre_Fiori>                                                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/Saros_(band)>                                                                                                                                                                                                                                 |
+| <http://dbpedia.org/resource/Sonshine_Media_Network_International>                                                                                                                                                                                                         |
+| <http://dbpedia.org/resource/Super_Aguri_F1>                                                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/Thales_Training_&_Simulation>                                                                                                                                                                                                                 |
+| <http://dbpedia.org/resource/The_Doughboys_(New_Jersey_band)>                                                                                                                                                                                                              |
+| <http://dbpedia.org/resource/WGSP-FM>                                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/WGSP_(AM)>                                                                                                                                                                                                                                    |
+| <http://dbpedia.org/resource/WKPT-TV>                                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/WKPT_(AM)>                                                                                                                                                                                                                                    |
+| <http://dbpedia.org/resource/WLGZ-FM>                                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/Whitechapel_(band)>                                                                                                                                                                                                                           |
+| <http://dbpedia.org/resource/1._Liga_Classic>                                                                                                                                                                                                                              |
+| <http://dbpedia.org/resource/101_Squadron_(Israel)>                                                                                                                                                                                                                        |
+| <http://dbpedia.org/resource/101_Squadron_(Portugal)>                                                                                                                                                                                                                      |
+| <http://dbpedia.org/resource/10th_Baluch_Regiment>                                                                                                                                                                                                                         |
+| <http://dbpedia.org/resource/10th_Cavalry_Brigade_(British_Indian_Army)>                                                                                                                                                                                                   |
+| <http://dbpedia.org/resource/113_Squadron_(Israel)>                                                                                                                                                                                                                        |
+| <http://dbpedia.org/resource/11_Squadron_(Belgium)>                                                                                                                                                                                                                        |
+| <http://dbpedia.org/resource/12_Squadron_SAAF>                                                                                                                                                                                                                             |
+| <http://dbpedia.org/resource/13th_Regiment_Illinois_Volunteer_Cavalry>                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/13th_Regiment_Massachusetts_Volunteer_Infantry>                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/1449AM_URB>                                                                                                                                                                                                                                   |
+| <http://dbpedia.org/resource/14th_Brigade_(Australia)>                                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/14th_Brigade_(Japan)>                                                                                                                                                                                                                         |
+| <http://dbpedia.org/resource/14th_Regiment_(New_York_State_Militia)>                                                                                                                                                                                                       |
+| <http://dbpedia.org/resource/14th_Regiment_Alabama_Infantry>                                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/14th_Regiment_Illinois_Volunteer_Cavalry>                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/14th_Regiment_Royal_Artillery>                                                                                                                                                                                                                |
+| <http://dbpedia.org/resource/15th_Brigade_(Australia)>                                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/15th_Brigade_(Japan)>                                                                                                                                                                                                                         |
+| <http://dbpedia.org/resource/15th_Regiment_Alabama_Infantry>                                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/15th_Regiment_Illinois_Volunteer_Cavalry>                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/15th_Regiment_Massachusetts_Volunteer_Infantry>                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/16th_Brigade_(Australia)>                                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/16th_Regiment_Illinois_Volunteer_Cavalry>                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/16th_Regiment_Royal_Artillery>                                                                                                                                                                                                                |
+| <http://dbpedia.org/resource/18th_Army_(German_Empire)>                                                                                                                                                                                                                    |
+| <http://dbpedia.org/resource/18th_Army_(Soviet_Union)>                                                                                                                                                                                                                     |
+| <http://dbpedia.org/resource/18th_Army_(Wehrmacht)>                                                                                                                                                                                                                        |
+| <http://dbpedia.org/resource/19th_Battalion_(Australia)>                                                                                                                                                                                                                   |
+| <http://dbpedia.org/resource/19th_Battalion_(United_States_Marine_Corps)>                                                                                                                                                                                                  |
+| <http://dbpedia.org/resource/1st/19th_Battalion,_Royal_New_South_Wales_Regiment>                                                                                                                                                                                           |
+| <http://dbpedia.org/resource/1st_(Halifax-Dartmouth)_Field_Artillery_Regiment>                                                                                                                                                                                             |
+| <http://dbpedia.org/resource/1st_Aviation_Regiment_(Australia)>                                                                                                                                                                                                            |
+| <http://dbpedia.org/resource/1st_Aviation_Regiment_(United_States)>                                                                                                                                                                                                        |
+| <http://dbpedia.org/resource/1st_Field_Artillery_Regiment_(Belgium)>                                                                                                                                                                                                       |
+| <http://dbpedia.org/resource/1st_Field_Artillery_Regiment_(United_States)>                                                                                                                                                                                                 |
+| <http://dbpedia.org/resource/1st_Guards_Army_(Soviet_Union)>                                                                                                                                                                                                               |
+| <http://dbpedia.org/resource/2002_(band)>                                                                                                                                                                                                                                  |
+| <http://dbpedia.org/resource/20th_Century_Fox_Records>                                                                                                                                                                                                                     |
+
+Construct query entity(type(BusCompany),foundationPlace(Munich)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/BusCompany> ; 
+<http://dbpedia.org/ontology/foundationPlace> <http://dbpedia.org/resource/Munich> . }
+
+The query did not return any data. 
+
+Construct query entity(type,foundationPlace(Munich)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/foundationPlace> <http://dbpedia.org/resource/Munich> . }
+
+The query succeeded. The returned answers are: 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                           | type                                                                       |
+==================================================================================================================================================
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://www.w3.org/2002/07/owl#Thing>                                      |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://schema.org/Organization>                                           |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>              |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>       |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/ontology/Agent>                                        |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/ontology/Company>                                      |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/ontology/Organisation>                                 |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://umbel.org/umbel/rc/Business>                                       |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/Abstraction100002137>                       |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/AudioEquipmentManufacturers>                |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/Business108061042>                          |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/Company108058098>                           |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/Enterprise108056231>                        |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/Group100031264>                             |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/Institution108053576>                       |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/Manufacturer108060446>                      |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/Organization108008335>                      |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/SocialGroup107950920>                       |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                          |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/YagoLegalActor>                             |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/CompaniesOfGermany>                         |
+| <http://dbpedia.org/resource/Klotz_Digital>                       | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>               |
+| <http://dbpedia.org/resource/Truma_(company)>                     | <http://www.w3.org/2002/07/owl#Thing>                                      |
+| <http://dbpedia.org/resource/Truma_(company)>                     | <http://schema.org/Organization>                                           |
+| <http://dbpedia.org/resource/Truma_(company)>                     | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>              |
+| <http://dbpedia.org/resource/Truma_(company)>                     | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>       |
+| <http://dbpedia.org/resource/Truma_(company)>                     | <http://dbpedia.org/ontology/Agent>                                        |
+| <http://dbpedia.org/resource/Truma_(company)>                     | <http://dbpedia.org/ontology/Company>                                      |
+| <http://dbpedia.org/resource/Truma_(company)>                     | <http://dbpedia.org/ontology/Organisation>                                 |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://www.w3.org/2002/07/owl#Thing>                                      |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://schema.org/Organization>                                           |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>              |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>       |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/ontology/Agent>                                        |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/ontology/Company>                                      |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/ontology/Organisation>                                 |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/Abstraction100002137>                       |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/Company108058098>                           |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/Group100031264>                             |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/Institution108053576>                       |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/Organization108008335>                      |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/SocialGroup107950920>                       |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                          |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/YagoLegalActor>                             |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/CompaniesBasedInFlorida>                    |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/CompaniesEstablishedIn1981>                 |
+| <http://dbpedia.org/resource/Arthrex>                             | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>               |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://www.w3.org/2002/07/owl#Thing>                                      |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://schema.org/Organization>                                           |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>              |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>       |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/ontology/Agent>                                        |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/ontology/Company>                                      |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/ontology/Organisation>                                 |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://umbel.org/umbel/rc/Business>                                       |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://umbel.org/umbel/rc/Organization>                                   |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/Abstraction100002137>                       |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/Company108058098>                           |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/Group100031264>                             |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/Institution108053576>                       |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/Organization108008335>                      |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/SocialGroup107950920>                       |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                          |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/YagoLegalActor>                             |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/CompaniesBasedInMunich>                     |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/CompaniesEstablishedIn1963>                 |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/CompaniesListedOnTheFrankfurtStockExchange> |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>               |
+| <http://dbpedia.org/resource/Nemetschek>                          | <http://dbpedia.org/class/yago/SoftwareCompaniesOfGermany>                 |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://www.w3.org/2002/07/owl#Thing>                                      |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://schema.org/Organization>                                           |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>              |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>       |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/ontology/Agent>                                        |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/ontology/Company>                                      |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/ontology/Organisation>                                 |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/Abstraction100002137>                       |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/Company108058098>                           |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/Group100031264>                             |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/Institution108053576>                       |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/Organization108008335>                      |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/SocialGroup107950920>                       |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                          |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/YagoLegalActor>                             |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/CompaniesBasedInMunich>                     |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/CompaniesEstablishedIn1967>                 |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/DefenceCompaniesOfGermany>                  |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> | <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>               |
+| <http://dbpedia.org/resource/Osram>                               | <http://www.w3.org/2002/07/owl#Thing>                                      |
+| <http://dbpedia.org/resource/Osram>                               | <http://schema.org/Organization>                                           |
+| <http://dbpedia.org/resource/Osram>                               | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>              |
+| <http://dbpedia.org/resource/Osram>                               | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson>       |
+| <http://dbpedia.org/resource/Osram>                               | <http://dbpedia.org/ontology/Agent>                                        |
+| <http://dbpedia.org/resource/Osram>                               | <http://dbpedia.org/ontology/Company>                                      |
+| <http://dbpedia.org/resource/Osram>                               | <http://dbpedia.org/ontology/Organisation>                                 |
+| <http://dbpedia.org/resource/Osram>                               | <http://dbpedia.org/class/yago/Abstraction100002137>                       |
+| <http://dbpedia.org/resource/Osram>                               | <http://dbpedia.org/class/yago/Company108058098>                           |
+
+Construct query entity(type(Company),foundationPlace(Munich)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> ; 
+<http://dbpedia.org/ontology/foundationPlace> <http://dbpedia.org/resource/Munich> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------------
+| subject                                                           |
+=====================================================================
+| <http://dbpedia.org/resource/Klotz_Digital>                       |
+| <http://dbpedia.org/resource/Truma_(company)>                     |
+| <http://dbpedia.org/resource/Arthrex>                             |
+| <http://dbpedia.org/resource/Nemetschek>                          |
+| <http://dbpedia.org/resource/Elektroniksystem-_und_Logistik-GmbH> |
+| <http://dbpedia.org/resource/Osram>                               |
+| <http://dbpedia.org/resource/Travian_Games>                       |
+| <http://dbpedia.org/resource/Siemens_Financial_Services>          |
+| <http://dbpedia.org/resource/Wienerwald_(restaurant)>             |
+| <http://dbpedia.org/resource/Amiando>                             |
+| <http://dbpedia.org/resource/Metaio_GmbH>                         |
+| <http://dbpedia.org/resource/Carpooling.com>                      |
+| <http://dbpedia.org/resource/Telegate>                            |
+| <http://dbpedia.org/resource/Metzeler>                            |
+| <http://dbpedia.org/resource/NorCom>                              |
+---------------------------------------------------------------------
+

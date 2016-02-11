@@ -1,0 +1,19 @@
+Query:  entity(mayorOf(Berlin)) 
+Construct query entity(mayorOf(Berlin)) 
+SELECT *
+WHERE { ?subject <mayorOf> <http://dbpedia.org/resource/Berlin> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Thing 
+
+Matching query schema entity(mayorOf) 
+to dataset schema Thing(institution) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+No matches found for  entity(mayorOf) 
+
+Cannot respond to   entity(mayorOf(Berlin)) 
+

@@ -1,0 +1,7 @@
+surfaceWaterBodies : correct
+SubBasinArea : does not exist
+RiverBodyName : should be riverName 
+altitudeTypology'-Mid-altitude: correct
+associatedGroundwaterId -'10065' : variable correct, constant wrong
+ 
+

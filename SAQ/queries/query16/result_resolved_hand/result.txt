@@ -1,0 +1,93 @@
+Query:  entity(type(Film),director(Francis_Ford_Coppola)) 
+Construct query entity(type(Film),director(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> ; 
+<http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------
+| subject                                                     |
+===============================================================
+| <http://dbpedia.org/resource/Hammett_(film)>                |
+| <http://dbpedia.org/resource/The_Rain_People>               |
+| <http://dbpedia.org/resource/Twixt_(film)>                  |
+| <http://dbpedia.org/resource/The_Conversation>              |
+| <http://dbpedia.org/resource/The_Godfather_Part_II>         |
+| <http://dbpedia.org/resource/The_Godfather_Part_III>        |
+| <http://dbpedia.org/resource/The_Terror_(1963_film)>        |
+| <http://dbpedia.org/resource/The_Cotton_Club_(film)>        |
+| <http://dbpedia.org/resource/The_Rainmaker_(1997_film)>     |
+| <http://dbpedia.org/resource/Apocalypse_Now>                |
+| <http://dbpedia.org/resource/Dementia_13>                   |
+| <http://dbpedia.org/resource/Tucker:_The_Man_and_His_Dream> |
+| <http://dbpedia.org/resource/Tonight_for_Sure>              |
+| <http://dbpedia.org/resource/The_Bellboy_and_the_Playgirls> |
+| <http://dbpedia.org/resource/Peggy_Sue_Got_Married>         |
+| <http://dbpedia.org/resource/Bram_Stoker's_Dracula>         |
+| <http://dbpedia.org/resource/Battle_Beyond_the_Sun>         |
+| <http://dbpedia.org/resource/Gardens_of_Stone>              |
+| <http://dbpedia.org/resource/Rumble_Fish>                   |
+| <http://dbpedia.org/resource/You're_a_Big_Boy_Now>          |
+| <http://dbpedia.org/resource/Jack_(1996_film)>              |
+| <http://dbpedia.org/resource/The_Godfather>                 |
+| <http://dbpedia.org/resource/The_Godfather_(film_series)>   |
+| <http://dbpedia.org/resource/The_Godfather_Saga>            |
+| <http://dbpedia.org/resource/Tetro>                         |
+| <http://dbpedia.org/resource/The_Outsiders_(film)>          |
+| <http://dbpedia.org/resource/Youth_Without_Youth_(film)>    |
+| <http://dbpedia.org/resource/One_from_the_Heart>            |
+| <http://dbpedia.org/resource/Apocalypse_Now_Redux>          |
+| <http://dbpedia.org/resource/New_York_Stories>              |
+---------------------------------------------------------------
+
+Narrowed to these target datasets:  Film 
+
+Matching query schema Film(director) 
+to dataset schema Film(director) 
+Created match data: 
+similarity(1.0).
+match(none).
+match([[Film,director],=,[Film,director]]).
+match([[Film],=,[Film]]).
+
+Construct query entity(type(Film),director(Francis_Ford_Coppola)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> ; 
+<http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Francis_Ford_Coppola> . }
+
+The query succeeded. The returned answers are: 
+---------------------------------------------------------------
+| subject                                                     |
+===============================================================
+| <http://dbpedia.org/resource/Hammett_(film)>                |
+| <http://dbpedia.org/resource/The_Rain_People>               |
+| <http://dbpedia.org/resource/Twixt_(film)>                  |
+| <http://dbpedia.org/resource/The_Conversation>              |
+| <http://dbpedia.org/resource/The_Godfather_Part_II>         |
+| <http://dbpedia.org/resource/The_Godfather_Part_III>        |
+| <http://dbpedia.org/resource/The_Terror_(1963_film)>        |
+| <http://dbpedia.org/resource/The_Cotton_Club_(film)>        |
+| <http://dbpedia.org/resource/The_Rainmaker_(1997_film)>     |
+| <http://dbpedia.org/resource/Apocalypse_Now>                |
+| <http://dbpedia.org/resource/Dementia_13>                   |
+| <http://dbpedia.org/resource/Tucker:_The_Man_and_His_Dream> |
+| <http://dbpedia.org/resource/Tonight_for_Sure>              |
+| <http://dbpedia.org/resource/The_Bellboy_and_the_Playgirls> |
+| <http://dbpedia.org/resource/Peggy_Sue_Got_Married>         |
+| <http://dbpedia.org/resource/Bram_Stoker's_Dracula>         |
+| <http://dbpedia.org/resource/Battle_Beyond_the_Sun>         |
+| <http://dbpedia.org/resource/Gardens_of_Stone>              |
+| <http://dbpedia.org/resource/Rumble_Fish>                   |
+| <http://dbpedia.org/resource/You're_a_Big_Boy_Now>          |
+| <http://dbpedia.org/resource/Jack_(1996_film)>              |
+| <http://dbpedia.org/resource/The_Godfather>                 |
+| <http://dbpedia.org/resource/The_Godfather_(film_series)>   |
+| <http://dbpedia.org/resource/The_Godfather_Saga>            |
+| <http://dbpedia.org/resource/Tetro>                         |
+| <http://dbpedia.org/resource/The_Outsiders_(film)>          |
+| <http://dbpedia.org/resource/Youth_Without_Youth_(film)>    |
+| <http://dbpedia.org/resource/One_from_the_Heart>            |
+| <http://dbpedia.org/resource/Apocalypse_Now_Redux>          |
+| <http://dbpedia.org/resource/New_York_Stories>              |
+---------------------------------------------------------------
+

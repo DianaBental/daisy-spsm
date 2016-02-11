@@ -1,0 +1,447 @@
+Query:  entity(type(FormulaOneRacer),races) 
+Construct query entity(type(FormulaOneRacer),races) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/FormulaOneRacer> ; 
+<http://dbpedia.org/ontology/races> ?races . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------
+| subject                                                                  | races |
+====================================================================================
+| <http://dbpedia.org/resource/Kevin_Cogan>                                | 2     |
+| <http://dbpedia.org/resource/Andr%C3%A9_Simon_(racing_driver)>           | 12    |
+| <http://dbpedia.org/resource/Brian_Naylor>                               | 8     |
+| <http://dbpedia.org/resource/Christian_Danner>                           | 47    |
+| <http://dbpedia.org/resource/Eric_Thompson_(racing_driver)>              | 1     |
+| <http://dbpedia.org/resource/Franck_Lagorce>                             | 2     |
+| <http://dbpedia.org/resource/Frank_Gardner_(racing_driver)>              | 9     |
+| <http://dbpedia.org/resource/Jacques_Pollet>                             | 5     |
+| <http://dbpedia.org/resource/Jo_Vonlanthen>                              | 1     |
+| <http://dbpedia.org/resource/Johnny_Claes>                               | 25    |
+| <http://dbpedia.org/resource/Karl_Kling>                                 | 11    |
+| <http://dbpedia.org/resource/Luigi_Musso>                                | 25    |
+| <http://dbpedia.org/resource/Luiz_Bueno>                                 | 1     |
+| <http://dbpedia.org/resource/Mark_Blundell>                              | 63    |
+| <http://dbpedia.org/resource/Mark_Donohue>                               | 16    |
+| <http://dbpedia.org/resource/Peter_Gethin>                               | 31    |
+| <http://dbpedia.org/resource/Rudi_Fischer>                               | 8     |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Bourdais>                    | 27    |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Buemi>                       | 55    |
+| <http://dbpedia.org/resource/Tony_Lanfranchi>                            | 3     |
+| <http://dbpedia.org/resource/Jean-Pierre_Beltoise__-__1>                 | 88    |
+| <http://dbpedia.org/resource/Mike_Hailwood__1>                           | 50    |
+| <http://dbpedia.org/resource/Alain_Prost>                                | 202   |
+| <http://dbpedia.org/resource/Jochen_Rindt>                               | 62    |
+| <http://dbpedia.org/resource/Juan_Manuel_Fangio>                         | 52    |
+| <http://dbpedia.org/resource/Manfred_Winkelhock>                         | 56    |
+| <http://dbpedia.org/resource/Mika_H%C3%A4kkinen>                         | 165   |
+| <http://dbpedia.org/resource/Niki_Lauda>                                 | 177   |
+| <http://dbpedia.org/resource/Riccardo_Patrese>                           | 257   |
+| <http://dbpedia.org/resource/Franck_Montagny>                            | 7     |
+| <http://dbpedia.org/resource/Tony_Shelly>                                | 3     |
+| <http://dbpedia.org/resource/Al_Pease>                                   | 3     |
+| <http://dbpedia.org/resource/Alberto_Crespo>                             | 1     |
+| <http://dbpedia.org/resource/Alejandro_de_Tomaso>                        | 2     |
+| <http://dbpedia.org/resource/Andrea_Chiesa>                              | 10    |
+| <http://dbpedia.org/resource/Archie_Scott_Brown>                         | 1     |
+| <http://dbpedia.org/resource/Bob_Drake_(racing_driver)>                  | 1     |
+| <http://dbpedia.org/resource/Bobby_Rahal>                                | 2     |
+| <http://dbpedia.org/resource/Chico_Landi>                                | 6     |
+| <http://dbpedia.org/resource/Clemente_Biondetti>                         | 1     |
+| <http://dbpedia.org/resource/David_Prophet>                              | 2     |
+| <http://dbpedia.org/resource/Hans-Joachim_Stuck>                         | 81    |
+| <http://dbpedia.org/resource/Hans_Stuck>                                 | 5     |
+| <http://dbpedia.org/resource/Helmut_Marko>                               | 10    |
+| <http://dbpedia.org/resource/Henry_Taylor_(racing_driver)>               | 11    |
+| <http://dbpedia.org/resource/Jaime_Alguersuari>                          | 46    |
+| <http://dbpedia.org/resource/Leslie_Marr>                                | 2     |
+| <http://dbpedia.org/resource/Miguel_%C3%81ngel_Guerra>                   | 4     |
+| <http://dbpedia.org/resource/Richard_Robarts>                            | 4     |
+| <http://dbpedia.org/resource/Rupert_Keegan>                              | 37    |
+| <http://dbpedia.org/resource/Tom_Pryce>                                  | 42    |
+| <http://dbpedia.org/resource/Xavier_Perrot>                              | 1     |
+| <http://dbpedia.org/resource/Zsolt_Baumgartner>                          | 20    |
+| <http://dbpedia.org/resource/H%C3%A9ctor_Rebaque>                        | 58    |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | 6     |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | 10    |
+| <http://dbpedia.org/resource/Ray_Reed>                                   | 1     |
+| <http://dbpedia.org/resource/Jack_Brabham>                               | 128   |
+| <http://dbpedia.org/resource/Willard_Cantrell>                           | 1     |
+| <http://dbpedia.org/resource/Damon_Hill>                                 | 122   |
+| <http://dbpedia.org/resource/Gilles_Villeneuve>                          | 68    |
+| <http://dbpedia.org/resource/Alan_Rees>                                  | 3     |
+| <http://dbpedia.org/resource/Alfonso_Thiele>                             | 1     |
+| <http://dbpedia.org/resource/Bill_Schindler>                             | 3     |
+| <http://dbpedia.org/resource/Christijan_Albers>                          | 46    |
+| <http://dbpedia.org/resource/Eddie_Sachs>                                | 7     |
+| <http://dbpedia.org/resource/Giovanni_Lavaggi>                           | 10    |
+| <http://dbpedia.org/resource/JJ_Lehto>                                   | 70    |
+| <http://dbpedia.org/resource/Jacques_Villeneuve_(elder)>                 | 3     |
+| <http://dbpedia.org/resource/Jim_Crawford_(racing_driver)>               | 2     |
+| <http://dbpedia.org/resource/Jim_Hall_(racing_driver)>                   | 12    |
+| <http://dbpedia.org/resource/John_Rhodes_(racing_driver)>                | 1     |
+| <http://dbpedia.org/resource/Luis_P%C3%A9rez-Sala>                       | 32    |
+| <http://dbpedia.org/resource/Mike_Parkes>                                | 7     |
+| <http://dbpedia.org/resource/Peter_Westbury>                             | 2     |
+| <http://dbpedia.org/resource/Ricardo_Rosset>                             | 33    |
+| <http://dbpedia.org/resource/Takuma_Sato>                                | 92    |
+| <http://dbpedia.org/resource/Tom_Bridger>                                | 1     |
+| <http://dbpedia.org/resource/Tony_Bettenhausen>                          | 11    |
+| <http://dbpedia.org/resource/Giancarlo_Fisichella>                       | 231   |
+| <http://dbpedia.org/resource/Christian_Klien>                            | 51    |
+| <http://dbpedia.org/resource/Gianmaria_Bruni>                            | 18    |
+| <http://dbpedia.org/resource/Giorgio_Pantano>                            | 15    |
+| <http://dbpedia.org/resource/Nanni_Galli>                                | 20    |
+| <http://dbpedia.org/resource/Nick_Heidfeld>                              | 185   |
+| <http://dbpedia.org/resource/Cliff_Allison>                              | 18    |
+| <http://dbpedia.org/resource/Conny_Andersson_(racing_driver)>            | 5     |
+| <http://dbpedia.org/resource/Marco_Apicella>                             | 1     |
+| <http://dbpedia.org/resource/Philippe_Alliot>                            | 116   |
+| <http://dbpedia.org/resource/Fred_Agabashian>                            | 9     |
+| <http://dbpedia.org/resource/Jean-Louis_Schlesser>                       | 2     |
+| <http://dbpedia.org/resource/Kenny_Acheson>                              | 10    |
+| <http://dbpedia.org/resource/Kurt_Adolff>                                | 1     |
+| <http://dbpedia.org/resource/Michele_Alboreto>                           | 215   |
+| <http://dbpedia.org/resource/Philippe_Adams>                             | 2     |
+| <http://dbpedia.org/resource/Ricardo_Zunino>                             | 11    |
+| <http://dbpedia.org/resource/Danny_Kladis>                               | 5     |
+
+Narrowed to these target datasets:  Animal AutoRacingLeague Automobile AutomobileEngine Cardinal Convention FigureSkater FormulaOneRacer FormulaOneRacing FormulaOneTeam MilitaryUnit MotocycleRacer MotorsportRacer MythologicalFigure NascarDriver RacingDriver RallyDriver Single SupremeCourtOfTheUnitedStatesCase UnitOfWork 
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema UnitOfWork(developer) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema Convention(causedBy,duration,endDate,followingEvent,nextEvent,numberOfPeopleAttending,participant,previousEvent,startDate) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema SupremeCourtOfTheUnitedStatesCase(argueDate,attorneyGeneral,codeBook,decideDate,developer,judge,legalArticle,procedure,ruling,solicitorGeneral,systemOfLaw) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema Animal(binomial,binomialAuthority,breeder,classis,conservationStatus,conservationStatusSystem,dam,damsire,domain,family,foalDate,genus,grandsire,kingdom,order,phylum,scientificName,sire,species,subClassis,subFamily,subTribus,superFamily,superTribus,taxon,tribus) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema Automobile(AutomobileFuelCapacity,AutomobileWheelbase,MeanOfTransportationDiameter,MeanOfTransportationHeight,MeanOfTransportationLength,MeanOfTransportationMass,MeanOfTransportationWeight,MeanOfTransportationWidth,assembly,automobilePlatform,bodyStyle,class,designCompany,discharge,dischargeAverage,engine,engineType,fuelCapacity,introductionDate,layout,modelEndDate,modelEndYear,modelStartDate,modelStartYear,numberOfCrew,numberOfLaunches,numberOfSeats,powerType,rebuilder,relatedMeanOfTransportation,transmission,version,wheelbase) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema Single(WorkRuntime,aSide,alternativeTitle,artist,author,bSide,basedOn,certification,certificationDate,chiefEditor,completionDate,composer,license,mainCharacter,musicComposer,musicType,musicalArtist,musicalBand,musicalKey,originalLanguage,originalTitle,previousWork,producer,productionCompany,recordDate,recordedIn,releaseDate,runtime,starring,subjectTerm,subsequentWork,translator,writer) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema AutomobileEngine(AutomobileEngineAcceleration,AutomobileEngineCoEmission,AutomobileEngineCylinderBore,AutomobileEngineDiameter,AutomobileEngineDisplacement,AutomobileEngineHeight,AutomobileEngineLength,AutomobileEnginePistonStroke,AutomobileEnginePowerOutput,AutomobileEngineTopSpeed,AutomobileEngineTorqueOutput,AutomobileEngineWeight,AutomobileEngineWidth,acceleration,automobileModel,blockAlloy,coEmission,compressionRatio,configuration,coolingSystem,cylinderBore,displacement,endYearOfInsertion,fuelConsumption,fuelSystem,fuelType,headAlloy,note,oilSystem,pistonStroke,powerOutput,redline,startYearOfInsertion,torqueOutput,valvetrain) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema AutoRacingLeague(affiliation,age,artPatron,ceo,chairperson,childOrganisation,currentSeason,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfTeams,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema FormulaOneTeam(affiliation,age,artPatron,ceo,chairperson,childOrganisation,currentMember,currentTeamMember,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,generalManager,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,manager,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,playerInTeam,playerSeason,product,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema FormulaOneRacing(affiliation,age,artPatron,ceo,chairperson,childOrganisation,circuitLength,circuitName,currentSeason,discipline,endowment,extinctionDate,extinctionYear,formationDate,formationYear,foundationPlace,generalCouncil,headquarter,hometown,honours,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,membership,nationalSelection,nlaId,numberOfEmployees,numberOfLaps,numberOfLocations,numberOfStaff,numberOfTeams,numberOfVolunteers,organisationMember,parentOrganisation,playerSeason,product,raceLength,regionServed,regionalCouncil,revenue,season,secretaryGeneral,slogan,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema MilitaryUnit(affiliation,age,aircraftAttack,aircraftBomber,aircraftElectronic,aircraftFighter,aircraftHelicopter,aircraftHelicopterAttack,aircraftHelicopterCargo,aircraftHelicopterMultirole,aircraftHelicopterObservation,aircraftHelicopterTransport,aircraftHelicopterUtility,aircraftInterceptor,aircraftPatrol,aircraftRecon,aircraftTrainer,aircraftTransport,anniversary,artPatron,battleHonours,ceo,chairperson,childOrganisation,commandStructure,disbanded,discipline,endowment,extinctionDate,extinctionYear,flyingHours,formationDate,formationYear,foundationPlace,fourthCommander,garrison,generalCouncil,headquarter,hometown,honours,identificationSymbol,ideology,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,march,membership,nationalSelection,nlaId,notableCommander,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,organisationMember,parentOrganisation,patron,playerSeason,product,regionServed,regionalCouncil,revenue,season,secondCommander,secretaryGeneral,slogan,superintendent,thirdCommander,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema Cardinal(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema MythologicalFigure(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mythology,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema MotocycleRacer(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema MotorsportRacer(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema NascarDriver(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema RacingDriver(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema RallyDriver(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema FigureSkater(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,choreographer,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentPartner,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerChoreographer,formerCoach,formerPartner,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema FormulaOneRacer(races) 
+to dataset schema FormulaOneRacer(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,carNumber,careerPoints,careerStation,case,cashPrice,catch,causeOfDeath,championships,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,fastestLap,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,firstRace,firstWin,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastPosition,lastProMatch,lastRace,lastSeason,lastWin,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,podiums,polePosition,poles,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,races,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.005141388174807249).
+match(none).
+match([[FormulaOneRacer,races],=,[FormulaOneRacer,races]]).
+match([[FormulaOneRacer,races],=,[FormulaOneRacer,firstRace]]).
+match([[FormulaOneRacer],=,[FormulaOneRacer]]).
+
+Construct query entity(type(FormulaOneRacer),firstRace) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/FormulaOneRacer> ; 
+<http://dbpedia.org/ontology/firstRace> ?firstRace . }
+
+The query succeeded. The returned answers are: 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                                  | firstRace                                                        |
+===============================================================================================================================================
+| <http://dbpedia.org/resource/Kevin_Cogan>                                | <http://dbpedia.org/resource/1980_Canadian_Grand_Prix>           |
+| <http://dbpedia.org/resource/Andr%C3%A9_Simon_(racing_driver)>           | <http://dbpedia.org/resource/1951_French_Grand_Prix>             |
+| <http://dbpedia.org/resource/Brian_Naylor>                               | <http://dbpedia.org/resource/1958_German_Grand_Prix>             |
+| <http://dbpedia.org/resource/Christian_Danner>                           | <http://dbpedia.org/resource/1985_Belgian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Eric_Thompson_(racing_driver)>              | <http://dbpedia.org/resource/1952_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Franck_Lagorce>                             | <http://dbpedia.org/resource/1994_Japanese_Grand_Prix>           |
+| <http://dbpedia.org/resource/Frank_Gardner_(racing_driver)>              | <http://dbpedia.org/resource/1964_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Jacques_Pollet>                             | <http://dbpedia.org/resource/1954_French_Grand_Prix>             |
+| <http://dbpedia.org/resource/Jo_Vonlanthen>                              | <http://dbpedia.org/resource/1975_Austrian_Grand_Prix>           |
+| <http://dbpedia.org/resource/Johnny_Claes>                               | <http://dbpedia.org/resource/1950_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Karl_Kling>                                 | <http://dbpedia.org/resource/1954_French_Grand_Prix>             |
+| <http://dbpedia.org/resource/Luigi_Musso>                                | <http://dbpedia.org/resource/1953_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Luiz_Bueno>                                 | <http://dbpedia.org/resource/1973_Brazilian_Grand_Prix>          |
+| <http://dbpedia.org/resource/Mark_Blundell>                              | <http://dbpedia.org/resource/1991_United_States_Grand_Prix>      |
+| <http://dbpedia.org/resource/Mark_Donohue>                               | <http://dbpedia.org/resource/1971_Canadian_Grand_Prix>           |
+| <http://dbpedia.org/resource/Peter_Gethin>                               | <http://dbpedia.org/resource/1970_Dutch_Grand_Prix>              |
+| <http://dbpedia.org/resource/Rudi_Fischer>                               | <http://dbpedia.org/resource/1951_Swiss_Grand_Prix>              |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Bourdais>                    | <http://dbpedia.org/resource/2008_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Buemi>                       | <http://dbpedia.org/resource/2009_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Giedo_van_der_Garde>                        | <http://dbpedia.org/resource/2013_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/J%C3%A9r%C3%B4me_d'Ambrosio>                | <http://dbpedia.org/resource/2011_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Tony_Lanfranchi>                            | <http://dbpedia.org/resource/1968_Race_of_Champions>             |
+| <http://dbpedia.org/resource/Daniel_Ricciardo>                           | <http://dbpedia.org/resource/2011_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Esteban_Guti%C3%A9rrez>                     | <http://dbpedia.org/resource/2013_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Jean-Pierre_Beltoise__-__1>                 | <http://dbpedia.org/resource/1967_Monaco_Grand_Prix>             |
+| <http://dbpedia.org/resource/Mike_Hailwood__1>                           | <http://dbpedia.org/resource/1963_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Alain_Prost>                                | <http://dbpedia.org/resource/1980_Argentine_Grand_Prix>          |
+| <http://dbpedia.org/resource/Jochen_Rindt>                               | <http://dbpedia.org/resource/1964_Austrian_Grand_Prix>           |
+| <http://dbpedia.org/resource/Juan_Manuel_Fangio>                         | <http://dbpedia.org/resource/1950_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Manfred_Winkelhock>                         | <http://dbpedia.org/resource/1980_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Mika_H%C3%A4kkinen>                         | <http://dbpedia.org/resource/1991_United_States_Grand_Prix>      |
+| <http://dbpedia.org/resource/Niki_Lauda>                                 | <http://dbpedia.org/resource/1971_Austrian_Grand_Prix>           |
+| <http://dbpedia.org/resource/Riccardo_Patrese>                           | <http://dbpedia.org/resource/1977_Monaco_Grand_Prix>             |
+| <http://dbpedia.org/resource/Franck_Montagny>                            | <http://dbpedia.org/resource/2006_European_Grand_Prix>           |
+| <http://dbpedia.org/resource/Tony_Shelly>                                | <http://dbpedia.org/resource/1962_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Al_Pease>                                   | <http://dbpedia.org/resource/1967_Canadian_Grand_Prix>           |
+| <http://dbpedia.org/resource/Alberto_Crespo>                             | <http://dbpedia.org/resource/1952_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Alejandro_de_Tomaso>                        | <http://dbpedia.org/resource/1957_Argentine_Grand_Prix>          |
+| <http://dbpedia.org/resource/Andrea_Chiesa>                              | <http://dbpedia.org/resource/1992_South_African_Grand_Prix>      |
+| <http://dbpedia.org/resource/Archie_Scott_Brown>                         | <http://dbpedia.org/resource/1956_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Bob_Drake_(racing_driver)>                  | <http://dbpedia.org/resource/1960_United_States_Grand_Prix>      |
+| <http://dbpedia.org/resource/Bobby_Rahal>                                | <http://dbpedia.org/resource/1978_United_States_Grand_Prix>      |
+| <http://dbpedia.org/resource/Chico_Landi>                                | <http://dbpedia.org/resource/1951_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Clemente_Biondetti>                         | <http://dbpedia.org/resource/1950_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/David_Prophet>                              | <http://dbpedia.org/resource/1963_South_African_Grand_Prix>      |
+| <http://dbpedia.org/resource/Hans-Joachim_Stuck>                         | <http://dbpedia.org/resource/1974_Argentine_Grand_Prix>          |
+| <http://dbpedia.org/resource/Hans_Stuck>                                 | <http://dbpedia.org/resource/1951_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Helmut_Marko>                               | <http://dbpedia.org/resource/1971_German_Grand_Prix>             |
+| <http://dbpedia.org/resource/Henry_Taylor_(racing_driver)>               | <http://dbpedia.org/resource/1959_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Jaime_Alguersuari>                          | <http://dbpedia.org/resource/2009_Hungarian_Grand_Prix>          |
+| <http://dbpedia.org/resource/Leslie_Marr>                                | <http://dbpedia.org/resource/1954_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Miguel_%C3%81ngel_Guerra>                   | <http://dbpedia.org/resource/1981_United_States_Grand_Prix_West> |
+| <http://dbpedia.org/resource/Richard_Robarts>                            | <http://dbpedia.org/resource/1974_Argentine_Grand_Prix>          |
+| <http://dbpedia.org/resource/Rupert_Keegan>                              | <http://dbpedia.org/resource/1977_Spanish_Grand_Prix>            |
+| <http://dbpedia.org/resource/Tom_Pryce>                                  | <http://dbpedia.org/resource/1974_Belgian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Xavier_Perrot>                              | <http://dbpedia.org/resource/1969_German_Grand_Prix>             |
+| <http://dbpedia.org/resource/Zsolt_Baumgartner>                          | <http://dbpedia.org/resource/2003_Hungarian_Grand_Prix>          |
+| <http://dbpedia.org/resource/H%C3%A9ctor_Rebaque>                        | <http://dbpedia.org/resource/1977_Belgian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | <http://dbpedia.org/resource/1961_Pau_Grand_Prix>                |
+| <http://dbpedia.org/resource/Ray_Reed>                                   | <http://dbpedia.org/resource/1965_South_African_Grand_Prix>      |
+| <http://dbpedia.org/resource/Jack_Brabham>                               | <http://dbpedia.org/resource/1955_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Michael_Schumacher>                         | <http://dbpedia.org/resource/1991_Belgian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Willard_Cantrell>                           | <http://dbpedia.org/resource/1953_Indianapolis_500>              |
+| <http://dbpedia.org/resource/Damon_Hill>                                 | <http://dbpedia.org/resource/1992_Spanish_Grand_Prix>            |
+| <http://dbpedia.org/resource/Gilles_Villeneuve>                          | <http://dbpedia.org/resource/1977_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Alan_Rees>                                  | <http://dbpedia.org/resource/1966_German_Grand_Prix>             |
+| <http://dbpedia.org/resource/Alfonso_Thiele>                             | <http://dbpedia.org/resource/1960_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Bill_Schindler>                             | <http://dbpedia.org/resource/1950_Indianapolis_500>              |
+| <http://dbpedia.org/resource/Christijan_Albers>                          | <http://dbpedia.org/resource/2005_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Eddie_Sachs>                                | <http://dbpedia.org/resource/1953_Indianapolis_500>              |
+| <http://dbpedia.org/resource/Giovanni_Lavaggi>                           | <http://dbpedia.org/resource/1995_German_Grand_Prix>             |
+| <http://dbpedia.org/resource/JJ_Lehto>                                   | <http://dbpedia.org/resource/1989_Portuguese_Grand_Prix>         |
+| <http://dbpedia.org/resource/Jacques_Villeneuve_(elder)>                 | <http://dbpedia.org/resource/1981_Canadian_Grand_Prix>           |
+| <http://dbpedia.org/resource/Jim_Crawford_(racing_driver)>               | <http://dbpedia.org/resource/1975_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Jim_Hall_(racing_driver)>                   | <http://dbpedia.org/resource/1960_United_States_Grand_Prix>      |
+| <http://dbpedia.org/resource/John_Rhodes_(racing_driver)>                | <http://dbpedia.org/resource/1965_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Kamui_Kobayashi>                            | <http://dbpedia.org/resource/2009_Brazilian_Grand_Prix>          |
+| <http://dbpedia.org/resource/Luis_P%C3%A9rez-Sala>                       | <http://dbpedia.org/resource/1988_Brazilian_Grand_Prix>          |
+| <http://dbpedia.org/resource/Mike_Parkes>                                | <http://dbpedia.org/resource/1959_British_Grand_Prix>            |
+| <http://dbpedia.org/resource/Peter_Westbury>                             | <http://dbpedia.org/resource/1969_German_Grand_Prix>             |
+| <http://dbpedia.org/resource/Ricardo_Rosset>                             | <http://dbpedia.org/resource/1996_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Sergio_P%C3%A9rez>                          | <http://dbpedia.org/resource/2011_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Takuma_Sato>                                | <http://dbpedia.org/resource/2002_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Tom_Bridger>                                | <http://dbpedia.org/resource/1958_Moroccan_Grand_Prix>           |
+| <http://dbpedia.org/resource/Tony_Bettenhausen>                          | <http://dbpedia.org/resource/1950_Indianapolis_500>              |
+| <http://dbpedia.org/resource/Giancarlo_Fisichella>                       | <http://dbpedia.org/resource/1996_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Christian_Klien>                            | <http://dbpedia.org/resource/2004_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Gianmaria_Bruni>                            | <http://dbpedia.org/resource/2004_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Giorgio_Pantano>                            | <http://dbpedia.org/resource/2004_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Nanni_Galli>                                | <http://dbpedia.org/resource/1970_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Nick_Heidfeld>                              | <http://dbpedia.org/resource/2000_Australian_Grand_Prix>         |
+| <http://dbpedia.org/resource/Cliff_Allison>                              | <http://dbpedia.org/resource/1958_Monaco_Grand_Prix>             |
+| <http://dbpedia.org/resource/Conny_Andersson_(racing_driver)>            | <http://dbpedia.org/resource/1976_Dutch_Grand_Prix>              |
+| <http://dbpedia.org/resource/Marco_Apicella>                             | <http://dbpedia.org/resource/1993_Italian_Grand_Prix>            |
+| <http://dbpedia.org/resource/Philippe_Alliot>                            | <http://dbpedia.org/resource/1984_Brazilian_Grand_Prix>          |
+| <http://dbpedia.org/resource/Fred_Agabashian>                            | <http://dbpedia.org/resource/1950_Indianapolis_500>              |
+| <http://dbpedia.org/resource/Jean-Louis_Schlesser>                       | <http://dbpedia.org/resource/1983_French_Grand_Prix>             |
+
+Construct query entity(type(FormulaOneRacer),races) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/FormulaOneRacer> ; 
+<http://dbpedia.org/ontology/races> ?races . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------
+| subject                                                                  | races |
+====================================================================================
+| <http://dbpedia.org/resource/Kevin_Cogan>                                | 2     |
+| <http://dbpedia.org/resource/Andr%C3%A9_Simon_(racing_driver)>           | 12    |
+| <http://dbpedia.org/resource/Brian_Naylor>                               | 8     |
+| <http://dbpedia.org/resource/Christian_Danner>                           | 47    |
+| <http://dbpedia.org/resource/Eric_Thompson_(racing_driver)>              | 1     |
+| <http://dbpedia.org/resource/Franck_Lagorce>                             | 2     |
+| <http://dbpedia.org/resource/Frank_Gardner_(racing_driver)>              | 9     |
+| <http://dbpedia.org/resource/Jacques_Pollet>                             | 5     |
+| <http://dbpedia.org/resource/Jo_Vonlanthen>                              | 1     |
+| <http://dbpedia.org/resource/Johnny_Claes>                               | 25    |
+| <http://dbpedia.org/resource/Karl_Kling>                                 | 11    |
+| <http://dbpedia.org/resource/Luigi_Musso>                                | 25    |
+| <http://dbpedia.org/resource/Luiz_Bueno>                                 | 1     |
+| <http://dbpedia.org/resource/Mark_Blundell>                              | 63    |
+| <http://dbpedia.org/resource/Mark_Donohue>                               | 16    |
+| <http://dbpedia.org/resource/Peter_Gethin>                               | 31    |
+| <http://dbpedia.org/resource/Rudi_Fischer>                               | 8     |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Bourdais>                    | 27    |
+| <http://dbpedia.org/resource/S%C3%A9bastien_Buemi>                       | 55    |
+| <http://dbpedia.org/resource/Tony_Lanfranchi>                            | 3     |
+| <http://dbpedia.org/resource/Jean-Pierre_Beltoise__-__1>                 | 88    |
+| <http://dbpedia.org/resource/Mike_Hailwood__1>                           | 50    |
+| <http://dbpedia.org/resource/Alain_Prost>                                | 202   |
+| <http://dbpedia.org/resource/Jochen_Rindt>                               | 62    |
+| <http://dbpedia.org/resource/Juan_Manuel_Fangio>                         | 52    |
+| <http://dbpedia.org/resource/Manfred_Winkelhock>                         | 56    |
+| <http://dbpedia.org/resource/Mika_H%C3%A4kkinen>                         | 165   |
+| <http://dbpedia.org/resource/Niki_Lauda>                                 | 177   |
+| <http://dbpedia.org/resource/Riccardo_Patrese>                           | 257   |
+| <http://dbpedia.org/resource/Franck_Montagny>                            | 7     |
+| <http://dbpedia.org/resource/Tony_Shelly>                                | 3     |
+| <http://dbpedia.org/resource/Al_Pease>                                   | 3     |
+| <http://dbpedia.org/resource/Alberto_Crespo>                             | 1     |
+| <http://dbpedia.org/resource/Alejandro_de_Tomaso>                        | 2     |
+| <http://dbpedia.org/resource/Andrea_Chiesa>                              | 10    |
+| <http://dbpedia.org/resource/Archie_Scott_Brown>                         | 1     |
+| <http://dbpedia.org/resource/Bob_Drake_(racing_driver)>                  | 1     |
+| <http://dbpedia.org/resource/Bobby_Rahal>                                | 2     |
+| <http://dbpedia.org/resource/Chico_Landi>                                | 6     |
+| <http://dbpedia.org/resource/Clemente_Biondetti>                         | 1     |
+| <http://dbpedia.org/resource/David_Prophet>                              | 2     |
+| <http://dbpedia.org/resource/Hans-Joachim_Stuck>                         | 81    |
+| <http://dbpedia.org/resource/Hans_Stuck>                                 | 5     |
+| <http://dbpedia.org/resource/Helmut_Marko>                               | 10    |
+| <http://dbpedia.org/resource/Henry_Taylor_(racing_driver)>               | 11    |
+| <http://dbpedia.org/resource/Jaime_Alguersuari>                          | 46    |
+| <http://dbpedia.org/resource/Leslie_Marr>                                | 2     |
+| <http://dbpedia.org/resource/Miguel_%C3%81ngel_Guerra>                   | 4     |
+| <http://dbpedia.org/resource/Richard_Robarts>                            | 4     |
+| <http://dbpedia.org/resource/Rupert_Keegan>                              | 37    |
+| <http://dbpedia.org/resource/Tom_Pryce>                                  | 42    |
+| <http://dbpedia.org/resource/Xavier_Perrot>                              | 1     |
+| <http://dbpedia.org/resource/Zsolt_Baumgartner>                          | 20    |
+| <http://dbpedia.org/resource/H%C3%A9ctor_Rebaque>                        | 58    |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | 6     |
+| <http://dbpedia.org/resource/Andr%C3%A9_Wicky>                           | 10    |
+| <http://dbpedia.org/resource/Ray_Reed>                                   | 1     |
+| <http://dbpedia.org/resource/Jack_Brabham>                               | 128   |
+| <http://dbpedia.org/resource/Willard_Cantrell>                           | 1     |
+| <http://dbpedia.org/resource/Damon_Hill>                                 | 122   |
+| <http://dbpedia.org/resource/Gilles_Villeneuve>                          | 68    |
+| <http://dbpedia.org/resource/Alan_Rees>                                  | 3     |
+| <http://dbpedia.org/resource/Alfonso_Thiele>                             | 1     |
+| <http://dbpedia.org/resource/Bill_Schindler>                             | 3     |
+| <http://dbpedia.org/resource/Christijan_Albers>                          | 46    |
+| <http://dbpedia.org/resource/Eddie_Sachs>                                | 7     |
+| <http://dbpedia.org/resource/Giovanni_Lavaggi>                           | 10    |
+| <http://dbpedia.org/resource/JJ_Lehto>                                   | 70    |
+| <http://dbpedia.org/resource/Jacques_Villeneuve_(elder)>                 | 3     |
+| <http://dbpedia.org/resource/Jim_Crawford_(racing_driver)>               | 2     |
+| <http://dbpedia.org/resource/Jim_Hall_(racing_driver)>                   | 12    |
+| <http://dbpedia.org/resource/John_Rhodes_(racing_driver)>                | 1     |
+| <http://dbpedia.org/resource/Luis_P%C3%A9rez-Sala>                       | 32    |
+| <http://dbpedia.org/resource/Mike_Parkes>                                | 7     |
+| <http://dbpedia.org/resource/Peter_Westbury>                             | 2     |
+| <http://dbpedia.org/resource/Ricardo_Rosset>                             | 33    |
+| <http://dbpedia.org/resource/Takuma_Sato>                                | 92    |
+| <http://dbpedia.org/resource/Tom_Bridger>                                | 1     |
+| <http://dbpedia.org/resource/Tony_Bettenhausen>                          | 11    |
+| <http://dbpedia.org/resource/Giancarlo_Fisichella>                       | 231   |
+| <http://dbpedia.org/resource/Christian_Klien>                            | 51    |
+| <http://dbpedia.org/resource/Gianmaria_Bruni>                            | 18    |
+| <http://dbpedia.org/resource/Giorgio_Pantano>                            | 15    |
+| <http://dbpedia.org/resource/Nanni_Galli>                                | 20    |
+| <http://dbpedia.org/resource/Nick_Heidfeld>                              | 185   |
+| <http://dbpedia.org/resource/Cliff_Allison>                              | 18    |
+| <http://dbpedia.org/resource/Conny_Andersson_(racing_driver)>            | 5     |
+| <http://dbpedia.org/resource/Marco_Apicella>                             | 1     |
+| <http://dbpedia.org/resource/Philippe_Alliot>                            | 116   |
+| <http://dbpedia.org/resource/Fred_Agabashian>                            | 9     |
+| <http://dbpedia.org/resource/Jean-Louis_Schlesser>                       | 2     |
+| <http://dbpedia.org/resource/Kenny_Acheson>                              | 10    |
+| <http://dbpedia.org/resource/Kurt_Adolff>                                | 1     |
+| <http://dbpedia.org/resource/Michele_Alboreto>                           | 215   |
+| <http://dbpedia.org/resource/Philippe_Adams>                             | 2     |
+| <http://dbpedia.org/resource/Ricardo_Zunino>                             | 11    |
+| <http://dbpedia.org/resource/Danny_Kladis>                               | 5     |
+

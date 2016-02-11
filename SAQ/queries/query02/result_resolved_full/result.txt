@@ -1,0 +1,199 @@
+Query:  entity(type(Town),country(Germany),populationTotal) 
+Construct query entity(type(Town),country(Germany),populationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<country> <http://dbpedia.org/resource/Germany> ; 
+<populationTotal> ?populationTotal . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  Architect FashionDesigner FormerMunicipality Municipality SubMunicipality Town 
+
+Matching query schema Town(country,populationTotal) 
+to dataset schema Architect(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantBuilding,significantDesign,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0035211267605633756).
+match(none).
+match([[Town],<,[Architect]]).
+match([[Town,populationTotal],<,[Architect,start]]).
+
+Matching query schema Town(country,populationTotal) 
+to dataset schema FashionDesigner(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,academyAward,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,afiAward,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,associatedAct,astrologicalSign,award,badGuy,baftaAward,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,cesarAward,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,disciple,discipline,dubber,dutchRKDCode,education,educationPlace,electionDate,emmyAward,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,field,filmFareAward,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,gaudiAward,generalCouncil,goldenGlobeAward,goyaAward,grammyAward,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,instrument,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,mbaId,measurements,media,mentor,militaryBranch,militaryFunction,mood,mount,movement,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,notableWork,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,polishFilmAward,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,style,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tonyAward,training,tvShow,ulanId,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,voiceType,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Town(country,populationTotal) 
+to dataset schema SubMunicipality(PopulatedPlaceArea,PopulatedPlaceAreaMetro,PopulatedPlaceAreaTotal,PopulatedPlaceAreaUrban,PopulatedPlacePopulationDensity,PopulatedPlacePopulationMetroDensity,PopulatedPlacePopulationUrbanDensity,administrativeHeadCity,agglomeration,agglomerationArea,agglomerationDemographics,alemmanicName,altitude,annualTemperature,anthem,apskritis,arberishtName,areaCode,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaRural,areaTotal,areaTotalRanking,areaUrban,areaWater,arrondissement,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,barangays,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,borough,budgetYear,cableCar,calabrianName,cannonNumber,capital,capitalCoordinates,catholicPercentage,ccaState,censusYear,ceremonialCounty,circle,cityLink,citySince,cityType,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,colonialName,commissioner,commissionerDate,communityIsoCode,congressionalDistrict,coordinates,councilArea,countySeat,currencyCode,cyrilliqueName,dateAgreement,daylightSavingTimeZone,delegateMayor,delegation,deme,demographics,demographicsAsOf,department,departmentPosition,depth,depthQuote,depths,different,disappearanceDate,dissolutionDate,dissolutionYear,district,dutchCOROPCode,ekatteCode,elevation,elevationQuote,emblem,endangeredSince,ethnicGroup,eventDate,fauna,fipsCode,firstMention,flora,flower,foresterDistrict,foundation,foundationDate,foundingPerson,frenchName,frioulanName,frontierLength,gagaouze,geolocDual,geologicPeriod,germanName,giniCoefficient,giniCoefficientAsOf,giniCoefficientCategory,giniCoefficientRanking,gnisCode,gnl,governingBody,governorate,greekName,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProduct,grossDomesticProductAsOf,grossDomesticProductNominalPerCapita,grossDomesticProductPerPeople,grossDomesticProductPurchasingPowerParityPerCapita,grossDomesticProductRank,heritageRegister,historicalMap,historicalName,historicalRegion,hraState,humanDevelopmentIndex,humanDevelopmentIndexAsOf,humanDevelopmentIndexRank,humanDevelopmentIndexRankingCategory,illiteracy,income,infantMortality,information,informationName,internationalPhonePrefix,internationalPhonePrefixLabel,isoCode,isoCode,ist,istat,italianName,kanjiName,kindOfCoordinate,kindOfRock,ladinName,lake,land,landArea,landPercentage,largestCity,largestCountry,largestSettlement,lawCountry,leaderName,leaderParty,leaderTitle,lengthQuote,licenceNumber,licenceNumberLabel,lieutenancy,lieutenancyArea,lifeExpectancy,limit,linkedSpace,localPhonePrefix,localizationThumbnail,localizationThumbnailCaption,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,luxembourgishName,mainIsland,maoriName,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,metropolitanBorough,minimumArea,minimumAreaQuote,minimumElevation,moldavianName,municipalityCode,namedByLanguage,nation,nationalTopographicSystemMapNumber,nearestCity,neighboringMunicipality,neighbourRegion,nextEntity,nisCode,numberOfCantons,numberOfCapitalDeputies,numberOfCounties,numberOfCountries,numberOfFederalDeputies,numberOfIsland,numberOfMunicipalities,numberOfStateDeputies,numberOfTerritories,nutsCode,occitanName,officialLanguage,okatoCode,oldDistrict,oldName,oldProvince,otherName,output,outskirts,parish,parliament,parliamentType,peopleName,perCapitaIncome,perCapitaIncomeAsOf,perCapitaIncomeRank,phonePrefix,phonePrefixName,pisciculturalPopulation,plant,pluviometry,policeName,politicGovernmentDepartment,politicalLeader,population,populationAsOf,populationDate,populationDensity,populationMetro,populationMetroDensity,populationPctChildren,populationPctMen,populationPctWomen,populationQuote,populationRural,populationRuralDensity,populationTotalRanking,populationUrban,populationUrbanDensity,populationYear,postalCode,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousDemographics,previousEntity,previousName,previousPopulation,previousPopulationTotal,principalArea,protectionStatus,protestantPercentage,province,provinceIsoCode,provinceLink,purchasingPowerParity,purchasingPowerParityRank,purchasingPowerParityYear,quote,rankAgreement,rankArea,rankPopulation,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalLanguage,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,saint,sardinianName,scale,scotishName,scotsName,sea,senior,seniunija,settlement,sharingOut,sharingOutArea,sharingOutPopulation,sharingOutPopulationName,sharingOutPopulationYear,sheading,sicilianName,simcCode,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,smallestCountry,snowParkNumber,sovereignCountry,statusYear,subMunicipalityType,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,termOfOffice,terytCode,timeZone,topic,touristicSite,tree,tu,typeCoordinate,unesco,unitaryAuthority,unlcCode,unloCode,utcOffset,vehicleCode,viceLeader,viceLeaderParty,volumeQuote,water,waterArea,waterPercentage,watercourse,wholeArea,widthQuote,yearOfConstruction,zipCode) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Town(country,populationTotal) 
+to dataset schema Municipality(PopulatedPlaceArea,PopulatedPlaceAreaMetro,PopulatedPlaceAreaTotal,PopulatedPlaceAreaUrban,PopulatedPlacePopulationDensity,PopulatedPlacePopulationMetroDensity,PopulatedPlacePopulationUrbanDensity,administrativeHeadCity,agglomeration,agglomerationArea,agglomerationDemographics,alemmanicName,altitude,amsterdamCode,annualTemperature,anthem,apskritis,arberishtName,areaCode,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaRural,areaTotal,areaTotalRanking,areaUrban,areaWater,arrondissement,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,barangays,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,borough,budgetYear,cableCar,calabrianName,cannonNumber,capital,capitalCoordinates,catholicPercentage,ccaState,censusYear,ceremonialCounty,circle,cityLink,citySince,cityType,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,colonialName,commissioner,commissionerDate,communityIsoCode,congressionalDistrict,coordinates,councilArea,countySeat,currencyCode,cyrilliqueName,dateAgreement,daylightSavingTimeZone,delegateMayor,delegation,deme,demographics,demographicsAsOf,department,departmentCode,departmentPosition,depth,depthQuote,depths,different,disappearanceDate,dissolutionDate,dissolutionYear,district,dutchCOROPCode,ekatteCode,elevation,elevationQuote,emblem,endangeredSince,ethnicGroup,eventDate,fauna,fipsCode,firstMention,flora,flower,foresterDistrict,foundation,foundationDate,foundingPerson,frenchName,frioulanName,frontierLength,gagaouze,geolocDual,geologicPeriod,germanName,giniCoefficient,giniCoefficientAsOf,giniCoefficientCategory,giniCoefficientRanking,gnisCode,gnl,governingBody,governorate,greekName,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProduct,grossDomesticProductAsOf,grossDomesticProductNominalPerCapita,grossDomesticProductPerPeople,grossDomesticProductPurchasingPowerParityPerCapita,grossDomesticProductRank,hasAbsorbedMunicipality,heritageRegister,historicalMap,historicalName,historicalRegion,hraState,humanDevelopmentIndex,humanDevelopmentIndexAsOf,humanDevelopmentIndexRank,humanDevelopmentIndexRankingCategory,illiteracy,income,infantMortality,information,informationName,internationalPhonePrefix,internationalPhonePrefixLabel,isoCode,isoCode,ist,istat,italianName,kanjiName,kindOfCoordinate,kindOfRock,ladinName,lake,land,landArea,landPercentage,largestCity,largestCountry,largestSettlement,lawCountry,leaderName,leaderParty,leaderTitle,lengthQuote,licenceNumber,licenceNumberLabel,lieutenancy,lieutenancyArea,lifeExpectancy,limit,linkedSpace,localPhonePrefix,localizationThumbnail,localizationThumbnailCaption,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,luxembourgishName,mainIsland,maoriName,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,metropolitanBorough,minimumArea,minimumAreaQuote,minimumElevation,moldavianName,municipalityCode,municipalityRenamedTo,municipalityType,namedByLanguage,nation,nationalTopographicSystemMapNumber,nearestCity,neighboringMunicipality,neighbourRegion,nextEntity,nisCode,numberOfCantons,numberOfCapitalDeputies,numberOfCounties,numberOfCountries,numberOfFederalDeputies,numberOfIsland,numberOfMunicipalities,numberOfStateDeputies,numberOfTerritories,nutsCode,occitanName,officialLanguage,okatoCode,oldDistrict,oldName,oldProvince,otherName,output,outskirts,parish,parliament,parliamentType,peopleName,perCapitaIncome,perCapitaIncomeAsOf,perCapitaIncomeRank,phonePrefix,phonePrefixName,pisciculturalPopulation,plant,pluviometry,policeName,politicGovernmentDepartment,politicalLeader,population,populationAsOf,populationDate,populationDensity,populationMetro,populationMetroDensity,populationPctChildren,populationPctMen,populationPctWomen,populationQuote,populationRural,populationRuralDensity,populationTotalRanking,populationUrban,populationUrbanDensity,populationYear,postalCode,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousDemographics,previousEntity,previousName,previousPopulation,previousPopulationTotal,principalArea,protectionStatus,protestantPercentage,province,provinceIsoCode,provinceLink,purchasingPowerParity,purchasingPowerParityRank,purchasingPowerParityYear,quote,rankAgreement,rankArea,rankPopulation,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalLanguage,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,saint,sardinianName,scale,scotishName,scotsName,sea,senior,seniunija,settlement,sharingOut,sharingOutArea,sharingOutPopulation,sharingOutPopulationName,sharingOutPopulationYear,sheading,sicilianName,simcCode,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,smallestCountry,snowParkNumber,sovereignCountry,statusYear,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,termOfOffice,terytCode,timeZone,topic,touristicSite,tree,tu,typeCoordinate,unesco,unitaryAuthority,unlcCode,unloCode,utcOffset,vehicleCode,viceLeader,viceLeaderParty,volumeQuote,water,waterArea,waterPercentage,watercourse,wholeArea,widthQuote,yearOfConstruction,zipCode) 
+Created match data: 
+similarity(0.004120879120879106).
+match(none).
+match([[Town,country],<,[Municipality,district]]).
+match([[Town],<,[Municipality]]).
+match([[Town,populationTotal],<,[Municipality,PopulatedPlaceAreaTotal]]).
+
+Matching query schema Town(country,populationTotal) 
+to dataset schema FormerMunicipality(PopulatedPlaceArea,PopulatedPlaceAreaMetro,PopulatedPlaceAreaTotal,PopulatedPlaceAreaUrban,PopulatedPlacePopulationDensity,PopulatedPlacePopulationMetroDensity,PopulatedPlacePopulationUrbanDensity,administrativeHeadCity,agglomeration,agglomerationArea,agglomerationDemographics,alemmanicName,altitude,amsterdamCode,annualTemperature,anthem,apskritis,arberishtName,areaCode,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaRural,areaTotal,areaTotalRanking,areaUrban,areaWater,arrondissement,artificialSnowArea,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,barangays,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,borough,budgetYear,cableCar,calabrianName,cannonNumber,capital,capitalCoordinates,catholicPercentage,ccaState,censusYear,ceremonialCounty,circle,cityLink,citySince,cityType,climate,climbUpNumber,coastLength,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,colonialName,commissioner,commissionerDate,communityIsoCode,congressionalDistrict,coordinates,councilArea,countySeat,currencyCode,cyrilliqueName,dateAgreement,daylightSavingTimeZone,delegateMayor,delegation,deme,demographics,demographicsAsOf,department,departmentCode,departmentPosition,depth,depthQuote,depths,different,disappearanceDate,dissolutionDate,dissolutionYear,district,dutchCOROPCode,ekatteCode,elevation,elevationQuote,emblem,endangeredSince,ethnicGroup,eventDate,fauna,fipsCode,firstMention,flora,flower,foresterDistrict,foundation,foundationDate,foundingPerson,frenchName,frioulanName,frontierLength,gagaouze,geolocDual,geologicPeriod,germanName,giniCoefficient,giniCoefficientAsOf,giniCoefficientCategory,giniCoefficientRanking,gnisCode,gnl,governingBody,governorate,greekName,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProduct,grossDomesticProductAsOf,grossDomesticProductNominalPerCapita,grossDomesticProductPerPeople,grossDomesticProductPurchasingPowerParityPerCapita,grossDomesticProductRank,hasAbsorbedMunicipality,heritageRegister,historicalMap,historicalName,historicalRegion,hraState,humanDevelopmentIndex,humanDevelopmentIndexAsOf,humanDevelopmentIndexRank,humanDevelopmentIndexRankingCategory,illiteracy,income,infantMortality,information,informationName,internationalPhonePrefix,internationalPhonePrefixLabel,isoCode,isoCode,ist,istat,italianName,kanjiName,kindOfCoordinate,kindOfRock,ladinName,lake,land,landArea,landPercentage,largestCity,largestCountry,largestSettlement,lawCountry,leaderName,leaderParty,leaderTitle,lengthQuote,licenceNumber,licenceNumberLabel,lieutenancy,lieutenancyArea,lifeExpectancy,limit,linkedSpace,localPhonePrefix,localizationThumbnail,localizationThumbnailCaption,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,luxembourgishName,mainIsland,maoriName,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,mergerDate,metropolitanBorough,minimumArea,minimumAreaQuote,minimumElevation,moldavianName,municipalityAbsorbedBy,municipalityCode,municipalityRenamedTo,municipalityType,namedByLanguage,nation,nationalTopographicSystemMapNumber,nearestCity,neighboringMunicipality,neighbourRegion,nextEntity,nisCode,numberOfCantons,numberOfCapitalDeputies,numberOfCounties,numberOfCountries,numberOfFederalDeputies,numberOfIsland,numberOfMunicipalities,numberOfStateDeputies,numberOfTerritories,nutsCode,occitanName,officialLanguage,okatoCode,oldDistrict,oldName,oldProvince,otherName,output,outskirts,parish,parliament,parliamentType,peopleName,perCapitaIncome,perCapitaIncomeAsOf,perCapitaIncomeRank,phonePrefix,phonePrefixName,pisciculturalPopulation,plant,pluviometry,policeName,politicGovernmentDepartment,politicalLeader,population,populationAsOf,populationDate,populationDensity,populationMetro,populationMetroDensity,populationPctChildren,populationPctMen,populationPctWomen,populationQuote,populationRural,populationRuralDensity,populationTotalRanking,populationUrban,populationUrbanDensity,populationYear,postalCode,presentMunicipality,presentName,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousDemographics,previousEntity,previousName,previousPopulation,previousPopulationTotal,principalArea,protectionStatus,protestantPercentage,province,provinceIsoCode,provinceLink,purchasingPowerParity,purchasingPowerParityRank,purchasingPowerParityYear,quote,rankAgreement,rankArea,rankPopulation,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,refgen,refgeo,refpol,regency,regionLink,regionType,regionalLanguage,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,saint,sardinianName,scale,scotishName,scotsName,sea,senior,seniunija,settlement,sharingOut,sharingOutArea,sharingOutPopulation,sharingOutPopulationName,sharingOutPopulationYear,sheading,sicilianName,simcCode,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,smallestCountry,snowParkNumber,sovereignCountry,statusYear,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,supply,termOfOffice,terytCode,timeZone,topic,touristicSite,tree,tu,typeCoordinate,unesco,unitaryAuthority,unlcCode,unloCode,utcOffset,vehicleCode,viceLeader,viceLeaderParty,volumeQuote,water,waterArea,waterPercentage,watercourse,wholeArea,widthQuote,yearOfConstruction,zipCode) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema Town(country,populationTotal) 
+to dataset schema Town(PopulatedPlaceArea,PopulatedPlaceAreaMetro,PopulatedPlaceAreaTotal,PopulatedPlaceAreaUrban,PopulatedPlacePopulationDensity,PopulatedPlacePopulationMetroDensity,PopulatedPlacePopulationUrbanDensity,administrativeCollectivity,administrativeDistrict,administrativeHeadCity,agglomeration,agglomerationArea,agglomerationDemographics,agglomerationPopulation,agglomerationPopulationYear,alemmanicName,algerianName,algerianSettlementName,altitude,annualTemperature,anthem,apskritis,arabicName,arberishtName,areaCode,areaDate,areaLand,areaOfCatchmentQuote,areaQuote,areaRank,areaRural,areaTotal,areaTotalRanking,areaUrban,areaWater,arrondissement,artificialSnowArea,associationOfLocalGovernment,authorityMandate,averageDepth,averageDepthQuote,avifaunaPopulation,barangays,biggestCity,bioclimate,bird,blackLongDistancePisteNumber,blackSkiPisteNumber,blueLongDistancePisteNumber,blueSkiPisteNumber,borough,bourgmestre,budgetYear,cableCar,calabrianName,cannonNumber,canton,capital,capitalCoordinates,catholicPercentage,ccaState,censusYear,ceremonialCounty,chaouiName,circle,cityLink,citySince,cityType,climate,climbUpNumber,coastLength,coastLine,codeLandRegistry,codeMunicipalMonument,codeNationalMonument,codeProvincialMonument,codeSettlement,collectivityMinority,colonialName,commissioner,commissionerDate,commune,communityIsoCode,coordinates,cornishName,councilArea,countySeat,currencyCode,cyrilliqueName,daira,dateAgreement,day,daylightSavingTimeZone,delegateMayor,delegation,deme,demographics,demographicsAsOf,department,departmentPosition,depth,depthQuote,depths,different,disappearanceDate,dissolutionDate,dissolutionYear,distanceToBelfast,distanceToCapital,distanceToCardiff,distanceToCharingCross,distanceToDouglas,distanceToDublin,distanceToEdinburgh,distanceToLondon,district,dutchName,ekatteCode,elevation,elevationQuote,emblem,endangeredSince,englishName,ethnicGroup,eventDate,fauna,federalState,finnishName,fipsCode,firstMention,flora,flower,foresterDistrict,foundation,foundationDate,foundingPerson,frazioni,frenchName,frioulanName,frontierLength,gaelicName,gagaouze,geolocDepartment,geolocDual,geologicPeriod,germanName,giniCoefficient,giniCoefficientAsOf,giniCoefficientCategory,giniCoefficientRanking,gnisCode,gnl,governingBody,governorate,greekName,greenLongDistancePisteNumber,greenSkiPisteNumber,gridReference,grossDomesticProduct,grossDomesticProductAsOf,grossDomesticProductNominalPerCapita,grossDomesticProductPerPeople,grossDomesticProductPurchasingPowerParityPerCapita,grossDomesticProductRank,heritageRegister,highestPoint,historicalMap,historicalName,historicalRegion,hraState,humanDevelopmentIndex,humanDevelopmentIndexAsOf,humanDevelopmentIndexRank,humanDevelopmentIndexRankingCategory,illiteracy,income,infantMortality,information,informationName,inseeCode,internationalPhonePrefix,internationalPhonePrefixLabel,irishName,isoCode,isoCode,isoCodeRegion,ist,istat,italianName,jointCommunity,kabyleName,kanjiName,kindOfCoordinate,kindOfRock,ladinName,lake,land,landArea,landPercentage,largestCity,largestCountry,largestMetro,largestSettlement,lawCountry,leaderName,leaderParty,leaderTitle,lengthQuote,licenceNumber,licenceNumberLabel,lieutenancy,lieutenancyArea,lifeExpectancy,limit,linkedSpace,localPhonePrefix,localizationThumbnail,localizationThumbnailCaption,locatedInArea,longDistancePisteKilometre,longDistancePisteNumber,lowest,lowestPoint,luxembourgishName,mainIsland,manxName,maoriName,map,mapCaption,mapDescription,maximumArea,maximumAreaQuote,maximumDepth,maximumDepthQuote,maximumElevation,mayorArticle,meaning,mergedSettlement,mergerDate,metropolitanBorough,minimumArea,minimumAreaQuote,minimumElevation,minority,moldavianName,mozabiteName,municipalityCode,namedByLanguage,nation,nationalTopographicSystemMapNumber,nearestCity,neighboringMunicipality,neighbourRegion,nextEntity,nisCode,numberOfCantons,numberOfCapitalDeputies,numberOfCounties,numberOfFederalDeputies,numberOfIsland,numberOfMunicipalities,numberOfStateDeputies,nutsCode,occitanName,officialLanguage,officialName,ofsCode,okatoCode,oldDistrict,oldName,oldProvince,otherInformation,otherLanguage,otherName,output,outskirts,parish,parliament,parliamentType,patronSaint,peopleName,perCapitaIncome,perCapitaIncomeAsOf,perCapitaIncomeRank,phonePrefix,phonePrefixLabel,phonePrefixName,pisciculturalPopulation,plant,pluviometry,policeName,politicGovernmentDepartment,politicalLeader,politicalMajority,politicalSeats,population,populationAsOf,populationDate,populationDensity,populationMetro,populationMetroDensity,populationPctChildren,populationPctMen,populationPctWomen,populationQuote,populationRural,populationRuralDensity,populationTotalRanking,populationTotalReference,populationUrban,populationUrbanDensity,populationYear,postalCode,presidentGeneralCouncilMandate,presidentRegionalCouncilMandate,previousDemographics,previousEntity,previousName,previousPopulation,previousPopulationTotal,principalArea,protectionStatus,protestantPercentage,provCode,province,provinceIsoCode,provinceLink,purchasingPowerParity,purchasingPowerParityRank,purchasingPowerParityYear,quote,rankAgreement,rankArea,rankPopulation,redLongDistancePisteNumber,redSkiPisteNumber,refcul,reference,reffBourgmestre,refgen,refgeo,refpol,regency,regionLink,regionType,regionalLanguage,regionalPrefecture,relatedPlaces,relief,representative,retentionTime,river,route,saint,sameName,sardinianName,scale,scotishName,scotsName,scottishName,sea,senior,seniunija,settlement,sharingOut,sharingOutArea,sharingOutName,sharingOutPopulation,sharingOutPopulationName,sharingOutPopulationYear,sheading,sicilianName,simcCode,skiLift,skiPisteKilometre,skiPisteNumber,skiTow,smallestCountry,snowParkNumber,sovereignCountry,statusYear,subPrefecture,subdivision,subdivisionLink,subdivisions,subregion,subsystem,subsystemLink,summerTemperature,supply,tamazightName,tamazightSettlementName,termOfOffice,terytCode,timeZone,topic,touaregName,touaregSettlementName,touristicSite,tree,tu,twinCity,typeCoordinate,unesco,unitaryAuthority,unlcCode,unloCode,utcOffset,vehicleCode,viceLeader,viceLeaderParty,volumeQuote,water,waterArea,waterPercentage,watercourse,welshName,wholeArea,widthQuote,wilaya,winterTemperature,yearOfConstruction,zipCode) 
+Created match data: 
+similarity(0.007075471698113178).
+match(none).
+match([[Town],=,[Town]]).
+match([[Town,country],=,[Town,largestCountry]]).
+match([[Town,populationTotal],=,[Town,previousPopulationTotal]]).
+match([[Town,country],=,[Town,land]]).
+match([[Town,populationTotal],=,[Town,areaTotal]]).
+
+Construct query entity(type(Architect),start) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Architect> ; 
+<http://dbpedia.org/ontology/start> ?start . }
+
+The query did not return any data. 
+
+Construct query entity(type,start) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/start> ?start . }
+
+Construct query entity(type(Municipality),district(Germany),PopulatedPlaceAreaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Municipality> ; 
+<http://dbpedia.org/ontology/district> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/PopulatedPlaceAreaTotal> ?PopulatedPlaceAreaTotal . }
+
+The query did not return any data. 
+
+Construct query entity(type,district(Germany),PopulatedPlaceAreaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/district> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/PopulatedPlaceAreaTotal> ?PopulatedPlaceAreaTotal . }
+
+Construct query entity(type(Municipality),district,PopulatedPlaceAreaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Municipality> ; 
+<http://dbpedia.org/ontology/district> ?district ; 
+<http://dbpedia.org/ontology/PopulatedPlaceAreaTotal> ?PopulatedPlaceAreaTotal . }
+
+Construct query entity(type,district,PopulatedPlaceAreaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/district> ?district ; 
+<http://dbpedia.org/ontology/PopulatedPlaceAreaTotal> ?PopulatedPlaceAreaTotal . }
+
+Construct query entity(type(Town),land(Germany),areaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/land> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/areaTotal> ?areaTotal . }
+
+The query did not return any data. 
+
+Construct query entity(type,land(Germany),areaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/land> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/areaTotal> ?areaTotal . }
+
+Construct query entity(type(Town),land,areaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/land> ?land ; 
+<http://dbpedia.org/ontology/areaTotal> ?areaTotal . }
+
+Construct query entity(type,land,areaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/land> ?land ; 
+<http://dbpedia.org/ontology/areaTotal> ?areaTotal . }
+
+Construct query entity(type(Town),land(Germany),previousPopulationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/land> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/previousPopulationTotal> ?previousPopulationTotal . }
+
+The query did not return any data. 
+
+Construct query entity(type,land(Germany),previousPopulationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/land> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/previousPopulationTotal> ?previousPopulationTotal . }
+
+Construct query entity(type(Town),land,previousPopulationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/land> ?land ; 
+<http://dbpedia.org/ontology/previousPopulationTotal> ?previousPopulationTotal . }
+
+Construct query entity(type,land,previousPopulationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/land> ?land ; 
+<http://dbpedia.org/ontology/previousPopulationTotal> ?previousPopulationTotal . }
+
+Construct query entity(type(Town),largestCountry(Germany),areaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/largestCountry> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/areaTotal> ?areaTotal . }
+
+The query did not return any data. 
+
+Construct query entity(type,largestCountry(Germany),areaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/largestCountry> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/areaTotal> ?areaTotal . }
+
+Construct query entity(type(Town),largestCountry,areaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/largestCountry> ?largestCountry ; 
+<http://dbpedia.org/ontology/areaTotal> ?areaTotal . }
+
+Construct query entity(type,largestCountry,areaTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/largestCountry> ?largestCountry ; 
+<http://dbpedia.org/ontology/areaTotal> ?areaTotal . }
+
+Construct query entity(type(Town),largestCountry(Germany),previousPopulationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/largestCountry> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/previousPopulationTotal> ?previousPopulationTotal . }
+
+The query did not return any data. 
+
+Construct query entity(type,largestCountry(Germany),previousPopulationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/largestCountry> <http://dbpedia.org/resource/Germany> ; 
+<http://dbpedia.org/ontology/previousPopulationTotal> ?previousPopulationTotal . }
+
+Construct query entity(type(Town),largestCountry,previousPopulationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Town> ; 
+<http://dbpedia.org/ontology/largestCountry> ?largestCountry ; 
+<http://dbpedia.org/ontology/previousPopulationTotal> ?previousPopulationTotal . }
+
+Construct query entity(type,largestCountry,previousPopulationTotal) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/largestCountry> ?largestCountry ; 
+<http://dbpedia.org/ontology/previousPopulationTotal> ?previousPopulationTotal . }
+

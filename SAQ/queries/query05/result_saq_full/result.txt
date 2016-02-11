@@ -1,0 +1,283 @@
+Query:  entity(type(professionalSkateboarder),nationality(Sweden)) 
+Construct query entity(type(professionalSkateboarder),nationality(Sweden)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/professionalSkateboarder> ; 
+<http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Sweden> . }
+
+The query did not return any data. 
+
+Narrowed to these target datasets:  AdultActor Athlete AthleteCareerStation FigureSkater Lawyer NationalCollegiateAthleticAssociationAthlete Publisher Skater 
+
+Matching query schema professionalSkateboarder(nationality) 
+to dataset schema AthleteCareerStation(amateurTeam,amateurYear,cyclistGenre,leadTeam,leadYear,proTeam,proYear) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema professionalSkateboarder(nationality) 
+to dataset schema Publisher(affiliation,age,artPatron,assetUnderManagement,assets,ceo,chairperson,childOrganisation,codeStockExchange,discipline,endowment,equity,extinctionDate,extinctionYear,fate,formationDate,formationYear,foundationPlace,generalCouncil,groundsForLiquidation,headquarter,hometown,honours,ideology,industry,internationally,juniorSeason,leaderFunction,legalForm,locationCity,mainOrgan,managerSeason,marketCapitalisation,membership,nationalSelection,netIncome,nlaId,numberOfEmployees,numberOfLocations,numberOfStaff,numberOfVolunteers,operatingIncome,organisationMember,parentOrganisation,playerSeason,product,production,regionServed,regionalCouncil,registration,revenue,season,secretaryGeneral,service,slogan,stockExchange,subsidiary,superintendent,trustee,viafId) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema professionalSkateboarder(nationality) 
+to dataset schema Lawyer(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,astrologicalSign,award,badGuy,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tvShow,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema professionalSkateboarder(nationality) 
+to dataset schema AdultActor(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,academyAward,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,afiAward,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,arielAward,army,arrestDate,artPatron,artisticFunction,associatedAct,astrologicalSign,award,badGuy,baftaAward,bestLap,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishWins,buriedPlace,bustSize,careerStation,case,catch,causeOfDeath,cesarAward,circumcised,citizenship,clothSize,clothingSize,coalition,coemperor,collaboration,college,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentTeamManager,danseCompetition,danseScore,dateOfBurial,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,decoration,defeatAsMgr,derivedWord,detractor,diploma,disciple,discipline,dubber,dutchRKDCode,education,educationPlace,electionDate,emmyAward,employer,endCareer,endReign,escalafon,ethnicity,expedition,externalOrnament,eyeColor,eyeColour,feat,federation,field,filmFareAward,filmNumber,foot,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,gaudiAward,geminiAward,generalCouncil,goldenCalfAward,goldenGlobeAward,goldenRaspberryAward,goyaAward,grammyAward,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,hipSize,homage,hometown,honours,idNumber,ideology,iftaAward,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,instrument,isniId,juniorSeason,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,laurenceOlivierAward,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,mbaId,measurements,media,mentor,militaryBranch,militaryFunction,mood,mount,movement,movie,naacpImageAward,nationalFilmAward,nationalSelection,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,networth,newspaper,nlaId,nndbId,nonProfessionalCareer,notableIdea,notableWork,noteOnRestingPlace,numberOfFilms,numberOfRun,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,polishFilmAward,politicalFunction,proPeriod,proSince,profession,project,pseudonym,publication,raceWins,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,salary,scene,school,screenActorsGuildAward,season,seasonManager,second,seiyu,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,specialTrial,speciality,sportDiscipline,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,statusManager,student,style,tattoo,teamManager,temple,templeYear,tessitura,third,titleDate,tonyAward,training,tvShow,ulanId,university,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,voiceType,waistSize,weapon,weddingParentsDate,wife,world,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema professionalSkateboarder(nationality) 
+to dataset schema Athlete(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0026595744680850686).
+match(none).
+match([[professionalSkateboarder],<,[Athlete]]).
+match([[professionalSkateboarder,nationality],<,[Athlete,nationality]]).
+
+Matching query schema professionalSkateboarder(nationality) 
+to dataset schema Skater(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0026595744680850686).
+match(none).
+match([[professionalSkateboarder,nationality],<,[Skater,nationality]]).
+match([[professionalSkateboarder],<,[Skater]]).
+
+Matching query schema professionalSkateboarder(nationality) 
+to dataset schema NationalCollegiateAthleticAssociationAthlete(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerHighschool,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Matching query schema professionalSkateboarder(nationality) 
+to dataset schema FigureSkater(PersonHeight,PersonWeight,abbeychurchBlessing,abbeychurchBlessingCharge,achievement,activeYear,activeYears,activeYearsEndDateMgr,activeYearsEndYearMgr,activeYearsStartDateMgr,activeYearsStartYearMgr,activity,affair,age,agency,allegiance,almaMater,announcedFrom,approach,architecturalMovement,army,arrestDate,artPatron,artisticFunction,asiaChampionship,astrologicalSign,athleticsDiscipline,australiaOpenDouble,australiaOpenMixed,australiaOpenSingle,award,backhand,badGuy,bestLap,bestRankDouble,bestRankSingle,bibsysId,bigPoolRecord,birthDate,birthName,birthPlace,birthSign,birthYear,bloodGroup,bloodType,bnfId,board,bodyDiscovered,bpnId,britishOpen,britishWins,bronzeMedalDouble,bronzeMedalMixed,bronzeMedalSingle,buriedPlace,bustSize,careerStation,case,cashPrice,catch,causeOfDeath,choreographer,circumcised,citizenship,clothSize,clothingSize,club,coachClub,coachSeason,coalition,coemperor,collaboration,college,collegeHof,competitionTitle,complexion,consecration,contest,continentalTournament,continentalTournamentBronze,continentalTournamentGold,continentalTournamentSilver,convictionDate,copilote,cousurper,created,creationChristianBishop,currentLeague,currentPartner,currentTeam,currentTeamManager,danseCompetition,danseScore,dateOfBurial,davisCup,deadInFightDate,deadInFightPlace,deathAge,deathCause,deathDate,deathPlace,deathYear,debutTeam,decoration,defeatAsMgr,derivedWord,detractor,diploma,discipline,draftLeague,draftPosition,draftTeam,dubber,education,educationPlace,electionDate,employer,endCareer,endReign,escalafon,espnId,ethnicity,europeanChampionship,expedition,externalOrnament,eyeColor,eyeColour,feat,fedCup,federation,fibahof,filmNumber,finalLost,finalLostDouble,finalLostSingle,finalLostTeam,firstProMatch,foot,formerChoreographer,formerCoach,formerPartner,formerTeam,freeDanseScore,freeProgCompetition,freeProgScore,freeScoreCompetition,friend,fullCompetition,fullScore,generalCouncil,goldMedalDouble,goldMedalMixed,goldMedalSingle,grave,gymApparatus,hairColor,hairColour,hand,handedness,handisport,hasNaturalBust,heightAgainst,heightAttack,heisman,hipSize,hof,homage,hometown,honours,hopmanCup,horseRidingDiscipline,idNumber,ideology,iihfHof,imposedDanseCompetition,imposedDanseScore,individualisedPnd,influenced,influencedBy,isniId,ithfDate,juniorSeason,juniorTeam,juniorYearsEndYear,juniorYearsStartYear,jutsu,killedBy,kindOfCriminal,kindOfCriminalAction,knownFor,lahHof,lastProMatch,laterality,lccnId,leadership,leagueManager,linguisticsTradition,littlePoolRecord,livingPlace,mainDomain,managerSeason,mastersWins,matchPoint,measurements,media,militaryBranch,militaryFunction,mood,mount,movie,mvp,nationalChampionship,nationalSelection,nationalTeam,nationalTeamMatchPoint,nationalTeamYear,nationalTournament,nationalTournamentBronze,nationalTournamentGold,nationalTournamentSilver,nationality,ncaaSeason,ncaaTeam,ncbhof,networth,newspaper,nflCode,nflSeason,nflTeam,nlaId,nndbId,nonProfessionalCareer,notableIdea,noteOnRestingPlace,numberOfRun,oldTeamCoached,olympicGames,olympicGamesBronze,olympicGamesGold,olympicGamesSilver,olympicGamesWins,opponent,orcidId,orientation,originalDanseCompetition,originalDanseScore,otherActivity,otherFunction,otherMedia,otherOccupation,otherSportsExperience,parent,parliamentaryGroup,particularSign,partner,patent,penisLength,personFunction,pgaWins,philosophicalSchool,piercing,playerSeason,playerStatus,podium,polePosition,politicalFunction,proPeriod,proSince,probowlPick,profession,project,pseudonym,publication,qatarClassic,raceWins,racketCatching,radio,regionalCouncil,reign,reignName,relatedFunctions,relation,relative,residence,restingDate,restingPlace,restingPlacePosition,retirementDate,ridId,rolandGarrosDouble,rolandGarrosMixed,rolandGarrosSingle,salary,scene,school,season,seasonManager,second,seiyu,selectionPoint,selectionYear,selibrId,sentence,sex,sexualOrientation,shoeNumber,shoeSize,shoot,shortProgCompetition,shortProgScore,sibling,signature,significantProject,silverMedalDouble,silverMedalMixed,silverMedalSingle,specialTrial,speciality,sportCountry,sportDiscipline,sportSpecialty,sportsFunction,spouse,spouseName,start,startCareer,startReign,startWct,startWqs,stateOfOrigin,stateOfOriginPoint,stateOfOriginTeam,stateOfOriginYear,statusManager,student,superbowlWin,supplementalDraftRound,tattoo,teamCoached,teamManager,teamPoint,teamTitle,temple,templeYear,tessitura,third,titleDate,titleDouble,titleSingle,tournamentOfChampions,trainer,tvShow,university,usOpenDouble,usOpenMixed,usOpenSingle,usopenWins,usurper,viafId,victim,victory,victoryAsMgr,victoryPercentageAsMgr,waistSize,weapon,weddingParentsDate,wife,wimbledonDouble,wimbledonMixed,wimbledonSingle,wins,world,worldChampionTitleYear,worldOpen,worldTeamCup,worldTournament,worldTournamentBronze,worldTournamentGold,worldTournamentSilver,youthClub) 
+Created match data: 
+similarity(0.0).
+match(none).
+
+Construct query entity(type(Athlete),nationality(Sweden)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Athlete> ; 
+<http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Sweden> . }
+
+The query succeeded. The returned answers are: 
+-------------------------------------------------------------------
+| subject                                                         |
+===================================================================
+| <http://dbpedia.org/resource/Armand_Krajnc>                     |
+| <http://dbpedia.org/resource/Bengt_Jansson>                     |
+| <http://dbpedia.org/resource/Carl_Pettersson>                   |
+| <http://dbpedia.org/resource/Naim_Terbunja>                     |
+| <http://dbpedia.org/resource/Sarah_Sj%C3%B6str%C3%B6m>          |
+| <http://dbpedia.org/resource/Tommy_Jansson>                     |
+| <http://dbpedia.org/resource/G%C3%B6sta_Arvidsson>              |
+| <http://dbpedia.org/resource/Karin_Sj%C3%B6din>                 |
+| <http://dbpedia.org/resource/Linn_Blohm>                        |
+| <http://dbpedia.org/resource/P%C3%A4r_Arvidsson>                |
+| <http://dbpedia.org/resource/Kajsa_Bergstr%C3%B6m>              |
+| <http://dbpedia.org/resource/Daniel_Chopra>                     |
+| <http://dbpedia.org/resource/Anders_Michanek>                   |
+| <http://dbpedia.org/resource/Maria_%C3%96stling>                |
+| <http://dbpedia.org/resource/Gabriella_Kain>                    |
+| <http://dbpedia.org/resource/Li_Fen>                            |
+| <http://dbpedia.org/resource/Marie_Svensson>                    |
+| <http://dbpedia.org/resource/Olle_Tandberg>                     |
+| <http://dbpedia.org/resource/Jan_Nilsson>                       |
+| <http://dbpedia.org/resource/Peter_Hanson>                      |
+| <http://dbpedia.org/resource/Isabelle_S%C3%B6derberg>           |
+| <http://dbpedia.org/resource/Mikael_%C3%96rn>                   |
+| <http://dbpedia.org/resource/Stefan_Nystrand>                   |
+| <http://dbpedia.org/resource/Michael_Jonzon>                    |
+| <http://dbpedia.org/resource/Ola_Kajbjer>                       |
+| <http://dbpedia.org/resource/Eric_la_Fleur>                     |
+| <http://dbpedia.org/resource/Pelle_Edberg>                      |
+| <http://dbpedia.org/resource/S%C3%B6ren_Sj%C3%B6sten>           |
+| <http://dbpedia.org/resource/Billy_Forsberg>                    |
+| <http://dbpedia.org/resource/Ulf_%22Tickan%22_Carlsson>         |
+| <http://dbpedia.org/resource/Niklas_Klingberg>                  |
+| <http://dbpedia.org/resource/Nathalie_Larsson>                  |
+| <http://dbpedia.org/resource/Jens_Fahrbring>                    |
+| <http://dbpedia.org/resource/Magnus_Zetterstr%C3%B6m>           |
+| <http://dbpedia.org/resource/Anton_Gaddefors>                   |
+| <http://dbpedia.org/resource/Johanna_Westberg>                  |
+| <http://dbpedia.org/resource/Louise_Sand>                       |
+| <http://dbpedia.org/resource/Malin_Svahnstr%C3%B6m>             |
+| <http://dbpedia.org/resource/Elina_Eggers>                      |
+| <http://dbpedia.org/resource/Johanna_Johansson>                 |
+| <http://dbpedia.org/resource/Eric_Andersson>                    |
+| <http://dbpedia.org/resource/Gabriella_Fagundez>                |
+| <http://dbpedia.org/resource/Kristoffer_Broberg>                |
+| <http://dbpedia.org/resource/Lars_Ericsson>                     |
+| <http://dbpedia.org/resource/Henrik_Gustafsson>                 |
+| <http://dbpedia.org/resource/Ulla_Renvall>                      |
+| <http://dbpedia.org/resource/Annika_S%C3%B6renstam>             |
+| <http://dbpedia.org/resource/Anders_Holmertz>                   |
+| <http://dbpedia.org/resource/Liselotte_Neumann>                 |
+| <http://dbpedia.org/resource/Conny_Andersson_(racing_driver)>   |
+| <http://dbpedia.org/resource/Johan_Edfors>                      |
+| <http://dbpedia.org/resource/Peter_Hedblom>                     |
+| <http://dbpedia.org/resource/Niklas_Forsmoo>                    |
+| <http://dbpedia.org/resource/Mattias_Gustafsson>                |
+| <http://dbpedia.org/resource/Robert_Dahlgren>                   |
+| <http://dbpedia.org/resource/Bj%C3%B6rn_Wirdheim>               |
+| <http://dbpedia.org/resource/Anders_Haglund>                    |
+| <http://dbpedia.org/resource/Gunnar_Nilsson>                    |
+| <http://dbpedia.org/resource/J%C3%B6rgen_Persson>               |
+| <http://dbpedia.org/resource/Mikael_Appelgren>                  |
+| <http://dbpedia.org/resource/Robert_Rosengren>                  |
+| <http://dbpedia.org/resource/Vera_Thulin>                       |
+| <http://dbpedia.org/resource/Bj%C3%B6rn_Knutsson>               |
+| <http://dbpedia.org/resource/Chris_Hanell>                      |
+| <http://dbpedia.org/resource/Tommy_Pettersson>                  |
+| <http://dbpedia.org/resource/Magnus_A._Carlsson>                |
+| <http://dbpedia.org/resource/Cecilia_Ekelundh>                  |
+| <http://dbpedia.org/resource/Martin_Boquist>                    |
+| <http://dbpedia.org/resource/G%C3%B6ran_Malkar>                 |
+| <http://dbpedia.org/resource/Matilda_Ekholm>                    |
+| <http://dbpedia.org/resource/Hanna_Westrin>                     |
+| <http://dbpedia.org/resource/Kristian_Karlsson>                 |
+| <http://dbpedia.org/resource/Fredrik_Ohlsson_(golfer)>          |
+| <http://dbpedia.org/resource/Andreas_Jonsson>                   |
+| <http://dbpedia.org/resource/Angelica_Bengtsson>                |
+| <http://dbpedia.org/resource/Kent_Andersson_(motorcyclist)>     |
+| <http://dbpedia.org/resource/Mikael_Max>                        |
+| <http://dbpedia.org/resource/Per_Jonsson>                       |
+| <http://dbpedia.org/resource/Peter_Karlsson_(speedway_rider)>   |
+| <http://dbpedia.org/resource/Peter_Karlsson_(table_tennis)>     |
+| <http://dbpedia.org/resource/Ragnar_Skan%C3%A5ker>              |
+| <http://dbpedia.org/resource/Robert_Karlsson>                   |
+| <http://dbpedia.org/resource/Sonja_Johnsson>                    |
+| <http://dbpedia.org/resource/Stellan_Bengtsson>                 |
+| <http://dbpedia.org/resource/Catrin_Nilsmark>                   |
+| <http://dbpedia.org/resource/Fredrik_Lindahl>                   |
+| <http://dbpedia.org/resource/Kalle_Brink>                       |
+| <http://dbpedia.org/resource/Henrik_Stenson>                    |
+| <http://dbpedia.org/resource/Ida_Marko-Varga>                   |
+| <http://dbpedia.org/resource/Kenny_Olsson>                      |
+| <http://dbpedia.org/resource/Lars_Fr%C3%B6lander>               |
+| <http://dbpedia.org/resource/Tony_Olsson>                       |
+| <http://dbpedia.org/resource/Adam_Mednick>                      |
+| <http://dbpedia.org/resource/Jonas_Blixt>                       |
+| <http://dbpedia.org/resource/Richard_S._Johnson>                |
+| <http://dbpedia.org/resource/Alexander_Nor%C3%A9n>              |
+| <http://dbpedia.org/resource/Pernilla_Lindberg>                 |
+
+Construct query entity(type(Skater),nationality(Sweden)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Skater> ; 
+<http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Sweden> . }
+
+The query did not return any data. 
+
+Construct query entity(type,nationality(Sweden)) 
+SELECT *
+WHERE { ?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ; 
+<http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Sweden> . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| subject                                                       | type                                                                                           |
+==================================================================================================================================================================
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://xmlns.com/foaf/0.1/Person>                                                             |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://schema.org/Person>                                                                     |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://wikidata.dbpedia.org/resource/Q215627>                                                 |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://www.w3.org/2002/07/owl#Thing>                                                          |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://wikidata.dbpedia.org/resource/Q5>                                                      |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                                  |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>                          |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/ontology/Actor>                                                            |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/ontology/Agent>                                                            |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/ontology/Artist>                                                           |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/ontology/Person>                                                           |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://umbel.org/umbel/rc/Actor>                                                              |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/Actor109765278>                                                 |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/CausalAgent100007347>                                           |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/Entertainer109616922>                                           |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/LivingThing100004258>                                           |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/Object100002684>                                                |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/Organism100004475>                                              |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/Performer110415638>                                             |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/Person100007846>                                                |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/Whole100003553>                                                 |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                              |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/PeopleFromG%C3%A4vle>                                           |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/YagoLegalActor>                                                 |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                        |
+| <http://dbpedia.org/resource/%C3%85ke_Fridell>                | <http://dbpedia.org/class/yago/SwedishActors>                                                  |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://xmlns.com/foaf/0.1/Person>                                                             |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://schema.org/Person>                                                                     |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://wikidata.dbpedia.org/resource/Q215627>                                                 |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://www.w3.org/2002/07/owl#Thing>                                                          |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://wikidata.dbpedia.org/resource/Q5>                                                      |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                                  |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>                          |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/ontology/Agent>                                                            |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/ontology/Person>                                                           |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/ontology/Scientist>                                                        |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://umbel.org/umbel/rc/Scientist>                                                          |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/CausalAgent100007347>                                           |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/Geologist110127689>                                             |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/LivingThing100004258>                                           |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/Object100002684>                                                |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/Organism100004475>                                              |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/Person100007846>                                                |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/Scientist110560637>                                             |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/Whole100003553>                                                 |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                              |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/YagoLegalActor>                                                 |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                        |
+| <http://dbpedia.org/resource/Alfred_Elis_T%C3%B6rnebohm>      | <http://dbpedia.org/class/yago/SwedishGeologists>                                              |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://xmlns.com/foaf/0.1/Person>                                                             |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://schema.org/Person>                                                                     |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://wikidata.dbpedia.org/resource/Q215627>                                                 |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://www.w3.org/2002/07/owl#Thing>                                                          |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://wikidata.dbpedia.org/resource/Q5>                                                      |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                                  |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>                          |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/ontology/Agent>                                                            |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/ontology/Athlete>                                                          |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/ontology/Boxer>                                                            |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/ontology/Person>                                                           |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/Boxer109870208>                                                 |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/CausalAgent100007347>                                           |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/Combatant109939313>                                             |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/LivingThing100004258>                                           |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/Object100002684>                                                |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/Organism100004475>                                              |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/Person100007846>                                                |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/Whole100003553>                                                 |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                              |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/YagoLegalActor>                                                 |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/PhysicalEntity100001930>                                        |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/SwedishBoxers>                                                  |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/LivingPeople>                                                   |
+| <http://dbpedia.org/resource/Armand_Krajnc>                   | <http://dbpedia.org/class/yago/MiddleweightBoxers>                                             |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://xmlns.com/foaf/0.1/Person>                                                             |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://schema.org/Person>                                                                     |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/WestHamHammersRiders>                                           |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://wikidata.dbpedia.org/resource/Q215627>                                                 |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://www.w3.org/2002/07/owl#Thing>                                                          |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://wikidata.dbpedia.org/resource/Q5>                                                      |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                                  |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>                          |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/ontology/Agent>                                                            |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/ontology/Athlete>                                                          |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/ontology/MotorcycleRider>                                                  |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/ontology/MotorsportRacer>                                                  |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/ontology/Person>                                                           |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/ontology/SpeedwayRider>                                                    |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/CausalAgent100007347>                                           |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/Champion109906704>                                              |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/Contestant109613191>                                            |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/LivingThing100004258>                                           |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/Object100002684>                                                |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/Organism100004475>                                              |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/Person100007846>                                                |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/Rider110529965>                                                 |
+| <http://dbpedia.org/resource/Bengt_Jansson>                   | <http://dbpedia.org/class/yago/Rival110533013>                                                 |
+

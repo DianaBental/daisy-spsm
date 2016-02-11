@@ -1,0 +1,94 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+
+%opening
+\title{Query Repair}
+\author{Andriana Gkaniatsou}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Introduction}
+
+The repair process takes as input the mismatched query (both data and schema) and the SPSM matching results and produces new queries which are considered 
+schematically correct. The repair process considers the following cases:
+
+\begin{itemize}
+ \item The query dataset name can match to more than one dataset names (we own).
+\item Each dataset match (predicate match) comes with the corresponding argument matches.
+\item Within the same dataset, an argument can have more than one matching (more than one arguments that can be mappes to).
+\item A dataset match might correspond to more than one new queries.
+\item A dataset macth that does not have any argument matching is discarded.
+\end{itemize}
+
+\section{Repair Algorithm}
+
+First step is to repair the query schema according to the SPSM results. 
+\begin{itemize}
+ \item Given a query dataset name and the correspoing arguments, find all SPMS results that match the query dataset name to 
+a dataset name that we own. Keep only the dataset name matches that produce argument matches.
+\item For each $DatasetMatch_i$, where $QueryDataset \mapsto DatasetMatch_i$ find all corresponding $SingleArgumentMatches$
+    \begin{itemize}
+    \item For each $QA_i$ where $QA_i$ $\in$ QueryArguments, find all $QA_i$ that appear  one $SingleArgumentMatch$. 
+     \item Find all  $QMA_i$ $\in$ QueryArguments, that have more than one $SingleArgumentMatches$, where  $SingleArgumentMatches= \{ SingleArgumentMatch_1, \\SingleArgumentMatch_2, .., SingleArgumentMatch_n\}$ and 
+$QueryDataset(QA_i) \mapsto DatasetMatch_i(SingleArgumentMatch_1)$, \\
+$QueryDataset(QA_i) \mapsto DatasetMatch_i(SingleArgumentMatch_2)$.., and $n \leq 2$
+    \begin{itemize}
+\item  For each $QMA_i$ select randomly $SingleArgumentMatches_i$ and replace it
+
+    \begin{itemize}
+     \item Replace each $QA_i$ with the corresponding  $SingleArgumentMatch$
+      \item For each of the remaining $QA_i$ replace it with a randomly chosen  $SingleArgumentMatch_i$ 
+      \item Delete all query arguments that do not have a corresponding $SingleArgumentMatch$
+    \end{itemize}
+\item Repeat for all $SingleArgumentMatches_i$
+\end{itemize}
+
+ \item Repeat untill all possible argument cobinations have been created. 
+
+
+    \end{itemize}
+
+
+
+\end{itemize}
+
+
+
+
+
+To form the final query, we have to find all data values contained in the original query and change their type. 
+Hence, for each query schema we have formed, we find (if any) the corresponding data values that are provided by the query.
+
+
+\section{Forming the final query - Data Level Repair}
+
+Inputs of this process are all query schemata that have been formed by the previous process and for each schema the corresponding data.
+For each schema we form the corresponding query and we send it to the appropriate dataset. If no answers are returned, assuming that the schema is 
+correct, we  uninstantiate the data values of the query.  Goal of this process is to identify the data values that cause the query failure. 
+The steps we perform are the following:
+
+\begin{itemize}
+ \item Find all data values of the query
+    \begin{itemize}
+    \item Select one randomly and uninstantiate it
+   \item Send query to the dataset again
+    \item Check if it returned any answers
+	\begin{itemize}
+	
+	\item If no answers were returned, pick another data value, and uninstantiate it 
+	  \item Send the new query to the dataset
+	  \item Check for answers
+	\end{itemize}
+      \item Repeat for all data values
+      \end{itemize}
+
+    \item Uninstantiate all data values of the query
+    \item Send uninstantiated query to the appropriate dataset
+      
+\end{itemize}
+
+
+\end{document}

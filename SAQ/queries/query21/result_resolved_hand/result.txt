@@ -1,0 +1,111 @@
+Query:  entity(subject(T._E._Lawrence),battle) 
+Construct query entity(subject(T._E._Lawrence),battle) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/T._E._Lawrence> <http://dbpedia.org/ontology/battle> ?battle . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------
+| battle                                                   |
+============================================================
+| <http://dbpedia.org/resource/Capture_of_Damascus_(1918)> |
+| <http://dbpedia.org/resource/Arab_Revolt>                |
+| <http://dbpedia.org/resource/Battle_of_Megiddo_(1918)>   |
+| <http://dbpedia.org/resource/World_War_I>                |
+| <http://dbpedia.org/resource/Battle_of_Aqaba>            |
+| <http://dbpedia.org/resource/Siege_of_Medina>            |
+| <http://dbpedia.org/resource/Battle_of_Aba_el_Lissan>    |
+| <http://dbpedia.org/resource/Battle_of_Deraa>            |
+| <http://dbpedia.org/resource/Battle_of_Fwelia>           |
+| <http://dbpedia.org/resource/Battle_of_Talifeh>          |
+------------------------------------------------------------
+
+Narrowed to these target datasets:  entity 
+
+Matching query schema entity(subject,battle) 
+to dataset schema entity(leader,language,populationTotal,publisher,occupation,birthPlace,leaderParty,mission) 
+Created match data: 
+similarity(0.16666666666666663).
+match(none).
+match([[entity,subject],<,[entity,language]]).
+match([[entity],=,[entity]]).
+
+Construct query entity(type(entity),subject(T._E._Lawrence)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/T._E._Lawrence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/entity> . }
+
+The query did not return any data. 
+
+Construct query entity(type,subject(T._E._Lawrence)) 
+SELECT *
+WHERE { <http://dbpedia.org/resource/T._E._Lawrence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type . }
+
+The query succeeded. The returned answers are: 
+------------------------------------------------------------------------------------
+| type                                                                             |
+====================================================================================
+| <http://xmlns.com/foaf/0.1/Person>                                               |
+| <http://schema.org/Person>                                                       |
+| <http://wikidata.dbpedia.org/resource/Q215627>                                   |
+| <http://www.w3.org/2002/07/owl#Thing>                                            |
+| <http://wikidata.dbpedia.org/resource/Q5>                                        |
+| <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent>                    |
+| <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson>            |
+| <http://dbpedia.org/ontology/Agent>                                              |
+| <http://dbpedia.org/ontology/MilitaryPerson>                                     |
+| <http://dbpedia.org/ontology/Person>                                             |
+| <http://umbel.org/umbel/rc/MilitaryPerson>                                       |
+| <http://umbel.org/umbel/rc/PersonWithOccupation>                                 |
+| <http://dbpedia.org/class/yago/AlumniOfJesusCollege,Oxford>                      |
+| <http://dbpedia.org/class/yago/AlumniOfMagdalenCollege,Oxford>                   |
+| <http://dbpedia.org/class/yago/Alumnus109786338>                                 |
+| <http://dbpedia.org/class/yago/Anthropologist109796323>                          |
+| <http://dbpedia.org/class/yago/Archeologist109804806>                            |
+| <http://dbpedia.org/class/yago/AsexualPeople>                                    |
+| <http://dbpedia.org/class/yago/Associate109816771>                               |
+| <http://dbpedia.org/class/yago/BritishArchaeologists>                            |
+| <http://dbpedia.org/class/yago/BritishArmyGeneralListOfficers>                   |
+| <http://dbpedia.org/class/yago/BritishGuerrillas>                                |
+| <http://dbpedia.org/class/yago/BritishPeopleOfIrishDescent>                      |
+| <http://dbpedia.org/class/yago/CausalAgent100007347>                             |
+| <http://dbpedia.org/class/yago/Colleague109935990>                               |
+| <http://dbpedia.org/class/yago/Friend110112591>                                  |
+| <http://dbpedia.org/class/yago/Guerrilla110150556>                               |
+| <http://dbpedia.org/class/yago/Intellectual109621545>                            |
+| <http://dbpedia.org/class/yago/Linguist110264219>                                |
+| <http://dbpedia.org/class/yago/LivingThing100004258>                             |
+| <http://dbpedia.org/class/yago/MilitaryOfficer110317007>                         |
+| <http://dbpedia.org/class/yago/Object100002684>                                  |
+| <http://dbpedia.org/class/yago/Organism100004475>                                |
+| <http://dbpedia.org/class/yago/Peer109626238>                                    |
+| <http://dbpedia.org/class/yago/Person100007846>                                  |
+| <http://dbpedia.org/class/yago/Scholar110557854>                                 |
+| <http://dbpedia.org/class/yago/Scientist110560637>                               |
+| <http://dbpedia.org/class/yago/Serviceman110582746>                              |
+| <http://dbpedia.org/class/yago/SkilledWorker110605985>                           |
+| <http://dbpedia.org/class/yago/SocialScientist110619642>                         |
+| <http://dbpedia.org/class/yago/Soldier110622053>                                 |
+| <http://dbpedia.org/class/yago/Theorist110706812>                                |
+| <http://dbpedia.org/class/yago/Translator110725280>                              |
+| <http://dbpedia.org/class/yago/Unfortunate109630641>                             |
+| <http://dbpedia.org/class/yago/Victim110752093>                                  |
+| <http://dbpedia.org/class/yago/Warrior110768585>                                 |
+| <http://dbpedia.org/class/yago/Whole100003553>                                   |
+| <http://dbpedia.org/class/yago/Worker109632518>                                  |
+| <http://dbpedia.org/class/yago/YagoLegalActorGeo>                                |
+| <http://dbpedia.org/class/yago/MotorcycleAccidentVictims>                        |
+| <http://dbpedia.org/class/yago/PeopleEducatedAtTheCityOfOxfordHighSchoolForBoys> |
+| <http://dbpedia.org/class/yago/PeopleFromCaernarfonshire>                        |
+| <http://dbpedia.org/class/yago/YagoLegalActor>                                   |
+| <http://dbpedia.org/class/yago/Companion109945905>                               |
+| <http://dbpedia.org/class/yago/CompanionsOfTheDistinguishedServiceOrder>         |
+| <http://dbpedia.org/class/yago/CompanionsOfTheOrderOfTheBath>                    |
+| <http://dbpedia.org/class/yago/EnlistedPerson110058777>                          |
+| <http://dbpedia.org/class/yago/FellowsOfAllSoulsCollege,Oxford>                  |
+| <http://dbpedia.org/class/yago/French%E2%80%93EnglishTranslators>                |
+| <http://dbpedia.org/class/yago/PhysicalEntity100001930>                          |
+| <http://dbpedia.org/class/yago/RoyalArtillerySoldiers>                           |
+| <http://dbpedia.org/class/yago/RoyalTankRegimentSoldiers>                        |
+| <http://dbpedia.org/class/yago/Greek%E2%80%93EnglishTranslators>                 |
+| <http://dbpedia.org/class/yago/GuerrillaWarfareTheorists>                        |
+------------------------------------------------------------------------------------
+
